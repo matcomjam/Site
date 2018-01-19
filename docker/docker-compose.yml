@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  matcomjam:
+    image: matcomjam
+    build:
+      context: ./MatcomJam
+      dockerfile: Dockerfile
