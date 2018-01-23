@@ -13,6 +13,6 @@ namespace CodeFirstDatabase
 		public int BlogId {get; set; }
 		
 		public User User {get; set; }
-        public Blog Blog { get; set; }
+		public Blog Blog {get; set; ]
     }
 }

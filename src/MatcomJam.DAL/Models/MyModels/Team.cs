@@ -12,8 +12,8 @@ namespace CodeFirstDatabase
         public int TeamId { get; set; }
         public string Name { get; set; }
         
-		//public int UserTeamId {get; set; }
-		public ICollection<UserTeam> UserTeam {get; set; }
+		public int UserTeamId {get; set; }
+		public UserTeam UserTeam {get; set; }
 		
 		public ICollection<Contestant> Contestants { get; set; }
     }

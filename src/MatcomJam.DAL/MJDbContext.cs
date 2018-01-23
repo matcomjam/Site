@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CodeFirstDatabase
 {
-    public class MJDbContext : DbContext
+    class MJDbContext: DbContext
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Contest> Contests { get; set; }
@@ -23,9 +23,6 @@ namespace CodeFirstDatabase
         public DbSet<Language> Languages { get; set; }
 
         public MJDbContext(DbContextOptions options) : base(options)
-        { }
-
-        public MJDbContext() : base()
         { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

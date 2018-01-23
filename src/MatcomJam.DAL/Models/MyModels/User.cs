@@ -21,8 +21,8 @@ namespace CodeFirstDatabase
 		public ICollection<Blog> Blog {get; set; }
 		public ICollection<Comment> Comments {get; set; }
 		
-		//public int UserTeamId {get; set; }
-		public ICollection<UserTeam> UserTeam {get; set; }
+		public int UserTeamId {get; set; }
+		public UserTeam UserTeam {get; set; }
 		
 		// Ready!!!
 		// TODO Check this entity
