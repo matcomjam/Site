@@ -4,8 +4,6 @@ namespace CodeFirstDatabase
 {
     public class Solution
     {
-        public int Id { get; set; }
-
         public int ProblemContestId { get; set; }
 		public ProblemContest ProblemContest {get; set; }
 		        

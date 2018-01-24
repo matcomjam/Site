@@ -9,7 +9,7 @@ namespace CodeFirstDatabase
 {
     public class Contestant : User
     {
-        public int Id { get; set; }
+        public int ContestantId { get; set; }
         
 		public int ContestId { get; set; }
         public int TeamId { get; set; }

@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL.Models;
 
 namespace CodeFirstDatabase
 {
@@ -22,7 +23,7 @@ namespace CodeFirstDatabase
 		public ICollection<Comment> Comments {get; set; }
 		
 		//public int UserTeamId {get; set; }
-		public ICollection<UserTeam> UserTeam {get; set; }
+		public ICollection<UserTeam> UserTeams { get; set; }
 		
 		// Ready!!!
 		// TODO Check this entity

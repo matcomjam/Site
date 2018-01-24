@@ -40,75 +40,75 @@ namespace QuickApp.Controllers
         }
 
 
-        [HttpGet("users/me")]
-        [Produces(typeof(UserViewModel))]
-        public async Task<IActionResult> GetCurrentUser()
-        {
-            return await GetUserByUserName(this.User.Identity.Name);
-        }
+        //[HttpGet("users/me")]
+        //[Produces(typeof(UserViewModel))]
+        //public async Task<IActionResult> GetCurrentUser()
+        //{
+        //    return await GetUserByUserName(this.User.Identity.Name);
+        //}
 
 
-        [HttpGet("users/{id}", Name = GetUserByIdActionName)]
-        [Produces(typeof(UserViewModel))]
-        public async Task<IActionResult> GetUserById(string id)
-        {
-            if (!(await _authorizationService.AuthorizeAsync(this.User, id, AccountManagementOperations.Read)).Succeeded)
-                return new ChallengeResult();
+        //[HttpGet("users/{id}", Name = GetUserByIdActionName)]
+        //[Produces(typeof(UserViewModel))]
+        //public async Task<IActionResult> GetUserById(string id)
+        //{
+        //    if (!(await _authorizationService.AuthorizeAsync(this.User, id, AccountManagementOperations.Read)).Succeeded)
+        //        return new ChallengeResult();
 
 
-            UserViewModel userVM = await GetUserViewModelHelper(id);
+        //    UserViewModel userVM = await GetUserViewModelHelper(id);
 
-            if (userVM != null)
-                return Ok(userVM);
-            else
-                return NotFound(id);
-        }
-
-
-        [HttpGet("users/username/{userName}")]
-        [Produces(typeof(UserViewModel))]
-        public async Task<IActionResult> GetUserByUserName(string userName)
-        {
-            ApplicationUser appUser = await _accountManager.GetUserByUserNameAsync(userName);
-
-            if (!(await _authorizationService.AuthorizeAsync(this.User, appUser?.Id ?? "", AccountManagementOperations.Read)).Succeeded)
-                return new ChallengeResult();
-
-            if (appUser == null)
-                return NotFound(userName);
-
-            return await GetUserById(appUser.Id);
-        }
+        //    if (userVM != null)
+        //        return Ok(userVM);
+        //    else
+        //        return NotFound(id);
+        //}
 
 
-        [HttpGet("users")]
-        [Produces(typeof(List<UserViewModel>))]
-        [Authorize(Authorization.Policies.ViewAllUsersPolicy)]
-        public async Task<IActionResult> GetUsers()
-        {
-            return await GetUsers(-1, -1);
-        }
+        //[HttpGet("users/username/{userName}")]
+        //[Produces(typeof(UserViewModel))]
+        //public async Task<IActionResult> GetUserByUserName(string userName)
+        //{
+        //    ApplicationUser appUser = await _accountManager.GetUserByUserNameAsync(userName);
+
+        //    if (!(await _authorizationService.AuthorizeAsync(this.User, appUser?.Id ?? "", AccountManagementOperations.Read)).Succeeded)
+        //        return new ChallengeResult();
+
+        //    if (appUser == null)
+        //        return NotFound(userName);
+
+        //    return await GetUserById(appUser.Id);
+        //}
 
 
-        [HttpGet("users/{page:int}/{pageSize:int}")]
-        [Produces(typeof(List<UserViewModel>))]
-        [Authorize(Authorization.Policies.ViewAllUsersPolicy)]
-        public async Task<IActionResult> GetUsers(int page, int pageSize)
-        {
-            var usersAndRoles = await _accountManager.GetUsersAndRolesAsync(page, pageSize);
+        //[HttpGet("users")]
+        //[Produces(typeof(List<UserViewModel>))]
+        //[Authorize(Authorization.Policies.ViewAllUsersPolicy)]
+        //public async Task<IActionResult> GetUsers()
+        //{
+        //    return await GetUsers(-1, -1);
+        //}
 
-            List<UserViewModel> usersVM = new List<UserViewModel>();
 
-            foreach (var item in usersAndRoles)
-            {
-                var userVM = Mapper.Map<UserViewModel>(item.Item1);
-                userVM.Roles = item.Item2;
+        //[HttpGet("users/{page:int}/{pageSize:int}")]
+        //[Produces(typeof(List<UserViewModel>))]
+        //[Authorize(Authorization.Policies.ViewAllUsersPolicy)]
+        //public async Task<IActionResult> GetUsers(int page, int pageSize)
+        //{
+        //    var usersAndRoles = await _accountManager.GetUsersAndRolesAsync(page, pageSize);
 
-                usersVM.Add(userVM);
-            }
+        //    List<UserViewModel> usersVM = new List<UserViewModel>();
 
-            return Ok(usersVM);
-        }
+        //    foreach (var item in usersAndRoles)
+        //    {
+        //        var userVM = Mapper.Map<UserViewModel>(item.Item1);
+        //        userVM.Roles = item.Item2;
+
+        //        usersVM.Add(userVM);
+        //    }
+
+        //    return Ok(usersVM);
+        //}
 
 
 
@@ -246,65 +246,65 @@ namespace QuickApp.Controllers
 
 
 
-        [HttpPost("users")]
-        [Authorize(Authorization.Policies.ManageAllUsersPolicy)]
-        public async Task<IActionResult> Register([FromBody] UserEditViewModel user)
-        {
-            if (!(await _authorizationService.AuthorizeAsync(this.User, Tuple.Create(user.Roles, new string[] { }), Authorization.Policies.AssignAllowedRolesPolicy)).Succeeded)
-                return new ChallengeResult();
+        //[HttpPost("users")]
+        //[Authorize(Authorization.Policies.ManageAllUsersPolicy)]
+        //public async Task<IActionResult> Register([FromBody] UserEditViewModel user)
+        //{
+        //    if (!(await _authorizationService.AuthorizeAsync(this.User, Tuple.Create(user.Roles, new string[] { }), Authorization.Policies.AssignAllowedRolesPolicy)).Succeeded)
+        //        return new ChallengeResult();
 
 
-            if (ModelState.IsValid)
-            {
-                if (user == null)
-                    return BadRequest($"{nameof(user)} cannot be null");
+        //    if (ModelState.IsValid)
+        //    {
+        //        if (user == null)
+        //            return BadRequest($"{nameof(user)} cannot be null");
 
 
-                ApplicationUser appUser = Mapper.Map<ApplicationUser>(user);
+        //        ApplicationUser appUser = Mapper.Map<ApplicationUser>(user);
 
-                var result = await _accountManager.CreateUserAsync(appUser, user.Roles, user.NewPassword);
-                if (result.Item1)
-                {
-                    UserViewModel userVM = await GetUserViewModelHelper(appUser.Id);
-                    return CreatedAtAction(GetUserByIdActionName, new { id = userVM.Id }, userVM);
-                }
+        //        var result = await _accountManager.CreateUserAsync(appUser, user.Roles, user.NewPassword);
+        //        if (result.Item1)
+        //        {
+        //            UserViewModel userVM = await GetUserViewModelHelper(appUser.Id);
+        //            return CreatedAtAction(GetUserByIdActionName, new { id = userVM.Id }, userVM);
+        //        }
 
-                AddErrors(result.Item2);
-            }
+        //        AddErrors(result.Item2);
+        //    }
 
-            return BadRequest(ModelState);
-        }
-
-
-
-        [HttpDelete("users/{id}")]
-        [Produces(typeof(UserViewModel))]
-        public async Task<IActionResult> DeleteUser(string id)
-        {
-            if (!(await _authorizationService.AuthorizeAsync(this.User, id, AccountManagementOperations.Delete)).Succeeded)
-                return new ChallengeResult();
-
-            if (!await _accountManager.TestCanDeleteUserAsync(id))
-                return BadRequest("User cannot be deleted. Delete all orders associated with this user and try again");
+        //    return BadRequest(ModelState);
+        //}
 
 
-            UserViewModel userVM = null;
-            ApplicationUser appUser = await this._accountManager.GetUserByIdAsync(id);
 
-            if (appUser != null)
-                userVM = await GetUserViewModelHelper(appUser.Id);
+        //[HttpDelete("users/{id}")]
+        //[Produces(typeof(UserViewModel))]
+        //public async Task<IActionResult> DeleteUser(string id)
+        //{
+        //    if (!(await _authorizationService.AuthorizeAsync(this.User, id, AccountManagementOperations.Delete)).Succeeded)
+        //        return new ChallengeResult();
 
-
-            if (userVM == null)
-                return NotFound(id);
-
-            var result = await this._accountManager.DeleteUserAsync(appUser);
-            if (!result.Item1)
-                throw new Exception("The following errors occurred whilst deleting user: " + string.Join(", ", result.Item2));
+        //    if (!await _accountManager.TestCanDeleteUserAsync(id))
+        //        return BadRequest("User cannot be deleted. Delete all orders associated with this user and try again");
 
 
-            return Ok(userVM);
-        }
+        //    UserViewModel userVM = null;
+        //    ApplicationUser appUser = await this._accountManager.GetUserByIdAsync(id);
+
+        //    if (appUser != null)
+        //        userVM = await GetUserViewModelHelper(appUser.Id);
+
+
+        //    if (userVM == null)
+        //        return NotFound(id);
+
+        //    var result = await this._accountManager.DeleteUserAsync(appUser);
+        //    if (!result.Item1)
+        //        throw new Exception("The following errors occurred whilst deleting user: " + string.Join(", ", result.Item2));
+
+
+        //    return Ok(userVM);
+        //}
 
 
 
@@ -367,61 +367,61 @@ namespace QuickApp.Controllers
 
 
 
-        [HttpGet("roles/{id}", Name = GetRoleByIdActionName)]
-        [Produces(typeof(RoleViewModel))]
-        public async Task<IActionResult> GetRoleById(string id)
-        {
-            var appRole = await _accountManager.GetRoleByIdAsync(id);
+        //[HttpGet("roles/{id}", Name = GetRoleByIdActionName)]
+        //[Produces(typeof(RoleViewModel))]
+        //public async Task<IActionResult> GetRoleById(string id)
+        //{
+        //    var appRole = await _accountManager.GetRoleByIdAsync(id);
 
-            if (!(await _authorizationService.AuthorizeAsync(this.User, appRole?.Name ?? "", Authorization.Policies.ViewRoleByRoleNamePolicy)).Succeeded)
-                return new ChallengeResult();
+        //    if (!(await _authorizationService.AuthorizeAsync(this.User, appRole?.Name ?? "", Authorization.Policies.ViewRoleByRoleNamePolicy)).Succeeded)
+        //        return new ChallengeResult();
 
-            if (appRole == null)
-                return NotFound(id);
+        //    if (appRole == null)
+        //        return NotFound(id);
 
-            return await GetRoleByName(appRole.Name);
-        }
-
-
-
-
-        [HttpGet("roles/name/{name}")]
-        [Produces(typeof(RoleViewModel))]
-        public async Task<IActionResult> GetRoleByName(string name)
-        {
-            if (!(await _authorizationService.AuthorizeAsync(this.User, name, Authorization.Policies.ViewRoleByRoleNamePolicy)).Succeeded)
-                return new ChallengeResult();
-
-
-            RoleViewModel roleVM = await GetRoleViewModelHelper(name);
-
-            if (roleVM == null)
-                return NotFound(name);
-
-            return Ok(roleVM);
-        }
+        //    return await GetRoleByName(appRole.Name);
+        //}
 
 
 
 
-        [HttpGet("roles")]
-        [Produces(typeof(List<RoleViewModel>))]
-        [Authorize(Authorization.Policies.ViewAllRolesPolicy)]
-        public async Task<IActionResult> GetRoles()
-        {
-            return await GetRoles(-1, -1);
-        }
+        //[HttpGet("roles/name/{name}")]
+        //[Produces(typeof(RoleViewModel))]
+        //public async Task<IActionResult> GetRoleByName(string name)
+        //{
+        //    if (!(await _authorizationService.AuthorizeAsync(this.User, name, Authorization.Policies.ViewRoleByRoleNamePolicy)).Succeeded)
+        //        return new ChallengeResult();
+
+
+        //    RoleViewModel roleVM = await GetRoleViewModelHelper(name);
+
+        //    if (roleVM == null)
+        //        return NotFound(name);
+
+        //    return Ok(roleVM);
+        //}
 
 
 
-        [HttpGet("roles/{page:int}/{pageSize:int}")]
-        [Produces(typeof(List<RoleViewModel>))]
-        [Authorize(Authorization.Policies.ViewAllRolesPolicy)]
-        public async Task<IActionResult> GetRoles(int page, int pageSize)
-        {
-            var roles = await _accountManager.GetRolesLoadRelatedAsync(page, pageSize);
-            return Ok(Mapper.Map<List<RoleViewModel>>(roles));
-        }
+
+        //[HttpGet("roles")]
+        //[Produces(typeof(List<RoleViewModel>))]
+        //[Authorize(Authorization.Policies.ViewAllRolesPolicy)]
+        //public async Task<IActionResult> GetRoles()
+        //{
+        //    return await GetRoles(-1, -1);
+        //}
+
+
+
+        //[HttpGet("roles/{page:int}/{pageSize:int}")]
+        //[Produces(typeof(List<RoleViewModel>))]
+        //[Authorize(Authorization.Policies.ViewAllRolesPolicy)]
+        //public async Task<IActionResult> GetRoles(int page, int pageSize)
+        //{
+        //    var roles = await _accountManager.GetRolesLoadRelatedAsync(page, pageSize);
+        //    return Ok(Mapper.Map<List<RoleViewModel>>(roles));
+        //}
 
 
 
@@ -461,60 +461,60 @@ namespace QuickApp.Controllers
 
 
 
-        [HttpPost("roles")]
-        [Authorize(Authorization.Policies.ManageAllRolesPolicy)]
-        public async Task<IActionResult> CreateRole([FromBody] RoleViewModel role)
-        {
-            if (ModelState.IsValid)
-            {
-                if (role == null)
-                    return BadRequest($"{nameof(role)} cannot be null");
+        //[HttpPost("roles")]
+        //[Authorize(Authorization.Policies.ManageAllRolesPolicy)]
+        //public async Task<IActionResult> CreateRole([FromBody] RoleViewModel role)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        if (role == null)
+        //            return BadRequest($"{nameof(role)} cannot be null");
 
 
-                ApplicationRole appRole = Mapper.Map<ApplicationRole>(role);
+        //        ApplicationRole appRole = Mapper.Map<ApplicationRole>(role);
 
-                var result = await _accountManager.CreateRoleAsync(appRole, role.Permissions?.Select(p => p.Value).ToArray());
-                if (result.Item1)
-                {
-                    RoleViewModel roleVM = await GetRoleViewModelHelper(appRole.Name);
-                    return CreatedAtAction(GetRoleByIdActionName, new { id = roleVM.Id }, roleVM);
-                }
+        //        var result = await _accountManager.CreateRoleAsync(appRole, role.Permissions?.Select(p => p.Value).ToArray());
+        //        if (result.Item1)
+        //        {
+        //            RoleViewModel roleVM = await GetRoleViewModelHelper(appRole.Name);
+        //            return CreatedAtAction(GetRoleByIdActionName, new { id = roleVM.Id }, roleVM);
+        //        }
 
-                AddErrors(result.Item2);
-            }
+        //        AddErrors(result.Item2);
+        //    }
 
-            return BadRequest(ModelState);
-        }
-
-
+        //    return BadRequest(ModelState);
+        //}
 
 
-        [HttpDelete("roles/{id}")]
-        [Produces(typeof(RoleViewModel))]
-        [Authorize(Authorization.Policies.ManageAllRolesPolicy)]
-        public async Task<IActionResult> DeleteRole(string id)
-        {
-            if (!await _accountManager.TestCanDeleteRoleAsync(id))
-                return BadRequest("Role cannot be deleted. Remove all users from this role and try again");
 
 
-            RoleViewModel roleVM = null;
-            ApplicationRole appRole = await this._accountManager.GetRoleByIdAsync(id);
-
-            if (appRole != null)
-                roleVM = await GetRoleViewModelHelper(appRole.Name);
-
-
-            if (roleVM == null)
-                return NotFound(id);
-
-            var result = await this._accountManager.DeleteRoleAsync(appRole);
-            if (!result.Item1)
-                throw new Exception("The following errors occurred whilst deleting role: " + string.Join(", ", result.Item2));
+        //[HttpDelete("roles/{id}")]
+        //[Produces(typeof(RoleViewModel))]
+        //[Authorize(Authorization.Policies.ManageAllRolesPolicy)]
+        //public async Task<IActionResult> DeleteRole(string id)
+        //{
+        //    if (!await _accountManager.TestCanDeleteRoleAsync(id))
+        //        return BadRequest("Role cannot be deleted. Remove all users from this role and try again");
 
 
-            return Ok(roleVM);
-        }
+        //    RoleViewModel roleVM = null;
+        //    ApplicationRole appRole = await this._accountManager.GetRoleByIdAsync(id);
+
+        //    if (appRole != null)
+        //        roleVM = await GetRoleViewModelHelper(appRole.Name);
+
+
+        //    if (roleVM == null)
+        //        return NotFound(id);
+
+        //    var result = await this._accountManager.DeleteRoleAsync(appRole);
+        //    if (!result.Item1)
+        //        throw new Exception("The following errors occurred whilst deleting role: " + string.Join(", ", result.Item2));
+
+
+        //    return Ok(roleVM);
+        //}
 
 
 
@@ -537,28 +537,28 @@ namespace QuickApp.Controllers
 
 
 
-        private async Task<UserViewModel> GetUserViewModelHelper(string userId)
-        {
-            var userAndRoles = await _accountManager.GetUserAndRolesAsync(userId);
-            if (userAndRoles == null)
-                return null;
+        //private async Task<UserViewModel> GetUserViewModelHelper(string userId)
+        //{
+        //    var userAndRoles = await _accountManager.GetUserAndRolesAsync(userId);
+        //    if (userAndRoles == null)
+        //        return null;
 
-            var userVM = Mapper.Map<UserViewModel>(userAndRoles.Item1);
-            userVM.Roles = userAndRoles.Item2;
+        //    var userVM = Mapper.Map<UserViewModel>(userAndRoles.Item1);
+        //    userVM.Roles = userAndRoles.Item2;
 
-            return userVM;
-        }
-
-
-        private async Task<RoleViewModel> GetRoleViewModelHelper(string roleName)
-        {
-            var role = await _accountManager.GetRoleLoadRelatedAsync(roleName);
-            if (role != null)
-                return Mapper.Map<RoleViewModel>(role);
+        //    return userVM;
+        //}
 
 
-            return null;
-        }
+        //private async Task<RoleViewModel> GetRoleViewModelHelper(string roleName)
+        //{
+        //    var role = await _accountManager.GetRoleLoadRelatedAsync(roleName);
+        //    if (role != null)
+        //        return Mapper.Map<RoleViewModel>(role);
+
+
+        //    return null;
+        //}
         
 
 
