@@ -4,13 +4,15 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL.Models;
+using MatcomJamDAL.Models.MyModel;
 
 namespace CodeFirstDatabase
 {
     public class UserTeam
     {
-		public int UserId { get; set; }
-		public User User {get; set; }
+		public string UserId { get; set; }
+		public ApplicationUser User {get; set; }
 		
         public int TeamID { get; set; }
         public Team Team {get; set; }

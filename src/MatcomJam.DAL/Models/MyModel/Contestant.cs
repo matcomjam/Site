@@ -4,14 +4,16 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL.Models;
+using MatcomJamDAL.Models.MyModel;
 
 namespace CodeFirstDatabase
 {
-    public class Contestant : User
+    public class Contestant : ApplicationUser
     {
-        public int ContestantId { get; set; }
-        
-		public int ContestId { get; set; }
+        public string ContestantId { get; set; }
+
+        public int ContestId { get; set; }
         public int TeamId { get; set; }
         
 		public Contest Contest { get; set; }

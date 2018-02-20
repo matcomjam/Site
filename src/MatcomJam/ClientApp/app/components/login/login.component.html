@@ -43,6 +43,10 @@
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-10">
                                 <button type="submit" class="btn btn-primary" [disabled]="isLoading"><i *ngIf="isLoading" class='fa fa-circle-o-notch fa-spin'></i> {{isLoading ? 'Loggin in...' : 'Login'}}</button>
+                                <a href="login/register" class="btn btn-primary">Register</a>
+                                <!--<a href="javascript:;" (click)="newUser(row)">
+                                    <i class="fa fa-plus-circle"></i> {{'users.management.NewUser' | translate}}
+                                </a>-->
                             </div>
                         </div>
 

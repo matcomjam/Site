@@ -12,9 +12,10 @@ using System;
 namespace QuickApp.Migrations
 {
     [DbContext(typeof(MJDbContext))]
-    partial class MJDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180201152647_DeletingGroupFromUser")]
+    partial class DeletingGroupFromUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -80,4 +80,8 @@
   <ItemGroup>
     <ProjectReference Include="..\MatcomJam.DAL\MatcomJamDAL.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\models\user-register.model.ts" />
+  </ItemGroup>
 </Project>

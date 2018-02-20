@@ -12,9 +12,10 @@ using System;
 namespace QuickApp.Migrations
 {
     [DbContext(typeof(MJDbContext))]
-    partial class MJDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180129185856_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -71,7 +72,7 @@ namespace QuickApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Groups");
+                    b.ToTable("Group");
                 });
 
             modelBuilder.Entity("CodeFirstDatabase.Institution", b =>
@@ -288,6 +289,10 @@ namespace QuickApp.Migrations
 
                     b.Property<string>("FullName");
 
+                    b.Property<int>("GroupId");
+
+                    b.Property<int>("InstitutionId");
+
                     b.Property<bool>("IsEnabled");
 
                     b.Property<string>("JobTitle");
@@ -322,6 +327,10 @@ namespace QuickApp.Migrations
                         .HasMaxLength(256);
 
                     b.HasKey("Id");
+
+                    b.HasIndex("GroupId");
+
+                    b.HasIndex("InstitutionId");
 
                     b.HasIndex("NormalizedEmail")
                         .HasName("EmailIndex");
@@ -639,6 +648,19 @@ namespace QuickApp.Migrations
                         .WithMany("UserTeams")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict);
+                });
+
+            modelBuilder.Entity("MatcomJamDAL.Models.MyModel.ApplicationUser", b =>
+                {
+                    b.HasOne("CodeFirstDatabase.Group", "Group")
+                        .WithMany()
+                        .HasForeignKey("GroupId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("CodeFirstDatabase.Institution", "Institution")
+                        .WithMany()
+                        .HasForeignKey("InstitutionId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -28,6 +28,8 @@ using Swashbuckle.AspNetCore.Swagger;
 using AppPermissions = DAL.Core.ApplicationPermissions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Rewrite;
+using CodeFirstDatabase;
+using MatcomJamDAL.Models.MyModel;
 
 namespace QuickApp
 {
@@ -49,15 +51,15 @@ namespace QuickApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<MJDbContext>(options =>
             {
-                options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"], b => b.MigrationsAssembly("QuickApp"));
+                options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"], b => b.MigrationsAssembly("MatcomJam"));
                 options.UseOpenIddict();
             });
 
             // add identity
             services.AddIdentity<ApplicationUser, ApplicationRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddEntityFrameworkStores<MJDbContext>()
                 .AddDefaultTokenProviders();
 
             // Configure Identity options and password complexity here
@@ -66,16 +68,16 @@ namespace QuickApp
                 // User settings
                 options.User.RequireUniqueEmail = true;
 
-                //    //// Password settings
-                //    //options.Password.RequireDigit = true;
-                //    //options.Password.RequiredLength = 8;
-                //    //options.Password.RequireNonAlphanumeric = false;
-                //    //options.Password.RequireUppercase = true;
-                //    //options.Password.RequireLowercase = false;
+                // Password settings
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 8;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireLowercase = false;
 
-                //    //// Lockout settings
-                //    //options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
-                //    //options.Lockout.MaxFailedAccessAttempts = 10;
+                // Lockout settings
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
+                options.Lockout.MaxFailedAccessAttempts = 10;
 
                 options.ClaimsIdentity.UserNameClaimType = OpenIdConnectConstants.Claims.Name;
                 options.ClaimsIdentity.UserIdClaimType = OpenIdConnectConstants.Claims.Subject;
@@ -87,7 +89,7 @@ namespace QuickApp
             // Register the OpenIddict services.
             services.AddOpenIddict(options =>
             {
-                options.AddEntityFrameworkCoreStores<ApplicationDbContext>();
+                options.AddEntityFrameworkCoreStores<MJDbContext>();
                 options.AddMvcBinders();
                 options.EnableTokenEndpoint("/connect/token");
                 options.AllowPasswordFlow();
@@ -141,7 +143,7 @@ namespace QuickApp
                     Type = "apiKey"
                 });
 
-                c.SwaggerDoc("v1", new Info { Title = "QuickApp API", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "MatcomJam API", Version = "v1" });
             });
 
             services.AddAuthorization(options =>
@@ -171,7 +173,7 @@ namespace QuickApp
 
 
             // Repositories
-            services.AddScoped<IUnitOfWork, HttpUnitOfWork>();
+          //  services.AddScoped<IUnitOfWork, HttpUnitOfWork>();
             services.AddScoped<IAccountManager, AccountManager>();
 
             // Auth Handlers
@@ -246,7 +248,7 @@ namespace QuickApp
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "QuickApp API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "MatcomJam API V1");
             });
 
 

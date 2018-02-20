@@ -9,6 +9,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
+import { RegisterComponent} from "./components/register/register.component";
 import { LoginComponent } from "./components/login/login.component";
 import { HomeComponent } from "./components/home/home.component";
 import { CustomersComponent } from "./components/customers/customers.component";
@@ -27,6 +28,7 @@ import { AuthGuard } from './services/auth-guard.service';
         RouterModule.forRoot([
             { path: "", component: HomeComponent, canActivate: [AuthGuard], data: { title: "Home" } },
             { path: "login", component: LoginComponent, data: { title: "Login" } },
+            {path: "login/register", component:RegisterComponent},
             { path: "customers", component: CustomersComponent, canActivate: [AuthGuard], data: { title: "Customers" } },
             { path: "products", component: ProductsComponent, canActivate: [AuthGuard], data: { title: "Products" } },
             { path: "orders", component: OrdersComponent, canActivate: [AuthGuard], data: { title: "Orders" } },

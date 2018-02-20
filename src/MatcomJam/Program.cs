@@ -34,6 +34,7 @@ namespace QuickApp
                     var databaseInitializer = services.GetRequiredService<IDatabaseInitializer>();
                     databaseInitializer.SeedAsync().Wait();
                 }
+
                 catch (Exception ex)
                 {
                     var logger = services.GetRequiredService<ILogger<Program>>();

@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using DAL.Core;
 using DAL.Core.Interfaces;
 using CodeFirstDatabase;
+using MatcomJamDAL.Models.MyModel;
 
 namespace DAL
 {
@@ -40,24 +41,23 @@ namespace DAL
         {
             await _context.Database.MigrateAsync().ConfigureAwait(false);
 
-            //if (!await _context.Users.AnyAsync())
-            //{
-            //    _logger.LogInformation("Generating inbuilt accounts");
+            if (!await _context.Users.AnyAsync())
+            {
+                _logger.LogInformation("Generating inbuilt accounts");
 
-            //    const string adminRoleName = "administrator";
-            //    const string userRoleName = "user";
+                const string adminRoleName = "administrator";
+                const string userRoleName = "user";
 
-            //    await EnsureRoleAsync(adminRoleName, "Default administrator", ApplicationPermissions.GetAllPermissionValues());
-            //    await EnsureRoleAsync(userRoleName, "Default user", new string[] { });
+                await EnsureRoleAsync(adminRoleName, "Default administrator", ApplicationPermissions.GetAllPermissionValues());
+                await EnsureRoleAsync(userRoleName, "Default user", new string[] { });
 
-            //    await CreateUserAsync("admin", "tempP@ss123", "Inbuilt Administrator", "admin@ebenmonney.com", "+1 (123) 000-0000", new string[] { adminRoleName });
-            //    await CreateUserAsync("user", "tempP@ss123", "Inbuilt Standard User", "user@ebenmonney.com", "+1 (123) 000-0001", new string[] { userRoleName });
+                await CreateUserAsync("admin", "tempP@ss123", "Inbuilt Administrator", "admin@ebenmonney.com", "+1 (123) 000-0000", new string[] { adminRoleName });
+                await CreateUserAsync("user", "tempP@ss123", "Inbuilt Standard User", "user@ebenmonney.com", "+1 (123) 000-0001", new string[] { userRoleName });
 
-            //    _logger.LogInformation("Inbuilt account generation completed");
-            //}
+                _logger.LogInformation("Inbuilt account generation completed");
+            }
 
-
-
+            #region check
             //if (!await _context.Customers.AnyAsync() && !await _context.ProductCategories.AnyAsync())
             //{
             //    _logger.LogInformation("Seeding initial data");
@@ -191,6 +191,7 @@ namespace DAL
 
             //    _logger.LogInformation("Seeding initial data completed");
             //}
+            #endregion 
         }
 
 

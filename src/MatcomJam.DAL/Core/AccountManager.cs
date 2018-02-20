@@ -8,7 +8,6 @@
 
 using DAL;
 using DAL.Core.Interfaces;
-using DAL.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -19,6 +18,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL.Core;
 using CodeFirstDatabase;
+using MatcomJamDAL.Models.MyModel;
 
 namespace DAL.Core
 {
@@ -60,52 +60,52 @@ namespace DAL.Core
         }
 
 
-        //public async Task<Tuple<ApplicationUser, string[]>> GetUserAndRolesAsync(string userId)
-        //{
-        //    //TODO: cambiar por cada user.Roles --> user.ApplicationUser.Roles
-        //    var user = await _context.Users
-        //        .Include(u => u.Roles)
-        //        .Where(u => u.Id == userId)
-        //        .FirstOrDefaultAsync();
+        public async Task<Tuple<ApplicationUser, string[]>> GetUserAndRolesAsync(string userId)
+        {
+            //TODO: cambiar por cada user.Roles --> user.ApplicationUser.Roles
+            var user = await _context.Users
+                .Include(u => u.Roles)
+                .Where(u => u.Id == userId) //userId --> int.Parse(userId)
+                .FirstOrDefaultAsync();
 
-        //    if (user == null)
-        //        return null;
+            if (user == null)
+                return null;
 
-        //    var userRoleIds = user.Roles.Select(r => r.RoleId).ToList();
+            var userRoleIds = user.Roles.Select(r => r.RoleId).ToList();
 
-        //    var roles = await _context.Roles
-        //        .Where(r => userRoleIds.Contains(r.Id))
-        //        .Select(r => r.Name)
-        //        .ToArrayAsync();
+            var roles = await _context.Roles
+                .Where(r => userRoleIds.Contains(r.Id))
+                .Select(r => r.Name)
+                .ToArrayAsync();
 
-        //    return Tuple.Create(user, roles);
-        //}
+            return Tuple.Create(user, roles); //added (ApplicationUser)
+        }
 
 
-        //public async Task<List<Tuple<ApplicationUser, string[]>>> GetUsersAndRolesAsync(int page, int pageSize)
-        //{
-        //    IQueryable<ApplicationUser> usersQuery = _context.Users
-        //        .Include(u => u.Roles)
-        //        .OrderBy(u => u.UserName);
+        public async Task<List<Tuple<ApplicationUser, string[]>>> GetUsersAndRolesAsync(int page, int pageSize)
+        {
+            IQueryable<ApplicationUser> usersQuery = _context.Users
+                .Include(u => u.Roles)
+                .OrderBy(u => u.UserName);
 
-        //    if (page != -1)
-        //        usersQuery = usersQuery.Skip((page - 1) * pageSize);
+            if (page != -1)
+                usersQuery = usersQuery.Skip((page - 1) * pageSize);
 
-        //    if (pageSize != -1)
-        //        usersQuery = usersQuery.Take(pageSize);
+            if (pageSize != -1)
+                usersQuery = usersQuery.Take(pageSize);
 
-        //    var users = await usersQuery.ToListAsync();
+            var users = await usersQuery.ToListAsync();
 
-        //    var userRoleIds = users.SelectMany(u => u.Roles.Select(r => r.RoleId)).ToList();
+            var userRoleIds = users.SelectMany(u => u.Roles.Select(r => r.RoleId)).ToList();
 
-        //    var roles = await _context.Roles
-        //        .Where(r => userRoleIds.Contains(r.Id))
-        //        .ToArrayAsync();
+            var roles = await _context.Roles
+                .Where(r => userRoleIds.Contains(r.Id))
+                .ToArrayAsync();
 
-        //    return users.Select(u => Tuple.Create(u,
-        //        roles.Where(r => u.Roles.Select(ur => ur.RoleId).Contains(r.Id)).Select(r => r.Name).ToArray()))
-        //        .ToList();
-        //}
+            return users.Select(u => Tuple.Create(u,
+                roles.Where(r => u.Roles.Select(ur => ur.RoleId).Contains(r.Id)).Select(r => r.Name).ToArray()))
+                .ToList();
+        }
 
 
         public async Task<Tuple<bool, string[]>> CreateUserAsync(ApplicationUser user, IEnumerable<string> roles, string password)
@@ -255,35 +255,35 @@ namespace DAL.Core
         }
 
 
-        //public async Task<ApplicationRole> GetRoleLoadRelatedAsync(string roleName)
-        //{
-        //    var role = await _context.Roles
-        //        .Include(r => r.Claims)
-        //        .Include(r => r.Users)
-        //        .Where(r => r.Name == roleName)
-        //        .FirstOrDefaultAsync();
+        public async Task<ApplicationRole> GetRoleLoadRelatedAsync(string roleName)
+        {
+            var role = await _context.Roles
+                .Include(r => r.Claims)
+                .Include(r => r.Users)
+                .Where(r => r.Name == roleName)
+                .FirstOrDefaultAsync();
 
-        //    return role;
-        //}
+            return role;
+        }
 
 
-        //public async Task<List<ApplicationRole>> GetRolesLoadRelatedAsync(int page, int pageSize)
-        //{
-        //    IQueryable<ApplicationRole> rolesQuery = _context.Roles
-        //        .Include(r => r.Claims)
-        //        .Include(r => r.Users)
-        //        .OrderBy(r => r.Name);
+        public async Task<List<ApplicationRole>> GetRolesLoadRelatedAsync(int page, int pageSize)
+        {
+            IQueryable<ApplicationRole> rolesQuery = _context.Roles
+                .Include(r => r.Claims)
+                .Include(r => r.Users)
+                .OrderBy(r => r.Name);
 
-        //    if (page != -1)
-        //        rolesQuery = rolesQuery.Skip((page - 1) * pageSize);
+            if (page != -1)
+                rolesQuery = rolesQuery.Skip((page - 1) * pageSize);
 
-        //    if (pageSize != -1)
-        //        rolesQuery = rolesQuery.Take(pageSize);
+            if (pageSize != -1)
+                rolesQuery = rolesQuery.Take(pageSize);
 
-        //    var roles = await rolesQuery.ToListAsync();
+            var roles = await rolesQuery.ToListAsync();
 
-        //    return roles;
-        //}
+            return roles;
+        }
 
 
         public async Task<Tuple<bool, string[]>> CreateRoleAsync(ApplicationRole role, IEnumerable<string> claims)
@@ -365,10 +365,10 @@ namespace DAL.Core
         }
 
 
-        //public async Task<bool> TestCanDeleteRoleAsync(string roleId)
-        //{
-        //    return !await _context.UserRoles.Where(r => r.RoleId == roleId).AnyAsync();
-        //}
+        public async Task<bool> TestCanDeleteRoleAsync(string roleId)
+        {
+            return !await _context.UserRoles.Where(r => r.RoleId == roleId).AnyAsync();
+        }
 
 
         public async Task<Tuple<bool, string[]>> DeleteRoleAsync(string roleName)

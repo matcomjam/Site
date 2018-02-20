@@ -1,4 +1,4 @@
-﻿// ======================================
+﻿//// ======================================
 // Author: Ebenezer Monney
 // Email:  info@ebenmonney.com
 // Copyright (c) 2017 www.ebenmonney.com
@@ -17,9 +17,9 @@ namespace DAL
 {
     public interface IUnitOfWork
     {
-        ICustomerRepository Customers { get; }
-        IProductRepository Products { get; }
-        IOrdersRepository Orders { get; }
+        //ICustomerRepository Customers { get; }
+        //IProductRepository Products { get; }
+        //IOrdersRepository Orders { get; }
 
 
         int SaveChanges();

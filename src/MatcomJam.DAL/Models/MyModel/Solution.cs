@@ -7,7 +7,7 @@ namespace CodeFirstDatabase
         public int ProblemContestId { get; set; }
 		public ProblemContest ProblemContest {get; set; }
 		        
-        public int ContestantId { get; set; }
+        public string ContestantId { get; set; }
         public Contestant Contestant { get; set; }
 		
 		public int LanguageId { get; set; }		

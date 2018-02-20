@@ -40,11 +40,11 @@ namespace QuickApp.Controllers
 
         // GET: api/values
         [HttpGet]
-        public IActionResult Get()
-        {
-            var allCustomers = _unitOfWork.Customers.GetAllCustomersData();
-            return Ok(Mapper.Map<IEnumerable<CustomerViewModel>>(allCustomers));
-        }
+        //public IActionResult Get()
+        //{
+        //    var allCustomers = _unitOfWork.Customers.GetAllCustomersData();
+        //    return Ok(Mapper.Map<IEnumerable<CustomerViewModel>>(allCustomers));
+        //}
 
 
 
