@@ -12,5 +12,7 @@ namespace CodeFirstDatabase
 		
 		public int LanguageId { get; set; }		
         public Language Language { get; set; }
+
+        public string Result { get; set; }
     }
 }

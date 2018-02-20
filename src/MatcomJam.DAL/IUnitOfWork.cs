@@ -17,6 +17,12 @@ namespace DAL
 {
     public interface IUnitOfWork
     {
+        IProblemRepository Problems { get; }
+        IContestRepository Contests { get; }
+        ISolutionRepository Submissions { get; }
+        IBlogRepository Blogs { get; }
+        
+        
         //ICustomerRepository Customers { get; }
         //IProductRepository Products { get; }
         //IOrdersRepository Orders { get; }

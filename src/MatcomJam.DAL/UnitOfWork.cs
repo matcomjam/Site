@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using CodeFirstDatabase;
 using DAL.Repositories;
 using DAL.Repositories.Interfaces;
+using MatcomJamDAL.Repositories;
 
 namespace DAL
 {
@@ -21,19 +22,19 @@ namespace DAL
     {
         readonly MJDbContext _context;
 
-        ICustomerRepository _customers;
-        IProductRepository _products;
-        IOrdersRepository _orders;
+        private IProblemRepository _problems;
+        private IContestRepository _contests;
+        private ISolutionRepository _submissions;
+        private IBlogRepository _blogs;
 
-
-
+        //ICustomerRepository _customers;
+        //IProductRepository _products;
+        //IOrdersRepository _orders;
+        
         public UnitOfWork(MJDbContext context)
         {
             _context = context;
         }
-
-
-
         //public ICustomerRepository Customers
         //{
         //    get
@@ -72,7 +73,11 @@ namespace DAL
         //}
 
 
+        public IProblemRepository Problems => _problems ?? (_problems = new ProblemRepository(_context));
 
+        public IContestRepository Contests => _contests ?? (_contests = new ContestRepository(_context));
+        public ISolutionRepository Submissions => _submissions ?? (_submissions = new SolutionRepository(_context));
+        public IBlogRepository Blogs => _blogs ?? (_blogs = new BlogRepository(_context));
 
         public int SaveChanges()
         {
