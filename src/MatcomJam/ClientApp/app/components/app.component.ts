@@ -21,6 +21,7 @@ import { AuthService } from '../services/auth.service';
 import { ConfigurationService } from '../services/configuration.service';
 import { Permission } from '../models/permission.model';
 import { LoginComponent } from "../components/login/login.component";
+import { ProblemsComponent } from "./problems/problems.component";
 
 var alertify: any = require('../assets/scripts/alertify.js');
 
@@ -38,7 +39,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     shouldShowLoginModal: boolean;
     removePrebootScreen: boolean;
     newNotificationCount = 0;
-    appTitle = "Quick Application";
+    appTitle = "Matcom Jam";
     appLogo = require("../assets/images/logo.png");
 
     stickyToasties: number[] = [];

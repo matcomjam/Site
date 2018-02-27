@@ -1,0 +1,22 @@
+<div class="container">
+    <header class="pageHeader">
+        <h3><i aria-hidden="true"></i> {{'Blogs' | translate}}</h3>
+    </header>
+
+    <div [@fadeInOut]>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <!--<th>#</th>-->
+                    <th>Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let blog of blogList">
+                    <!--<th scope="row">1</th>-->
+                    <td>{{blog.title}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

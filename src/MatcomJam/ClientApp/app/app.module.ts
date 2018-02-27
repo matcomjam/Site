@@ -50,8 +50,8 @@ import { AppComponent } from "./components/app.component";
 import { LoginComponent } from "./components/login/login.component";
 import { HomeComponent } from "./components/home/home.component";
 import { CustomersComponent } from "./components/customers/customers.component";
-import { ProductsComponent } from "./components/products/products.component";
-import { OrdersComponent } from "./components/orders/orders.component";
+import { ContestComponent } from "./components/contest/contest.component";
+import { BlogComponent } from "./components/blog/blog.component";
 import { SettingsComponent } from "./components/settings/settings.component";
 import { AboutComponent } from "./components/about/about.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
@@ -67,9 +67,10 @@ import { UsersManagementComponent } from "./components/controls/users-management
 import { RolesManagementComponent } from "./components/controls/roles-management.component";
 import { RoleEditorComponent } from "./components/controls/role-editor.component";
 import { RegisterComponent } from './components/register/register.component';
-
-
-
+import { ProblemsComponent } from './components/problems/problems.component';
+import { ProblemService } from './services/problem.service';
+import { ContestService } from './services/contest.service';
+import { BlogService } from './services/blog.service';
 
 @NgModule({
     imports: [
@@ -98,8 +99,8 @@ import { RegisterComponent } from './components/register/register.component';
         LoginComponent,
         HomeComponent,
         CustomersComponent,
-        ProductsComponent,
-        OrdersComponent,
+        ContestComponent,
+        BlogComponent,
         SettingsComponent,
         UsersManagementComponent, UserInfoComponent, UserPreferencesComponent,
         RolesManagementComponent, RoleEditorComponent,
@@ -116,7 +117,8 @@ import { RegisterComponent } from './components/register/register.component';
         BootstrapSelectDirective,
         BootstrapDatepickerDirective,
         GroupByPipe,
-        RegisterComponent
+        RegisterComponent,
+        ProblemsComponent
     ],
     providers: [
         { provide: 'BASE_URL', useFactory: getBaseUrl },
@@ -130,7 +132,10 @@ import { RegisterComponent } from './components/register/register.component';
         AccountService,
         AccountEndpoint,
         LocalStoreManager,
-        EndpointFactory
+        EndpointFactory,
+        ProblemService,
+        ContestService,
+        BlogService
     ],
     bootstrap: [AppComponent]
 })

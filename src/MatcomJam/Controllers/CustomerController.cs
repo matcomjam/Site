@@ -39,7 +39,7 @@ namespace QuickApp.Controllers
 
 
         // GET: api/values
-        [HttpGet]
+        //[HttpGet]
         //public IActionResult Get()
         //{
         //    var allCustomers = _unitOfWork.Customers.GetAllCustomersData();

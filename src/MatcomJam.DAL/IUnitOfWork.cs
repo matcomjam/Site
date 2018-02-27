@@ -21,8 +21,8 @@ namespace DAL
         IContestRepository Contests { get; }
         ISolutionRepository Submissions { get; }
         IBlogRepository Blogs { get; }
-        
-        
+
+
         //ICustomerRepository Customers { get; }
         //IProductRepository Products { get; }
         //IOrdersRepository Orders { get; }

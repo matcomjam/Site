@@ -1,19 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using DAL.Models;
+using CodeFirstDatabase;
 using MatcomJamDAL.Models.MyModel;
 
-namespace CodeFirstDatabase
+namespace QuickApp.ViewModels
 {
-    public class Blog
+    public class BlogViewModel
     {
         public int Id { get; set; }
         public string Title { get; set; }
         public string UserId { get; set; }
-        public ApplicationUser User { get; set; }
-        public ICollection<Comment> Comments { get; set; }
     }
 }

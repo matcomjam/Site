@@ -1,0 +1,25 @@
+<div class="container">
+    <header class="pageHeader">
+        <h3><i aria-hidden="true"></i> {{'Contests' | translate}}</h3>
+    </header>
+    
+    <div [@fadeInOut]>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <!--<th>#</th>-->
+                    <th>Title</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let contest of contestList">
+                    <!--<th scope="row">1</th>-->
+                    <td>{{contest.title}}</td>
+                    <td>{{contest.description}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

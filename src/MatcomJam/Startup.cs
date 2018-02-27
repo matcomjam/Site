@@ -29,7 +29,9 @@ using AppPermissions = DAL.Core.ApplicationPermissions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Rewrite;
 using CodeFirstDatabase;
+using DAL.Repositories.Interfaces;
 using MatcomJamDAL.Models.MyModel;
+using MatcomJamDAL.Repositories;
 
 namespace QuickApp
 {
@@ -173,8 +175,9 @@ namespace QuickApp
 
 
             // Repositories
-          //  services.AddScoped<IUnitOfWork, HttpUnitOfWork>();
+            services.AddScoped<IUnitOfWork, HttpUnitOfWork>();
             services.AddScoped<IAccountManager, AccountManager>();
+            //services.AddScoped<IProblemRepository, ProblemRepository>();
 
             // Auth Handlers
             services.AddSingleton<IAuthorizationHandler, ViewUserAuthorizationHandler>();

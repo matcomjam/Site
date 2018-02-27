@@ -57,6 +57,65 @@ namespace DAL
                 _logger.LogInformation("Inbuilt account generation completed");
             }
 
+            if (!await _context.Problems.AnyAsync())
+            {
+                Problem p1 = new Problem
+                {
+                    Title = "A + B",
+                    Tag = "Ad-Hoc",
+                    Description = "Add integer a to integer b"
+                };
+
+                Problem p2 = new Problem
+                {
+                    Title = "Hello World",
+                    Tag = "Ad-Hoc",
+                    Description = "Print Hello World"
+                };
+
+                _context.Problems.Add(p1);
+                _context.Problems.Add(p2);
+                await _context.SaveChangesAsync();
+
+                _logger.LogInformation("Seeding initial data completed");
+            }
+
+            if (!await _context.Contests.AnyAsync())
+            {
+                Contest c1 = new Contest
+                {
+                    Title = "Copa Matcom 2017-2018",
+                    Description = "Se hara por equipos etc etc"
+                };
+
+                Contest c2 = new Contest
+                {
+                    Title = "Clasificatorias para Concurso Local ACM-ICPC 2017-2018",
+                    Description = "Se hara individual etc etc"
+                };
+
+                _context.Contests.Add(c1);
+                _context.Contests.Add(c2);
+                await _context.SaveChangesAsync();
+            }
+
+            if (!await _context.Blogs.AnyAsync())
+            {
+                Blog b1 = new Blog
+                {
+                    Title = "Bla bla bla"
+                };
+
+                Blog b2 = new Blog
+                {
+                    Title = "Mas babaaaa!!!",
+                };
+
+                _context.Blogs.Add(b1);
+                _context.Blogs.Add(b2);
+                await _context.SaveChangesAsync();
+            }
+
             #region check
             //if (!await _context.Customers.AnyAsync() && !await _context.ProductCategories.AnyAsync())
             //{

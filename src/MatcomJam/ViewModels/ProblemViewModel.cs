@@ -1,24 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Dynamic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using CodeFirstDatabase;
 
-namespace CodeFirstDatabase
+namespace QuickApp.ViewModels
 {
-    public class Problem
+    public class ProblemViewModel
     {
         public int Id { get; set; }
 
         public string Title { get; set; }
-		public string Tag { get; set; }
-		public string Description {get; set; }
-        
-		public ICollection<ProblemContest> ProblemContests { get; set; }
-		public ICollection<Test> Tests {get; set; }
-		public ICollection<Language> Languages {get; set; }
-        
+        public string Tag { get; set; }
+        public string Description { get; set; }
         public int TimeLimit { get; set; }
         public int MemoryLimit { get; set; }
         public int MaximumMessages { get; set; }

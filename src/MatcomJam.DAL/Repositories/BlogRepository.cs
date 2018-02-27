@@ -5,6 +5,7 @@ using CodeFirstDatabase;
 using DAL.Repositories;
 using DAL.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace MatcomJamDAL.Repositories
 {
@@ -15,5 +16,9 @@ namespace MatcomJamDAL.Repositories
         }
         private MJDbContext _appContext => (MJDbContext)_context;
 
+        public IEnumerable<Blog> GetAllBlogs()
+        {
+            return _appContext.Blogs.OrderBy(b => b.Id).ToList();
+        }
     }
 }

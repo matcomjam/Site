@@ -1,0 +1,35 @@
+<div class="container">
+    <header class="pageHeader">
+        <h3><i aria-hidden="true"></i> {{'Problems' | translate}}</h3>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search problem by name...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <!--<th>#</th>-->
+                    <th>Title</th>
+                    <th>Tag</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let problem of problemList">
+                    <!--<th scope="row">1</th>-->
+                    <td>{{problem.title}}</td>
+                    <td>{{problem.tag}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
