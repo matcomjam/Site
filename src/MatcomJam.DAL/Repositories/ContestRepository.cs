@@ -21,5 +21,44 @@ namespace MatcomJamDAL.Repositories
         {
             return _appContext.Contests.OrderBy(c => c.ContestId).ToList();
         }
+
+        public bool SaveContest(Contest model)
+        {
+            var contest = _appContext.Contests.Find(model.ContestId);
+            if (contest == null)
+            {
+                contest = new Contest
+                {
+                    ContestId = model.ContestId,
+                    Title = model.Title,
+                    Description = model.Description,
+                    Duration = model.Duration
+                };
+                _appContext.Contests.Add(contest);
+            }
+            else
+            {
+                contest.ContestId = model.ContestId;
+                contest.Title = model.Title;
+                contest.Description = model.Description;
+                contest.Duration = model.Duration;
+            }
+            return _appContext.SaveChanges() >= 1;
+        }
+
+        public bool DeleteContestById(int id)
+        {
+            var contest = _appContext.Contests.FirstOrDefault(c => c.ContestId == id);
+            if (contest != null)
+            {
+                _appContext.Contests.Remove(contest);
+            }
+            return _appContext.SaveChanges() >= 1;
+        }
+
+        public Contest GetContest(int id)
+        {
+            return _appContext.Contests.FirstOrDefault(c => c.ContestId == id);
+        }
     }
 }

@@ -10,14 +10,29 @@ import { Problem } from "../../models/problem.model";
 })
 export class ProblemsComponent implements OnInit {
     problemList: Problem[];
+    public editProblemId: any;
 
     constructor(private problemService: ProblemService) { }
 
     ngOnInit() {
+        this.editProblemId = 0;
+        this.loadData();
+    }
+
+    loadData() {
         this.problemService.getProblems()
             .subscribe(p => {
                 this.problemList = <Problem[]>(p);
-                console.log('problem', this.problemList);
             });
+    }
+
+    delete(problemId) {
+        var ans = confirm("Do you want to delete problem with Id: " + problemId);
+        if (ans) {
+            this.problemService.deleteProblem(problemId)
+                .subscribe(p => {
+                    this.loadData();
+                });
+        }
     }
 }

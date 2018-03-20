@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using CodeFirstDatabase;
 using DAL;
 using Microsoft.AspNetCore.Mvc;
 using QuickApp.ViewModels;
@@ -11,7 +12,7 @@ using QuickApp.ViewModels;
 
 namespace QuickApp.Controllers
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
     public class ContestController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -22,6 +23,7 @@ namespace QuickApp.Controllers
         }
         // GET: api/values
         [HttpGet]
+        [Route("api/Contest/Index")]
         [Produces(typeof(List<ContestViewModel>))]
         public IActionResult Get()
         {
@@ -38,27 +40,36 @@ namespace QuickApp.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        [Route("api/Contest/Index/{id}")]
+        public IActionResult Get(int id)
         {
-            return "value";
+            var contest = _unitOfWork.Contests.GetContest(id);
+            var contestVM = Mapper.Map<ContestViewModel>(contest);
+            return Ok(contestVM);
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        [Route("api/Contest/Save")]
+        public IActionResult Post([FromBody]Contest contest)
         {
+            return Json(_unitOfWork.Contests.SaveContest(contest));
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpPut]
+        [Route("api/Contest/Update")]
+        public IActionResult Put([FromBody]Contest contest)
         {
+            return Json(_unitOfWork.Contests.SaveContest(contest));
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        [Route("api/Contest/Delete/{id}")]
+        public IActionResult Delete(int id)
         {
+            return Json(_unitOfWork.Contests.DeleteContestById(id));
         }
     }
 }

@@ -8,7 +8,7 @@
 
 import { NgModule, ErrorHandler } from "@angular/core";
 import { RouterModule } from "@angular/router";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
@@ -71,6 +71,13 @@ import { ProblemsComponent } from './components/problems/problems.component';
 import { ProblemService } from './services/problem.service';
 import { ContestService } from './services/contest.service';
 import { BlogService } from './services/blog.service';
+import { CreateProblemComponent } from './components/create-problem/create-problem.component';
+
+import { NgForm, FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import { Router, ActivatedRoute } from '@angular/router';
+import { SelectProblemComponent } from './components/select-problem/select-problem.component';
+import { CreateContestComponent } from './components/create-contest/create-contest.component';
+import { CreateBlogComponent } from './components/create-blog/create-blog.component';
 
 @NgModule({
     imports: [
@@ -78,6 +85,7 @@ import { BlogService } from './services/blog.service';
         BrowserAnimationsModule,
         HttpClientModule,
         FormsModule,
+        ReactiveFormsModule,
         AppRoutingModule,
         TranslateModule.forRoot({
             loader: {
@@ -118,7 +126,11 @@ import { BlogService } from './services/blog.service';
         BootstrapDatepickerDirective,
         GroupByPipe,
         RegisterComponent,
-        ProblemsComponent
+        ProblemsComponent,
+        CreateProblemComponent,
+        SelectProblemComponent,
+        CreateContestComponent,
+        CreateBlogComponent
     ],
     providers: [
         { provide: 'BASE_URL', useFactory: getBaseUrl },
@@ -135,7 +147,8 @@ import { BlogService } from './services/blog.service';
         EndpointFactory,
         ProblemService,
         ContestService,
-        BlogService
+        BlogService,
+        FormBuilder
     ],
     bootstrap: [AppComponent]
 })

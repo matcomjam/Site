@@ -23,11 +23,6 @@ namespace DAL
         IBlogRepository Blogs { get; }
 
 
-        //ICustomerRepository Customers { get; }
-        //IProductRepository Products { get; }
-        //IOrdersRepository Orders { get; }
-
-
         int SaveChanges();
     }
 }

@@ -11,14 +11,20 @@
                         <button class="btn btn-default" type="button">
                             <span class="glyphicon glyphicon-search"></span>
                         </button>
+                        <!--<button class="btn btn default " type="button" style="float: right" (click)="showDialogToAdd()" aria-label="Add">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>-->
                     </span>
                 </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->
+        <p>
+            <a [routerLink]="['/insert-problem']">Create new <i class="fa fa-plus-circle"></i></a>
+        </p>
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <!--<th>#</th>-->
+                    <th>#</th>
                     <th>Title</th>
                     <th>Tag</th>
                 </tr>
@@ -26,8 +32,15 @@
             <tbody>
                 <tr *ngFor="let problem of problemList">
                     <!--<th scope="row">1</th>-->
+                    <td>
+                        <a [routerLink]="['/problems/', problem.id]">{{problem.id}}</a>
+                    </td>
                     <td>{{problem.title}}</td>
                     <td>{{problem.tag}}</td>
+                    <td>
+                        <a [routerLink]="['/problem/edit/', problem.id]"><i class="fa fa-pencil-square-o"></i> Edit </a> |
+                        <a [routerLink]="" (click)="delete(problem.id)"><i class="fa fa-trash-o"></i> Delete </a>
+                    </td>
                 </tr>
             </tbody>
         </table>

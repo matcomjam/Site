@@ -177,7 +177,7 @@ namespace QuickApp
             // Repositories
             services.AddScoped<IUnitOfWork, HttpUnitOfWork>();
             services.AddScoped<IAccountManager, AccountManager>();
-            //services.AddScoped<IProblemRepository, ProblemRepository>();
+            services.AddScoped<IProblemRepository, ProblemRepository>();
 
             // Auth Handlers
             services.AddSingleton<IAuthorizationHandler, ViewUserAuthorizationHandler>();

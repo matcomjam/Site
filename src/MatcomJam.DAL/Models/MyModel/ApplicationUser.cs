@@ -63,7 +63,6 @@ namespace MatcomJamDAL.Models.MyModel
 
         public ICollection<Blog> Blog { get; set; }
         public ICollection<Comment> Comments { get; set; }
-
         public ICollection<UserTeam> UserTeams { get; set; }
 
         // Ready!!!

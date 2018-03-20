@@ -21,7 +21,10 @@ import { NotFoundComponent } from "./components/not-found/not-found.component";
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './services/auth-guard.service';
 import { ProblemsComponent } from "./components/problems/problems.component";
-
+import { CreateProblemComponent } from "./components/create-problem/create-problem.component";
+import { SelectProblemComponent } from "./components/select-problem/select-problem.component"; 
+import { CreateContestComponent } from "./components/create-contest/create-contest.component"; 
+import { CreateBlogComponent } from "./components/create-blog/create-blog.component"; 
 
 
 @NgModule({
@@ -32,7 +35,14 @@ import { ProblemsComponent } from "./components/problems/problems.component";
             {path: "login/register", component:RegisterComponent},
             { path: "customers", component: CustomersComponent, canActivate: [AuthGuard], data: { title: "Customers" } },
             { path: "problems", component: ProblemsComponent, data: { title: "Problems" } },
-            { path: "contests", component: ContestComponent, canActivate: [AuthGuard], data: { title: "Contest" } },
+            { path: "problems/:id", component: SelectProblemComponent, data: { title: "SelectedProblem" } },
+            { path: "insert-problem", component: CreateProblemComponent, data: { title: "CreateProblems" } },
+            { path: "insert-contest", component: CreateContestComponent, data: { title: "CreateContests" } },
+            { path: "insert-blog", component: CreateBlogComponent, data: { title: "CreateBlogs" } },
+            { path: "problem/edit/:id", component: CreateProblemComponent, data: { title: "EditProblems" } },
+            { path: "contest/edit/:id", component: CreateContestComponent, data: { title: "EditContests" } },
+            { path: "blog/edit/:id", component: CreateBlogComponent, data: { title: "EditBlogss" } },
+            { path: "contests", component: ContestComponent, canActivate: [AuthGuard], data: { title: "Contests" } },
             { path: "blogs", component: BlogComponent, canActivate: [AuthGuard], data: { title: "Blogs" } },
             { path: "settings", component: SettingsComponent, canActivate: [AuthGuard], data: { title: "Settings" } },
             { path: "about", component: AboutComponent, data: { title: "About Us" } },

@@ -7,5 +7,8 @@ namespace DAL.Repositories.Interfaces
     public interface IProblemRepository:IRepository<Problem>
     {
         IEnumerable<Problem> GetAllProblems();
+        bool SaveProblem(Problem model);
+        bool DeleteProblemById(int id);
+        Problem GetProblem(int id);
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using CodeFirstDatabase;
 using DAL;
 using Microsoft.AspNetCore.Mvc;
 using QuickApp.ViewModels;
@@ -11,22 +12,23 @@ using QuickApp.ViewModels;
 
 namespace QuickApp.Controllers
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
     public class ProblemController : Controller
     {
-        private IUnitOfWork _unitOdfOfWork;
+        private IUnitOfWork _unitOfWork;
 
         public ProblemController(IUnitOfWork unitOfWork)
         {
-            _unitOdfOfWork = unitOfWork;
+            _unitOfWork = unitOfWork;
         }
 
         // GET: api/values
         [HttpGet]
+        [Route("api/Problem/Index")]
         [Produces(typeof(List<ProblemViewModel>))]
         public IActionResult Get()
         {
-            var allProblems = _unitOdfOfWork.Problems.GetAllProblems();
+            var allProblems = _unitOfWork.Problems.GetAllProblems();
             var problemViewModels = new List<ProblemViewModel>();
             foreach (var problem in allProblems)
             {
@@ -39,27 +41,41 @@ namespace QuickApp.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        [Route("api/Problem/Index/{id}")]
+        public IActionResult Get(int id)
         {
-            return "value" + id;
+            var problem = _unitOfWork.Problems.GetProblem(id);
+            var problemVM = Mapper.Map<ProblemViewModel>(problem);
+            return Ok(problemVM);
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        [Route("api/Problem/Save")]
+        //[Produces(typeof(Problem))]
+        public IActionResult Post([FromBody]Problem problem)
         {
+            //var p = Mapper.Map<Problem>(problem);
+            return Json(_unitOfWork.Problems.SaveProblem(problem));
+            //return Ok(p);
+            //return CreatedAtRoute("DefaultApi", new { id = problem.Id }, problem);
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpPut]
+        [Route("api/Problem/Update")]
+        public IActionResult Edit([FromBody]Problem problem)
         {
+            //var p = Mapper.Map<Problem>(problem);
+            return Json(_unitOfWork.Problems.SaveProblem(problem));
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        [Route("api/Problem/Delete/{id}")]
+        public IActionResult Delete(int id)
         {
+            return Json(_unitOfWork.Problems.DeleteProblemById(id));
         }
     }
 }

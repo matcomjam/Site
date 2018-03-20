@@ -18,5 +18,8 @@ namespace QuickApp.ViewModels
         public int MaximumMessages { get; set; }
         public int NumberOfNodes { get; set; }
         public int SizeOfMessages { get; set; }
+        //public ICollection<ProblemContest> ProblemContests { get; set; }
+        //public ICollection<Test> Tests { get; set; }
+        //public ICollection<Language> Languages { get; set; }
     }
 }

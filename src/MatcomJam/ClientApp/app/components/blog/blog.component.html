@@ -2,19 +2,41 @@
     <header class="pageHeader">
         <h3><i aria-hidden="true"></i> {{'Blogs' | translate}}</h3>
     </header>
-
-    <div [@fadeInOut]>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search problem by name...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <p>
+            <a [routerLink]="['/insert-blog']">Create new <i class="fa fa-plus-circle"></i></a>
+        </p>
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <!--<th>#</th>-->
+                    <th>#</th>
                     <th>Title</th>
+                    <th>Description</th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let blog of blogList">
-                    <!--<th scope="row">1</th>-->
+                    <td>
+                        <a [routerLink]="['/blogs/', blog.id]">{{blog.id}}</a>
+                    </td>
                     <td>{{blog.title}}</td>
+                    <td>{{blog.description}}</td>
+                    <td>
+                        <a [routerLink]="['/blog/edit/', blog.id]"><i class="fa fa-pencil-square-o"></i> Edit </a> |
+                        <a [routerLink]="" (click)="delete(blog.id)"><i class="fa fa-trash-o"></i> Delete </a>
+                    </td>
                 </tr>
             </tbody>
         </table>

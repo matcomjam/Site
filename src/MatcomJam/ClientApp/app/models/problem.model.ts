@@ -1,11 +1,11 @@
 export class Problem {
-    Id: Number;
-    Title: String;
-    Tag: String;
-    Description: String;
-    TimeLimit: Number;
-    MemoryLimit: Number;
-    MaximumMessages: Number;
-    NumberOfNodes: Number;
-    SizeOfMessages: Number;
+    Id: number;
+    Title: string;
+    Tag: string;
+    Description: string;
+    TimeLimit: number;
+    MemoryLimit: number;
+    MaximumMessages: number;
+    NumberOfNodes: number;
+    SizeOfMessages: number;
 }

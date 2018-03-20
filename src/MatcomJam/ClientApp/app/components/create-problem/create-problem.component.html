@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <h3>Problem</h3>
+    <hr />
+    <form [formGroup]="problemForm" formDir="NgForm" (ngSubmit)="save()"  novalidate>
+        <div class="form-group row">
+            <label class=" control-label col-md-12" for="Title">Title</label>
+            <div class="col-md-8">
+                <input class="form-control" type="text" name="Title" formControlName="title" placeholder="Title">
+                <!--<div class-validation-error *ngIf="Title.invalid && Title.touched">This Field is Required</div>-->
+            </div>
+            <!--<span class="text-danger" *ngIf="problemForm.hasError('required', 'title') && formDir.submitted">
+                Title is required.
+            </span>-->
+        </div>
+        <div class="form-group row">
+            <label class="control-label col-md-12" for="Tag">Tag</label>
+            <div class="col-md-8">
+                <input class="form-control" type="text" name="Tag" formControlName="tag" placeholder="Tag">
+                <!--<div class-validation-error *ngIf="Tag.invalid && Tag.touched">This Field is Required</div>-->
+            </div>
+            <!--<span class="text-danger" *ngIf="problemForm.hasError('required', 'tag') && formDir.submitted">
+                Tag is required
+            </span>-->
+        </div>
+        <div class="form-group row">
+            <label class="control-label col-md-12" for="Description">Description</label>
+            <div class="col-md-8">
+                <input class="form-control" type="text" name="Description" formControlName="description" data-val="true" placeholder="Description">
+                <!--<div class-validation-error *ngIf="Description.invalid && Description.touched">This Field is Required</div>-->
+            </div>
+            <!--<span class="text-danger" *ngIf="problemForm.hasError('required', 'description') && formDir.submitted">
+                Description is required
+            </span>-->
+        </div>
+        <div class="form-group">
+            <div class="form-group col-md-4">
+                <button type="submit" class="btn btn-lg btn-block btn-info"> <i class="fa fa-floppy-o"></i> Save</button>
+            </div>
+            <div class="form-group col-md-4">
+                <button class="btn btn-lg btn-block btn-secondary" (click)="cancel()"> <i class="glyphicon glyphicon-remove"></i> Cancel</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

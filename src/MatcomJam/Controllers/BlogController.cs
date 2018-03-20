@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using CodeFirstDatabase;
 using DAL;
 using Microsoft.AspNetCore.Mvc;
 using QuickApp.ViewModels;
@@ -11,7 +12,7 @@ using QuickApp.ViewModels;
 
 namespace QuickApp.Controllers
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
     public class BlogController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -23,6 +24,7 @@ namespace QuickApp.Controllers
 
         // GET: api/values
         [HttpGet]
+        [Route("api/BLog/Index")]
         [Produces(typeof(List<BlogViewModel>))]
         public IActionResult Get()
         {
@@ -39,27 +41,36 @@ namespace QuickApp.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        [Route("api/BLog/Index/{id}")]
+        public IActionResult Get(int id)
         {
-            return "value";
+            var blog = _unitOfWork.Blogs.GetBlog(id);
+            var blogVM = Mapper.Map<BlogViewModel>(blog);
+            return Ok(blogVM);
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        [Route("api/BLog/Save")]
+        public IActionResult Post([FromBody]Blog blog)
         {
+            return Json(_unitOfWork.Blogs.SaveBlog(blog));
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [Route("api/BLog/Update")]
+        public IActionResult Put([FromBody]Blog blog)
         {
+            return Json(_unitOfWork.Blogs.SaveBlog(blog));
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        [Route("api/BLog/Delete/{id}")]
+        public IActionResult Delete(int id)
         {
+            return Json(_unitOfWork.Blogs.DeleteBlog(id));
         }
     }
 }

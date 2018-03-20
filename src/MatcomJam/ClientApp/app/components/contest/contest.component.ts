@@ -15,7 +15,8 @@ import {Contest} from '../../models/contest.model';
     selector: 'contest',
     templateUrl: './contest.component.html',
     styleUrls: ['./contest.component.css'],
-    animations: [fadeInOut]
+    animations: [fadeInOut],
+    providers: [ContestService]
 })
 
 export class ContestComponent implements OnInit{
@@ -25,10 +26,24 @@ export class ContestComponent implements OnInit{
     constructor(private contestService: ContestService) { }
 
     ngOnInit(): void {
-        this.contestService.getContest()
+        this.loadData();
+    }
+
+    loadData() {
+        this.contestService.getContests()
             .subscribe(c => {
                 this.contestList = <Contest[]>(c);
                 console.log('contests', this.contestList);
             });
+    }
+
+    delete(id) {
+        var ans = confirm("Do you want to delete problem with Id: " + id);
+        if (ans) {
+            this.contestService.deleContest(id)
+                .subscribe(p => {
+                    this.loadData();
+                });
+        }
     }
 }

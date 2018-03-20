@@ -15,7 +15,8 @@ import { Blog } from '../../models/blog.model';
     selector: 'blog',
     templateUrl: './blog.component.html',
     styleUrls: ['./blog.component.css'],
-    animations: [fadeInOut]
+    animations: [fadeInOut],
+    providers: [BlogService]
 })
 export class BlogComponent implements OnInit {
 
@@ -23,11 +24,24 @@ export class BlogComponent implements OnInit {
     constructor(private blogService: BlogService) { }
 
     ngOnInit(): void {
+        this.loadData();
+    }
+
+    loadData() {
         this.blogService.getBlogs()
             .subscribe(b => {
                 this.blogList = <Blog[]>(b);
                 console.log('blogs', this.blogList);
             });
+    }
 
+    delete(id) {
+        var ans = confirm("Do you want to delete blog with Id: " + id);
+        if (ans) {
+            this.blogService.deleteBlog(id)
+                .subscribe(p => {
+                    this.loadData();
+                });
+        }
     }
 }
