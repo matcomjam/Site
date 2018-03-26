@@ -2,7 +2,7 @@
     <header class="pageHeader">
         <h3><i aria-hidden="true"></i> {{'Contests' | translate}}</h3>
     </header>
-    
+
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -21,28 +21,29 @@
         </p>
         <table class="table table-striped">
             <thead>
-            <tr>
-                <th>#</th>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Duration</th>
-            </tr>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Duration</th>
+                </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let contest of contestList">
-                <!--<th scope="row">1</th>-->
-                <td>
-                    <a [routerLink]="['/contests/', contest.contestId]">{{contest.contestId}}</a>
-                </td>
-                <td>{{contest.title}}</td>
-                <td>{{contest.description}}</td>
-                <td>{{contest.duration}}</td>
-                <td>
-                    <a [routerLink]="['/contest/edit/', contest.contestId]"><i class="fa fa-pencil-square-o"></i> Edit </a> |
-                    <a [routerLink]="" (click)="delete(contest.contestId)"><i class="fa fa-trash-o"></i> Delete </a>
-                </td>
-            </tr>
+                <tr *ngFor="let contest of contestList">
+                    <!--<th scope="row">1</th>-->
+                    <td>
+                        <a [routerLink]="['/contests/', contest.contestId]">{{contest.contestId}}</a>
+                    </td>
+                    <td>{{contest.title}}</td>
+                    <td>{{contest.description}}</td>
+                    <td>{{contest.duration}}</td>
+                    <td>
+                        <a [routerLink]="['/contest/edit/', contest.contestId]"><i class="fa fa-pencil-square-o"></i> Edit </a> |
+                        <a [routerLink]="" (click)="delete(contest.contestId)"><i class="fa fa-trash-o"></i> Delete </a>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>
+    <app-pagination [offset]="offset" [limit]="limit" [size]="size" (pageChange)="onPageChange($event)"></app-pagination>
 </div>

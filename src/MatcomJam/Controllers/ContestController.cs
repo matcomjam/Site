@@ -23,11 +23,11 @@ namespace QuickApp.Controllers
         }
         // GET: api/values
         [HttpGet]
-        [Route("api/Contest/Index")]
+        [Route("api/Contest/Index2")]
         [Produces(typeof(List<ContestViewModel>))]
-        public IActionResult Get()
+        public IActionResult Get(int offset, int limit)
         {
-            var allContests = _unitOfWork.Contests.GetAllContests();
+            var allContests = _unitOfWork.Contests.GetAllContests(offset, limit);
             var contestViewModels = new List<ContestViewModel>();
             foreach (var contest in allContests)
             {
@@ -36,6 +36,14 @@ namespace QuickApp.Controllers
             }
 
             return Ok(contestViewModels);
+        }
+
+        [HttpGet]
+        [Route("api/Contest/Index")]
+        [Produces(typeof(List<ContestViewModel>))]
+        public IActionResult Get()
+        {
+            return Ok(_unitOfWork.Contests.GetContestCount());
         }
 
         // GET api/values/5

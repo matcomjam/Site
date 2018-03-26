@@ -1,47 +1,32 @@
-<div class="container">
-    <header class="pageHeader">
-        <h3><i class="fa fa-tachometer fa-lg page-caption" aria-hidden="true"></i> {{'pageHeader.Dashboard' | translate}}</h3>
-    </header>
-
-    <div [@fadeInOut]>
-        <div *ngIf="!configurations.showDashboardStatistics && !configurations.showDashboardNotifications && !configurations.showDashboardTodo && !configurations.showDashboardBanner" class="well well-lg">
-            <h4 class="text-muted text-center">
-                {{'home.NoWidgets1' | translate}} <a routerLink="/settings" fragment="preferences"><i class="fa fa-sliders"></i> {{'settings.tab.Preferences' | translate}}</a>
-                {{'home.NoWidgets2' | translate}}
-            </h4>
-        </div>
-
-        <div *ngIf="configurations.showDashboardStatistics" class="row bottom-space well well-sm">
-            <h4 class="text-muted inline-block">{{'home.StatisticsTitle' | translate}}</h4>
-            <button type="button" class="close pull-right statistics-close-btn" aria-label="Close" title="Close" (click)="configurations.showDashboardStatistics = false">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="clearfix"></div>
-            <statistics-demo></statistics-demo>
-        </div>
-
-        <div *ngIf="configurations.showDashboardNotifications" class="row bottom-space">
-            <button type="button" class="close pull-right todo-close-btn" aria-label="Close" title="Close" (click)="configurations.showDashboardNotifications = false">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="clearfix"></div>
-            <notifications-viewer></notifications-viewer>
-        </div>
-
-        <div *ngIf="configurations.showDashboardTodo" class="row bottom-space">
-            <button type="button" class="close pull-right todo-close-btn" aria-label="Close" title="Close" (click)="configurations.showDashboardTodo = false">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="clearfix"></div>
-            <todo-demo></todo-demo>
-        </div>
-
-        <div *ngIf="configurations.showDashboardBanner" class="row no-bottom-space">
-            <button type="button" class="close pull-right banner-close-btn" aria-label="Close" title="Close" (click)="configurations.showDashboardBanner = false">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="clearfix"></div>
-            <banner-demo></banner-demo>
-        </div>
+<div class="card card-outline-primary m-1 p-1" *ngFor="let blog of this.blogList">
+    <div class="bg-faded p-1">
+        <h4>
+            {{blog.title}}
+            <!--<span class="badge badge-pill badge-primary" style="float:right">
+                <small>@p.Price.ToString("c")</small>
+            </span>-->
+        </h4>
     </div>
+    <div class="card-text p-1">{{blog.description}}</div>
 </div>
+
+
+<!--<div class="container m-t-1">
+    <div class="card card-block" *ngFor="let blog of this.blogList">
+        <h4 class="card-title">{{blog.title}}</h4>
+        <p class="card-text">{{blog.description}}</p>
+    </div>
+</div>-->
+
+<!--<div class="container" *ngFor="let blog of this.blogList">
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="margin-top-0">{{blog.title}}</h4>
+        </div>
+        <div class="col-md-8">
+            <p>{{blog.description}}</p>
+        </div>
+        <p></p>
+    </div>
+</div>-->
+<app-pagination [offset]="offset" [limit]="limit" [size]="size" (pageChange)="onPageChange($event)"></app-pagination>

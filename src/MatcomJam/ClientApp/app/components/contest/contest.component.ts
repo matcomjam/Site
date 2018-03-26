@@ -23,6 +23,10 @@ export class ContestComponent implements OnInit{
 
     contestList:Contest[];
 
+    offset: number = 0;
+    limit: number = 4;
+    size: number;
+
     constructor(private contestService: ContestService) { }
 
     ngOnInit(): void {
@@ -30,11 +34,8 @@ export class ContestComponent implements OnInit{
     }
 
     loadData() {
-        this.contestService.getContests()
-            .subscribe(c => {
-                this.contestList = <Contest[]>(c);
-                console.log('contests', this.contestList);
-            });
+        this.getSize();
+        this.findAll(this.limit);
     }
 
     delete(id) {
@@ -45,5 +46,25 @@ export class ContestComponent implements OnInit{
                     this.loadData();
                 });
         }
+    }
+
+    getSize() {
+        this.contestService.getContestCount()
+            .subscribe(c => {
+                this.size = Number(c)
+                console.log('size', this.size);
+            });
+    }
+
+    findAll(limit: number, offset: number = 1) {
+        this.contestService.getContests(offset, limit)
+            .subscribe(b => {
+                this.contestList = <Contest[]>(b);
+            });
+    }
+
+    onPageChange(offset) {
+        this.offset = offset;
+        this.findAll(this.limit, (offset / this.limit) + 1);
     }
 }

@@ -24,11 +24,11 @@ namespace QuickApp.Controllers
 
         // GET: api/values
         [HttpGet]
-        [Route("api/Problem/Index")]
+        [Route("api/Problem/Index2")]
         [Produces(typeof(List<ProblemViewModel>))]
-        public IActionResult Get()
+        public IActionResult Get(int offset, int limit)
         {
-            var allProblems = _unitOfWork.Problems.GetAllProblems();
+            var allProblems = _unitOfWork.Problems.GetAllProblems(offset, limit);
             var problemViewModels = new List<ProblemViewModel>();
             foreach (var problem in allProblems)
             {
@@ -37,6 +37,14 @@ namespace QuickApp.Controllers
             }
 
             return Ok(problemViewModels);
+        }
+
+        [HttpGet]
+        [Route("api/Problem/Index")]
+        [Produces(typeof(List<ProblemViewModel>))]
+        public IActionResult Get()
+        {
+            return Ok(_unitOfWork.Problems.GetProblemCount());
         }
 
         // GET api/values/5

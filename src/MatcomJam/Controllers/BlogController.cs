@@ -24,11 +24,11 @@ namespace QuickApp.Controllers
 
         // GET: api/values
         [HttpGet]
-        [Route("api/BLog/Index")]
+        [Route("api/BLog/Index2/")]
         [Produces(typeof(List<BlogViewModel>))]
-        public IActionResult Get()
+        public IActionResult Get(int offset, int limit)
         {
-            var allBlogs = _unitOfWork.Blogs.GetAllBlogs();
+            var allBlogs = _unitOfWork.Blogs.GetAllBlogs(offset, limit);
             var blogViewModels = new List<BlogViewModel>();
             foreach (var contest in allBlogs)
             {
@@ -37,6 +37,15 @@ namespace QuickApp.Controllers
             }
 
             return Ok(blogViewModels);
+        }
+
+        // GET: api/values
+        [HttpGet]
+        [Route("api/BLog/Index")]
+        [Produces(typeof(List<BlogViewModel>))]
+        public IActionResult Get()
+        {
+            return Ok(_unitOfWork.Blogs.GetBlogCount());
         }
 
         // GET api/values/5

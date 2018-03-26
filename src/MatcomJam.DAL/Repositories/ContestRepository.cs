@@ -17,9 +17,9 @@ namespace MatcomJamDAL.Repositories
         }
         private MJDbContext _appContext => (MJDbContext)_context;
 
-        public IEnumerable<Contest> GetAllContests()
+        public IEnumerable<Contest> GetAllContests(int page, int limit)
         {
-            return _appContext.Contests.OrderBy(c => c.ContestId).ToList();
+            return _appContext.Contests.OrderBy(b => b.ContestId).Skip((page - 1) * limit).Take(limit).ToList();
         }
 
         public bool SaveContest(Contest model)
@@ -59,6 +59,11 @@ namespace MatcomJamDAL.Repositories
         public Contest GetContest(int id)
         {
             return _appContext.Contests.FirstOrDefault(c => c.ContestId == id);
+        }
+
+        public int GetContestCount()
+        {
+            return _appContext.Contests.Count();
         }
     }
 }

@@ -21,6 +21,11 @@ import { Blog } from '../../models/blog.model';
 export class BlogComponent implements OnInit {
 
     blogList: Blog[];
+
+    offset: number = 0;
+    limit: number = 4;
+    size: number;
+
     constructor(private blogService: BlogService) { }
 
     ngOnInit(): void {
@@ -28,11 +33,8 @@ export class BlogComponent implements OnInit {
     }
 
     loadData() {
-        this.blogService.getBlogs()
-            .subscribe(b => {
-                this.blogList = <Blog[]>(b);
-                console.log('blogs', this.blogList);
-            });
+        this.getSize();
+        this.findAll(this.limit);
     }
 
     delete(id) {
@@ -43,5 +45,25 @@ export class BlogComponent implements OnInit {
                     this.loadData();
                 });
         }
+    }
+
+    getSize() {
+        this.blogService.getBlogCount()
+            .subscribe(c => {
+                this.size = Number(c)
+                console.log('size', this.size);
+            });
+    }
+
+    findAll(limit: number, offset: number = 1) {
+        this.blogService.getBlogs(offset, limit)
+            .subscribe(b => {
+                this.blogList = <Blog[]>(b);
+            });
+    }
+
+    onPageChange(offset) {
+        this.offset = offset;
+        this.findAll(this.limit, (offset / this.limit) + 1);
     }
 }

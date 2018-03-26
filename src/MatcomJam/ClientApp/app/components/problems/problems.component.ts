@@ -12,6 +12,10 @@ export class ProblemsComponent implements OnInit {
     problemList: Problem[];
     public editProblemId: any;
 
+    offset: number = 0;
+    limit: number = 4;
+    size: number;
+
     constructor(private problemService: ProblemService) { }
 
     ngOnInit() {
@@ -20,10 +24,8 @@ export class ProblemsComponent implements OnInit {
     }
 
     loadData() {
-        this.problemService.getProblems()
-            .subscribe(p => {
-                this.problemList = <Problem[]>(p);
-            });
+        this.getSize();
+        this.findAll(this.limit);
     }
 
     delete(problemId) {
@@ -34,5 +36,25 @@ export class ProblemsComponent implements OnInit {
                     this.loadData();
                 });
         }
+    }
+
+    getSize() {
+        this.problemService.getProblemCount()
+            .subscribe(c => {
+                this.size = Number(c)
+                console.log('problems count', this.size);
+            });
+    }
+
+    findAll(limit: number, offset: number = 1) {
+        this.problemService.getProblems(offset, limit)
+            .subscribe(b => {
+                this.problemList = <Problem[]>(b);
+            });
+    }
+
+    onPageChange(offset) {
+        this.offset = offset;
+        this.findAll(this.limit, (offset / this.limit) + 1);
     }
 }

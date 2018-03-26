@@ -32,7 +32,8 @@
                         <a [routerLink]="['/blogs/', blog.id]">{{blog.id}}</a>
                     </td>
                     <td>{{blog.title}}</td>
-                    <td>{{blog.description}}</td>
+
+                <!--<td class="col-md-6">{{blog.description}}</td>-->
                     <td>
                         <a [routerLink]="['/blog/edit/', blog.id]"><i class="fa fa-pencil-square-o"></i> Edit </a> |
                         <a [routerLink]="" (click)="delete(blog.id)"><i class="fa fa-trash-o"></i> Delete </a>
@@ -41,4 +42,5 @@
             </tbody>
         </table>
     </div>
+    <app-pagination [offset]="offset" [limit]="limit" [size]="size" (pageChange)="onPageChange($event)"></app-pagination>
 </div>

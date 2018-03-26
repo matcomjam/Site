@@ -21,7 +21,11 @@ export class ContestService {
 
     constructor(private http: HttpClient) { }
 
-    getContests<T>() {
+    getContests<T>(offset: number = 1, limit: number = 4) {
+        return this.http.get(this._getUrl + "2/" + `?offset=${offset}&limit=${limit}`);
+    }
+
+    getContestCount<T>() {
         return this.http.get(this._getUrl);
     }
 

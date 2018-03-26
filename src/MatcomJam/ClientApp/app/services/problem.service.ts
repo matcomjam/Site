@@ -21,32 +21,20 @@ export class ProblemService {
     selectedProblem: Problem = new Problem();
     constructor(private http: HttpClient) { }
 
-    //postProblem<T>(problem: Problem) {
-    //    //let body = JSON.stringify(problem);
-    //    //console.log('service', body);
-    //    return this.http.post(this._saveUrl, problem)
-    //        //.map((x: Response) => {
-    //        //    //console.log('response service', x);
-    //        //    x.json();
-    //        //});
-    //}
-    getProblems<T>() {
+    getProblems<T>(offset: number = 1, limit: number = 4) {
+        return this.http.get(this._getUrl + "2/"+ `?offset=${offset}&limit=${limit}`);
+    }
+
+    getProblemCount<T>() {
         return this.http.get(this._getUrl);
-        //.map((data: Response) => {
-        //    return <any>data.json();
-        //});
-        //console.log(this.problemList);
     }
 
     getProblemById<T>(id: number) {
         var getByidUrl = this._getUrl + "/" + id;
         return this.http.get(getByidUrl)
-            //.map((res: Response) => res.json());
     }
 
-    saveProblem<T>(problem: Problem)/*: Observable<string>*/ {
-        //let body = JSON.stringify(problem);
-
+    saveProblem<T>(problem: Problem){
         return this.http.post(this._saveUrl, problem)
             .map((res: Response) => res.json);
     }
@@ -54,12 +42,9 @@ export class ProblemService {
     deleteProblem<T>(id: number) {
         var deleteByIdUrl = this._deleteByIdUrl + id;
         return this.http.delete(deleteByIdUrl)
-            //.map((res: Response) => res.json());
     }
 
     updateProblem(problem: Problem) {
-        //let body = JSON.stringify(problem);
         return this.http.put(this._updateUrl, problem)
-            //.map((res: Response) => res.json());
     }
 }

@@ -16,9 +16,9 @@ namespace MatcomJamDAL.Repositories
         }
         private MJDbContext _appContext => (MJDbContext)_context;
 
-        public IEnumerable<Problem> GetAllProblems()
+        public IEnumerable<Problem> GetAllProblems(int page, int limit)
         {
-            return _appContext.Problems.OrderBy(p => p.Id).ToList();
+            return _appContext.Problems.OrderBy(b => b.Id).Skip((page - 1) * limit).Take(limit).ToList();
         }
 
         public bool SaveProblem(Problem model)
@@ -58,6 +58,11 @@ namespace MatcomJamDAL.Repositories
         public Problem GetProblem(int id)
         {
             return _appContext.Problems.FirstOrDefault(p => p.Id == id);
+        }
+
+        public int GetProblemCount()
+        {
+            return _appContext.Problems.Count();
         }
     }
 }

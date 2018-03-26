@@ -6,19 +6,24 @@ using DAL.Repositories;
 using DAL.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace MatcomJamDAL.Repositories
 {
-    class BlogRepository:Repository<Blog>, IBlogRepository
+    class BlogRepository : Repository<Blog>, IBlogRepository
     {
         public BlogRepository(DbContext context) : base(context)
-        {
-        }
+        { }
         private MJDbContext _appContext => (MJDbContext)_context;
 
-        public IEnumerable<Blog> GetAllBlogs()
+        public IEnumerable<Blog> GetAllBlogs(int page, int limit)
         {
-            return _appContext.Blogs.OrderBy(b => b.Id).ToList();
+            return _appContext.Blogs.OrderBy(b => b.Id).Skip((page - 1) * limit).Take(limit).ToList();
+        }
+
+        public int GetBlogCount()
+        {
+            return _appContext.Blogs.Count();
         }
 
         public bool SaveBlog(Blog model)

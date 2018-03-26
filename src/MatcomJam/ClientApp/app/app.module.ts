@@ -73,11 +73,14 @@ import { ContestService } from './services/contest.service';
 import { BlogService } from './services/blog.service';
 import { CreateProblemComponent } from './components/create-problem/create-problem.component';
 
+import { PaginationModule } from 'ngx-bootstrap';
+
 import { NgForm, FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { SelectProblemComponent } from './components/select-problem/select-problem.component';
 import { CreateContestComponent } from './components/create-contest/create-contest.component';
 import { CreateBlogComponent } from './components/create-blog/create-blog.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 @NgModule({
     imports: [
@@ -87,6 +90,7 @@ import { CreateBlogComponent } from './components/create-blog/create-blog.compon
         FormsModule,
         ReactiveFormsModule,
         AppRoutingModule,
+        PaginationModule.forRoot(),
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
@@ -130,7 +134,8 @@ import { CreateBlogComponent } from './components/create-blog/create-blog.compon
         CreateProblemComponent,
         SelectProblemComponent,
         CreateContestComponent,
-        CreateBlogComponent
+        CreateBlogComponent,
+        PaginationComponent
     ],
     providers: [
         { provide: 'BASE_URL', useFactory: getBaseUrl },
