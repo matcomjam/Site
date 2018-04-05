@@ -21,12 +21,28 @@ export class ProblemService {
     selectedProblem: Problem = new Problem();
     constructor(private http: HttpClient) { }
 
-    getProblems<T>(offset: number = 1, limit: number = 4) {
-        return this.http.get(this._getUrl + "2/"+ `?offset=${offset}&limit=${limit}`);
+    getProblems<T>(offset: number, limit: number, filter) {
+        var query = this.toQueryString(filter);
+        query = query != null && query !== "" ? query + '&' : "";
+        return this.http.get(this._getUrl + "2/" + `?${query}offset=${offset}&limit=${limit}`);
     }
 
-    getProblemCount<T>() {
-        return this.http.get(this._getUrl);
+    toQueryString(obj) {
+        var parts = [];
+        for (var property in obj) {
+            console.log('property', property)
+            var value = obj[property];
+            if (value != null && value != undefined)
+                parts.push(encodeURIComponent(property) + '=' + encodeURIComponent(value));
+        }
+
+        return parts.join('&');
+    }
+
+    getProblemCount<T>(filter) {
+        var query = this.toQueryString(filter)
+        query = (query != null && query !== "") ? '?' + query : "";
+        return this.http.get(this._getUrl + `${query}`);
     }
 
     getProblemById<T>(id: number) {
@@ -34,7 +50,7 @@ export class ProblemService {
         return this.http.get(getByidUrl)
     }
 
-    saveProblem<T>(problem: Problem){
+    saveProblem<T>(problem: Problem) {
         return this.http.post(this._saveUrl, problem)
             .map((res: Response) => res.json);
     }

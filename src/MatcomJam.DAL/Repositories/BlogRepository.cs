@@ -7,6 +7,7 @@ using DAL.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using MatcomJamDAL.Models.MyModel;
 
 namespace MatcomJamDAL.Repositories
 {
@@ -16,14 +17,25 @@ namespace MatcomJamDAL.Repositories
         { }
         private MJDbContext _appContext => (MJDbContext)_context;
 
-        public IEnumerable<Blog> GetAllBlogs(int page, int limit)
+        public IEnumerable<Blog> GetAllBlogs(Filter filter, int page, int limit)
         {
-            return _appContext.Blogs.OrderBy(b => b.Id).Skip((page - 1) * limit).Take(limit).ToList();
+            //return _appContext.Blogs.OrderBy(b => b.Id).Skip((page - 1) * limit).Take(limit).ToList();
+            return _appContext.Blogs.Where(b => Search(filter, b)).OrderBy(b => b.Id).Skip((page - 1) * limit).Take(limit).ToList();
         }
 
-        public int GetBlogCount()
+        bool Search(Filter filter, Blog b)
         {
-            return _appContext.Blogs.Count();
+            if (string.IsNullOrEmpty(filter?.Pattern)) return true;
+            var query = filter.Pattern.ToLower();
+            return b.Id.ToString().ToLower().IndexOf(query) != -1 ||
+                   b.Title.ToLower().IndexOf(query) != -1 ||
+                   b.Description.ToLower().IndexOf(query) != -1 ||
+                   b.UserName.ToLower().IndexOf(query) != -1;
+        }
+
+        public int GetBlogCount(Filter filter)
+        {
+            return _appContext.Blogs.Count(b => Search(filter, b));
         }
 
         public bool SaveBlog(Blog model)
@@ -36,8 +48,18 @@ namespace MatcomJamDAL.Repositories
                     Id = model.Id,
                     Title = model.Title,
                     Description = model.Description,
+                    UserId = model.UserId,
+                    UserName = model.UserName
                 };
-                _appContext.Blogs.Add(blog);
+                try
+                {
+                    _appContext.Blogs.Add(blog);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    throw;
+                }
             }
             else
             {

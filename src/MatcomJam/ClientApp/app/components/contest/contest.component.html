@@ -7,9 +7,9 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search problem by name...">
+                    <input type="text" [(ngModel)]="filter.pattern" class="form-control" placeholder="Search problem by name...">
                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">
+                        <button class="btn btn-default" type="button" (click)="onSearchChanged()">
                             <span class="glyphicon glyphicon-search"></span>
                         </button>
                     </span>

@@ -12,9 +12,10 @@ using System;
 namespace QuickApp.Migrations
 {
     [DbContext(typeof(MJDbContext))]
-    partial class MJDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180326204516_addingUserNameToBlogForTesting")]
+    partial class addingUserNameToBlogForTesting
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -330,20 +331,6 @@ namespace QuickApp.Migrations
                     b.ToTable("AspNetUsers");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("ApplicationUser");
-                });
-
-            modelBuilder.Entity("MatcomJamDAL.Models.MyModel.Code", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("FileName")
-                        .IsRequired()
-                        .HasMaxLength(255);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Codes");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

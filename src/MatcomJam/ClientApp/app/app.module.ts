@@ -81,6 +81,8 @@ import { SelectProblemComponent } from './components/select-problem/select-probl
 import { CreateContestComponent } from './components/create-contest/create-contest.component';
 import { CreateBlogComponent } from './components/create-blog/create-blog.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
+import { CodeService } from "./services/code.service";
+import { SelectedBlogComponent } from './components/selected-blog/selected-blog.component';
 
 @NgModule({
     imports: [
@@ -135,7 +137,8 @@ import { PaginationComponent } from './components/pagination/pagination.componen
         SelectProblemComponent,
         CreateContestComponent,
         CreateBlogComponent,
-        PaginationComponent
+        PaginationComponent,
+        SelectedBlogComponent
     ],
     providers: [
         { provide: 'BASE_URL', useFactory: getBaseUrl },
@@ -153,7 +156,8 @@ import { PaginationComponent } from './components/pagination/pagination.componen
         ProblemService,
         ContestService,
         BlogService,
-        FormBuilder
+        FormBuilder,
+        CodeService
     ],
     bootstrap: [AppComponent]
 })

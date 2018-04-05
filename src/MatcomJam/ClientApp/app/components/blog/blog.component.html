@@ -6,9 +6,9 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search problem by name...">
+                    <input type="text" [(ngModel)]="filter.pattern" class="form-control" placeholder="Search...">
                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">
+                        <button class="btn btn-default" type="button" (click)="onSearchChanged()">
                             <span class="glyphicon glyphicon-search"></span>
                         </button>
                     </span>
@@ -18,29 +18,32 @@
         <p>
             <a [routerLink]="['/insert-blog']">Create new <i class="fa fa-plus-circle"></i></a>
         </p>
+        <p>
+            {{this.blogList | json}}
+        </p>
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th>#</th>
                     <th>Title</th>
-                    <th>Description</th>
+                    <th>Autor</th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let blog of blogList">
-                    <td>
-                        <a [routerLink]="['/blogs/', blog.id]">{{blog.id}}</a>
-                    </td>
-                    <td>{{blog.title}}</td>
-
-                <!--<td class="col-md-6">{{blog.description}}</td>-->
-                    <td>
-                        <a [routerLink]="['/blog/edit/', blog.id]"><i class="fa fa-pencil-square-o"></i> Edit </a> |
-                        <a [routerLink]="" (click)="delete(blog.id)"><i class="fa fa-trash-o"></i> Delete </a>
-                    </td>
-                </tr>
+            <tr *ngFor="let blog of blogList">
+                <td>
+                    <a [routerLink]="['/blogs/', blog.id]">{{blog.id}}</a>
+                </td>
+                <td>{{blog.title}}</td>
+                <td>{{blog.userName}}</td>
+                <!--<td>{{getUserName(blog.userId)}}</td>-->
+                <td>
+                    <a [routerLink]="['/blog/edit/', blog.id]"><i class="fa fa-pencil-square-o"></i> Edit </a> |
+                    <a [routerLink]="" (click)="delete(blog.id)"><i class="fa fa-trash-o"></i> Delete </a>
+                </td>
+            </tr>
             </tbody>
         </table>
     </div>
-    <app-pagination [offset]="offset" [limit]="limit" [size]="size" (pageChange)="onPageChange($event)"></app-pagination>
 </div>
+<app-pagination [offset]="offset" [limit]="limit" [size]="size" (pageChange)="onPageChange($event)"></app-pagination>

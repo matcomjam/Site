@@ -30,7 +30,7 @@ namespace CodeFirstDatabase
         public DbSet<Language> Languages { get; set; }
         public DbSet<Group> Groups { get; set; }
         public DbSet<Institution> Institutions { get; set; }
-
+        public DbSet<Code> Codes { get; set; }
 
         public MJDbContext(DbContextOptions options) : base(options)
         { }

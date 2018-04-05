@@ -84,4 +84,8 @@
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\app\models\user-register.model.ts" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\uploads\" />
+  </ItemGroup>
 </Project>

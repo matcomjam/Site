@@ -7,6 +7,7 @@ using DAL.Repositories;
 using DAL.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using MatcomJamDAL.Models.MyModel;
 
 namespace MatcomJamDAL.Repositories
 {
@@ -17,9 +18,19 @@ namespace MatcomJamDAL.Repositories
         }
         private MJDbContext _appContext => (MJDbContext)_context;
 
-        public IEnumerable<Contest> GetAllContests(int page, int limit)
+        public IEnumerable<Contest> GetAllContests(Filter filter, int page, int limit)
         {
-            return _appContext.Contests.OrderBy(b => b.ContestId).Skip((page - 1) * limit).Take(limit).ToList();
+            //return _appContext.Contests.OrderBy(b => b.ContestId).Skip((page - 1) * limit).Take(limit).ToList();
+            return _appContext.Contests.Where(c => Search(filter, c)).OrderBy(b => b.ContestId).Skip((page - 1) * limit).Take(limit).ToList();
+        }
+
+        bool Search(Filter filter, Contest c)
+        {
+            if (string.IsNullOrEmpty(filter?.Pattern)) return true;
+            var query = filter.Pattern.ToLower();
+            return c.ContestId.ToString().ToLower().IndexOf(query) != -1 ||
+                   c.Title.ToLower().IndexOf(query) != -1 ||
+                   c.Description.ToLower().IndexOf(query) != -1;
         }
 
         public bool SaveContest(Contest model)
@@ -61,9 +72,9 @@ namespace MatcomJamDAL.Repositories
             return _appContext.Contests.FirstOrDefault(c => c.ContestId == id);
         }
 
-        public int GetContestCount()
+        public int GetContestCount(Filter filter)
         {
-            return _appContext.Contests.Count();
+            return _appContext.Contests.Count(c => Search(filter, c));
         }
     }
 }

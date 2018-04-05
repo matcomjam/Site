@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using CodeFirstDatabase;
 using DAL;
+using MatcomJamDAL.Models.MyModel;
 using Microsoft.AspNetCore.Mvc;
 using QuickApp.ViewModels;
 
@@ -26,15 +27,16 @@ namespace QuickApp.Controllers
         [HttpGet]
         [Route("api/Problem/Index2")]
         [Produces(typeof(List<ProblemViewModel>))]
-        public IActionResult Get(int offset, int limit)
+        public IActionResult Get(Filter filter, int offset, int limit)
         {
-            var allProblems = _unitOfWork.Problems.GetAllProblems(offset, limit);
-            var problemViewModels = new List<ProblemViewModel>();
-            foreach (var problem in allProblems)
-            {
-                var problemVM = Mapper.Map<ProblemViewModel>(problem);
-                problemViewModels.Add(problemVM);
-            }
+            var allProblems = _unitOfWork.Problems.GetAllProblems(filter, offset, limit);
+            var problemViewModels = allProblems.Select(Mapper.Map<ProblemViewModel>).ToList();
+            //var problemViewModels = new List<ProblemViewModel>();
+            //foreach (var problem in allProblems)
+            //{
+            //    var problemVM = Mapper.Map<ProblemViewModel>(problem);
+            //    problemViewModels.Add(problemVM);
+            //}
 
             return Ok(problemViewModels);
         }
@@ -42,9 +44,9 @@ namespace QuickApp.Controllers
         [HttpGet]
         [Route("api/Problem/Index")]
         [Produces(typeof(List<ProblemViewModel>))]
-        public IActionResult Get()
+        public IActionResult Get(Filter filter)
         {
-            return Ok(_unitOfWork.Problems.GetProblemCount());
+            return Ok(_unitOfWork.Problems.GetProblemCount(filter));
         }
 
         // GET api/values/5

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using CodeFirstDatabase;
 using DAL;
+using MatcomJamDAL.Models.MyModel;
 using Microsoft.AspNetCore.Mvc;
 using QuickApp.ViewModels;
 
@@ -25,9 +26,9 @@ namespace QuickApp.Controllers
         [HttpGet]
         [Route("api/Contest/Index2")]
         [Produces(typeof(List<ContestViewModel>))]
-        public IActionResult Get(int offset, int limit)
+        public async Task<IActionResult> Get(Filter filter, int offset, int limit)
         {
-            var allContests = _unitOfWork.Contests.GetAllContests(offset, limit);
+            var allContests = _unitOfWork.Contests.GetAllContests(filter, offset, limit);
             var contestViewModels = new List<ContestViewModel>();
             foreach (var contest in allContests)
             {
@@ -41,9 +42,9 @@ namespace QuickApp.Controllers
         [HttpGet]
         [Route("api/Contest/Index")]
         [Produces(typeof(List<ContestViewModel>))]
-        public IActionResult Get()
+        public IActionResult Get(Filter filter)
         {
-            return Ok(_unitOfWork.Contests.GetContestCount());
+            return Ok(_unitOfWork.Contests.GetContestCount(filter));
         }
 
         // GET api/values/5

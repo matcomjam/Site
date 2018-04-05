@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
     }
 
     getSize() {
-        this.blogService.getBlogCount()
+        this.blogService.getBlogCount(null)
             .subscribe(c => {
                 this.size = Number(c)
                 console.log('size', this.size);
@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
     }
 
     findAll(limit: number, offset: number = 1) {
-        this.blogService.getBlogs(offset, limit)
+        this.blogService.getBlogs(null, offset, limit)
             .subscribe(b => {
                 this.blogList = <Blog[]>(b);
             });

@@ -6,14 +6,11 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search problem by name...">
+                    <input type="text" [(ngModel)]="filter.pattern" class="form-control" placeholder="Search...">
                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">
+                        <button class="btn btn-default" type="button" (click)="onSearchChanged()">
                             <span class="glyphicon glyphicon-search"></span>
                         </button>
-                        <!--<button class="btn btn default " type="button" style="float: right" (click)="showDialogToAdd()" aria-label="Add">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>-->
                     </span>
                 </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
@@ -36,7 +33,7 @@
                         <a [routerLink]="['/problems/', problem.id]">{{problem.id}}</a>
                     </td>
                     <td>{{problem.title}}</td>
-                    <td>{{problem.tag}}</td>
+                    <td class="badge">{{problem.tag}}</td>
                     <td>
                         <a [routerLink]="['/problem/edit/', problem.id]"><i class="fa fa-pencil-square-o"></i> Edit </a> |
                         <a [routerLink]="" (click)="delete(problem.id)"><i class="fa fa-trash-o"></i> Delete </a>

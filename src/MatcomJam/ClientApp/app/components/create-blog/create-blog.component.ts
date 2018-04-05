@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { BlogService } from '../../services/blog.service';
 import { Blog } from "../../models/blog.model";
+import { User } from "../../models/user.model";
 import { NgForm, FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
+
 
 @Component({
     selector: 'app-create-blog',
@@ -15,25 +18,29 @@ export class CreateBlogComponent implements OnInit {
     title: string = "Create";
     id: number;
     errorMessage: any;
-    b:Blog;
+    currentUser: User = new User();
+
     constructor(private _formB: FormBuilder, private blogService: BlogService,
-        private _router: Router, private _avRoute: ActivatedRoute) {
+        private _router: Router, private _avRoute: ActivatedRoute, private authService: AuthService) {
         if (this._avRoute.snapshot.params["id"]) {
             this.id = this._avRoute.snapshot.params["id"];
         }
+
+        //this.currentUser = new User(this.authService.currentUser.id, this.authService.currentUser.userName);
 
         this.blogForm = this._formB.group({
             id: 0,
             title: ['', [Validators.required]],
             description: ['', [Validators.required]],
-            userId: 0
+            userId: this.authService.currentUser.id,
+            userName: this.authService.currentUser.userName
         });
     }
 
     ngOnInit() {
         if (this.id > 0) {
             this.title = "Edit";
-            this.blogService.getProblemById(this.id)
+            this.blogService.getBlogById(this.id)
                 .subscribe((p: Blog) => {
                     this.blogForm.setValue(p);
                 });
@@ -48,6 +55,7 @@ export class CreateBlogComponent implements OnInit {
         if (this.title == "Create") {
             this.blogService.saveBlog(this.blogForm.value)
                 .subscribe(p => {
+                    console.log('blog details', this.blogForm.value);
                     this._router.navigate(['/blogs']);
                 })
             //error => this.errorMessage = error);
@@ -55,7 +63,6 @@ export class CreateBlogComponent implements OnInit {
         else if (this.title == "Edit") {
             this.blogService.updateBlog(this.blogForm.value)
                 .subscribe(p => {
-                    console.log('por que no estas yendo pa esa direccion');
                     this._router.navigate(['/blogs']);
                 })
             //error => this.errorMessage = error);

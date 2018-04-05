@@ -10,26 +10,29 @@ import { Problem } from "../../models/problem.model";
 })
 export class ProblemsComponent implements OnInit {
     problemList: Problem[];
-    public editProblemId: any;
+    editProblemId: any;
 
     offset: number = 0;
     limit: number = 4;
     size: number;
 
+    filter: any = {};
+
     constructor(private problemService: ProblemService) { }
 
     ngOnInit() {
+        console.log('asi empezo filter', this.filter.pattern)
         this.editProblemId = 0;
         this.loadData();
     }
 
     loadData() {
         this.getSize();
-        this.findAll(this.limit);
+        this.findAll();
     }
 
     delete(problemId) {
-        var ans = confirm("Do you want to delete problem with Id: " + problemId);
+        var ans = confirm(`Do you want to delete problem with Id: ${problemId}`);
         if (ans) {
             this.problemService.deleteProblem(problemId)
                 .subscribe(p => {
@@ -39,15 +42,15 @@ export class ProblemsComponent implements OnInit {
     }
 
     getSize() {
-        this.problemService.getProblemCount()
+        this.problemService.getProblemCount(this.filter)
             .subscribe(c => {
                 this.size = Number(c)
                 console.log('problems count', this.size);
             });
     }
 
-    findAll(limit: number, offset: number = 1) {
-        this.problemService.getProblems(offset, limit)
+    findAll(offset: number = 1) {
+        this.problemService.getProblems(offset, this.limit, this.filter)
             .subscribe(b => {
                 this.problemList = <Problem[]>(b);
             });
@@ -55,6 +58,10 @@ export class ProblemsComponent implements OnInit {
 
     onPageChange(offset) {
         this.offset = offset;
-        this.findAll(this.limit, (offset / this.limit) + 1);
+        this.findAll((offset / this.limit) + 1);
+    }
+
+    onSearchChanged() {
+        this.loadData();
     }
 }

@@ -24,15 +24,31 @@ export class BlogService {
 
     constructor(private http: HttpClient) { }
 
-    getBlogs<T>(offset: number = 1, limit: number = 4) {
-        return this.http.get(this._getUrl + "2/" + `?offset=${offset}&limit=${limit}`);
+    getBlogs<T>(filter, offset: number, limit: number) {
+        var query = this.toQueryString(filter);
+        query = query != null && query !== "" ? query + '&' : "";
+        return this.http.get(this._getUrl + "2/" + `?${query}offset=${offset}&limit=${limit}`);
     }
 
-    getBlogCount<T>() {
-        return this.http.get(this._getUrl);
+    toQueryString(obj) {
+        var parts = [];
+        for (var property in obj) {
+            console.log('property', property)
+            var value = obj[property];
+            if (value != null && value != undefined)
+                parts.push(encodeURIComponent(property) + '=' + encodeURIComponent(value));
+        }
+
+        return parts.join('&');
     }
 
-    getProblemById<T>(id: number) {
+    getBlogCount<T>(filter) {
+        var query = this.toQueryString(filter)
+        query = (query != null && query !== "") ? '?' + query : "";
+        return this.http.get(this._getUrl + `${query}`);
+    }
+
+    getBlogById<T>(id: number) {
         var getByIdUrl = this._getUrl + '/' + id;
         return this.http.get(getByIdUrl);
     }

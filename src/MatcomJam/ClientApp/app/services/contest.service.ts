@@ -21,12 +21,28 @@ export class ContestService {
 
     constructor(private http: HttpClient) { }
 
-    getContests<T>(offset: number = 1, limit: number = 4) {
-        return this.http.get(this._getUrl + "2/" + `?offset=${offset}&limit=${limit}`);
+    getContests<T>(filter, offset: number, limit: number) {
+        var query = this.toQueryString(filter);
+        query = query != null && query !== "" ? query + '&' : "";
+        return this.http.get(this._getUrl + "2/" + `?${query}offset=${offset}&limit=${limit}`);
     }
 
-    getContestCount<T>() {
-        return this.http.get(this._getUrl);
+    toQueryString(obj) {
+        var parts = [];
+        for (var property in obj) {
+            console.log('property', property)
+            var value = obj[property];
+            if (value != null && value != undefined)
+                parts.push(encodeURIComponent(property) + '=' + encodeURIComponent(value));
+        }
+
+        return parts.join('&');
+    }
+
+    getContestCount<T>(filter) {
+        var query = this.toQueryString(filter)
+        query = (query != null && query !== "") ? '?' + query : "";
+        return this.http.get(this._getUrl + `${query}`);
     }
 
     getContestById<T>(id: number) {

@@ -5,6 +5,7 @@ using System.Text;
 using CodeFirstDatabase;
 using DAL.Repositories;
 using DAL.Repositories.Interfaces;
+using MatcomJamDAL.Models.MyModel;
 using Microsoft.EntityFrameworkCore;
 
 namespace MatcomJamDAL.Repositories
@@ -16,9 +17,25 @@ namespace MatcomJamDAL.Repositories
         }
         private MJDbContext _appContext => (MJDbContext)_context;
 
-        public IEnumerable<Problem> GetAllProblems(int page, int limit)
+        public IEnumerable<Problem> GetAllProblems(Filter filter, int page, int limit)
         {
-            return _appContext.Problems.OrderBy(b => b.Id).Skip((page - 1) * limit).Take(limit).ToList();
+            ////var aux = _appContext.Problems.OrderBy(b => b.Id).Where(b=> b.Title)
+            //return filter != null
+            //    ? _appContext.Problems.Where(p => Search(filter.Pattern, p)).OrderBy(b => b.Id)
+            //        .Skip((page - 1) * limit).Take(limit).ToList()
+            //    : _appContext.Problems.OrderBy(b => b.Id).Skip((page - 1) * limit).Take(limit).ToList();
+
+            return _appContext.Problems.Where(p => Search(filter, p)).OrderBy(p => p.Id)
+                .Skip((page - 1) * limit).Take(limit).ToList();
+        }
+
+        public bool Search(Filter filter, Problem p)
+        {
+            if (string.IsNullOrEmpty(filter?.Pattern)) return true;
+            var query = filter.Pattern.ToLower();
+            return p.Id.ToString().ToLower().IndexOf(query) != -1 ||
+                p.Title.ToLower().IndexOf(query) != -1 ||
+                   p.Tag.ToLower().IndexOf(query) != -1;
         }
 
         public bool SaveProblem(Problem model)
@@ -60,9 +77,9 @@ namespace MatcomJamDAL.Repositories
             return _appContext.Problems.FirstOrDefault(p => p.Id == id);
         }
 
-        public int GetProblemCount()
+        public int GetProblemCount(Filter filter)
         {
-            return _appContext.Problems.Count();
+            return _appContext.Problems.Count(p => Search(filter, p));
         }
     }
 }

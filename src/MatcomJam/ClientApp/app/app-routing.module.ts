@@ -15,6 +15,7 @@ import { HomeComponent } from "./components/home/home.component";
 import { CustomersComponent } from "./components/customers/customers.component";
 import { ContestComponent } from "./components/contest/contest.component";
 import { BlogComponent } from "./components/blog/blog.component";
+import { SelectedBlogComponent } from "./components/selected-blog/selected-blog.component";
 import { SettingsComponent } from "./components/settings/settings.component";
 import { AboutComponent } from "./components/about/about.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
@@ -44,6 +45,7 @@ import { CreateBlogComponent } from "./components/create-blog/create-blog.compon
             { path: "blog/edit/:id", component: CreateBlogComponent, data: { title: "EditBlogss" } },
             { path: "contests", component: ContestComponent, canActivate: [AuthGuard], data: { title: "Contests" } },
             { path: "blogs", component: BlogComponent, canActivate: [AuthGuard], data: { title: "Blogs" } },
+            { path: "blogs/:id", component: SelectedBlogComponent, canActivate: [AuthGuard], data: { title: "SelectedBlogs" } },
             { path: "settings", component: SettingsComponent, canActivate: [AuthGuard], data: { title: "Settings" } },
             { path: "about", component: AboutComponent, data: { title: "About Us" } },
             { path: "home", redirectTo: "/", pathMatch: "full" },

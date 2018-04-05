@@ -12,9 +12,10 @@ using System;
 namespace QuickApp.Migrations
 {
     [DbContext(typeof(MJDbContext))]
-    partial class MJDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180402200204_addCode")]
+    partial class addCode
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
