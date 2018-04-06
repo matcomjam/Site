@@ -71,6 +71,7 @@ import { ProblemsComponent } from './components/problems/problems.component';
 import { ProblemService } from './services/problem.service';
 import { ContestService } from './services/contest.service';
 import { BlogService } from './services/blog.service';
+import { CommentService } from './services/comment.service';
 import { CreateProblemComponent } from './components/create-problem/create-problem.component';
 
 import { PaginationModule } from 'ngx-bootstrap';
@@ -157,7 +158,8 @@ import { SelectedBlogComponent } from './components/selected-blog/selected-blog.
         ContestService,
         BlogService,
         FormBuilder,
-        CodeService
+        CodeService,
+        CommentService
     ],
     bootstrap: [AppComponent]
 })

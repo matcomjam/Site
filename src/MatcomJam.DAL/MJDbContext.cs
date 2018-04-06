@@ -86,7 +86,7 @@ namespace CodeFirstDatabase
                 .IsRequired().OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Comment>()
-                .HasKey(bu => new { bu.UserId, bu.BlogId });
+                .HasKey(ci => ci.Id); 
 
             modelBuilder.Entity<Comment>()
                 .HasOne(bu => bu.Blog)

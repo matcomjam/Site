@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0da0b8ae0852250ea88a"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "bff2056ba95cecc0c484"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -722,7 +722,7 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(163)(__webpack_require__.s = 163);
+/******/ 	return hotCreateRequire(165)(__webpack_require__.s = 165);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -921,7 +921,7 @@ function isSameDay(date1, date2) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Utilities; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(8);
 // ======================================
 // Author: Ebenezer Monney
 // Email:  info@ebenmonney.com
@@ -1404,17 +1404,6 @@ module.exports = (__webpack_require__(1))(8);
 
 /***/ }),
 /* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(2);
-var map_1 = __webpack_require__(53);
-Observable_1.Observable.prototype.map = map_1.map;
-//# sourceMappingURL=map.js.map
-
-/***/ }),
-/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1449,11 +1438,11 @@ Observable_1.Observable.prototype.map = map_1.map;
 /* unused harmony export ɵe */
 /* unused harmony export ɵf */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__ = __webpack_require__(188);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__);
@@ -4177,10 +4166,21 @@ var HttpClientJsonpModule = /** @class */ (function () {
 
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(304);
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(2);
+var map_1 = __webpack_require__(53);
+Observable_1.Observable.prototype.map = map_1.map;
+//# sourceMappingURL=map.js.map
 
 /***/ }),
 /* 11 */
@@ -4193,7 +4193,7 @@ module.exports = (__webpack_require__(1))(304);
 /* unused harmony export AlertMessage */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return MessageSeverity; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_utilities__ = __webpack_require__(6);
@@ -4399,16 +4399,16 @@ var MessageSeverity;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__local_store_manager_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__endpoint_factory_service__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__configuration_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__db_Keys__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__jwt_helper__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__jwt_helper__ = __webpack_require__(218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utilities__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_user_model__ = __webpack_require__(24);
 // ======================================
@@ -4665,8 +4665,8 @@ var AuthService = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(19);
@@ -4675,7 +4675,7 @@ var AuthService = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_forkJoin__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_do__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_do__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_map__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_map__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__account_endpoint_service__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__auth_service__ = __webpack_require__(12);
@@ -4865,7 +4865,7 @@ var AccountService = /** @class */ (function () {
 /* unused harmony export formattingTokens */
 /* harmony export (immutable) */ __webpack_exports__["a"] = addFormatToken;
 /* harmony export (immutable) */ __webpack_exports__["c"] = makeFormatFunction;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_type_checks__ = __webpack_require__(25);
 
 
@@ -4932,8 +4932,8 @@ function removeFormattingTokens(input) {
 /* unused harmony export mergeConfigs */
 /* harmony export (immutable) */ __webpack_exports__["b"] = getSetGlobalLocale;
 /* unused harmony export defineLocale */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__locale_class__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__locale_defaults__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__locale_class__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__locale_defaults__ = __webpack_require__(355);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_type_checks__ = __webpack_require__(25);
 // internal storage for locale config files
 
@@ -5025,7 +5025,7 @@ function defineLocale(name, config) {
 /* harmony export (immutable) */ __webpack_exports__["a"] = createDate;
 /* harmony export (immutable) */ __webpack_exports__["c"] = shiftDate;
 /* harmony export (immutable) */ __webpack_exports__["b"] = setDate;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__units_month__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__units_month__ = __webpack_require__(130);
 
 var defaultTimeUnit = {
     year: 0,
@@ -5165,17 +5165,17 @@ var TranslateLanguageLoader = /** @class */ (function () {
         //Note Dynamic require(variable) will not work. Require is always at compile time
         switch (lang) {
             case "en":
-                return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].of(__webpack_require__(210));
-            case "fr":
-                return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].of(__webpack_require__(211));
-            case "de":
                 return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].of(__webpack_require__(212));
-            case "pt":
+            case "fr":
                 return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].of(__webpack_require__(213));
-            case "ar":
+            case "de":
                 return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].of(__webpack_require__(214));
-            case "ko":
+            case "pt":
                 return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].of(__webpack_require__(215));
+            case "ar":
+                return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].of(__webpack_require__(216));
+            case "ko":
+                return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].of(__webpack_require__(217));
             default:
         }
     };
@@ -5594,7 +5594,7 @@ var User = /** @class */ (function () {
 /* harmony export (immutable) */ __webpack_exports__["e"] = isObject;
 /* harmony export (immutable) */ __webpack_exports__["f"] = isUndefined;
 /* harmony export (immutable) */ __webpack_exports__["g"] = toInt;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(31);
 
 function isDateValid(date) {
     return date && date.getTime && !isNaN(date.getTime());
@@ -5637,8 +5637,8 @@ function toInt(argumentForCoercion) {
 /* unused harmony export formatMoment */
 /* unused harmony export expandFormat */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__format_functions__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__locale__ = __webpack_require__(360);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__units__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__locale__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__units__ = __webpack_require__(368);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__locale_locales_service__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_type_checks__ = __webpack_require__(25);
 // moment.js
@@ -5994,12 +5994,94 @@ var LocalStoreManager = /** @class */ (function () {
 
 /***/ }),
 /* 29 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BlogService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_forkJoin__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_forkJoin__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var BlogService = /** @class */ (function () {
+    function BlogService(http) {
+        this.http = http;
+        this._getUrl = '/api/Blog/Index';
+        this._saveUrl = 'api/Blog/Save';
+        this._updateUrl = 'api/Blog/Update/';
+        this._deleteByIdUrl = 'api/Blog/Delete/';
+    }
+    BlogService.prototype.getBlogs = function (filter, offset, limit) {
+        var query = this.toQueryString(filter);
+        query = query != null && query !== "" ? query + '&' : "";
+        return this.http.get(this._getUrl + "2/" + ("?" + query + "offset=" + offset + "&limit=" + limit));
+    };
+    BlogService.prototype.toQueryString = function (obj) {
+        var parts = [];
+        for (var property in obj) {
+            console.log('property', property);
+            var value = obj[property];
+            if (value != null && value != undefined)
+                parts.push(encodeURIComponent(property) + '=' + encodeURIComponent(value));
+        }
+        return parts.join('&');
+    };
+    BlogService.prototype.getBlogCount = function (filter) {
+        var query = this.toQueryString(filter);
+        query = (query != null && query !== "") ? '?' + query : "";
+        return this.http.get(this._getUrl + ("" + query));
+    };
+    BlogService.prototype.getBlogById = function (id) {
+        var getByIdUrl = this._getUrl + '/' + id;
+        return this.http.get(getByIdUrl);
+    };
+    BlogService.prototype.saveBlog = function (blog) {
+        return this.http.post(this._saveUrl, blog);
+    };
+    BlogService.prototype.deleteBlog = function (id) {
+        var deleteByIdUrl = this._deleteByIdUrl + id;
+        return this.http.delete(deleteByIdUrl);
+    };
+    BlogService.prototype.updateBlog = function (blog) {
+        return this.http.put(this._updateUrl, blog);
+    };
+    BlogService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
+    ], BlogService);
+    return BlogService;
+}());
+
+
+
+/***/ }),
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(6);
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6034,7 +6116,7 @@ function createUTCDate(y, m, d, h, M, s, ms) {
 //# sourceMappingURL=utils.js.map
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6078,13 +6160,13 @@ function getDateShift(units) {
 //# sourceMappingURL=start-end-of.js.map
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DatePickerInnerComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__date_formatter__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__date_formatter__ = __webpack_require__(139);
 /* tslint:disable:max-file-line-count */
 
 
@@ -6376,7 +6458,7 @@ var DatePickerInnerComponent = (function () {
 //# sourceMappingURL=datepicker-inner.component.js.map
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6487,7 +6569,7 @@ var BsDatepickerActions = (function () {
 //# sourceMappingURL=bs-datepicker.actions.js.map
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6541,104 +6623,22 @@ var BsLocaleService = (function () {
 //# sourceMappingURL=bs-locale.service.js.map
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(16);
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(306);
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(5);
-
-/***/ }),
-/* 38 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BlogService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_forkJoin__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_forkJoin__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-var BlogService = /** @class */ (function () {
-    function BlogService(http) {
-        this.http = http;
-        this._getUrl = '/api/Blog/Index';
-        this._saveUrl = 'api/Blog/Save';
-        this._updateUrl = 'api/Blog/Update/';
-        this._deleteByIdUrl = 'api/Blog/Delete/';
-    }
-    BlogService.prototype.getBlogs = function (filter, offset, limit) {
-        var query = this.toQueryString(filter);
-        query = query != null && query !== "" ? query + '&' : "";
-        return this.http.get(this._getUrl + "2/" + ("?" + query + "offset=" + offset + "&limit=" + limit));
-    };
-    BlogService.prototype.toQueryString = function (obj) {
-        var parts = [];
-        for (var property in obj) {
-            console.log('property', property);
-            var value = obj[property];
-            if (value != null && value != undefined)
-                parts.push(encodeURIComponent(property) + '=' + encodeURIComponent(value));
-        }
-        return parts.join('&');
-    };
-    BlogService.prototype.getBlogCount = function (filter) {
-        var query = this.toQueryString(filter);
-        query = (query != null && query !== "") ? '?' + query : "";
-        return this.http.get(this._getUrl + ("" + query));
-    };
-    BlogService.prototype.getBlogById = function (id) {
-        var getByIdUrl = this._getUrl + '/' + id;
-        return this.http.get(getByIdUrl);
-    };
-    BlogService.prototype.saveBlog = function (blog) {
-        return this.http.post(this._saveUrl, blog);
-    };
-    BlogService.prototype.deleteBlog = function (id) {
-        var deleteByIdUrl = this._deleteByIdUrl + id;
-        return this.http.delete(deleteByIdUrl);
-    };
-    BlogService.prototype.updateBlog = function (blog) {
-        return this.http.put(this._updateUrl, blog);
-    };
-    BlogService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
-    ], BlogService);
-    return BlogService;
-}());
-
-
 
 /***/ }),
 /* 39 */
@@ -6647,7 +6647,7 @@ var BlogService = /** @class */ (function () {
 "use strict";
 
 var Observable_1 = __webpack_require__(2);
-var forkJoin_1 = __webpack_require__(221);
+var forkJoin_1 = __webpack_require__(223);
 Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
 //# sourceMappingURL=forkJoin.js.map
 
@@ -6658,7 +6658,7 @@ Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
 "use strict";
 
 var Observable_1 = __webpack_require__(2);
-var do_1 = __webpack_require__(222);
+var do_1 = __webpack_require__(224);
 Observable_1.Observable.prototype.do = do_1._do;
 Observable_1.Observable.prototype._do = do_1._do;
 //# sourceMappingURL=do.js.map
@@ -6670,7 +6670,7 @@ Observable_1.Observable.prototype._do = do_1._do;
 "use strict";
 
 var Observable_1 = __webpack_require__(2);
-var fromEvent_1 = __webpack_require__(239);
+var fromEvent_1 = __webpack_require__(244);
 Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
 //# sourceMappingURL=fromEvent.js.map
 
@@ -6681,16 +6681,16 @@ Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProblemService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_forkJoin__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_forkJoin__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_problem_model__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_problem_model__ = __webpack_require__(257);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6808,7 +6808,7 @@ module.exports = (__webpack_require__(1))(305);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bs_moment_utils_date_getters__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bs_moment_utils_date_setters__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bs_moment_utils_date_compare__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bs_moment_utils_start_end_of__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bs_moment_utils_start_end_of__ = __webpack_require__(32);
 
 
 
@@ -7032,7 +7032,7 @@ module.exports = (__webpack_require__(1))(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_auth_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_configuration_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_utilities__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_user_login_model__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_user_login_model__ = __webpack_require__(219);
 // ======================================
 // Author: Ebenezer Monney
 // Email:  info@ebenmonney.com
@@ -7157,8 +7157,8 @@ var LoginComponent = /** @class */ (function () {
     LoginComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: "app-login",
-            template: __webpack_require__(218),
-            styles: [__webpack_require__(219)]
+            template: __webpack_require__(220),
+            styles: [__webpack_require__(221)]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_alert_service__["a" /* AlertService */], __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__services_configuration_service__["a" /* ConfigurationService */]])
     ], LoginComponent);
@@ -7174,18 +7174,18 @@ var LoginComponent = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EndpointFactory; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_throw__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_throw__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_throw__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_mergeMap__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_mergeMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_catch__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_catch__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__auth_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__configuration_service__ = __webpack_require__(20);
@@ -7338,7 +7338,7 @@ var EndpointFactory = /** @class */ (function () {
 "use strict";
 
 var Observable_1 = __webpack_require__(2);
-var mergeMap_1 = __webpack_require__(207);
+var mergeMap_1 = __webpack_require__(209);
 Observable_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;
 Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
 //# sourceMappingURL=mergeMap.js.map
@@ -7358,16 +7358,16 @@ Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContestService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_forkJoin__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_forkJoin__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_contest_model__ = __webpack_require__(230);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_contest_model__ = __webpack_require__(232);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7446,15 +7446,15 @@ var ContestService = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_interval__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_interval__ = __webpack_require__(274);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_interval___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_interval__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__ = __webpack_require__(282);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__auth_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__notification_endpoint_service__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_notification_model__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__notification_endpoint_service__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_notification_model__ = __webpack_require__(289);
 // ======================================
 // Author: Ebenezer Monney
 // Email:  info@ebenmonney.com
@@ -7589,8 +7589,8 @@ var NotificationService = /** @class */ (function () {
 
 "use strict";
 
-var AsyncAction_1 = __webpack_require__(119);
-var AsyncScheduler_1 = __webpack_require__(120);
+var AsyncAction_1 = __webpack_require__(121);
+var AsyncScheduler_1 = __webpack_require__(122);
 /**
  *
  * Async Scheduler
@@ -7644,9 +7644,9 @@ exports.async = new AsyncScheduler_1.AsyncScheduler(AsyncAction_1.AsyncAction);
 /* unused harmony export dayOfYearFromWeeks */
 /* harmony export (immutable) */ __webpack_exports__["a"] = weekOfYear;
 /* unused harmony export weeksInYear */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__year__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__day_of_year__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__day_of_year__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_date_getters__ = __webpack_require__(5);
 /**
  *
@@ -7909,12 +7909,12 @@ var DatepickerConfig = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BsDatepickerStore; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mini_ngrx_store_class__ = __webpack_require__(141);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bs_datepicker_state__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mini_ngrx_store_class__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bs_datepicker_state__ = __webpack_require__(144);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mini_ngrx_state_class__ = __webpack_require__(143);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bs_datepicker_reducer__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mini_ngrx_state_class__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bs_datepicker_reducer__ = __webpack_require__(387);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -7963,7 +7963,7 @@ var BsDatepickerStore = (function (_super) {
 /* unused harmony export isSame */
 /* unused harmony export isSameOrAfter */
 /* unused harmony export isSameOrBefore */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__start_end_of__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__start_end_of__ = __webpack_require__(32);
 
 function isAfter(date1, date2, units) {
     if (units === void 0) { units = 'milliseconds'; }
@@ -8046,11 +8046,11 @@ function createMatrix(options, fn) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_filter__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_filter__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bs_moment_utils_date_getters__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bs_datepicker_actions__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bs_locale_service__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bs_datepicker_actions__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bs_locale_service__ = __webpack_require__(35);
 
 
 
@@ -8231,7 +8231,7 @@ var BsDatepickerEffects = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BsDaterangepickerDirective; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__themes_bs_bs_daterangepicker_container_component__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__themes_bs_bs_daterangepicker_container_component__ = __webpack_require__(149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__component_loader_component_loader_factory__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bs_datepicker_config__ = __webpack_require__(23);
 
@@ -8437,7 +8437,7 @@ module.exports = (__webpack_require__(1))(39);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BsDatepickerDirective; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__component_loader_component_loader_factory__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__themes_bs_bs_datepicker_container_component__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__themes_bs_bs_datepicker_container_component__ = __webpack_require__(147);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_filter__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_filter__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bs_datepicker_config__ = __webpack_require__(23);
@@ -9034,11 +9034,11 @@ var TabsetConfig = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TimepickerStore; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__timepicker_reducer__ = __webpack_require__(414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__timepicker_reducer__ = __webpack_require__(419);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mini_ngrx_store_class__ = __webpack_require__(141);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mini_ngrx_state_class__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mini_ngrx_store_class__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mini_ngrx_state_class__ = __webpack_require__(145);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -9217,7 +9217,7 @@ function isInputValid(hours, minutes, seconds, isPM) {
 /* unused harmony export escapeRegexp */
 /* harmony export (immutable) */ __webpack_exports__["c"] = tokenize;
 /* harmony export (immutable) */ __webpack_exports__["a"] = getValueFromObject;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__latin_map__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__latin_map__ = __webpack_require__(161);
 
 function latinize(str) {
     if (!str) {
@@ -9288,7 +9288,7 @@ function getValueFromObject(object, option) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_theme_provider__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__typeahead_utils__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_utils_class__ = __webpack_require__(418);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_utils_class__ = __webpack_require__(423);
 
 
 
@@ -9760,21 +9760,21 @@ module.exports = (__webpack_require__(1))(334);
 /* unused harmony export TranslateDirective */
 /* unused harmony export TranslatePipe */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators_share__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators_share__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators_share__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators_map__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators_map__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operators_merge__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operators_merge__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operators_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators_merge__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators_switchMap__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators_switchMap__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operators_toArray__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operators_toArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operators_toArray__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operators_take__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operators_take__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operators_take___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_operators_take__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -13632,7 +13632,7 @@ var TranslateModule_1;
 
 //# sourceMappingURL=core.es5.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(188)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(190)))
 
 /***/ }),
 /* 88 */
@@ -13651,8 +13651,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(192);
-var subscribeToResult_1 = __webpack_require__(193);
+var OuterSubscriber_1 = __webpack_require__(194);
+var subscribeToResult_1 = __webpack_require__(195);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -13794,7 +13794,7 @@ var SwitchMapSubscriber = (function (_super) {
 
 "use strict";
 
-var reduce_1 = __webpack_require__(194);
+var reduce_1 = __webpack_require__(196);
 function toArrayReducer(arr, item, index) {
     arr.push(item);
     return arr;
@@ -13849,7 +13849,7 @@ module.exports = (__webpack_require__(1))(287);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_utilities__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_user_register_model__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_user_register_model__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_user_model__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -14018,8 +14018,8 @@ var RegisterComponent = /** @class */ (function () {
     RegisterComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-register',
-            template: __webpack_require__(201),
-            styles: [__webpack_require__(202)]
+            template: __webpack_require__(203),
+            styles: [__webpack_require__(204)]
         })
     ], RegisterComponent);
     return RegisterComponent;
@@ -14034,7 +14034,7 @@ var RegisterComponent = /** @class */ (function () {
 "use strict";
 
 var Observable_1 = __webpack_require__(2);
-var of_1 = __webpack_require__(36);
+var of_1 = __webpack_require__(37);
 Observable_1.Observable.of = of_1.of;
 //# sourceMappingURL=of.js.map
 
@@ -14092,7 +14092,7 @@ var DBkeys = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_animations__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_blog_service__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_blog_service__ = __webpack_require__(29);
 // ======================================
 // Author: Ebenezer Monney
 // Email:  info@ebenmonney.com
@@ -14148,8 +14148,8 @@ var HomeComponent = /** @class */ (function () {
     HomeComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'home',
-            template: __webpack_require__(224),
-            styles: [__webpack_require__(225)],
+            template: __webpack_require__(226),
+            styles: [__webpack_require__(227)],
             animations: [__WEBPACK_IMPORTED_MODULE_1__services_animations__["a" /* fadeInOut */]],
             providers: [__WEBPACK_IMPORTED_MODULE_2__services_blog_service__["a" /* BlogService */]]
         }),
@@ -14189,8 +14189,8 @@ var CustomersComponent = /** @class */ (function () {
     CustomersComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'customers',
-            template: __webpack_require__(227),
-            styles: [__webpack_require__(228)],
+            template: __webpack_require__(229),
+            styles: [__webpack_require__(230)],
             animations: [__WEBPACK_IMPORTED_MODULE_1__services_animations__["a" /* fadeInOut */]]
         })
     ], CustomersComponent);
@@ -14277,8 +14277,8 @@ var ContestComponent = /** @class */ (function () {
     ContestComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'contest',
-            template: __webpack_require__(231),
-            styles: [__webpack_require__(232)],
+            template: __webpack_require__(233),
+            styles: [__webpack_require__(234)],
             animations: [__WEBPACK_IMPORTED_MODULE_1__services_animations__["a" /* fadeInOut */]],
             providers: [__WEBPACK_IMPORTED_MODULE_2__services_contest_service__["a" /* ContestService */]]
         }),
@@ -14297,7 +14297,7 @@ var ContestComponent = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BlogComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_animations__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_blog_service__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_blog_service__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_auth_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_account_service__ = __webpack_require__(13);
 // ======================================
@@ -14381,8 +14381,8 @@ var BlogComponent = /** @class */ (function () {
     BlogComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'blog',
-            template: __webpack_require__(234),
-            styles: [__webpack_require__(235)],
+            template: __webpack_require__(236),
+            styles: [__webpack_require__(237)],
             animations: [__WEBPACK_IMPORTED_MODULE_1__services_animations__["a" /* fadeInOut */]],
             providers: [__WEBPACK_IMPORTED_MODULE_2__services_blog_service__["a" /* BlogService */]]
         }),
@@ -14400,8 +14400,8 @@ var BlogComponent = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountEndpoint; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__endpoint_factory_service__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__configuration_service__ = __webpack_require__(20);
@@ -14646,13 +14646,140 @@ var AccountEndpoint = /** @class */ (function (_super) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectedBlogComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_blog_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_comment_service__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_auth_service__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var SelectedBlogComponent = /** @class */ (function () {
+    function SelectedBlogComponent(blogService, _router, _avRoute, commentService, _fromB, authService) {
+        this.blogService = blogService;
+        this._router = _router;
+        this._avRoute = _avRoute;
+        this.commentService = commentService;
+        this._fromB = _fromB;
+        this.authService = authService;
+        this.actualComment = {};
+        if (this._avRoute.snapshot.params["id"]) {
+            this.blogId = this._avRoute.snapshot.params["id"];
+            this.autorId = this.authService.currentUser.id;
+        }
+    }
+    SelectedBlogComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.blogService.getBlogById(this.blogId)
+            .subscribe(function (b) {
+            _this.blog = (b);
+        });
+    };
+    SelectedBlogComponent.prototype.saveComment = function () {
+        this.actualComment.userId = this.autorId;
+        this.actualComment.blogId = this.blogId;
+        console.log('comment so far', this.actualComment);
+        this.commentService.save(this.actualComment)
+            .subscribe(function (res) {
+            console.log('victoria');
+        });
+    };
+    SelectedBlogComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-selected-blog',
+            template: __webpack_require__(239),
+            styles: [__webpack_require__(240)]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_blog_service__["a" /* BlogService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["Router"],
+            __WEBPACK_IMPORTED_MODULE_3__angular_router__["ActivatedRoute"],
+            __WEBPACK_IMPORTED_MODULE_2__services_comment_service__["a" /* CommentService */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["FormBuilder"],
+            __WEBPACK_IMPORTED_MODULE_5__services_auth_service__["a" /* AuthService */]])
+    ], SelectedBlogComponent);
+    return SelectedBlogComponent;
+}());
+
+
+
+/***/ }),
+/* 106 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommentService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CommentService = /** @class */ (function () {
+    function CommentService(http) {
+        this.http = http;
+        this._getUrl = '/api/Comment/Index';
+        this._saveUrl = 'api/Comment/Save';
+        this._updateUrl = 'api/Comment/Update/';
+        this._deleteByIdUrl = 'api/Comment/Delete/';
+    }
+    CommentService.prototype.getComment = function () {
+        return this.http.get(this._getUrl);
+    };
+    CommentService.prototype.getBlogById = function (id) {
+        var getByIdUrl = this._getUrl + '/' + id;
+        return this.http.get(getByIdUrl);
+    };
+    CommentService.prototype.save = function (comment) {
+        return this.http.post(this._saveUrl, comment);
+    };
+    CommentService.prototype.delete = function (id) {
+        var deleteByIdUrl = this._deleteByIdUrl + id;
+        return this.http.delete(deleteByIdUrl);
+    };
+    CommentService.prototype.updateBlog = function (comment) {
+        return this.http.put(this._updateUrl, comment);
+    };
+    CommentService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
+    ], CommentService);
+    return CommentService;
+}());
+
+
+
+/***/ }),
+/* 107 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_switchMap__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_switchMap__ = __webpack_require__(242);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_switchMap__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_animations__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_bootstrap_tab_directive__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_bootstrap_tab_directive__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_account_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_permission_model__ = __webpack_require__(18);
 // ======================================
@@ -14739,8 +14866,8 @@ var SettingsComponent = /** @class */ (function () {
     SettingsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'settings',
-            template: __webpack_require__(242),
-            styles: [__webpack_require__(243)],
+            template: __webpack_require__(247),
+            styles: [__webpack_require__(248)],
             animations: [__WEBPACK_IMPORTED_MODULE_3__services_animations__["a" /* fadeInOut */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["ActivatedRoute"], __WEBPACK_IMPORTED_MODULE_5__services_account_service__["a" /* AccountService */]])
@@ -14751,7 +14878,7 @@ var SettingsComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14761,7 +14888,7 @@ var SettingsComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_fromEvent__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_fromEvent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
 // ======================================
 // Author: Ebenezer Monney
@@ -14832,25 +14959,25 @@ var BootstrapTabDirective = /** @class */ (function () {
 
 
 /***/ }),
-/* 107 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(204);
 
 /***/ }),
-/* 108 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(51);
 
 /***/ }),
-/* 109 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(20);
 
 /***/ }),
-/* 110 */
+/* 112 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14878,8 +15005,8 @@ var AboutComponent = /** @class */ (function () {
     AboutComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'about',
-            template: __webpack_require__(245),
-            styles: [__webpack_require__(246)],
+            template: __webpack_require__(250),
+            styles: [__webpack_require__(251)],
             animations: [__WEBPACK_IMPORTED_MODULE_1__services_animations__["a" /* fadeInOut */]]
         })
     ], AboutComponent);
@@ -14889,7 +15016,7 @@ var AboutComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 111 */
+/* 113 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14917,8 +15044,8 @@ var NotFoundComponent = /** @class */ (function () {
     NotFoundComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'not-found',
-            template: __webpack_require__(248),
-            styles: [__webpack_require__(249)],
+            template: __webpack_require__(253),
+            styles: [__webpack_require__(254)],
             animations: [__WEBPACK_IMPORTED_MODULE_1__services_animations__["a" /* fadeInOut */]]
         })
     ], NotFoundComponent);
@@ -14928,7 +15055,7 @@ var NotFoundComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 112 */
+/* 114 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14998,8 +15125,8 @@ var ProblemsComponent = /** @class */ (function () {
     ProblemsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-problems',
-            template: __webpack_require__(253),
-            styles: [__webpack_require__(254)],
+            template: __webpack_require__(258),
+            styles: [__webpack_require__(259)],
             providers: [__WEBPACK_IMPORTED_MODULE_1__services_problem_service__["a" /* ProblemService */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_problem_service__["a" /* ProblemService */]])
@@ -15010,7 +15137,7 @@ var ProblemsComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 113 */
+/* 115 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15018,7 +15145,7 @@ var ProblemsComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_problem_service__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -15103,8 +15230,8 @@ var CreateProblemComponent = /** @class */ (function () {
     CreateProblemComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-create-problem',
-            template: __webpack_require__(256),
-            styles: [__webpack_require__(257)],
+            template: __webpack_require__(261),
+            styles: [__webpack_require__(262)],
             providers: [__WEBPACK_IMPORTED_MODULE_1__services_problem_service__["a" /* ProblemService */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"], __WEBPACK_IMPORTED_MODULE_1__services_problem_service__["a" /* ProblemService */],
@@ -15116,15 +15243,15 @@ var CreateProblemComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 114 */
+/* 116 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectProblemComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_problem_service__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_code_service__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_code_service__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -15165,8 +15292,8 @@ var SelectProblemComponent = /** @class */ (function () {
     SelectProblemComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-select-problem',
-            template: __webpack_require__(259),
-            styles: [__webpack_require__(260)]
+            template: __webpack_require__(264),
+            styles: [__webpack_require__(265)]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_problem_service__["a" /* ProblemService */],
             __WEBPACK_IMPORTED_MODULE_2__services_code_service__["a" /* CodeService */],
@@ -15178,13 +15305,13 @@ var SelectProblemComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CodeService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -15215,7 +15342,7 @@ var CodeService = /** @class */ (function () {
 
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15223,7 +15350,7 @@ var CodeService = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_contest_service__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -15291,8 +15418,8 @@ var CreateContestComponent = /** @class */ (function () {
     CreateContestComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-create-contest',
-            template: __webpack_require__(262),
-            styles: [__webpack_require__(263)],
+            template: __webpack_require__(267),
+            styles: [__webpack_require__(268)],
             providers: [__WEBPACK_IMPORTED_MODULE_1__services_contest_service__["a" /* ContestService */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_contest_service__["a" /* ContestService */],
@@ -15306,16 +15433,16 @@ var CreateContestComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreateBlogComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_blog_service__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_blog_service__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_user_model__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_auth_service__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -15391,8 +15518,8 @@ var CreateBlogComponent = /** @class */ (function () {
     CreateBlogComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-create-blog',
-            template: __webpack_require__(265),
-            styles: [__webpack_require__(266)],
+            template: __webpack_require__(270),
+            styles: [__webpack_require__(271)],
             providers: [__WEBPACK_IMPORTED_MODULE_1__services_blog_service__["a" /* BlogService */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormBuilder"], __WEBPACK_IMPORTED_MODULE_1__services_blog_service__["a" /* BlogService */],
@@ -15404,15 +15531,15 @@ var CreateBlogComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 118 */
+/* 120 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppTitleService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_mergeMap__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_mergeMap__);
@@ -15481,7 +15608,7 @@ var AppTitleService = /** @class */ (function () {
 
 
 /***/ }),
-/* 119 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15491,8 +15618,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var root_1 = __webpack_require__(274);
-var Action_1 = __webpack_require__(275);
+var root_1 = __webpack_require__(279);
+var Action_1 = __webpack_require__(280);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -15629,7 +15756,7 @@ exports.AsyncAction = AsyncAction;
 //# sourceMappingURL=AsyncAction.js.map
 
 /***/ }),
-/* 120 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15639,7 +15766,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Scheduler_1 = __webpack_require__(276);
+var Scheduler_1 = __webpack_require__(281);
 var AsyncScheduler = (function (_super) {
     __extends(AsyncScheduler, _super);
     function AsyncScheduler() {
@@ -15686,30 +15813,30 @@ exports.AsyncScheduler = AsyncScheduler;
 //# sourceMappingURL=AsyncScheduler.js.map
 
 /***/ }),
-/* 121 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(55);
 
 /***/ }),
-/* 122 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(310);
 
 /***/ }),
-/* 123 */
+/* 125 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NotificationEndpoint; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
 // ======================================
 // Author: Ebenezer Monney
@@ -15838,7 +15965,7 @@ var NotificationEndpoint = /** @class */ (function () {
 
 
 /***/ }),
-/* 124 */
+/* 126 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15848,9 +15975,9 @@ var NotificationEndpoint = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_fromEvent__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_fromEvent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_select_dist_js_bootstrap_select__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_select_dist_js_bootstrap_select__ = __webpack_require__(295);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_select_dist_js_bootstrap_select___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_bootstrap_select_dist_js_bootstrap_select__);
 // ======================================
 // Author: Ebenezer Monney
@@ -15988,7 +16115,7 @@ var BootstrapSelectDirective = /** @class */ (function () {
 
 
 /***/ }),
-/* 125 */
+/* 127 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15998,7 +16125,7 @@ var BootstrapSelectDirective = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_account_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_utilities__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_user_model__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_user_edit_model__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_user_edit_model__ = __webpack_require__(335);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_role_model__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_permission_model__ = __webpack_require__(18);
 // ======================================
@@ -16324,8 +16451,8 @@ var UserInfoComponent = /** @class */ (function () {
     UserInfoComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'user-info',
-            template: __webpack_require__(331),
-            styles: [__webpack_require__(332)]
+            template: __webpack_require__(336),
+            styles: [__webpack_require__(337)]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_alert_service__["a" /* AlertService */], __WEBPACK_IMPORTED_MODULE_2__services_account_service__["a" /* AccountService */]])
     ], UserInfoComponent);
@@ -16335,7 +16462,7 @@ var UserInfoComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 126 */
+/* 128 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16511,8 +16638,8 @@ var RoleEditorComponent = /** @class */ (function () {
     RoleEditorComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'role-editor',
-            template: __webpack_require__(343),
-            styles: [__webpack_require__(344)]
+            template: __webpack_require__(348),
+            styles: [__webpack_require__(349)]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_alert_service__["a" /* AlertService */], __WEBPACK_IMPORTED_MODULE_2__services_account_service__["a" /* AccountService */]])
     ], RoleEditorComponent);
@@ -16522,7 +16649,7 @@ var RoleEditorComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 127 */
+/* 129 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16665,14 +16792,14 @@ var Locale = (function () {
 //# sourceMappingURL=locale.class.js.map
 
 /***/ }),
-/* 128 */
+/* 130 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = daysInMonth;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__format_functions__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__year__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_date_getters__ = __webpack_require__(5);
 
 
@@ -16701,14 +16828,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__format_functions__["a" /* addFormatToken */]
 //# sourceMappingURL=month.js.map
 
 /***/ }),
-/* 129 */
+/* 131 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = getDayOfYear;
 /* unused harmony export _getDayOfYear */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__format_functions__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_start_end_of__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_start_end_of__ = __webpack_require__(32);
 
 
 // FORMATTING
@@ -16731,7 +16858,7 @@ function _getDayOfYear(date) {
 //# sourceMappingURL=day-of-year.js.map
 
 /***/ }),
-/* 130 */
+/* 132 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16822,13 +16949,13 @@ var AccordionPanelComponent = (function () {
 //# sourceMappingURL=accordion-group.component.js.map
 
 /***/ }),
-/* 131 */
+/* 133 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollapseModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__collapse_directive__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__collapse_directive__ = __webpack_require__(134);
 
 
 var CollapseModule = (function () {
@@ -16851,7 +16978,7 @@ var CollapseModule = (function () {
 //# sourceMappingURL=collapse.module.js.map
 
 /***/ }),
-/* 132 */
+/* 134 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16952,14 +17079,14 @@ var CollapseDirective = (function () {
 //# sourceMappingURL=collapse.directive.js.map
 
 /***/ }),
-/* 133 */
+/* 135 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AlertComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_config__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_decorators__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_decorators__ = __webpack_require__(359);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -17050,7 +17177,7 @@ var AlertComponent = (function () {
 //# sourceMappingURL=alert.component.js.map
 
 /***/ }),
-/* 134 */
+/* 136 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17148,7 +17275,7 @@ var ButtonCheckboxDirective = (function () {
 //# sourceMappingURL=button-checkbox.directive.js.map
 
 /***/ }),
-/* 135 */
+/* 137 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17240,7 +17367,7 @@ var ButtonRadioDirective = (function () {
 //# sourceMappingURL=button-radio.directive.js.map
 
 /***/ }),
-/* 136 */
+/* 138 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17248,7 +17375,7 @@ var ButtonRadioDirective = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DatePickerComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__datepicker_inner_component__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__datepicker_inner_component__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__datepicker_config__ = __webpack_require__(66);
 
 
@@ -17363,7 +17490,7 @@ var DatePickerComponent = (function () {
 //# sourceMappingURL=datepicker.component.js.map
 
 /***/ }),
-/* 137 */
+/* 139 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17382,14 +17509,14 @@ var DateFormatter = (function () {
 //# sourceMappingURL=date-formatter.js.map
 
 /***/ }),
-/* 138 */
+/* 140 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DayPickerComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_theme_provider__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__datepicker_inner_component__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__datepicker_inner_component__ = __webpack_require__(33);
 // @deprecated
 // tslint:disable
 
@@ -17502,14 +17629,14 @@ var DayPickerComponent = (function () {
 //# sourceMappingURL=daypicker.component.js.map
 
 /***/ }),
-/* 139 */
+/* 141 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonthPickerComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_theme_provider__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__datepicker_inner_component__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__datepicker_inner_component__ = __webpack_require__(33);
 // @deprecated
 // tslint:disable
 
@@ -17570,14 +17697,14 @@ var MonthPickerComponent = (function () {
 //# sourceMappingURL=monthpicker.component.js.map
 
 /***/ }),
-/* 140 */
+/* 142 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return YearPickerComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_theme_provider__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__datepicker_inner_component__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__datepicker_inner_component__ = __webpack_require__(33);
 // @deprecated
 // tslint:disable
 
@@ -17639,14 +17766,14 @@ var YearPickerComponent = (function () {
 //# sourceMappingURL=yearpicker.component.js.map
 
 /***/ }),
-/* 141 */
+/* 143 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MiniStore; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_distinctUntilChanged__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_distinctUntilChanged__ = __webpack_require__(377);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_operator_distinctUntilChanged__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_map__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_operator_map__);
@@ -17702,13 +17829,13 @@ var MiniStore = (function (_super) {
 //# sourceMappingURL=store.class.js.map
 
 /***/ }),
-/* 142 */
+/* 144 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export BsDatepickerState */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return initialDatepickerState; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__defaults__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__defaults__ = __webpack_require__(379);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bs_datepicker_config__ = __webpack_require__(23);
 
 
@@ -17728,18 +17855,18 @@ var initialDatepickerState = Object.assign(new __WEBPACK_IMPORTED_MODULE_1__bs_d
 //# sourceMappingURL=bs-datepicker.state.js.map
 
 /***/ }),
-/* 143 */
+/* 145 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MiniState; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_observeOn__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_observeOn__ = __webpack_require__(380);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_observeOn___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_operator_observeOn__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_scheduler_queue__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_scheduler_queue__ = __webpack_require__(382);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_scheduler_queue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_scheduler_queue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_scan__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_scan__ = __webpack_require__(385);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_scan___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_scan__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -17778,7 +17905,7 @@ var MiniState = (function (_super) {
 //# sourceMappingURL=state.class.js.map
 
 /***/ }),
-/* 144 */
+/* 146 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17817,15 +17944,15 @@ function formatYearRangeTitle(yearsMatrix, formatOptions) {
 //# sourceMappingURL=format-years-calendar.js.map
 
 /***/ }),
-/* 145 */
+/* 147 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BsDatepickerContainerComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__base_bs_datepicker_container__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__base_bs_datepicker_container__ = __webpack_require__(148);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bs_datepicker_config__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducer_bs_datepicker_actions__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducer_bs_datepicker_actions__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__reducer_bs_datepicker_effects__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reducer_bs_datepicker_store__ = __webpack_require__(67);
 var __extends = (this && this.__extends) || (function () {
@@ -17915,7 +18042,7 @@ var BsDatepickerContainerComponent = (function (_super) {
 //# sourceMappingURL=bs-datepicker-container.component.js.map
 
 /***/ }),
-/* 146 */
+/* 148 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17962,15 +18089,15 @@ var BsDatepickerAbstractComponent = (function () {
 //# sourceMappingURL=bs-datepicker-container.js.map
 
 /***/ }),
-/* 147 */
+/* 149 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BsDaterangepickerContainerComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__base_bs_datepicker_container__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__base_bs_datepicker_container__ = __webpack_require__(148);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bs_datepicker_config__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducer_bs_datepicker_actions__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducer_bs_datepicker_actions__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__reducer_bs_datepicker_effects__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reducer_bs_datepicker_store__ = __webpack_require__(67);
 var __extends = (this && this.__extends) || (function () {
@@ -18078,7 +18205,7 @@ var BsDaterangepickerContainerComponent = (function (_super) {
 //# sourceMappingURL=bs-daterangepicker-container.component.js.map
 
 /***/ }),
-/* 148 */
+/* 150 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18332,7 +18459,7 @@ var PagerComponent = (function () {
 //# sourceMappingURL=pager.component.js.map
 
 /***/ }),
-/* 149 */
+/* 151 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18586,7 +18713,7 @@ var PaginationComponent = (function () {
 //# sourceMappingURL=pagination.component.js.map
 
 /***/ }),
-/* 150 */
+/* 152 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18671,14 +18798,14 @@ var BarComponent = (function () {
 //# sourceMappingURL=bar.component.js.map
 
 /***/ }),
-/* 151 */
+/* 153 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgressbarComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__progressbar_config__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(154);
 
 
 
@@ -18730,13 +18857,13 @@ var ProgressbarComponent = (function () {
 //# sourceMappingURL=progressbar.component.js.map
 
 /***/ }),
-/* 152 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(288);
 
 /***/ }),
-/* 153 */
+/* 155 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18854,7 +18981,7 @@ var RatingComponent = (function () {
 //# sourceMappingURL=rating.component.js.map
 
 /***/ }),
-/* 154 */
+/* 156 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19046,7 +19173,7 @@ var SortableComponent = (function () {
 //# sourceMappingURL=sortable.component.js.map
 
 /***/ }),
-/* 155 */
+/* 157 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19088,7 +19215,7 @@ var NgTranscludeDirective = (function () {
 //# sourceMappingURL=ng-transclude.directive.js.map
 
 /***/ }),
-/* 156 */
+/* 158 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19116,7 +19243,7 @@ var TabHeadingDirective = (function () {
 //# sourceMappingURL=tab-heading.directive.js.map
 
 /***/ }),
-/* 157 */
+/* 159 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19126,7 +19253,7 @@ var TabHeadingDirective = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducer_timepicker_actions__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducer_timepicker_store__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__timepicker_controls_util__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__timepicker_controls_util__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__timepicker_config__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__timepicker_utils__ = __webpack_require__(81);
 /* tslint:disable:no-forward-ref max-file-line-count */
@@ -19331,7 +19458,7 @@ var TimepickerComponent = (function () {
 //# sourceMappingURL=timepicker.component.js.map
 
 /***/ }),
-/* 158 */
+/* 160 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19457,7 +19584,7 @@ function timepickerControls(value, state) {
 //# sourceMappingURL=timepicker-controls.util.js.map
 
 /***/ }),
-/* 159 */
+/* 161 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20292,7 +20419,7 @@ var latinMap = {
 //# sourceMappingURL=latin-map.js.map
 
 /***/ }),
-/* 160 */
+/* 162 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20317,30 +20444,30 @@ var TypeaheadMatch = (function () {
 //# sourceMappingURL=typeahead-match.class.js.map
 
 /***/ }),
-/* 161 */
+/* 163 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TypeaheadDirective; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_from__ = __webpack_require__(419);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_from__ = __webpack_require__(424);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_from__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_debounceTime__ = __webpack_require__(420);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_debounceTime__ = __webpack_require__(425);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_debounceTime__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_filter__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_filter__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_mergeMap__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_mergeMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_toArray__ = __webpack_require__(423);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_toArray__ = __webpack_require__(428);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_toArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_toArray__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_Observable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__component_loader__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__typeahead_container_component__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__typeahead_match_class__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__typeahead_match_class__ = __webpack_require__(162);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__typeahead_utils__ = __webpack_require__(82);
 /* tslint:disable:max-file-line-count */
 
@@ -20731,28 +20858,28 @@ var TypeaheadDirective = (function () {
 //# sourceMappingURL=typeahead.directive.js.map
 
 /***/ }),
-/* 162 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(19);
 
 /***/ }),
-/* 163 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(164);
-__webpack_require__(165);
-module.exports = __webpack_require__(178);
+__webpack_require__(166);
+__webpack_require__(167);
+module.exports = __webpack_require__(180);
 
 
 /***/ }),
-/* 164 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(218);
 
 /***/ }),
-/* 165 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__resourceQuery, module) {/*eslint-env browser*/
@@ -20771,7 +20898,7 @@ var options = {
   ansiColors: {}
 };
 if (true) {
-  var querystring = __webpack_require__(167);
+  var querystring = __webpack_require__(169);
   var overrides = querystring.parse(__resourceQuery.slice(1));
   setOverrides(overrides);
 }
@@ -20908,11 +21035,11 @@ if (typeof window !== 'undefined') {
 }
 
 function createReporter() {
-  var strip = __webpack_require__(170);
+  var strip = __webpack_require__(172);
 
   var overlay;
   if (typeof document !== 'undefined' && options.overlay) {
-    overlay = __webpack_require__(172)({
+    overlay = __webpack_require__(174)({
       ansiColors: options.ansiColors,
       overlayStyles: options.overlayStyles
     });
@@ -20968,7 +21095,7 @@ function createReporter() {
   };
 }
 
-var processUpdate = __webpack_require__(177);
+var processUpdate = __webpack_require__(179);
 
 var customHandler;
 var subscribeAllHandler;
@@ -21034,27 +21161,27 @@ if (module) {
   };
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, "?path=__webpack_hmr&dynamicPublicPath=true", __webpack_require__(166)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, "?path=__webpack_hmr&dynamicPublicPath=true", __webpack_require__(168)(module)))
 
 /***/ }),
-/* 166 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(254);
 
 /***/ }),
-/* 167 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(168);
-exports.encode = exports.stringify = __webpack_require__(169);
+exports.decode = exports.parse = __webpack_require__(170);
+exports.encode = exports.stringify = __webpack_require__(171);
 
 
 /***/ }),
-/* 168 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21145,7 +21272,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 169 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21237,12 +21364,12 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 170 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ansiRegex = __webpack_require__(171)();
+var ansiRegex = __webpack_require__(173)();
 
 module.exports = function (str) {
 	return typeof str === 'string' ? str.replace(ansiRegex, '') : str;
@@ -21250,7 +21377,7 @@ module.exports = function (str) {
 
 
 /***/ }),
-/* 171 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21261,7 +21388,7 @@ module.exports = function () {
 
 
 /***/ }),
-/* 172 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*eslint-env browser*/
@@ -21287,7 +21414,7 @@ var styles = {
   textAlign: 'left'
 };
 
-var ansiHTML = __webpack_require__(173);
+var ansiHTML = __webpack_require__(175);
 var colors = {
   reset: ['transparent', 'transparent'],
   black: '181818',
@@ -21301,7 +21428,7 @@ var colors = {
   darkgrey: '6D7891'
 };
 
-var Entities = __webpack_require__(174).AllHtmlEntities;
+var Entities = __webpack_require__(176).AllHtmlEntities;
 var entities = new Entities();
 
 function showProblems(type, lines) {
@@ -21364,7 +21491,7 @@ module.exports.showProblems = showProblems;
 
 
 /***/ }),
-/* 173 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21547,19 +21674,19 @@ ansiHTML.reset()
 
 
 /***/ }),
-/* 174 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
-  XmlEntities: __webpack_require__(175),
-  Html4Entities: __webpack_require__(176),
+  XmlEntities: __webpack_require__(177),
+  Html4Entities: __webpack_require__(178),
   Html5Entities: __webpack_require__(85),
   AllHtmlEntities: __webpack_require__(85)
 };
 
 
 /***/ }),
-/* 175 */
+/* 177 */
 /***/ (function(module, exports) {
 
 var ALPHA_INDEX = {
@@ -21720,7 +21847,7 @@ module.exports = XmlEntities;
 
 
 /***/ }),
-/* 176 */
+/* 178 */
 /***/ (function(module, exports) {
 
 var HTML_ALPHA = ['apos', 'nbsp', 'iexcl', 'cent', 'pound', 'curren', 'yen', 'brvbar', 'sect', 'uml', 'copy', 'ordf', 'laquo', 'not', 'shy', 'reg', 'macr', 'deg', 'plusmn', 'sup2', 'sup3', 'acute', 'micro', 'para', 'middot', 'cedil', 'sup1', 'ordm', 'raquo', 'frac14', 'frac12', 'frac34', 'iquest', 'Agrave', 'Aacute', 'Acirc', 'Atilde', 'Auml', 'Aring', 'Aelig', 'Ccedil', 'Egrave', 'Eacute', 'Ecirc', 'Euml', 'Igrave', 'Iacute', 'Icirc', 'Iuml', 'ETH', 'Ntilde', 'Ograve', 'Oacute', 'Ocirc', 'Otilde', 'Ouml', 'times', 'Oslash', 'Ugrave', 'Uacute', 'Ucirc', 'Uuml', 'Yacute', 'THORN', 'szlig', 'agrave', 'aacute', 'acirc', 'atilde', 'auml', 'aring', 'aelig', 'ccedil', 'egrave', 'eacute', 'ecirc', 'euml', 'igrave', 'iacute', 'icirc', 'iuml', 'eth', 'ntilde', 'ograve', 'oacute', 'ocirc', 'otilde', 'ouml', 'divide', 'oslash', 'ugrave', 'uacute', 'ucirc', 'uuml', 'yacute', 'thorn', 'yuml', 'quot', 'amp', 'lt', 'gt', 'OElig', 'oelig', 'Scaron', 'scaron', 'Yuml', 'circ', 'tilde', 'ensp', 'emsp', 'thinsp', 'zwnj', 'zwj', 'lrm', 'rlm', 'ndash', 'mdash', 'lsquo', 'rsquo', 'sbquo', 'ldquo', 'rdquo', 'bdquo', 'dagger', 'Dagger', 'permil', 'lsaquo', 'rsaquo', 'euro', 'fnof', 'Alpha', 'Beta', 'Gamma', 'Delta', 'Epsilon', 'Zeta', 'Eta', 'Theta', 'Iota', 'Kappa', 'Lambda', 'Mu', 'Nu', 'Xi', 'Omicron', 'Pi', 'Rho', 'Sigma', 'Tau', 'Upsilon', 'Phi', 'Chi', 'Psi', 'Omega', 'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta', 'iota', 'kappa', 'lambda', 'mu', 'nu', 'xi', 'omicron', 'pi', 'rho', 'sigmaf', 'sigma', 'tau', 'upsilon', 'phi', 'chi', 'psi', 'omega', 'thetasym', 'upsih', 'piv', 'bull', 'hellip', 'prime', 'Prime', 'oline', 'frasl', 'weierp', 'image', 'real', 'trade', 'alefsym', 'larr', 'uarr', 'rarr', 'darr', 'harr', 'crarr', 'lArr', 'uArr', 'rArr', 'dArr', 'hArr', 'forall', 'part', 'exist', 'empty', 'nabla', 'isin', 'notin', 'ni', 'prod', 'sum', 'minus', 'lowast', 'radic', 'prop', 'infin', 'ang', 'and', 'or', 'cap', 'cup', 'int', 'there4', 'sim', 'cong', 'asymp', 'ne', 'equiv', 'le', 'ge', 'sub', 'sup', 'nsub', 'sube', 'supe', 'oplus', 'otimes', 'perp', 'sdot', 'lceil', 'rceil', 'lfloor', 'rfloor', 'lang', 'rang', 'loz', 'spades', 'clubs', 'hearts', 'diams'];
@@ -21873,7 +22000,7 @@ module.exports = Html4Entities;
 
 
 /***/ }),
-/* 177 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -22025,22 +22152,22 @@ module.exports = function(hash, moduleMap, options) {
 
 
 /***/ }),
-/* 178 */
+/* 180 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_client_shim__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_client_shim__ = __webpack_require__(181);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_client_shim___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_client_shim__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_web_animations_js__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_web_animations_js__ = __webpack_require__(182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_web_animations_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_web_animations_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_zone_js__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_zone_js__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_zone_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_zone_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_bootstrap__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_dynamic__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_app_module__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_dynamic__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_app_module__ = __webpack_require__(185);
 // ======================================
 // Author: Ebenezer Monney
 // Email:  info@ebenmonney.com
@@ -22076,31 +22203,31 @@ var modulePromise = Object(__WEBPACK_IMPORTED_MODULE_5__angular_platform_browser
 
 
 /***/ }),
-/* 179 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(216);
 
 /***/ }),
-/* 180 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(217);
 
 /***/ }),
-/* 181 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(333);
 
 /***/ }),
-/* 182 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(303);
 
 /***/ }),
-/* 183 */
+/* 185 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22108,13 +22235,13 @@ module.exports = (__webpack_require__(1))(303);
 /* unused harmony export getBaseUrl */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_bootstrap__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_bootstrap__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__swimlane_ngx_datatable__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__swimlane_ngx_datatable__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__swimlane_ngx_datatable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__swimlane_ngx_datatable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_toasty__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ngx_bootstrap_modal__ = __webpack_require__(27);
@@ -22122,60 +22249,61 @@ module.exports = (__webpack_require__(1))(303);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ngx_bootstrap_popover__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ngx_bootstrap_dropdown__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_ngx_bootstrap_carousel__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ng2_charts__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ng2_charts__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ng2_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_ng2_charts__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__app_routing_module__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__app_error_handler__ = __webpack_require__(268);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_app_title_service__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__app_routing_module__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__app_error_handler__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_app_title_service__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_app_translation_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_configuration_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_alert_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_local_store_manager_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__services_endpoint_factory_service__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_notification_service__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_notification_endpoint_service__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_notification_endpoint_service__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_account_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_account_endpoint_service__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__directives_equal_validator_directive__ = __webpack_require__(285);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__directives_last_element_directive__ = __webpack_require__(286);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__directives_autofocus_directive__ = __webpack_require__(287);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__directives_bootstrap_tab_directive__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__directives_bootstrap_toggle_directive__ = __webpack_require__(288);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__directives_bootstrap_select_directive__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__directives_bootstrap_datepicker_directive__ = __webpack_require__(291);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pipes_group_by_pipe__ = __webpack_require__(293);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_app_component__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__directives_equal_validator_directive__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__directives_last_element_directive__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__directives_autofocus_directive__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__directives_bootstrap_tab_directive__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__directives_bootstrap_toggle_directive__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__directives_bootstrap_select_directive__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__directives_bootstrap_datepicker_directive__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pipes_group_by_pipe__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_app_component__ = __webpack_require__(299);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_login_login_component__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_home_home_component__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_customers_customers_component__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_contest_contest_component__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_blog_blog_component__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_settings_settings_component__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_about_about_component__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_not_found_not_found_component__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_controls_banner_demo_component__ = __webpack_require__(307);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_controls_todo_demo_component__ = __webpack_require__(313);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_controls_statistics_demo_component__ = __webpack_require__(317);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__components_controls_notifications_viewer_component__ = __webpack_require__(322);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_controls_search_box_component__ = __webpack_require__(326);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__components_controls_user_info_component__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_controls_user_preferences_component__ = __webpack_require__(334);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_controls_users_management_component__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_controls_roles_management_component__ = __webpack_require__(342);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_controls_role_editor_component__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_settings_settings_component__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_about_about_component__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_not_found_not_found_component__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_controls_banner_demo_component__ = __webpack_require__(312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_controls_todo_demo_component__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_controls_statistics_demo_component__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__components_controls_notifications_viewer_component__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_controls_search_box_component__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__components_controls_user_info_component__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_controls_user_preferences_component__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_controls_users_management_component__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_controls_roles_management_component__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_controls_role_editor_component__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_register_register_component__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_problems_problems_component__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_problems_problems_component__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__services_problem_service__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__services_contest_service__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__services_blog_service__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__components_create_problem_create_problem_component__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60_ngx_bootstrap__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__components_select_problem_select_problem_component__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_create_contest_create_contest_component__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__components_create_blog_create_blog_component__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__components_pagination_pagination_component__ = __webpack_require__(450);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__services_code_service__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__components_selected_blog_selected_blog_component__ = __webpack_require__(456);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__services_blog_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__services_comment_service__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__components_create_problem_create_problem_component__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61_ngx_bootstrap__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_select_problem_select_problem_component__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__components_create_contest_create_contest_component__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__components_create_blog_create_blog_component__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__components_pagination_pagination_component__ = __webpack_require__(455);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__services_code_service__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__components_selected_blog_selected_blog_component__ = __webpack_require__(105);
 // ======================================
 // Author: Ebenezer Monney
 // Email:  info@ebenmonney.com
@@ -22257,6 +22385,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -22269,7 +22398,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormsModule"],
                 __WEBPACK_IMPORTED_MODULE_1__angular_forms__["ReactiveFormsModule"],
                 __WEBPACK_IMPORTED_MODULE_15__app_routing_module__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_60_ngx_bootstrap__["a" /* PaginationModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_61_ngx_bootstrap__["a" /* PaginationModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["b" /* TranslateModule */].forRoot({
                     loader: {
                         provide: __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["a" /* TranslateLoader */],
@@ -22310,12 +22439,12 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_34__pipes_group_by_pipe__["a" /* GroupByPipe */],
                 __WEBPACK_IMPORTED_MODULE_54__components_register_register_component__["a" /* RegisterComponent */],
                 __WEBPACK_IMPORTED_MODULE_55__components_problems_problems_component__["a" /* ProblemsComponent */],
-                __WEBPACK_IMPORTED_MODULE_59__components_create_problem_create_problem_component__["a" /* CreateProblemComponent */],
-                __WEBPACK_IMPORTED_MODULE_61__components_select_problem_select_problem_component__["a" /* SelectProblemComponent */],
-                __WEBPACK_IMPORTED_MODULE_62__components_create_contest_create_contest_component__["a" /* CreateContestComponent */],
-                __WEBPACK_IMPORTED_MODULE_63__components_create_blog_create_blog_component__["a" /* CreateBlogComponent */],
-                __WEBPACK_IMPORTED_MODULE_64__components_pagination_pagination_component__["a" /* PaginationComponent */],
-                __WEBPACK_IMPORTED_MODULE_66__components_selected_blog_selected_blog_component__["a" /* SelectedBlogComponent */]
+                __WEBPACK_IMPORTED_MODULE_60__components_create_problem_create_problem_component__["a" /* CreateProblemComponent */],
+                __WEBPACK_IMPORTED_MODULE_62__components_select_problem_select_problem_component__["a" /* SelectProblemComponent */],
+                __WEBPACK_IMPORTED_MODULE_63__components_create_contest_create_contest_component__["a" /* CreateContestComponent */],
+                __WEBPACK_IMPORTED_MODULE_64__components_create_blog_create_blog_component__["a" /* CreateBlogComponent */],
+                __WEBPACK_IMPORTED_MODULE_65__components_pagination_pagination_component__["a" /* PaginationComponent */],
+                __WEBPACK_IMPORTED_MODULE_67__components_selected_blog_selected_blog_component__["a" /* SelectedBlogComponent */]
             ],
             providers: [
                 { provide: 'BASE_URL', useFactory: getBaseUrl },
@@ -22334,7 +22463,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_57__services_contest_service__["a" /* ContestService */],
                 __WEBPACK_IMPORTED_MODULE_58__services_blog_service__["a" /* BlogService */],
                 __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormBuilder"],
-                __WEBPACK_IMPORTED_MODULE_65__services_code_service__["a" /* CodeService */]
+                __WEBPACK_IMPORTED_MODULE_66__services_code_service__["a" /* CodeService */],
+                __WEBPACK_IMPORTED_MODULE_59__services_comment_service__["a" /* CommentService */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_35__components_app_component__["a" /* AppComponent */]]
         })
@@ -22348,7 +22478,7 @@ function getBaseUrl() {
 
 
 /***/ }),
-/* 184 */
+/* 186 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22366,10 +22496,10 @@ function getBaseUrl() {
 /* unused harmony export ɵe */
 /* unused harmony export ɵc */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_tslib__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_animations__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_animations_browser__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_animations_browser__ = __webpack_require__(187);
 /**
  * @license Angular v5.1.0
  * (c) 2010-2017 Google, Inc. https://angular.io/
@@ -23306,7 +23436,7 @@ var NoopAnimationsModule = /** @class */ (function () {
 
 
 /***/ }),
-/* 185 */
+/* 187 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29507,37 +29637,37 @@ function supportsWebAnimations() {
 
 
 /***/ }),
-/* 186 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(307);
 
 /***/ }),
-/* 187 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(194);
 
 /***/ }),
-/* 188 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(26);
 
 /***/ }),
-/* 189 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(211);
 
 /***/ }),
-/* 190 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(302);
 
 /***/ }),
-/* 191 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29603,25 +29733,25 @@ exports.merge = merge;
 //# sourceMappingURL=merge.js.map
 
 /***/ }),
-/* 192 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(35);
 
 /***/ }),
-/* 193 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(33);
 
 /***/ }),
-/* 194 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(328);
 
 /***/ }),
-/* 195 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29631,8 +29761,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = __webpack_require__(37);
-var ArgumentOutOfRangeError_1 = __webpack_require__(196);
+var Subscriber_1 = __webpack_require__(38);
+var ArgumentOutOfRangeError_1 = __webpack_require__(198);
 var EmptyObservable_1 = __webpack_require__(91);
 /**
  * Emits only the first `count` values emitted by the source Observable.
@@ -29718,13 +29848,13 @@ var TakeSubscriber = (function (_super) {
 //# sourceMappingURL=take.js.map
 
 /***/ }),
-/* 196 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(331);
 
 /***/ }),
-/* 197 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -29734,7 +29864,7 @@ module.exports = (__webpack_require__(1))(331);
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(true)
-		module.exports = factory(__webpack_require__(7), __webpack_require__(0), __webpack_require__(35));
+		module.exports = factory(__webpack_require__(7), __webpack_require__(0), __webpack_require__(36));
 	else if(typeof define === 'function' && define.amd)
 		define("ngxDatatable", ["@angular/common", "@angular/core", "@angular/platform-browser"], factory);
 	else if(typeof exports === 'object')
@@ -51123,36 +51253,36 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__angular_platform_browser__;
 //# sourceMappingURL=index.map
 
 /***/ }),
-/* 198 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(222);
 
 /***/ }),
-/* 199 */
+/* 201 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_register_register_component__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_login_login_component__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_home_home_component__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_customers_customers_component__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_contest_contest_component__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_blog_blog_component__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_selected_blog_selected_blog_component__ = __webpack_require__(456);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_settings_settings_component__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_about_about_component__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_not_found_not_found_component__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_selected_blog_selected_blog_component__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_settings_settings_component__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_about_about_component__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_not_found_not_found_component__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_auth_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_auth_guard_service__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_problems_problems_component__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_create_problem_create_problem_component__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_select_problem_select_problem_component__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_create_contest_create_contest_component__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_create_blog_create_blog_component__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_auth_guard_service__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_problems_problems_component__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_create_problem_create_problem_component__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_select_problem_select_problem_component__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_create_contest_create_contest_component__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_create_blog_create_blog_component__ = __webpack_require__(119);
 // ======================================
 // Author: Ebenezer Monney
 // Email:  info@ebenmonney.com
@@ -51227,7 +51357,7 @@ var AppRoutingModule = /** @class */ (function () {
 
 
 /***/ }),
-/* 200 */
+/* 202 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51251,17 +51381,17 @@ var UserRegister = /** @class */ (function () {
 
 
 /***/ }),
-/* 201 */
+/* 203 */
 /***/ (function(module, exports) {
 
 module.exports = "<html>\r\n<body>\r\n    <div class=\"vertical-center-flex\">\r\n        <div class=\"register-container\" center-block>\r\n            <div class=\"panel panel-primary\" boxshadow>\r\n                <div class=\"panel-heading\">\r\n                    <span class=\"glyphicon glyphicon-lock\"></span> Register\r\n                </div>\r\n                <div class=\"panel-body\">\r\n                    <form *ngIf=\"formResetToggle\" class=\"form-horizontal register\" name=\"registerForm\" #f=\"ngForm\" novalidate\r\n                          (ngSubmit)=\"f.form.valid ? register() :\r\n                          (!email.valid && showErrorAlert('Eamil is required', 'Please enter a valid email'));\r\n                          (!password.valid && showErrorAlert('Password is required', 'Please enter a valid password'));\r\n                          (!confirmPassword.valid && showErrorAlert('Password Confirmation is required', 'Please confirm the password'))\">\r\n                        <div class=\"form-group has-feedback\">\r\n                            <label class=\"control-label col-md-2\" for=\"register-email\">Email:</label>\r\n                            <div class=\"col-md-10\" [ngClass]=\"{'has-success': f.submitted && email.valid, 'has-error' : f.submitted && !email.valid}\">\r\n                                <input type=\"text\" id=\"register-email\" name=\"email\" placeholder=\"Enter email or username\" class=\"form-control\" [(ngModel)]=\"userRegister.email\" #email=\"ngModel\" required />\r\n                                <span *ngIf=\"f.submitted\" class=\"glyphicon form-control-feedback\" [ngClass]=\"{'glyphicon-ok ': email.valid, 'glyphicon-remove' : !email.valid}\" aria-hidden=\"true\"></span>\r\n                                <span class=\"errorMessage\" *ngIf=\"f.submitted && !email.valid\">\r\n                                    Email is required\r\n                                </span>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"form-group has-feedback\">\r\n                            <label class=\"control-label col-md-2\" for=\"register-password\">Password:</label>\r\n                            <div class=\"col-md-10\" [ngClass]=\"{'has-success': f.submitted && password.valid, 'has-error' : f.submitted && !password.valid}\">\r\n                                <input type=\"password\" id=\"register-password\" name=\"password\" placeholder=\"Enter password\" class=\"form-control\" [(ngModel)]=\"userRegister.password\" #password=\"ngModel\" required />\r\n                                <span *ngIf=\"f.submitted\" class=\"glyphicon form-control-feedback\" [ngClass]=\"{'glyphicon-ok ': password.valid, 'glyphicon-remove' : !password.valid}\" aria-hidden=\"true\"></span>\r\n                                <span class=\"errorMessage\" *ngIf=\"f.submitted && !password.valid\">\r\n                                    Password is required\r\n                                </span>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"form-group has-feedback\">\r\n                            <label class=\"control-label col-md-2\" for=\"registerConfirm-password\">Confirm Password:</label>\r\n                            <div class=\"col-md-10\" [ngClass]=\"{'has-success': f.submitted && confirmPassword.valid, 'has-error' : f.submitted && !confirmPassword.valid}\">\r\n                                <input type=\"password\" id=\"register-confirmPassword\" name=\"confirmPassword\" placeholder=\"Enter password confirmation\" class=\"form-control\" [(ngModel)]=\"userRegister.confirmPassword\" #confirmPassword=\"ngModel\" required />\r\n                                <span *ngIf=\"f.submitted\" class=\"glyphicon form-control-feedback\" [ngClass]=\"{'glyphicon-ok ': confirmPassword.valid, 'glyphicon-remove' : !confirmPassword.valid}\" aria-hidden=\"true\"></span>\r\n                                <span class=\"errorMessage\" *ngIf=\"f.submitted && !confirmPassword.valid\">\r\n                                    Password Confirmation is required\r\n                                </span>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"form-group\">\r\n                            <div class=\"col-md-offset-2 col-md-10\">\r\n                                <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"isLoading\"><i *ngIf=\"isLoading\" class='fa fa-circle-o-notch fa-spin'></i> {{isLoading ? 'Register in...' : 'Register'}}</button>\r\n                            </div>\r\n                        </div>\r\n                        <!--<div align=\"center\">\r\n                            Username *: <input type=\"username\" name=\"username\" /><br />\r\n                            Password *: <input type=\"password\" name=\"pwd\" /><br />\r\n                            Confirm Password *: <input type=\"confirmPassword\" name=\"confirmPassword\" /><br />\r\n\r\n                            Email *: <input type=\"email\" name=\"email\" /><br />\r\n\r\n                            <input type=\"submit\" value=\"Submit\" />\r\n                        </div>-->\r\n                    </form>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n\r\n\r\n    <p>Note: Please make sure your details are correct before submitting form and that all fields marked with * are completed!.</p>\r\n\r\n\r\n</body>\r\n</html>";
 
 /***/ }),
-/* 202 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(203);
+        var result = __webpack_require__(205);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -51271,7 +51401,7 @@ module.exports = "<html>\r\n<body>\r\n    <div class=\"vertical-center-flex\">\r
     
 
 /***/ }),
-/* 203 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -51285,28 +51415,28 @@ exports.push([module.i, ".boxshadow {\r\n    position: relative;\r\n    -moz-box
 
 
 /***/ }),
-/* 204 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(2);
-var throw_1 = __webpack_require__(205);
+var throw_1 = __webpack_require__(207);
 Observable_1.Observable.throw = throw_1._throw;
 //# sourceMappingURL=throw.js.map
 
 /***/ }),
-/* 205 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ErrorObservable_1 = __webpack_require__(206);
+var ErrorObservable_1 = __webpack_require__(208);
 exports._throw = ErrorObservable_1.ErrorObservable.create;
 //# sourceMappingURL=throw.js.map
 
 /***/ }),
-/* 206 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51395,67 +51525,67 @@ exports.ErrorObservable = ErrorObservable;
 //# sourceMappingURL=ErrorObservable.js.map
 
 /***/ }),
-/* 207 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(309);
 
 /***/ }),
-/* 208 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(2);
-var catch_1 = __webpack_require__(209);
+var catch_1 = __webpack_require__(211);
 Observable_1.Observable.prototype.catch = catch_1._catch;
 Observable_1.Observable.prototype._catch = catch_1._catch;
 //# sourceMappingURL=catch.js.map
 
 /***/ }),
-/* 209 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(316);
 
 /***/ }),
-/* 210 */
+/* 212 */
 /***/ (function(module, exports) {
 
 module.exports = {"app":{"Welcome":"Welcome","Notifications":"Notifications","New":"New"},"mainMenu":{"Appointments":"Appointments","Customers":"Customers","Products":"Products","Orders":"Orders","About":"About","Logout":"Logout"},"pageHeader":{"Dashboard":"Dashboard","Customers":"Customers","Products":"Products","Orders":"Orders","NotFound":"Not-Found","About":"About","Settings":"Settings"},"home":{"NoWidgets1":"You have no widgets displayed. Goto","NoWidgets2":"to configure available widgets","StatisticsTitle":"Some Important Stuff"},"notFound":{"404":"404","pageNotFound":"The page you are looking for does not exist","backToHome":"Back to home"},"settings":{"tab":{"Profile":"Profile","Preferences":"Preferences","Users":"Users","Roles":"Roles"},"header":{"UserProfile":"User Profile","UserPreferences":"User Preferences","UserDepartments":"User Departments","UsersManagements":"Users Managements","RolesManagement":"Roles Management"}},"preferences":{"ReloadPreferences":"Reload Preferences:","ReloadPreferencesHint":"Load default preferences (local changes are discarded)","Language":"Language:","English":"English","French":"French","German":"German","Portuguese":"Portuguese","Arabic":"Arabic","Korean":"Korean","LanguageHint":"Select the preferred language for your account","HomePage":"Home Page:","Dashboard":"Dashboard","Customers":"Customers","Products":"Products","Orders":"Orders","About":"About","Settings":"Settings","HomePageHint":"Select the default page to navigate to on login","Theme":"Theme:","DefaultColor":"<span class='default-theme-option'>Default</span>","RedColor":"<span class='red-theme-option'>Red</span>","OrangeColor":"<span class='orange-theme-option'>Orange</span>","GreenColor":"<span class='green-theme-option'>Green</span>","GrayColor":"<span class='gray-theme-option'>Gray</span>","BlackColor":"<span class='black-theme-option'>Black</span>","ThemeHint":"Select the default color theme for your account","DashboardStatistics":"Dashboard Statistics:","DashboardStatisticsHint":"Show demo graph widget on the dashboard","DashboardNotifications":"Dashboard Notifications:","DashboardNotificationsHint":"Show application notifications on the dashboard","DashboardTodo":"Dashboard Todo:","DashboardTodoHint":"Shows demo todo widget on the dashboard","DashboardBanner":"Dashboard Banner:","DashboardBannerHint":"Show demo information banner widget on the dashboard","ResetDefault":"Reset default","SetDefault":"Set as default"},"users":{"management":{"Search":"Search for user...","NewUser":"New User","Edit":"Edit","Delete":"Delete","EditUser":"Edit User \"{{name}}\"","Title":"Title","UserName":"User Name","FullName":"Full Name","Email":"Email","Roles":"Roles","PhoneNumber":"Phone Number"},"editor":{"JobTitle":"Job Title: ","UserName":"User Name:","UserNameRequired":"User name is required (minimum of 2 and maximum of 200 characters)","Password":"Password:","PasswordHint":"Your password is required when changing user name","CurrentPasswordRequired":"Current password is required","Email":"Email:","EmailRequired":"Email address is required (maximum of 200 characters)","InvalidEmail":"Specified email is not valid","ChangePassword":"Change Password","CurrentPassword":"Current Password:","NewPassword":"New Password:","NewPasswordRequired":"New password is required (minimum of 6 characters)","ConfirmPassword":"Confirm Password:","ConfirmationPasswordRequired":"Confirmation password is required","PasswordMismatch":"New password and confirmation password do not match","Roles":"Roles:","FullName":" Full Name:","RoleRequired":" Role is required","PhoneNumber":"Phone #:","Enabled":"Enabled","Unblock":"Unblock","Close":"Close","Edit":"Edit","Cancel":"Cancel","Save":"Save","Saving":"Saving..."}},"roles":{"management":{"Search":"Search for role...","NewRole":"New Role","Edit":"Edit","Details":"Details","Delete":"Delete","RoleDetails":"Role Details \"{{name}}\"","EditRole":"Edit Role \"{{name}}\"","Name":"Name","Description":"Description","Users":"Users"},"editor":{"Name":"Name:","Description":"Description:","RoleNameRequired":"Role name is required (minimum of 2 and maximum of 200 characters)","SelectAll":"Select all","SelectNone":"Select none","Close":"Close","Cancel":"Cancel","Save":"Save","Saving":"Saving..."}},"notifications":{"Delete":"Delete notification","Pin":"Pin notification","Date":"Date","Notification":"Notification"},"todoDemo":{"management":{"Search":"Search for task...","HideCompleted":"Hide Completed","AddTask":"Add Task","Delete":"Delete task","Important":"Mark as important","Task":"Task","Description":"Description"},"editor":{"NewTask":"New Task","Name":"Name","TaskNameRequired":"Task name is required","Description":"Description","Important":"Mark as important","AddTask":"Add Task"}}}
 
 /***/ }),
-/* 211 */
+/* 213 */
 /***/ (function(module, exports) {
 
 module.exports = {"app":{"Welcome":"Bienvenue","Notifications":"Notifications","New":"Nouveau"},"mainMenu":{"Appointments":"Rendez-vous","Customers":"Les clients","Products":"Les produits","Orders":"Les ordres","About":"À Propos","Logout":"Se Déconnecter"},"pageHeader":{"Dashboard":"Tableau de bord","Customers":"Les clients","Products":"Les produits","Orders":"Les ordres","NotFound":"Pas trouvé","About":"À Propos","Settings":"Paramètres"},"home":{"NoWidgets1":"Vous n'avez pas de widgets affichés. Aller à","NoWidgets2":"Configurer les widgets disponibles","StatisticsTitle":"Quelques trucs importants"},"notFound":{"404":"404","pageNotFound":"La page que vous recherchez n'existe pas","backToHome":"De retour à la page d'accueil"},"settings":{"tab":{"Profile":"Profil","Preferences":"Préférences","Users":"Utilisateurs","Roles":"Rôles"},"header":{"UserProfile":"Profil de l'utilisateur","UserPreferences":"Préférences de l'utilisateur","UserDepartments":"Départements d'utilisateurs","UsersManagements":"Gestion des utilisateurs","RolesManagement":"Gestion des rôles"}},"preferences":{"ReloadPreferences":"Recharger les préférences:","ReloadPreferencesHint":"Charger les préférences par défaut (les modifications locales sont rejetées)","Language":"La langue:","English":"Anglais","French":"Français","German":"Allemand","Portuguese":"Portugais","Arabic":"Arabe","Korean":"Coréen","LanguageHint":"Sélectionnez la langue préférée pour votre compte","HomePage":"Page d'accueil:","Dashboard":"Tableau de bord","Customers":"Les clients","Products":"Les produits","Orders":"Les ordres","About":"À propos","Settings":"Paramètres","HomePageHint":"Sélectionnez la page par défaut pour naviguer jusqu'à la connexion","Theme":"Thème:","DefaultColor":"<span class='default-theme-option'>Défaut</span>","RedColor":"<span class='red-theme-option'>Rouge</span>","OrangeColor":"<span class='orange-theme-option'>Orange</span>","GreenColor":"<span class='green-theme-option'>Vert</span>","GrayColor":"<span class='gray-theme-option'>Gris</span>","BlackColor":"<span class='black-theme-option'>Noir</span>","ThemeHint":"Sélectionnez le thème de couleur par défaut pour votre compte","DashboardStatistics":"Statistiques du tableau de bord:","DashboardStatisticsHint":"Afficher le widget de graphique de démonstration sur le tableau de bord","DashboardNotifications":"Notifications du tableau de bord:","DashboardNotificationsHint":"Afficher les notifications d'application sur le tableau de bord","DashboardTodo":"Tableau de bord à faire:","DashboardTodoHint":"Afficher le widget de démon tout sur le tableau de bord","DashboardBanner":"Bannière de Tableau de Bord:","DashboardBannerHint":"Afficher le widget de bannière d'information de démonstration sur le tableau de bord","ResetDefault":"Réinitialiser par défaut","SetDefault":"Définir par défaut"},"users":{"management":{"Search":"Rechercher un utilisateur...","NewUser":"Nouvel utilisateur","Edit":"Modif.","Delete":"Supp.","EditUser":"Modifier Utilisateur \"{{name}}\"","Title":"Titre","UserName":"Nom d'utilisateur","FullName":"Nom Complet","Email":"Adresse électronique","Roles":"Les rôles","PhoneNumber":"Numéro de téléphone"},"editor":{"JobTitle":"Profession: ","UserName":"Nom d'utilisateur:","UserNameRequired":"Le nom d'utilisateur est requis (minimum de 2 et maximum de 200 caractères)","Password":"Mot de passe:","PasswordHint":"Votre mot de passe est nécessaire lors de la modification du nom d'utilisateur","CurrentPasswordRequired":"Le mot de passe actuel est requis","Email":"Adresse électronique:","EmailRequired":"L'adresse de courrier électronique est requise (maximum de 200 caractères)","InvalidEmail":"Le courrier électronique spécifié n'est pas valide","ChangePassword":"Changer le mot de passe","CurrentPassword":"Mot de passe actuel:","NewPassword":"Nouveau mot de passe:","NewPasswordRequired":"Un nouveau mot de passe est nécessaire (minimum de 6 caractères)","ConfirmPassword":"Confirmez le mot de passe:","ConfirmationPasswordRequired":"Le mot de passe de confirmation est requis","PasswordMismatch":"Le nouveau mot de passe et le mot de passe de confirmation ne correspondent pas","Roles":"Les rôles:","FullName":" Nom complet:","RoleRequired":"Rôle requis ","PhoneNumber":"Téléphone #:","Enabled":"Activée","Unblock":"Débloquer","Close":"Fermer","Edit":"Modifier","Cancel":"Annuler","Save":"Enregistrer","Saving":"En cours d'enregistrement..."}},"roles":{"management":{"Search":"Recherche rôle...","NewRole":"Nouveau rôle","Edit":"Modifier","Details":"Détails","Delete":"Effacer","RoleDetails":"Détails des rôles \"{{name}}\"","EditRole":"Modifier Rôle \"{{name}}\"","Name":"Nom","Description":"La description","Users":"Utilisateurs"},"editor":{"Name":"Nom:","Description":"La description:","RoleNameRequired":"Le nom du rôle est requis (minimum de 2 et maximum de 200 caractères)","SelectAll":"Tout sélectionner","SelectNone":"Ne rien sélectionner","Close":"Fermer","Cancel":"Annuler","Save":"Enregistrer","Saving":"En cours d'enregistrement..."}},"notifications":{"Delete":"Supprimer notification","Pin":"Épingler notification","Date":"Date","Notification":"Notification"},"todoDemo":{"management":{"Search":"Rechercher une tâche...","HideCompleted":"Masquer complété","AddTask":"Ajouter une tâche","Delete":"Supprimer la tâche","Important":"Marquer comme important","Task":"Tâche","Description":"Description"},"editor":{"NewTask":"Nouvelle tâche","Name":"Nom","TaskNameRequired":"Le nom de la tâche est requis","Description":"Description","Important":"Marquer comme important","AddTask":"Ajouter une tâche"}}}
 
 /***/ }),
-/* 212 */
+/* 214 */
 /***/ (function(module, exports) {
 
 module.exports = {"app":{"Welcome":"Willkommen","Notifications":"Benachrichtigungen","New":"Neu"},"mainMenu":{"Appointments":"Termine","Customers":"Kunden","Products":"Produkte","Orders":"Bestellungen","About":"Über","Logout":"Abmelden"},"pageHeader":{"Dashboard":"Übersicht","Customers":"Kunden","Products":"Produkte","Orders":"Bestellungen","NotFound":"Nicht gefunden","About":"Über","Settings":"Einstellungen"},"home":{"NoWidgets1":"Keine Elemente zur Anzeige vorhanden. Gehe zu","NoWidgets2":"um die Anzeige zu konfigurieren","StatisticsTitle":"Irgendwas ganz Wichtiges"},"notFound":{"404":"404","pageNotFound":"Die angeforderte Seite wurde nicht gefunden","backToHome":"Zurück zur Startseite"},"settings":{"tab":{"Profile":"Profil","Preferences":"Einstellungen","Users":"Benutzer","Roles":"Rollen"},"header":{"UserProfile":"Benutzerprofil","UserPreferences":"Benutzereinstellungen","UserDepartments":"Benutzerabteilungen","UsersManagements":"Benutzerverwaltung","RolesManagement":"Rollenverwaltung"}},"preferences":{"ReloadPreferences":"Einstellungen aktualisieren:","ReloadPreferencesHint":"Vorgabeeinstellungen laden (lokale Einstellungen überschreiben)","Language":"Sprache:","English":"English","French":"Französisch","German":"Deutsch","Portuguese":"Portugiesisch","Arabic":"Arabisch","Korean":"Koreanisch","LanguageHint":"Die bevorzugte Anzeigesprache auswählen","HomePage":"Startseite:","Dashboard":"Dashboard","Customers":"Kunden","Products":"Produkte","Orders":"Bestellungen","About":"Über","Settings":"Einstellungen","HomePageHint":"Die Standardseite zur Anzeige nach der Anmeldung wählen","Theme":"Farbschema:","DefaultColor":"<span class='default-theme-option'>Standard</span>","RedColor":"<span class='red-theme-option'>Rot</span>","OrangeColor":"<span class='orange-theme-option'>Orange</span>","GreenColor":"<span class='green-theme-option'>Grün</span>","GrayColor":"<span class='gray-theme-option'>Grau</span>","BlackColor":"<span class='black-theme-option'>Schwarz</span>","ThemeHint":"Das bevorzugte Farbschema wählen","DashboardStatistics":"Dashboard Statistiken:","DashboardStatisticsHint":"Zeigt das Demo-Statistik Element auf dem Dashboard","DashboardNotifications":"Dashboard Benachrichtigungen:","DashboardNotificationsHint":"Zeige Anwendungsbenachrichtigungen auf dem Dashboard","DashboardTodo":"Dashboard Beispielaufgaben:","DashboardTodoHint":"Zeigt das Beispielaufgaben Element auf dem Dashboard","DashboardBanner":"Dashboard Banner:","DashboardBannerHint":"Zeigt das Info-Banner Element auf dem Dashboard","ResetDefault":"Vorgabeeinstellungen","SetDefault":"Als Standard setzen"},"users":{"management":{"Search":"Benutzer suchen...","NewUser":"Neuer Benutzer","Edit":"Bearb.","Delete":"Entf.","EditUser":"Benutzer \"{{name}}\" bearbeiten","Title":"Titel","UserName":"Benutzername","FullName":"Vor- und Nachname","Email":"Email","Roles":"Rollen","PhoneNumber":"Telefon"},"editor":{"JobTitle":"Beruf: ","UserName":"Benutzername:","UserNameRequired":"Ein Benutzername ist erforderlich (mindestens 2, maximal 200 Zeichen)","Password":"Passwort:","PasswordHint":"Passworteingabe ist erforderlich, wenn der Benutzername geändert werden soll","CurrentPasswordRequired":"Aktuelles Passwort ist erforderlich","Email":"Email:","EmailRequired":"Email Adresse ist erforderlich (maximal 200 Zeichen)","InvalidEmail":"Angegebene Email-Adresse ist ungültig","ChangePassword":"Passwort ändern","CurrentPassword":"Aktuelles Passwort:","NewPassword":"Neues Passwort:","NewPasswordRequired":"Neues Passwort ist erforderlich (mindestens 6 Zeichen)","ConfirmPassword":"Passwort bestätigen:","ConfirmationPasswordRequired":"Passwort Bestätigung ist erforderlich","PasswordMismatch":"Die angegebenen Passwörter stimmen nicht überein","Roles":"Rollen:","FullName":"Vollständiger Name:","RoleRequired":" Rolle ist erforderlich","PhoneNumber":"Telefon #:","Enabled":"Aktiviert","Unblock":"Entsperren","Close":"Schliessen","Edit":"Bearbeiten","Cancel":"Abbrechen","Save":"Speichern","Saving":"Speichere..."}},"roles":{"management":{"Search":"Suche nach Rollen...","NewRole":"Neue Rolle","Edit":"Bearb.","Details":"Details","Delete":"Entf.","RoleDetails":"Rollen Details \"{{name}}\"","EditRole":"Rolle \"{{name}}\" bearbeiten","Name":"Name","Description":"Beschreibung","Users":"Benutzer"},"editor":{"Name":"Name:","Description":"Beschreibung:","RoleNameRequired":"Ein Rollenname ist erforderlich (mindestens 2, maximal 200 Zeichen)","SelectAll":"Alle auswählen","SelectNone":"Auswahl aufheben","Close":"Schliessen","Cancel":"Abbrechen","Save":"Speichern","Saving":"Speichere..."}},"notifications":{"Delete":"Benachrichtigung löschen","Pin":"Benachrichtigung anheften","Date":"Datum","Notification":"Benachrichtigung"},"todoDemo":{"management":{"Search":"Suche nach Aufgaben...","HideCompleted":"Abgeschlossene ausblenden","AddTask":"Aufgabe hinzufügen","Delete":"Aufgabe löschen","Important":"Als wichtig markieren","Task":"Aufgabe","Description":"Beschreibung"},"editor":{"NewTask":"Neue Aufgabe","Name":"Name","TaskNameRequired":"Aufgabenname ist erforderlich","Description":"Beschreibung","Important":"Als wichtig markieren","AddTask":"Aufgabe hinzufügen"}}}
 
 /***/ }),
-/* 213 */
+/* 215 */
 /***/ (function(module, exports) {
 
 module.exports = {"app":{"Welcome":"Bem-vindo!","Notifications":"Notificações","New":"Novo"},"mainMenu":{"Appointments":"Compromissos","Customers":"Clientes","Products":"Produtos","Orders":"Pedidos","About":"Sobre","Logout":"Sair"},"pageHeader":{"Dashboard":"Painel de Controle","Customers":"Clientes","Products":"Produtos","Orders":"Pedidos","NotFound":"Não Encontrado","About":"Sobre","Settings":"Configurações"},"home":{"NoWidgets1":"Você não possui widgets a serem mostrados. Ir para","NoWidgets2":"configurar widgets disponíveis","StatisticsTitle":"Alguma coisa importante"},"notFound":{"404":"404","pageNotFound":"A página que você está procurando não foi encontrada","backToHome":"Voltar para a página principal"},"settings":{"tab":{"Profile":"Perfil","Preferences":"Preferências","Users":"Usuários","Roles":"Funções"},"header":{"UserProfile":"Perfil de Usuário","UserPreferences":"Preferências de Usuário","UserDepartments":"Departamentos de Usuários","UsersManagements":"Gerenciamento de Usuários","RolesManagement":"Gerenciamento de Funções"}},"preferences":{"ReloadPreferences":"Recarregar Preferências:","ReloadPreferencesHint":"Carregar as preferências padrão (as alterações atuais serão descartadas)","Language":"Idioma:","English":"English","French":"Français","German":"Deutsche","Portuguese":"Português","Arabic":"عربى","Korean":"한국어","LanguageHint":"Selecione seu idioma","HomePage":"Principal:","Dashboard":"Painel de Controle","Customers":"Clientes","Products":"Produtos","Orders":"Pedidos","About":"Sobre","Settings":"Configurações","HomePageHint":"Selecione a página padrão para acessar após o login","Theme":"Tema:","DefaultColor":"<span class='default-theme-option'>Padrão</span>","RedColor":"<span class='red-theme-option'>Vermelho</span>","OrangeColor":"<span class='orange-theme-option'>Laranja</span>","GreenColor":"<span class='green-theme-option'>Verde</span>","GrayColor":"<span class='gray-theme-option'>Cinza</span>","BlackColor":"<span class='black-theme-option'>Preto</span>","ThemeHint":"Selecione o tema padrão","DashboardStatistics":"Estatísticas do Painel de Controle:","DashboardStatisticsHint":"Mostrar o widget gráfico demonstrativo no Painel de Controle","DashboardNotifications":"Notificações no Painel de Controle:","DashboardNotificationsHint":"Mostra as notificações no painel de controle","DashboardTodo":"Tarefas no Painel de Controle:","DashboardTodoHint":"Mostra o widget demonstrativo de Tarefas no painel de controle","DashboardBanner":"Banner no Painel de Controle:","DashboardBannerHint":"Mostra o widget demonstrativo de informações no painle de controle","ResetDefault":"Resetar","SetDefault":"Definir como Padrão"},"users":{"management":{"Search":"Procurar usuário...","NewUser":"Novo Usuário","Edit":"Editar","Delete":"Excluir","EditUser":"Editar usuário \"{{name}}\"","Title":"Título","UserName":"Nome de Usuário","FullName":"Nome Completo","Email":"E-mail","Roles":"Funções","PhoneNumber":"Telefone"},"editor":{"JobTitle":"Cargo: ","UserName":"Nome de Usuário:","UserNameRequired":"Nome de usuário é obrigatório (mínimo de 2 máximo de 200 caracteres)","Password":"Senha:","PasswordHint":"Sua senha é necessária ao alterar o nome do usuário","CurrentPasswordRequired":"A senha atual é necessária","Email":"Email:","EmailRequired":"Email é obrigatório (máximo de 200 caracteres)","InvalidEmail":"O email especificado não é válido","ChangePassword":"Trocar senha","CurrentPassword":"Senha Atual:","NewPassword":"Nova senha:","NewPasswordRequired":"Nova senha é obrigatória (mínimo de 6 caracteres)","ConfirmPassword":"Confirme a senha:","ConfirmationPasswordRequired":"Confirmação de senha é obrigatória","PasswordMismatch":"Nova senha e Confirmação de senha não são iguais","Roles":"Perfis:","FullName":" Nome Completo:","RoleRequired":" Perfil é Obrigatório","PhoneNumber":"Telefone:","Enabled":"Habilitado","Unblock":"Desbloquear","Close":"Fechar","Edit":"Editar","Cancel":"Cancela","Save":"Salvar","Saving":"Salvando..."}},"roles":{"management":{"Search":"rocurar por Função...","NewRole":"Nova Função","Edit":"Editar","Details":"Detalhes","Delete":"Excluir","RoleDetails":"Detalhes da Função \"{{name}}\"","EditRole":"Editar Função \"{{name}}\"","Name":"Nome","Description":"Descrição","Users":"Usuários"},"editor":{"Name":"Nome:","Description":"Descrição:","RoleNameRequired":"Nome da Função é Obrigatório (mínimo de 2 máximo de 200 caracteres)","SelectAll":"Selecionar Todos","SelectNone":"Nenhum","Close":"Fechar","Cancel":"Cancelar","Save":"Salvar","Saving":"Salvando..."}},"notifications":{"Delete":"Excluir Notificação","Pin":"Fixar notificação","Date":"Data","Notification":"Notificação"},"todoDemo":{"management":{"Search":"Procurar por Tarefa...","HideCompleted":"Esconder Completas","AddTask":"Adicionar tarefa","Delete":"Excluir tarefa","Important":"Marcar como importante","Task":"Tarefa","Description":"Descrição"},"editor":{"NewTask":"Nova Tarefa","Name":"Nome","TaskNameRequired":"Título da tarefa é obrigatório","Description":"Descrição","Important":"Marcar como importante","AddTask":"Adicionar Tarefa"}}}
 
 /***/ }),
-/* 214 */
+/* 216 */
 /***/ (function(module, exports) {
 
 module.exports = {"app":{"Welcome":"أهلا بك","Notifications":"إعلام","New":"جديد"},"mainMenu":{"Appointments":"المواعيد","Customers":"الزبائن","Products":"المنتجات","Orders":"الأوامر","About":"حول منجز التطبيق","Logout":"الخروج"},"pageHeader":{"Dashboard":"لوحة القيادة","Customers":"الزبائن","Products":"المنتجات","Orders":"الأوامر","NotFound":"لا يوجد","About":"حول منجز التطبيق","Settings":"إعدادات"},"home":{"NoWidgets1":"لم يتم عرض أية أدوات. اذهب إلى","NoWidgets2":"لتكوين الأدوات المتاحة","StatisticsTitle":"بعض الاشياء الهامة"},"notFound":{"404":"404","pageNotFound":"الصفحة التي تبحث عنها غير موجودة","backToHome":"العودة إلى لوحة الإستقبال"},"settings":{"tab":{"Profile":"الملف الشخصي","Preferences":"التفضيلات","Users":"المستخدمين","Roles":"الأدوار"},"header":{"UserProfile":"ملف تعريفي للمستخدم","UserPreferences":"خيارات المستخدم","UserDepartments":"أقسام المستخدم","UsersManagements":"إدارة المستخدمين","RolesManagement":"إدارة الأدوار"}},"preferences":{"ReloadPreferences":"إعادة تحميل التفضيلات:","ReloadPreferencesHint":"(تحميل التفضيلات الافتراضية (يتم تجاهل التغييرات المحلية","Language":"لغة:","English":"الإنجليزية","French":"الفرنسية","German":"الألمانية","Portuguese":"البرتغالية","Arabic":"العربية","Korean":"الكورية","LanguageHint":"اختيار اللغة المفضلة لحسابك","HomePage":"الصفحة الرئيسية:","Dashboard":"لوحة القيادة","Customers":"الزبائن","Products":"منتجات","Orders":"أوامر","About":"حول","Settings":"إعدادات","HomePageHint":"حدد الصفحة الافتراضية للانتقال إلى تسجيل الدخول","Theme":"فكرة رئيسية:","DefaultColor":"<span class='default-theme-option'>اللون المفضل</span>","RedColor":"<span class='red-theme-option'>الأحمر</span>","OrangeColor":"<span class='orange-theme-option'>البرتقالي</span>","GreenColor":"<span class='green-theme-option'>الأخضر</span>","GrayColor":"<span class='gray-theme-option'>الرمادي</span>","BlackColor":"<span class='black-theme-option'>الأسود</span>","ThemeHint":"حدد اللون الافتراضي لحسابك","DashboardStatistics":"إحصائيات لوحة التحكم:","DashboardStatisticsHint":"عرض الرسم البياني التجريبي على لوحة القيادة","DashboardNotifications":"إشعارات لوحة التحكم:","DashboardNotificationsHint":"عرض إشعارات التطبيق على لوحة التحكم","DashboardTodo":"لوحة التحكم للواجبات:","DashboardTodoHint":"يظهر الوحة التجريبية للواجبات على لوحة القيادة","DashboardBanner":"شعار لوحة التحكم:","DashboardBannerHint":"عرض معلومات الراية التجريبية على لوحة القيادة","ResetDefault":"اعادة تشغيل الأصل","SetDefault":"تعيين الأصل"},"users":{"management":{"Search":"البحث عن المستخدم...","NewUser":"مستخدم جديد","Edit":"تصحيح","Delete":"حذف","EditUser":"تحرير العضو \"{{name}}\"","Title":"عنوان","UserName":"اسم المستخدم","FullName":"الإسم الكامل","Email":"البريد الإلكتروني","Roles":"الأدوار","PhoneNumber":"رقم الهاتف"},"editor":{"JobTitle":"المسمى الوظيفي: ","UserName":"اسم المستخدم:","UserNameRequired":"(مطلوب اسم المستخدم (الحد الأدنى من 2 والحد الأقصى 200 حرفا","Password":"كلمة المرور:","PasswordHint":"كلمة المرور مطلوبة عند تغيير اسم المستخدم","CurrentPasswordRequired":"كلمة المرور الحالية مطلوبة","Email":"البريد الإلكتروني:","EmailRequired":"(عنوان البريد الإلكتروني مطلوب (بحد أقصى 200 حرف","InvalidEmail":"البريد الإلكتروني المحدد غير صالح","ChangePassword":"غير كلمة المرور","CurrentPassword":"كلمة المرور الحالية:","NewPassword":"كلمة مرور جديدة:","NewPasswordRequired":"الحد الأدنى من 6 أحرف) مطلوب كلمة مرور)","ConfirmPassword":"تأكيد كلمة المرور:","ConfirmationPasswordRequired":"مطلوب كلمة مرور التأكيد","PasswordMismatch":"لا تتطابق كلمة المرور الجديدة وكلمة مرور التأكيد","Roles":"الأدوار:","FullName":" الإسم الكامل:","RoleRequired":" مطلوب دور","PhoneNumber":"الهاتف #:","Enabled":"تمكين","Unblock":"رفع الحظر","Close":"إغلاق","Edit":"تصحيح","Cancel":"إلغاء","Save":"حفظ","Saving":"جار الحفظ..."}},"roles":{"management":{"Search":"البحث عن دور...","NewRole":"دور جديد","Edit":"تصحيح","Details":"تفاصيل","Delete":"حذف","RoleDetails":"تفاصيل الدور \"{{name}}\"","EditRole":"  تحرير الدور\"{{name}}\"","Name":"اسم","Description":"وصف","Users":"المستخدمين"},"editor":{"Name":"اسم:","Description":"وصف:","RoleNameRequired":"(اسم الدور مطلوب (بحد أدنى 2 و 200 حرف كحد أقصى","SelectAll":"اختر الكل","SelectNone":"لا تختر شيء","Close":"إغلاق","Cancel":"إلغاء","Save":"حفظ","Saving":"جار الحفظ..."}},"notifications":{"Delete":"حذف الإشعار","Pin":"رفع الأولوية","Date":"تاريخ","Notification":"إعلام"},"todoDemo":{"management":{"Search":"البحث عن مهمة...","HideCompleted":"إكتمال الإخفاء","AddTask":"إضافة مهمة","Delete":"حذف المهمة","Important":"وضع علامة كمهمة","Task":"مهمة","Description":"وصف"},"editor":{"NewTask":"مهمة جديدة","Name":"اسم","TaskNameRequired":"مطلوب اسم المهمة","Description":"وصف","Important":"وضع علامة لإظهار الأهمية","AddTask":"إضافة مهمة"}}}
 
 /***/ }),
-/* 215 */
+/* 217 */
 /***/ (function(module, exports) {
 
 module.exports = {"app":{"Welcome":"환영","Notifications":"알림","New":"새로운"},"mainMenu":{"Appointments":"설비","Customers":"고객","Products":"제작품","Orders":"명령","About":"약","Logout":"로그 아웃"},"pageHeader":{"Dashboard":"계기반","Customers":"고객","Products":"제작품","Orders":"명령","NotFound":"발견되지 않음","About":"약","Settings":"설정"},"home":{"NoWidgets1":"위젯이 표시되지 않았습니다. 고토","NoWidgets2":"사용 가능한 위젯을 구성하는 방법","StatisticsTitle":"중요한 것들"},"notFound":{"404":"404","pageNotFound":"찾고있는 페이지가 존재하지 않습니다.","backToHome":"홈으로"},"settings":{"tab":{"Profile":"윤곽","Preferences":"환경 설정","Users":"사용자","Roles":"역할"},"header":{"UserProfile":"유저 프로필","UserPreferences":"사용자 환경 설정","UserDepartments":"사용자 부서","UsersManagements":"사용자 관리","RolesManagement":"역할 관리"}},"preferences":{"ReloadPreferences":"환경 설정 새로 고침 :","ReloadPreferencesHint":"기본 환경 설정로드 (로컬 변경 사항은 무시됩니다)","Language":"언어:","English":"영어","French":"프랑스 국민","German":"독일어","Portuguese":"포르투갈 인","Arabic":"아라비아 말","Korean":"한국어","LanguageHint":"계정의 기본 언어 선택","HomePage":"홈페이지 :","Dashboard":"계기반","Customers":"고객","Products":"제작품","Orders":"명령","About":"약","Settings":"설정","HomePageHint":"로그인시 이동할 기본 페이지를 선택하십시오.","Theme":"테마:","DefaultColor":"<span class='default-theme-option'>태만</span>","RedColor":"<span class='red-theme-option'>빨간</span>","OrangeColor":"\"<span class='orange-theme-option'>주황색</span>","GreenColor":"<span class='green-theme-option'>녹색</span>","GrayColor":"<span class='gray-theme-option'>회색</span>","BlackColor":"<span class='black-theme-option'>검은</span>","ThemeHint":"계정의 기본 색상 테마 선택","DashboardStatistics":"대시 보드 통계:","DashboardStatisticsHint":"데모 그래프 위젯을 대시 보드에 표시하십시오.","DashboardNotifications":"대시 보드 알림 :","DashboardNotificationsHint":"대시 보드에 애플리케이션 알림 표시","DashboardTodo":"대시 보드 할일:","DashboardTodoHint":"대시 보드에서 데모 할 일 위젯 표시","DashboardBanner":"대시 보드 배너 :","DashboardBannerHint":"데모 정보 배너 위젯을 대시 보드에 표시하십시오.","ResetDefault":"기본값 재설정","SetDefault":"기본값으로 설정"},"users":{"management":{"Search":"사용자 검색...","NewUser":"새로운 사용자","Edit":"편집하다","Delete":"지우다","EditUser":"사용자 편집 \"{{name}}\"","Title":"표제","UserName":"사용자 이름","FullName":"성명","Email":"이메일","Roles":"역할","PhoneNumber":"전화 번호"},"editor":{"JobTitle":"직위: ","UserName":"사용자 이름: ","UserNameRequired":"사용자 이름이 필요합니다 (최소 2 자, 최대 200 자).","Password":"암호:","PasswordHint":"사용자 이름을 변경할 때 암호가 필요합니다.","CurrentPasswordRequired":"현재 비밀번호가 필요합니다.","Email":"이메일:","EmailRequired":"이메일 주소는 필수 사항입니다 (최대 200 자).","InvalidEmail":"지정된 이메일이 유효하지 않습니다.","ChangePassword":"비밀번호 변경","CurrentPassword":"현재 비밀번호:","NewPassword":"새 비밀번호:","NewPasswordRequired":"새 암호가 필요합니다 (최소 6 자).","ConfirmPassword":"비밀번호 확인:","ConfirmationPasswordRequired":"확인 암호가 필요합니다.","PasswordMismatch":"새 비밀번호와 확인 비밀번호가 일치하지 않습니다.","Roles":"역할 :","FullName":"성명 :","RoleRequired":"역할이 필요합니다.","PhoneNumber":"전화 #:","Enabled":"사용","Unblock":"차단 해제","Close":"닫기","Edit":"편집하다","Cancel":"취소","Save":"구하다","Saving":"절약..."}},"roles":{"management":{"Search":"역할 검색...","NewRole":"새로운 역할","Edit":"편집하다","Details":"세부","Delete":"지우다","RoleDetails":"역할 세부 정보 \"{{name}}\"","EditRole":"역할 편집 \"{{name}}\"","Name":"이름","Description":"기술","Users":"사용자"},"editor":{"Name":"이름:","Description":"기술:","RoleNameRequired":"역할 이름은 필수 항목입니다 (최소 2 자, 최대 200 자).","SelectAll":"모두 선택","SelectNone":"없음 선택","Close":"닫기","Cancel":"취소","Save":"구하다","Saving":"절약..."}},"notifications":{"Delete":"알림 삭제","Pin":"핀 알림","Date":"날짜","Notification":"공고"},"todoDemo":{"management":{"Search":"할 일 검색...","HideCompleted":"완료 안함","AddTask":"할 일 추가","Delete":"작업 삭제","Important":"중요한 것으로 표시","Task":"태스크","Description":"기술"},"editor":{"NewTask":"새 작업","Name":"이름","TaskNameRequired":"작업 이름이 필요합니다.","Description":"기술","Important":"중요한 것으로 표시","AddTask":"할 일 추가"}}}
 
 /***/ }),
-/* 216 */
+/* 218 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51546,7 +51676,7 @@ var JwtHelper = /** @class */ (function () {
 
 
 /***/ }),
-/* 217 */
+/* 219 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51570,17 +51700,17 @@ var UserLogin = /** @class */ (function () {
 
 
 /***/ }),
-/* 218 */
+/* 220 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"vertical-center-flex\">\r\n    <div class=\"login-container center-block\">\r\n        <div class=\"panel panel-primary boxshadow\">\r\n            <div class=\"panel-heading\">\r\n                <span class=\"glyphicon glyphicon-lock\"></span> Login\r\n                <button *ngIf=\"isModal\" type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"closeModal()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n            </div>\r\n            <div class=\"panel-body\">\r\n                <div class=\"col-md-8 col-md-offset-2\">\r\n                    <form *ngIf=\"formResetToggle\" class=\"form-horizontal login\" name=\"loginForm\" #f=\"ngForm\" novalidate\r\n                          (ngSubmit)=\"f.form.valid ? login() :\r\n                          (!email.valid && showErrorAlert('Email is required', 'Please enter a valid email'));\r\n                          (!password.valid && showErrorAlert('Password is required', 'Please enter a valid password'))\">\r\n                        <div class=\"form-group has-feedback\">\r\n                            <label class=\"control-label col-md-2\" for=\"login-email\">Email:</label>\r\n                            <div class=\"col-md-10\" [ngClass]=\"{'has-success': f.submitted && email.valid, 'has-error' : f.submitted && !email.valid}\">\r\n                                <input type=\"text\" id=\"login-email\" name=\"email\" placeholder=\"Enter email or username\" class=\"form-control\" [(ngModel)]=\"userLogin.email\" #email=\"ngModel\" required />\r\n                                <span *ngIf=\"f.submitted\" class=\"glyphicon form-control-feedback\" [ngClass]=\"{'glyphicon-ok ': email.valid, 'glyphicon-remove' : !email.valid}\" aria-hidden=\"true\"></span>\r\n                                <span class=\"errorMessage\" *ngIf=\"f.submitted && !email.valid\">\r\n                                    Email is required\r\n                                </span>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"form-group has-feedback\">\r\n                            <label class=\"control-label col-md-2\" for=\"login-password\">Password:</label>\r\n                            <div class=\"col-md-10\" [ngClass]=\"{'has-success': f.submitted && password.valid, 'has-error' : f.submitted && !password.valid}\">\r\n                                <input type=\"password\" id=\"login-password\" name=\"password\" placeholder=\"Enter password\" class=\"form-control\" [(ngModel)]=\"userLogin.password\" #password=\"ngModel\" required />\r\n                                <span *ngIf=\"f.submitted\" class=\"glyphicon form-control-feedback\" [ngClass]=\"{'glyphicon-ok ': password.valid, 'glyphicon-remove' : !password.valid}\" aria-hidden=\"true\"></span>\r\n                                <span class=\"errorMessage\" *ngIf=\"f.submitted && !password.valid\">\r\n                                    Password is required\r\n                                </span>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"form-group\">\r\n                            <div class=\"col-md-offset-2 col-md-10\">\r\n                                <div class=\"checkbox\">\r\n                                    <label><input type=\"checkbox\" name=\"rememberMe\" [(ngModel)]=\"userLogin.rememberMe\"> Remember me</label>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"form-group\">\r\n                            <div class=\"col-md-offset-2 col-md-10\">\r\n                                <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"isLoading\"><i *ngIf=\"isLoading\" class='fa fa-circle-o-notch fa-spin'></i> {{isLoading ? 'Loggin in...' : 'Login'}}</button>\r\n                                <a href=\"login/register\" class=\"btn btn-primary\">Register</a>\r\n                                <!--<a href=\"javascript:;\" (click)=\"newUser(row)\">\r\n                                    <i class=\"fa fa-plus-circle\"></i> {{'users.management.NewUser' | translate}}\r\n                                </a>-->\r\n                            </div>\r\n                        </div>\r\n\r\n                        <!--<div *ngIf=\"!isModal\" class=\"col-md-12\">\r\n                            <hr class=\"separator-hr\" />\r\n                        </div>\r\n\r\n                        <div *ngIf=\"!isModal\" class=\"col-md-12 last-control-group\">\r\n                            <span>Don't have an account?</span><a href=\"javascript:;\" class=\"btn btn-link\" (click)=\"signUp()\">Sign Up</a>\r\n                        </div>-->\r\n                    </form>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
 
 /***/ }),
-/* 219 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(220);
+        var result = __webpack_require__(222);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -51590,7 +51720,7 @@ module.exports = "<div class=\"vertical-center-flex\">\r\n    <div class=\"login
     
 
 /***/ }),
-/* 220 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -51604,18 +51734,18 @@ exports.push([module.i, ".boxshadow {\r\n    position: relative;\r\n    -moz-box
 
 
 /***/ }),
-/* 221 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(300);
 
 /***/ }),
-/* 222 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var tap_1 = __webpack_require__(223);
+var tap_1 = __webpack_require__(225);
 /* tslint:enable:max-line-length */
 /**
  * Perform a side effect for every emission on the source Observable, but return
@@ -51667,7 +51797,7 @@ exports._do = _do;
 //# sourceMappingURL=do.js.map
 
 /***/ }),
-/* 223 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51677,7 +51807,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = __webpack_require__(37);
+var Subscriber_1 = __webpack_require__(38);
 /* tslint:enable:max-line-length */
 /**
  * Perform a side effect for every emission on the source Observable, but return
@@ -51786,17 +51916,17 @@ var DoSubscriber = (function (_super) {
 //# sourceMappingURL=tap.js.map
 
 /***/ }),
-/* 224 */
+/* 226 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"card card-outline-primary m-1 p-1 well\" *ngFor=\"let blog of this.blogList\">\r\n    <div class=\"bg-faded p-1\">\r\n        <h3>\r\n            {{blog.title}}\r\n        </h3>\r\n        <h6>by <a href=\"javascript:;\">{{blog.userName}}</a></h6>\r\n    </div>\r\n    <div class=\"card-text p-1\">{{blog.description}}</div>\r\n</div>\r\n\r\n\r\n<!--<div class=\"container m-t-1\">\r\n    <div class=\"card card-block\" *ngFor=\"let blog of this.blogList\">\r\n        <h4 class=\"card-title\">{{blog.title}}</h4>\r\n        <p class=\"card-text\">{{blog.description}}</p>\r\n    </div>\r\n</div>-->\r\n<!--<div class=\"container\" *ngFor=\"let blog of this.blogList\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n            <h4 class=\"margin-top-0\">{{blog.title}}</h4>\r\n        </div>\r\n        <div class=\"col-md-8\">\r\n            <p>{{blog.description}}</p>\r\n        </div>\r\n        <p></p>\r\n    </div>\r\n</div>-->\r\n<app-pagination [offset]=\"offset\" [limit]=\"limit\" [size]=\"size\" (pageChange)=\"onPageChange($event)\"></app-pagination>\r\n";
 
 /***/ }),
-/* 225 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(226);
+        var result = __webpack_require__(228);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -51806,7 +51936,7 @@ module.exports = "<div class=\"card card-outline-primary m-1 p-1 well\" *ngFor=\
     
 
 /***/ }),
-/* 226 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -51820,17 +51950,17 @@ exports.push([module.i, "\r\n.bottom-space {\r\n    margin-bottom: 40px;\r\n}\r\
 
 
 /***/ }),
-/* 227 */
+/* 229 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">\r\n        <h3><i class=\"fa fa-handshake-o fa-lg page-caption\" aria-hidden=\"true\"></i> {{'pageHeader.Customers' | translate}}</h3>\r\n    </header>\r\n\r\n    <div [@fadeInOut]>\r\n        <!---- Sample Page Content ---->\r\n        <todo-demo verticalScrollbar=\"true\"></todo-demo>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
-/* 228 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(229);
+        var result = __webpack_require__(231);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -51840,7 +51970,7 @@ module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">
     
 
 /***/ }),
-/* 229 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -51854,7 +51984,7 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 230 */
+/* 232 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51868,17 +51998,17 @@ var Contest = /** @class */ (function () {
 
 
 /***/ }),
-/* 231 */
+/* 233 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">\r\n        <h3><i aria-hidden=\"true\"></i> {{'Contests' | translate}}</h3>\r\n    </header>\r\n\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-6\">\r\n                <div class=\"input-group\">\r\n                    <input type=\"text\" [(ngModel)]=\"filter.pattern\" class=\"form-control\" placeholder=\"Search problem by name...\">\r\n                    <span class=\"input-group-btn\">\r\n                        <button class=\"btn btn-default\" type=\"button\" (click)=\"onSearchChanged()\">\r\n                            <span class=\"glyphicon glyphicon-search\"></span>\r\n                        </button>\r\n                    </span>\r\n                </div><!-- /input-group -->\r\n            </div><!-- /.col-lg-6 -->\r\n        </div><!-- /.row -->\r\n        <p>\r\n            <a [routerLink]=\"['/insert-contest']\">Create new <i class=\"fa fa-plus-circle\"></i></a>\r\n        </p>\r\n        <table class=\"table table-striped\">\r\n            <thead>\r\n                <tr>\r\n                    <th>#</th>\r\n                    <th>Title</th>\r\n                    <th>Description</th>\r\n                    <th>Duration</th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n                <tr *ngFor=\"let contest of contestList\">\r\n                    <!--<th scope=\"row\">1</th>-->\r\n                    <td>\r\n                        <a [routerLink]=\"['/contests/', contest.contestId]\">{{contest.contestId}}</a>\r\n                    </td>\r\n                    <td>{{contest.title}}</td>\r\n                    <td>{{contest.description}}</td>\r\n                    <td>{{contest.duration}}</td>\r\n                    <td>\r\n                        <a [routerLink]=\"['/contest/edit/', contest.contestId]\"><i class=\"fa fa-pencil-square-o\"></i> Edit </a> |\r\n                        <a [routerLink]=\"\" (click)=\"delete(contest.contestId)\"><i class=\"fa fa-trash-o\"></i> Delete </a>\r\n                    </td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n    </div>\r\n    <app-pagination [offset]=\"offset\" [limit]=\"limit\" [size]=\"size\" (pageChange)=\"onPageChange($event)\"></app-pagination>\r\n</div>\r\n";
 
 /***/ }),
-/* 232 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(233);
+        var result = __webpack_require__(235);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -51886,33 +52016,33 @@ module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">
             module.exports = result.toString();
         }
     
-
-/***/ }),
-/* 233 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-/* 234 */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">\r\n        <h3><i aria-hidden=\"true\"></i> {{'Blogs' | translate}}</h3>\r\n    </header>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-6\">\r\n                <div class=\"input-group\">\r\n                    <input type=\"text\" [(ngModel)]=\"filter.pattern\" class=\"form-control\" placeholder=\"Search...\">\r\n                    <span class=\"input-group-btn\">\r\n                        <button class=\"btn btn-default\" type=\"button\" (click)=\"onSearchChanged()\">\r\n                            <span class=\"glyphicon glyphicon-search\"></span>\r\n                        </button>\r\n                    </span>\r\n                </div><!-- /input-group -->\r\n            </div><!-- /.col-lg-6 -->\r\n        </div><!-- /.row -->\r\n        <p>\r\n            <a [routerLink]=\"['/insert-blog']\">Create new <i class=\"fa fa-plus-circle\"></i></a>\r\n        </p>\r\n        <p>\r\n            {{this.blogList | json}}\r\n        </p>\r\n        <table class=\"table table-striped\">\r\n            <thead>\r\n                <tr>\r\n                    <th>#</th>\r\n                    <th>Title</th>\r\n                    <th>Autor</th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n            <tr *ngFor=\"let blog of blogList\">\r\n                <td>\r\n                    <a [routerLink]=\"['/blogs/', blog.id]\">{{blog.id}}</a>\r\n                </td>\r\n                <td>{{blog.title}}</td>\r\n                <td>{{blog.userName}}</td>\r\n                <!--<td>{{getUserName(blog.userId)}}</td>-->\r\n                <td>\r\n                    <a [routerLink]=\"['/blog/edit/', blog.id]\"><i class=\"fa fa-pencil-square-o\"></i> Edit </a> |\r\n                    <a [routerLink]=\"\" (click)=\"delete(blog.id)\"><i class=\"fa fa-trash-o\"></i> Delete </a>\r\n                </td>\r\n            </tr>\r\n            </tbody>\r\n        </table>\r\n    </div>\r\n</div>\r\n<app-pagination [offset]=\"offset\" [limit]=\"limit\" [size]=\"size\" (pageChange)=\"onPageChange($event)\"></app-pagination>\r\n";
 
 /***/ }),
 /* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
+exports = module.exports = __webpack_require__(3)(undefined);
+// imports
 
-        var result = __webpack_require__(236);
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+/* 236 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">\r\n        <h3><i aria-hidden=\"true\"></i> {{'Blogs' | translate}}</h3>\r\n    </header>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-6\">\r\n                <div class=\"input-group\">\r\n                    <input type=\"text\" [(ngModel)]=\"filter.pattern\" class=\"form-control\" placeholder=\"Search...\">\r\n                    <span class=\"input-group-btn\">\r\n                        <button class=\"btn btn-default\" type=\"button\" (click)=\"onSearchChanged()\">\r\n                            <span class=\"glyphicon glyphicon-search\"></span>\r\n                        </button>\r\n                    </span>\r\n                </div><!-- /input-group -->\r\n            </div><!-- /.col-lg-6 -->\r\n        </div><!-- /.row -->\r\n        <p>\r\n            <a [routerLink]=\"['/insert-blog']\">Create new <i class=\"fa fa-plus-circle\"></i></a>\r\n        </p>\r\n        <p>\r\n            {{this.blogList | json}}\r\n        </p>\r\n        <table class=\"table table-striped\">\r\n            <thead>\r\n                <tr>\r\n                    <th>#</th>\r\n                    <th>Title</th>\r\n                    <th>Autor</th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n            <tr *ngFor=\"let blog of blogList\">\r\n                <td>\r\n                    <a [routerLink]=\"['/blogs/', blog.id]\">{{blog.id}}</a>\r\n                </td>\r\n                <td>{{blog.title}}</td>\r\n                <td>{{blog.userName}}</td>\r\n                <!--<td>{{getUserName(blog.userId)}}</td>-->\r\n                <td>\r\n                    <a [routerLink]=\"['/blog/edit/', blog.id]\"><i class=\"fa fa-pencil-square-o\"></i> Edit </a> |\r\n                    <a [routerLink]=\"\" (click)=\"delete(blog.id)\"><i class=\"fa fa-trash-o\"></i> Delete </a>\r\n                </td>\r\n            </tr>\r\n            </tbody>\r\n        </table>\r\n    </div>\r\n</div>\r\n<app-pagination [offset]=\"offset\" [limit]=\"limit\" [size]=\"size\" (pageChange)=\"onPageChange($event)\"></app-pagination>\r\n";
+
+/***/ }),
+/* 237 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(238);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -51922,7 +52052,7 @@ module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">
     
 
 /***/ }),
-/* 236 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -51936,18 +52066,52 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 237 */
+/* 239 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"tab-content\" *ngIf=\"blog\">\r\n    <div class=\"bg-faded p-1\">\r\n        <h3>\r\n            {{blog.title}}\r\n        </h3>\r\n        <h6>\r\n            by <a href=\"javascript:;\">{{blog.userName}}</a>\r\n        </h6>\r\n    </div>\r\n    <div class=\"card-text p-1\">\r\n            <h5>{{blog.description}}</h5>\r\n    </div>\r\n   \r\n    <hr />\r\n\r\n    <div class=\"form-group row\">\r\n        <div class=\"col-md-6\">\r\n            <textarea class=\"form-control\" type=\"text\" [(ngModel)]=\"actualComment.description\" name=\"Description\" data-val=\"true\" placeholder=\"Enter a messagge\"></textarea>\r\n            <!--<div class-validation-error *ngIf=\"Description.invalid && Description.touched\">This Field is Required</div>-->\r\n        </div>\r\n        <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'description') && formDir.submitted\">\r\n            Description is required\r\n        </span>-->\r\n        <button class=\"btn\" (click)=\"saveComment()\" [class.disabled]=\"actualComment.description == null || actualComment.description == ''\">Commentar</button>\r\n    </div>\r\n</div>";
+
+/***/ }),
+/* 240 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(241);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 241 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(2);
-var switchMap_1 = __webpack_require__(238);
+var switchMap_1 = __webpack_require__(243);
 Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
 //# sourceMappingURL=switchMap.js.map
 
 /***/ }),
-/* 238 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52008,17 +52172,17 @@ exports.switchMap = switchMap;
 //# sourceMappingURL=switchMap.js.map
 
 /***/ }),
-/* 239 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var FromEventObservable_1 = __webpack_require__(240);
+var FromEventObservable_1 = __webpack_require__(245);
 exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
 //# sourceMappingURL=fromEvent.js.map
 
 /***/ }),
-/* 240 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52029,10 +52193,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(2);
-var tryCatch_1 = __webpack_require__(107);
-var isFunction_1 = __webpack_require__(241);
-var errorObject_1 = __webpack_require__(108);
-var Subscription_1 = __webpack_require__(109);
+var tryCatch_1 = __webpack_require__(109);
+var isFunction_1 = __webpack_require__(246);
+var errorObject_1 = __webpack_require__(110);
+var Subscription_1 = __webpack_require__(111);
 var toString = Object.prototype.toString;
 function isNodeStyleEventEmitter(sourceObj) {
     return !!sourceObj && typeof sourceObj.addListener === 'function' && typeof sourceObj.removeListener === 'function';
@@ -52240,23 +52404,23 @@ exports.FromEventObservable = FromEventObservable;
 //# sourceMappingURL=FromEventObservable.js.map
 
 /***/ }),
-/* 241 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(49);
 
 /***/ }),
-/* 242 */
+/* 247 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">\r\n        <h3><i class=\"fa fa-cog fa-lg page-caption\" aria-hidden=\"true\"></i> {{'pageHeader.Settings' | translate}}</h3>\r\n    </header>\r\n\r\n    <div [@fadeInOut] class=\"row\">\r\n        <div class=\"col-sm-2 side-menu\">\r\n            <ul bootstrapTab #tab=\"bootstrap-tab\" class=\"nav nav-tabs tabs-left\" (showBSTab)=\"onShowTab($event)\">\r\n                <li class=\"active\">\r\n                    <a id=\"profileTab\" [routerLink]=\"[]\" fragment=\"profile\" href=\"#profile\" data-toggle=\"tab\"><i class=\"fa fa-user-circle-o fa-fw\" aria-hidden=\"true\"></i> {{'settings.tab.Profile' | translate}}</a>\r\n                </li>\r\n                <li>\r\n                    <a id=\"preferencesTab\" [routerLink]=\"[]\" fragment=\"preferences\" href=\"#preferences\" data-toggle=\"tab\"><i class=\"fa fa-sliders fa-fw\" aria-hidden=\"true\"></i> {{'settings.tab.Preferences' | translate}}</a>\r\n                </li>\r\n                <li [hidden]=\"!canViewUsers\">\r\n                    <a id=\"usersTab\" [routerLink]=\"[]\" fragment=\"users\" href=\"#users\" data-toggle=\"tab\"><i class=\"fa fa-users fa-fw\" aria-hidden=\"true\"></i> {{'settings.tab.Users' | translate}}</a>\r\n                </li>\r\n                <li [hidden]=\"!canViewRoles\">\r\n                    <a id=\"rolesTab\" [routerLink]=\"[]\" fragment=\"roles\" href=\"#roles\" data-toggle=\"tab\"><i class=\"fa fa-shield fa-fw\" aria-hidden=\"true\"></i> {{'settings.tab.Roles' | translate}}</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n        <div class=\"col-sm-10\">\r\n            <div class=\"tab-content\">\r\n                <div class=\"tab-pane active\" id=\"profile\">\r\n                    <h4>{{'settings.header.UserProfile' | translate}}</h4>\r\n                    <hr class=\"separator-hr\" />\r\n                    <div [@fadeInOut] *ngIf=\"isProfileActivated\" class=\"content-container\">\r\n                        <user-info></user-info>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"tab-pane\" id=\"preferences\">\r\n                    <h4>{{'settings.header.UserPreferences' | translate}}</h4>\r\n                    <hr class=\"separator-hr\" />\r\n                    <div [@fadeInOut] *ngIf=\"isPreferencesActivated\" class=\"content-container\">\r\n                        <user-preferences></user-preferences>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"tab-pane\" id=\"users\">\r\n                    <h4>{{'settings.header.UsersManagements' | translate}}</h4>\r\n                    <hr class=\"separator-hr\" />\r\n                    <div [@fadeInOut] *ngIf=\"canViewUsers && isUsersActivated\" class=\"content-container\">\r\n                        <users-management></users-management>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"tab-pane\" id=\"roles\">\r\n                    <h4>{{'settings.header.RolesManagement' | translate}}</h4>\r\n                    <hr class=\"separator-hr\" />\r\n                    <div [@fadeInOut] *ngIf=\"canViewRoles && isRolesActivated\" class=\"content-container\">\r\n                        <roles-management></roles-management>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
-/* 243 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(244);
+        var result = __webpack_require__(249);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -52266,7 +52430,7 @@ module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">
     
 
 /***/ }),
-/* 244 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -52280,17 +52444,17 @@ exports.push([module.i, ".side-menu {\r\n    min-width: 120px;\r\n}\r\n\r\n.sepa
 
 
 /***/ }),
-/* 245 */
+/* 250 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">\r\n        <h3><i class=\"fa fa-info-circle fa-lg page-caption\" aria-hidden=\"true\"></i> {{'pageHeader.About' | translate}}</h3>\r\n    </header>\r\n\r\n    <div [@fadeInOut]>\r\n        <div class=\"row\">\r\n            <div class=\"col-sm-6\">\r\n                <h2>Eben is a Freelancer (Hire Me)<sup>&reg;</sup></h2>\r\n                <p>Contact me and I'll get back to you within 24 hours.</p>\r\n                <p><span title=\"Contact me on Skype\" class=\"fa fa-skype fa-fw\"></span> eben.monney</p>\r\n                <p><span title=\"Follow me on twitter\" class=\"fa fa-twitter fa-fw\"></span> <a class=\"black-anchor\" target=\"_blank\" href=\"https://twitter.com/kommand\">twitter.com/kommand</a></p>\r\n                <p><span title=\"Connect on facebook\" class=\"fa fa-facebook-official fa-fw\"></span> <a class=\"black-anchor\" target=\"_blank\" href=\"https://www.facebook.com/monney\">facebook.com/monney</a></p>\r\n                <p><span title=\"Drop me a mail\" class=\"fa fa-envelope fa-fw\"></span> <a class=\"black-anchor\" href=\"mailto:contact@ebenmonney.com\">contact@ebenmonney.com</a></p>\r\n                <p><span title=\"My website\" class=\"fa fa-globe fa-fw\"></span> <a class=\"black-anchor\" target=\"_blank\" href=\"https://www.ebenmonney.com\">www.ebenmonney.com</a></p>\r\n                <br />\r\n            </div>\r\n            <div class=\"col-sm-6\">\r\n                <!-- Column 2 -->\r\n            </div>\r\n        </div>\r\n        <div class=\"row bg-grey\">\r\n            <div class=\"col-sm-4\">\r\n                <span class=\"fa fa-globe logo\"></span>\r\n            </div>\r\n            <div class=\"col-sm-8\">\r\n                <h2>Our Values</h2>\r\n                <h4><strong>MISSION:</strong> Quality, Affordable and Easy-to-use software for all</h4>\r\n                <p>\r\n                    <strong>VISION:</strong> It is our desire to encourage the use of technology in everyday life. Time is the most valuable resource anyone has,\r\n                    that is why we at Eben Software Solutions<sup>&reg;</sup> wish to provide quality, affordable and easy-to-use software solutions to boost your productivity. Get more done in less time!\r\n                    <br />\r\n                    <br />\r\n                    Productivity, Accessibility and Affordability is at the core of our values\r\n                </p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
-/* 246 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(247);
+        var result = __webpack_require__(252);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -52300,7 +52464,7 @@ module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">
     
 
 /***/ }),
-/* 247 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -52314,17 +52478,17 @@ exports.push([module.i, "\r\n.pageHeader {\r\n    margin-bottom: 30px;\r\n}\r\n\
 
 
 /***/ }),
-/* 248 */
+/* 253 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">\r\n        <h3><i class=\"fa fa-exclamation-circle fa-lg page-caption\" aria-hidden=\"true\"></i> {{'pageHeader.NotFound' | translate}}</h3>\r\n    </header>\r\n\r\n    <div [@fadeInOut] class=\"vertical-center-flex\">\r\n        <div class=\"center-block\">\r\n            <div class=\"icon-container\"><i class='fa fa-exclamation-circle'></i> {{'notFound.404' | translate}}</div>\r\n            <div class=\"text-muted error-description\">{{'notFound.pageNotFound' | translate}}</div>\r\n            <div><a class=\"btn btn-primary\" routerLink=\"/\"><i class='fa fa-home'></i> {{'notFound.backToHome' | translate}}</a></div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
-/* 249 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(250);
+        var result = __webpack_require__(255);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -52334,7 +52498,7 @@ module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">
     
 
 /***/ }),
-/* 250 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -52348,13 +52512,13 @@ exports.push([module.i, ".vertical-center-flex {\r\n    min-height: 60vh;\r\n}\r
 
 
 /***/ }),
-/* 251 */
+/* 256 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthGuard; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auth_service__ = __webpack_require__(12);
 // ======================================
 // Author: Ebenezer Monney
@@ -52409,7 +52573,7 @@ var AuthGuard = /** @class */ (function () {
 
 
 /***/ }),
-/* 252 */
+/* 257 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -52423,17 +52587,17 @@ var Problem = /** @class */ (function () {
 
 
 /***/ }),
-/* 253 */
+/* 258 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">\r\n        <h3><i aria-hidden=\"true\"></i> {{'Problems' | translate}}</h3>\r\n    </header>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-6\">\r\n                <div class=\"input-group\">\r\n                    <input type=\"text\" [(ngModel)]=\"filter.pattern\" class=\"form-control\" placeholder=\"Search...\">\r\n                    <span class=\"input-group-btn\">\r\n                        <button class=\"btn btn-default\" type=\"button\" (click)=\"onSearchChanged()\">\r\n                            <span class=\"glyphicon glyphicon-search\"></span>\r\n                        </button>\r\n                    </span>\r\n                </div><!-- /input-group -->\r\n            </div><!-- /.col-lg-6 -->\r\n        </div><!-- /.row -->\r\n        <p>\r\n            <a [routerLink]=\"['/insert-problem']\">Create new <i class=\"fa fa-plus-circle\"></i></a>\r\n        </p>\r\n        <table class=\"table table-striped\">\r\n            <thead>\r\n                <tr>\r\n                    <th>#</th>\r\n                    <th>Title</th>\r\n                    <th>Tag</th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n                <tr *ngFor=\"let problem of problemList\">\r\n                    <!--<th scope=\"row\">1</th>-->\r\n                    <td>\r\n                        <a [routerLink]=\"['/problems/', problem.id]\">{{problem.id}}</a>\r\n                    </td>\r\n                    <td>{{problem.title}}</td>\r\n                    <td class=\"badge\">{{problem.tag}}</td>\r\n                    <td>\r\n                        <a [routerLink]=\"['/problem/edit/', problem.id]\"><i class=\"fa fa-pencil-square-o\"></i> Edit </a> |\r\n                        <a [routerLink]=\"\" (click)=\"delete(problem.id)\"><i class=\"fa fa-trash-o\"></i> Delete </a>\r\n                    </td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n    </div>\r\n    <app-pagination [offset]=\"offset\" [limit]=\"limit\" [size]=\"size\" (pageChange)=\"onPageChange($event)\"></app-pagination>\r\n</div>";
 
 /***/ }),
-/* 254 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(255);
+        var result = __webpack_require__(260);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -52443,7 +52607,7 @@ module.exports = "<div class=\"container\">\r\n    <header class=\"pageHeader\">
     
 
 /***/ }),
-/* 255 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -52457,97 +52621,29 @@ exports.push([module.i, "\r\n.control-box {\r\n    margin-bottom: 5px;\r\n}\r\n\
 
 
 /***/ }),
-/* 256 */
+/* 261 */
 /***/ (function(module, exports) {
 
 module.exports = "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <title></title>\r\n</head>\r\n<body>\r\n    <h1>{{title}}</h1>\r\n    <h3>Problem</h3>\r\n    <hr />\r\n    <form [formGroup]=\"problemForm\" formDir=\"NgForm\" (ngSubmit)=\"save()\"  novalidate>\r\n        <div class=\"form-group row\">\r\n            <label class=\" control-label col-md-12\" for=\"Title\">Title</label>\r\n            <div class=\"col-md-8\">\r\n                <input class=\"form-control\" type=\"text\" name=\"Title\" formControlName=\"title\" placeholder=\"Title\">\r\n                <!--<div class-validation-error *ngIf=\"Title.invalid && Title.touched\">This Field is Required</div>-->\r\n            </div>\r\n            <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'title') && formDir.submitted\">\r\n                Title is required.\r\n            </span>-->\r\n        </div>\r\n        <div class=\"form-group row\">\r\n            <label class=\"control-label col-md-12\" for=\"Tag\">Tag</label>\r\n            <div class=\"col-md-8\">\r\n                <input class=\"form-control\" type=\"text\" name=\"Tag\" formControlName=\"tag\" placeholder=\"Tag\">\r\n                <!--<div class-validation-error *ngIf=\"Tag.invalid && Tag.touched\">This Field is Required</div>-->\r\n            </div>\r\n            <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'tag') && formDir.submitted\">\r\n                Tag is required\r\n            </span>-->\r\n        </div>\r\n        <div class=\"form-group row\">\r\n            <label class=\"control-label col-md-12\" for=\"Description\">Description</label>\r\n            <div class=\"col-md-8\">\r\n                <input class=\"form-control\" type=\"text\" name=\"Description\" formControlName=\"description\" data-val=\"true\" placeholder=\"Description\">\r\n                <!--<div class-validation-error *ngIf=\"Description.invalid && Description.touched\">This Field is Required</div>-->\r\n            </div>\r\n            <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'description') && formDir.submitted\">\r\n                Description is required\r\n            </span>-->\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <div class=\"form-group col-md-4\">\r\n                <button type=\"submit\" class=\"btn btn-lg btn-block btn-info\"> <i class=\"fa fa-floppy-o\"></i> Save</button>\r\n            </div>\r\n            <div class=\"form-group col-md-4\">\r\n                <button class=\"btn btn-lg btn-block btn-secondary\" (click)=\"cancel()\"> <i class=\"glyphicon glyphicon-remove\"></i> Cancel</button>\r\n            </div>\r\n        </div>\r\n    </form>\r\n</body>\r\n</html>";
 
 /***/ }),
-/* 257 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(258);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 258 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-/* 259 */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"tab-content\" *ngIf=\"problem\">\r\n    <div role=\"tabpanel\" class=\"tab-pane active\" id=\"restiction\">\r\n        <h3>Restrictions</h3>\r\n        <ul>\r\n            <li>TimeLimit: {{problem.timeLimit}}</li>\r\n            <li>MemoryLimit: {{problem.memoryLimit}}</li>\r\n            <li>MaximumMessages: {{problem.maximumMessages}}</li>\r\n            <li>NumberOfNodes: {{problem.numberOfNodes}}</li>\r\n            <li>SizeOfMessages: {{problem.sizeOfMessages}}</li>\r\n        </ul>\r\n        <h3>{{problem.title}}</h3>\r\n        <p>{{problem.description}}</p>\r\n    </div>\r\n    <input type=\"file\" (change)=\"uploadCode()\" #fileInput />\r\n</div>\r\n";
-
-/***/ }),
-/* 260 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(261);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 261 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
 /* 262 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <title></title>\r\n</head>\r\n<body>\r\n    <h1>{{title}}</h1>\r\n    <h3>Contest</h3>\r\n    <hr />\r\n    <form [formGroup]=\"contestForm\" formDir=\"NgForm\" (ngSubmit)=\"save()\" novalidate>\r\n        <div class=\"form-group row\">\r\n            <label class=\" control-label col-md-12\" for=\"Title\">Title</label>\r\n            <div class=\"col-md-8\">\r\n                <input class=\"form-control\" type=\"text\" name=\"Title\" formControlName=\"title\" placeholder=\"Title\">\r\n                <!--<div class-validation-error *ngIf=\"Title.invalid && Title.touched\">This Field is Required</div>-->\r\n            </div>\r\n            <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'title') && formDir.submitted\">\r\n                Title is required.\r\n            </span>-->\r\n        </div>\r\n        <div class=\"form-group row\">\r\n            <label class=\"control-label col-md-12\" for=\"Duration\">Duration</label>\r\n            <div class=\"col-md-8\">\r\n                <input class=\"form-control\" type=\"text\" name=\"Duration\" formControlName=\"duration\" placeholder=\"Duration\">\r\n                <!--<div class-validation-error *ngIf=\"Tag.invalid && Tag.touched\">This Field is Required</div>-->\r\n            </div>\r\n            <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'tag') && formDir.submitted\">\r\n                Tag is required\r\n            </span>-->\r\n        </div>\r\n        <div class=\"form-group row\">\r\n            <label class=\"control-label col-md-12\" for=\"Description\">Description</label>\r\n            <div class=\"col-md-8\">\r\n                <input class=\"form-control\" type=\"text\" name=\"Description\" formControlName=\"description\" data-val=\"true\" placeholder=\"Description\">\r\n                <!--<div class-validation-error *ngIf=\"Description.invalid && Description.touched\">This Field is Required</div>-->\r\n            </div>\r\n            <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'description') && formDir.submitted\">\r\n                Description is required\r\n            </span>-->\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <!--<div class=\"form-group col-md-4\">\r\n                <button [disabled]=\"!problemForm.valid\" type=\"submit\" class=\"btn btn-lg btn-block btn-info\"> <i class=\"fa fa-floppy-o\"></i> Submit</button>\r\n            </div>\r\n            <div class=\"form-group col-md-4\">\r\n                <button type=\"button\" class=\"btn btn-lg btn-block btn-secondary\" (click)=\"cancel()\">Cancel</button>\r\n            </div>-->\r\n            <div class=\"form-group col-md-4\">\r\n                <button type=\"submit\" class=\"btn btn-lg btn-block btn-info\"> <i class=\"fa fa-floppy-o\"></i> Save</button>\r\n            </div>\r\n            <div class=\"form-group col-md-4\">\r\n                <button class=\"btn btn-lg btn-block btn-secondary\" (click)=\"cancel()\"> <i class=\"glyphicon glyphicon-remove\"></i> Cancel</button>\r\n            </div>\r\n        </div>\r\n    </form>\r\n</body>\r\n</html>";
+
+        var result = __webpack_require__(263);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
 
 /***/ }),
 /* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
-
-        var result = __webpack_require__(264);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 264 */
-/***/ (function(module, exports, __webpack_require__) {
-
 exports = module.exports = __webpack_require__(3)(undefined);
 // imports
 
@@ -52559,17 +52655,51 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 265 */
+/* 264 */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <title></title>\r\n</head>\r\n<body>\r\n    <h1>{{title}}</h1>\r\n    <h3>Blog</h3>\r\n    <hr />\r\n    <form [formGroup]=\"blogForm\" formDir=\"NgForm\" (ngSubmit)=\"save()\" novalidate>\r\n        <div class=\"form-group row\">\r\n            <label class=\" control-label col-md-12\" for=\"Title\">Title</label>\r\n            <div class=\"col-md-8\">\r\n                <input class=\"form-control\" type=\"text\" name=\"Title\" formControlName=\"title\" placeholder=\"Title\">\r\n                <!--<div class-validation-error *ngIf=\"Title.invalid && Title.touched\">This Field is Required</div>-->\r\n            </div>\r\n            <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'title') && formDir.submitted\">\r\n                Title is required.\r\n            </span>-->\r\n        </div>\r\n        <textarea style=\"font-weight: bold; font-style: italic;\">Description</textarea>\r\n        <div class=\"form-group row\">\r\n            <label class=\"control-label col-md-12\" for=\"Description\">Description</label>\r\n            <div class=\"col-md-8\">\r\n                <input class=\"form-control\" type=\"text\" name=\"Description\" formControlName=\"description\" data-val=\"true\" placeholder=\"Description\">\r\n                <!--<div class-validation-error *ngIf=\"Description.invalid && Description.touched\">This Field is Required</div>-->\r\n            </div>\r\n            <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'description') && formDir.submitted\">\r\n                Description is required\r\n            </span>-->\r\n        </div>\r\n        <input class=\"form-control\" type=\"hidden\" name=\"userId\" />\r\n        <input class=\"form-control\" type=\"hidden\" name=\"userName\" />\r\n        <div class=\"form-group\">\r\n            <div class=\"form-group col-md-4\">\r\n                <button type=\"submit\" class=\"btn btn-lg btn-block btn-info\"> <i class=\"fa fa-floppy-o\"></i> Save</button>\r\n            </div>\r\n            <div class=\"form-group col-md-4\">\r\n                <button class=\"btn btn-lg btn-block btn-secondary\" (click)=\"cancel()\"> <i class=\"glyphicon glyphicon-remove\"></i> Cancel</button>\r\n            </div>\r\n        </div>\r\n    </form>\r\n\r\n</body>\r\n</html>";
+module.exports = "<div class=\"tab-content\" *ngIf=\"problem\">\r\n    <div role=\"tabpanel\" class=\"tab-pane active\" id=\"restriction\">\r\n        <h3>Restrictions</h3>\r\n        <ul>\r\n            <li>TimeLimit: {{problem.timeLimit}}</li>\r\n            <li>MemoryLimit: {{problem.memoryLimit}}</li>\r\n            <li>MaximumMessages: {{problem.maximumMessages}}</li>\r\n            <li>NumberOfNodes: {{problem.numberOfNodes}}</li>\r\n            <li>SizeOfMessages: {{problem.sizeOfMessages}}</li>\r\n        </ul>\r\n    </div>\r\n    <div class=\"bg-faded p-1\">\r\n        <h3>{{problem.title}}</h3>\r\n    </div>\r\n    <div class=\"card-text p-1\">\r\n        <p>\r\n            {{problem.description}}\r\n        </p>\r\n    </div>\r\n    <input type=\"file\" (change)=\"uploadCode()\" #fileInput />\r\n</div>\r\n";
+
+/***/ }),
+/* 265 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(266);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
 
 /***/ }),
 /* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
+exports = module.exports = __webpack_require__(3)(undefined);
+// imports
 
-        var result = __webpack_require__(267);
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+/* 267 */
+/***/ (function(module, exports) {
+
+module.exports = "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <title></title>\r\n</head>\r\n<body>\r\n    <h1>{{title}}</h1>\r\n    <h3>Contest</h3>\r\n    <hr />\r\n    <form [formGroup]=\"contestForm\" formDir=\"NgForm\" (ngSubmit)=\"save()\" novalidate>\r\n        <div class=\"form-group row\">\r\n            <label class=\" control-label col-md-12\" for=\"Title\">Title</label>\r\n            <div class=\"col-md-8\">\r\n                <input class=\"form-control\" type=\"text\" name=\"Title\" formControlName=\"title\" placeholder=\"Title\">\r\n                <!--<div class-validation-error *ngIf=\"Title.invalid && Title.touched\">This Field is Required</div>-->\r\n            </div>\r\n            <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'title') && formDir.submitted\">\r\n                Title is required.\r\n            </span>-->\r\n        </div>\r\n        <div class=\"form-group row\">\r\n            <label class=\"control-label col-md-12\" for=\"Duration\">Duration</label>\r\n            <div class=\"col-md-8\">\r\n                <input class=\"form-control\" type=\"text\" name=\"Duration\" formControlName=\"duration\" placeholder=\"Duration\">\r\n                <!--<div class-validation-error *ngIf=\"Tag.invalid && Tag.touched\">This Field is Required</div>-->\r\n            </div>\r\n            <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'tag') && formDir.submitted\">\r\n                Tag is required\r\n            </span>-->\r\n        </div>\r\n        <div class=\"form-group row\">\r\n            <label class=\"control-label col-md-12\" for=\"Description\">Description</label>\r\n            <div class=\"col-md-8\">\r\n                <input class=\"form-control\" type=\"text\" name=\"Description\" formControlName=\"description\" data-val=\"true\" placeholder=\"Description\">\r\n                <!--<div class-validation-error *ngIf=\"Description.invalid && Description.touched\">This Field is Required</div>-->\r\n            </div>\r\n            <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'description') && formDir.submitted\">\r\n                Description is required\r\n            </span>-->\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <!--<div class=\"form-group col-md-4\">\r\n                <button [disabled]=\"!problemForm.valid\" type=\"submit\" class=\"btn btn-lg btn-block btn-info\"> <i class=\"fa fa-floppy-o\"></i> Submit</button>\r\n            </div>\r\n            <div class=\"form-group col-md-4\">\r\n                <button type=\"button\" class=\"btn btn-lg btn-block btn-secondary\" (click)=\"cancel()\">Cancel</button>\r\n            </div>-->\r\n            <div class=\"form-group col-md-4\">\r\n                <button type=\"submit\" class=\"btn btn-lg btn-block btn-info\"> <i class=\"fa fa-floppy-o\"></i> Save</button>\r\n            </div>\r\n            <div class=\"form-group col-md-4\">\r\n                <button class=\"btn btn-lg btn-block btn-secondary\" (click)=\"cancel()\"> <i class=\"glyphicon glyphicon-remove\"></i> Cancel</button>\r\n            </div>\r\n        </div>\r\n    </form>\r\n</body>\r\n</html>";
+
+/***/ }),
+/* 268 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(269);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -52579,7 +52709,7 @@ module.exports = "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf
     
 
 /***/ }),
-/* 267 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -52593,7 +52723,41 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 268 */
+/* 270 */
+/***/ (function(module, exports) {
+
+module.exports = "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <title></title>\r\n</head>\r\n<body>\r\n    <h1>{{title}}</h1>\r\n    <h3>Blog</h3>\r\n    <hr />\r\n    <form [formGroup]=\"blogForm\" formDir=\"NgForm\" (ngSubmit)=\"save()\" novalidate>\r\n        <div class=\"form-group row\">\r\n            <label class=\" control-label col-md-12\" for=\"Title\">Title</label>\r\n            <div class=\"col-md-8\">\r\n                <input class=\"form-control\" type=\"text\" name=\"Title\" formControlName=\"title\" placeholder=\"Title\">\r\n                <!--<div class-validation-error *ngIf=\"Title.invalid && Title.touched\">This Field is Required</div>-->\r\n            </div>\r\n            <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'title') && formDir.submitted\">\r\n                Title is required.\r\n            </span>-->\r\n        </div>\r\n        <textarea style=\"font-weight: bold; font-style: italic;\">Description</textarea>\r\n        <div class=\"form-group row\">\r\n            <label class=\"control-label col-md-12\" for=\"Description\">Description</label>\r\n            <div class=\"col-md-8\">\r\n                <input class=\"form-control\" type=\"text\" name=\"Description\" formControlName=\"description\" data-val=\"true\" placeholder=\"Description\">\r\n                <!--<div class-validation-error *ngIf=\"Description.invalid && Description.touched\">This Field is Required</div>-->\r\n            </div>\r\n            <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'description') && formDir.submitted\">\r\n                Description is required\r\n            </span>-->\r\n        </div>\r\n        <input class=\"form-control\" type=\"hidden\" name=\"userId\" />\r\n        <input class=\"form-control\" type=\"hidden\" name=\"userName\" />\r\n        <div class=\"form-group\">\r\n            <div class=\"form-group col-md-4\">\r\n                <button type=\"submit\" class=\"btn btn-lg btn-block btn-info\"> <i class=\"fa fa-floppy-o\"></i> Save</button>\r\n            </div>\r\n            <div class=\"form-group col-md-4\">\r\n                <button class=\"btn btn-lg btn-block btn-secondary\" (click)=\"cancel()\"> <i class=\"glyphicon glyphicon-remove\"></i> Cancel</button>\r\n            </div>\r\n        </div>\r\n    </form>\r\n\r\n</body>\r\n</html>";
+
+/***/ }),
+/* 271 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(272);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 272 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+/* 273 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -52652,28 +52816,28 @@ var AppErrorHandler = /** @class */ (function (_super) {
 
 
 /***/ }),
-/* 269 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(2);
-var interval_1 = __webpack_require__(270);
+var interval_1 = __webpack_require__(275);
 Observable_1.Observable.interval = interval_1.interval;
 //# sourceMappingURL=interval.js.map
 
 /***/ }),
-/* 270 */
+/* 275 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var IntervalObservable_1 = __webpack_require__(271);
+var IntervalObservable_1 = __webpack_require__(276);
 exports.interval = IntervalObservable_1.IntervalObservable.create;
 //# sourceMappingURL=interval.js.map
 
 /***/ }),
-/* 271 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52683,7 +52847,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isNumeric_1 = __webpack_require__(272);
+var isNumeric_1 = __webpack_require__(277);
 var Observable_1 = __webpack_require__(2);
 var async_1 = __webpack_require__(60);
 /**
@@ -52767,12 +52931,12 @@ exports.IntervalObservable = IntervalObservable;
 //# sourceMappingURL=IntervalObservable.js.map
 
 /***/ }),
-/* 272 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var isArray_1 = __webpack_require__(273);
+var isArray_1 = __webpack_require__(278);
 function isNumeric(val) {
     // parseFloat NaNs numeric-cast false positives (null|true|false|"")
     // ...but misinterprets leading-number strings, particularly hex literals ("0x...")
@@ -52785,19 +52949,19 @@ exports.isNumeric = isNumeric;
 //# sourceMappingURL=isNumeric.js.map
 
 /***/ }),
-/* 273 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(27);
 
 /***/ }),
-/* 274 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(12);
 
 /***/ }),
-/* 275 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52807,7 +52971,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscription_1 = __webpack_require__(109);
+var Subscription_1 = __webpack_require__(111);
 /**
  * A unit of work to be executed in a {@link Scheduler}. An action is typically
  * created from within a Scheduler and an RxJS user does not need to concern
@@ -52847,7 +53011,7 @@ exports.Action = Action;
 //# sourceMappingURL=Action.js.map
 
 /***/ }),
-/* 276 */
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52902,23 +53066,23 @@ exports.Scheduler = Scheduler;
 //# sourceMappingURL=Scheduler.js.map
 
 /***/ }),
-/* 277 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(2);
-var startWith_1 = __webpack_require__(278);
+var startWith_1 = __webpack_require__(283);
 Observable_1.Observable.prototype.startWith = startWith_1.startWith;
 //# sourceMappingURL=startWith.js.map
 
 /***/ }),
-/* 278 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var startWith_1 = __webpack_require__(279);
+var startWith_1 = __webpack_require__(284);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits the items you specify as arguments before it begins to emit
@@ -52945,16 +53109,16 @@ exports.startWith = startWith;
 //# sourceMappingURL=startWith.js.map
 
 /***/ }),
-/* 279 */
+/* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ArrayObservable_1 = __webpack_require__(280);
-var ScalarObservable_1 = __webpack_require__(281);
+var ArrayObservable_1 = __webpack_require__(285);
+var ScalarObservable_1 = __webpack_require__(286);
 var EmptyObservable_1 = __webpack_require__(91);
-var concat_1 = __webpack_require__(282);
-var isScheduler_1 = __webpack_require__(121);
+var concat_1 = __webpack_require__(287);
+var isScheduler_1 = __webpack_require__(123);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits the items you specify as arguments before it begins to emit
@@ -52999,27 +53163,27 @@ exports.startWith = startWith;
 //# sourceMappingURL=startWith.js.map
 
 /***/ }),
-/* 280 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(30);
 
 /***/ }),
-/* 281 */
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(54);
 
 /***/ }),
-/* 282 */
+/* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var isScheduler_1 = __webpack_require__(121);
-var of_1 = __webpack_require__(36);
-var from_1 = __webpack_require__(122);
-var concatAll_1 = __webpack_require__(283);
+var isScheduler_1 = __webpack_require__(123);
+var of_1 = __webpack_require__(37);
+var from_1 = __webpack_require__(124);
+var concatAll_1 = __webpack_require__(288);
 /* tslint:enable:max-line-length */
 /**
  * Creates an output Observable which sequentially emits all values from given
@@ -53128,13 +53292,13 @@ exports.concat = concat;
 //# sourceMappingURL=concat.js.map
 
 /***/ }),
-/* 283 */
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(319);
 
 /***/ }),
-/* 284 */
+/* 289 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53164,7 +53328,7 @@ var Notification = /** @class */ (function () {
 
 
 /***/ }),
-/* 285 */
+/* 290 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53240,7 +53404,7 @@ var EqualValidator = /** @class */ (function () {
 
 
 /***/ }),
-/* 286 */
+/* 291 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53299,7 +53463,7 @@ var LastElementDirective = /** @class */ (function () {
 
 
 /***/ }),
-/* 287 */
+/* 292 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53343,7 +53507,7 @@ var AutofocusDirective = /** @class */ (function () {
 
 
 /***/ }),
-/* 288 */
+/* 293 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53353,9 +53517,9 @@ var AutofocusDirective = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_fromEvent__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_fromEvent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_toggle_js_bootstrap_toggle__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_toggle_js_bootstrap_toggle__ = __webpack_require__(294);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_toggle_js_bootstrap_toggle___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_bootstrap_toggle_js_bootstrap_toggle__);
 // ======================================
 // Author: Ebenezer Monney
@@ -53447,19 +53611,19 @@ var BootstrapToggleDirective = /** @class */ (function () {
 
 
 /***/ }),
-/* 289 */
+/* 294 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(293);
 
 /***/ }),
-/* 290 */
+/* 295 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(295);
 
 /***/ }),
-/* 291 */
+/* 296 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53469,9 +53633,9 @@ module.exports = (__webpack_require__(1))(295);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_fromEvent__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_fromEvent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_datepicker_dist_js_bootstrap_datepicker__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_datepicker_dist_js_bootstrap_datepicker__ = __webpack_require__(297);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_datepicker_dist_js_bootstrap_datepicker___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_bootstrap_datepicker_dist_js_bootstrap_datepicker__);
 // ======================================
 // Author: Ebenezer Monney
@@ -53606,7 +53770,7 @@ var BootstrapDatepickerDirective = /** @class */ (function () {
 
 
 /***/ }),
-/* 292 */
+/* 297 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -53617,7 +53781,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 (function(factory){
     if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(29)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(30)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -55645,7 +55809,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
-/* 293 */
+/* 298 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -55691,20 +55855,20 @@ var GroupByPipe = /** @class */ (function () {
 
 
 /***/ }),
-/* 294 */
+/* 299 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_toasty__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_alert_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_notification_service__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_app_translation_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_account_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_local_store_manager_service__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_app_title_service__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_app_title_service__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_auth_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_configuration_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__models_permission_model__ = __webpack_require__(18);
@@ -55738,7 +55902,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var alertify = __webpack_require__(295);
+var alertify = __webpack_require__(300);
 var AppComponent = /** @class */ (function () {
     function AppComponent(storageManager, toastyService, toastyConfig, accountService, alertService, notificationService, appTitleService, authService, translationService, configurations, router) {
         this.toastyService = toastyService;
@@ -55753,7 +55917,7 @@ var AppComponent = /** @class */ (function () {
         this.router = router;
         this.newNotificationCount = 0;
         this.appTitle = "Matcom Jam";
-        this.appLogo = __webpack_require__(296);
+        this.appLogo = __webpack_require__(301);
         this.stickyToasties = [];
         this.dataLoadingConsecutiveFailurs = 0;
         storageManager.initialiseStorageSyncListener();
@@ -56019,8 +56183,8 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: "quick-app",
-            template: __webpack_require__(297),
-            styles: [__webpack_require__(298), __webpack_require__(300), __webpack_require__(305)],
+            template: __webpack_require__(302),
+            styles: [__webpack_require__(303), __webpack_require__(305), __webpack_require__(310)],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_7__services_local_store_manager_service__["a" /* LocalStoreManager */], __WEBPACK_IMPORTED_MODULE_2_ng2_toasty__["ToastyService"], __WEBPACK_IMPORTED_MODULE_2_ng2_toasty__["ToastyConfig"],
@@ -56033,7 +56197,7 @@ var AppComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 295 */
+/* 300 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// ======================================
@@ -56684,102 +56848,30 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// =============
 
 
 /***/ }),
-/* 296 */
+/* 301 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,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"
 
 /***/ }),
-/* 297 */
+/* 302 */
 /***/ (function(module, exports) {
 
 module.exports = "<div id=\"app_container\" class=\"{{configurations.theme | lowercase}}-theme\">\r\n    <ng2-toasty></ng2-toasty>\r\n    <div class='container'>\r\n        <nav id=\"header\" class=\"app-component navbar navbar-inner navbar-fixed-top\">\r\n            <nav class=\"container\">\r\n                <div class=\"navbar-header\">\r\n                    <button type=\"button\" class=\"app-component navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\".menuItemsContainer.app-component\" aria-expanded=\"false\">\r\n                        <span class=\"sr-only\">Toggle navigation</span>\r\n                        <span class=\"icon-bar\"></span>\r\n                        <span class=\"icon-bar\"></span>\r\n                        <span class=\"icon-bar\"></span>\r\n                    </button>\r\n                    <a class=\"app-component navbar-brand\" routerLink=\"/\">\r\n                        <img [src]=\"appLogo\" alt=\"logo\">\r\n                        <span class=\"app-component appTitle\">{{appTitle}}</span>\r\n                    </a>\r\n                </div>\r\n                <div *ngIf=\"isUserLoggedIn\" class=\"app-component collapse navbar-collapse menuItemsContainer\">\r\n                    <ul class=\"app-component nav navbar-nav nav-pills navBarPadding\">\r\n                        <li routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{ exact: true }\"><a routerLink=\"\"><span class=\"glyphicon glyphicon-home\"></span></a></li>\r\n                        <li routerLinkActive=\"active\" *ngIf=\"canViewCustomers\"><a routerLink=\"/customers\">{{'mainMenu.Customers' | translate}}</a></li>\r\n                        <li routerLinkActive=\"active\"><a routerLink=\"/problems\">{{'Problems' | translate}}</a></li>\r\n                        <li routerLinkActive=\"active\"><a routerLink=\"/contests\">{{'Contests' | translate}}</a></li>\r\n                        <li routerLinkActive=\"active\"><a routerLink=\"/blogs\">{{'Blogs' | translate}}</a></li>\r\n                        <li routerLinkActive=\"active\"><a routerLink=\"/about\">{{'mainMenu.About' | translate}}</a></li>\r\n                    </ul>\r\n                    <ul class=\"app-component nav navbar-nav nav-pills navBarPadding navbar-right\">\r\n                        <li (click)=\"logout()\"><a href=\"javascript:;\"><span class=\"glyphicon glyphicon-log-out\"></span> {{'mainMenu.Logout' | translate}}</a></li>\r\n                    </ul>\r\n                    <p class=\"app-component navbar-text navbar-right notifications-popup\">\r\n                        {{'app.Welcome' | translate}}\r\n                        <a class=\"app-component navbar-link user-name\" [popover]=\"popTemplate\" (onHidden)=\"markNotificationsAsRead()\" placement=\"bottom\" [popoverTitle]=\"notificationsTitle\" href=\"javascript:;\" triggers=\"focus\">\r\n                            {{userName}}\r\n                            <span *ngIf=\"newNotificationCount > 0\" class=\"badge\">{{newNotificationCount}}</span>\r\n                        </a>,\r\n                    </p>\r\n\r\n                    <ng-template #popTemplate>\r\n                        <notifications-viewer [isViewOnly]=\"true\"></notifications-viewer>\r\n                    </ng-template>\r\n\r\n\r\n                    <ul class=\"app-component nav navbar-nav nav-pills navBarPadding navbar-right\">\r\n                        <li routerLinkActive=\"active\"><a routerLink=\"/settings\"><span class=\"glyphicon glyphicon-cog\"></span></a></li>\r\n                    </ul>\r\n                </div>\r\n                <div *ngIf=\"!isUserLoggedIn && router.isActive('/about', false)\" class=\"app-component collapse navbar-collapse menuItemsContainer\">\r\n                    <ul class=\"app-component nav navbar-nav nav-pills navBarPadding navbar-right\">\r\n                        <li routerLinkActive=\"active\"><a routerLink=\"/login\"><span class=\"glyphicon glyphicon-log-in\"></span></a></li>\r\n                    </ul>\r\n                </div>\r\n                <div *ngIf=\"!isUserLoggedIn && router.isActive('/login', false) || false\" class=\"app-component collapse navbar-collapse menuItemsContainer\">\r\n                    <ul class=\"app-component nav navbar-nav nav-pills navBarPadding navbar-right\">\r\n                        <li routerLinkActive=\"active\"><a routerLink=\"/about\"><span class=\"glyphicon glyphicon-info-sign\"></span></a></li>\r\n                    </ul>\r\n                </div>\r\n            </nav>\r\n        </nav>\r\n\r\n        <div id=\"pre-bootstrap\" *ngIf=\"!removePrebootScreen\" [class.prebootShow.app-component]=\"!isAppLoaded\" class=\"app-component prebootStep\">\r\n            <div class=\"messaging\">\r\n                <h1>\r\n                    Loaded!\r\n                </h1>\r\n                <p>\r\n                    QUICK APPLICATION SYSTEM - <span class=\"appName\" style=\"font-style:italic\">quick</span><span class=\"appName\">App</span> &copy; <a href=\"https://www.ebenmonney.com\">WWW.EBENMONNEY.COM</a>\r\n                </p>\r\n\r\n            </div>\r\n        </div>\r\n\r\n        <div id=\"mainContent\" class=\"app-component\">\r\n            <router-outlet></router-outlet>\r\n        </div>\r\n\r\n        <div id=\"footer\">\r\n            <div class=\"app-component navbar-fixed-bottom navbar-inner footer\">\r\n                <div class=\"container\">\r\n                    <footer>\r\n                        <div class=\"app-component vcenter_text center-block\">\r\n                            <p class=\"text-center text-muted\">\r\n                                <span class=\"appName\" style=\"font-style:italic\">quick</span><span class=\"appName\">App</span> &copy; {{getYear()}}\r\n                                <a href=\"https://www.ebenmonney.com\" target=\"_blank\">www.ebenmonney.com</a>\r\n                                <!--<span class=\"small display-none\">- Powered by <a href=\"https://www.ebenmonney.com/quickapp\" target=\"_blank\"><span class=\"appName\" style=\"font-style:italic\">quick</span><span class=\"appName\">App</span></a></span>-->\r\n                            </p>\r\n                        </div>\r\n                    </footer>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n    <div *ngIf=\"shouldShowLoginModal\" class=\"modal fade\" bsModal #loginModal=\"bs-modal\" (onShown)=\"onLoginModalShown()\" (onHidden)=\"onLoginModalHidden()\" (onHide)=\"onLoginModalHide()\"\r\n         [config]=\"{backdrop: 'static'}\" tabindex=\"-1\">\r\n        <div class=\"modal-dialog modal-lg\">\r\n            <app-login #loginControl isModal=\"true\"></app-login>\r\n        </div>\r\n    </div>\r\n</div>";
 
 /***/ }),
-/* 298 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(299);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 299 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\r\n#mainContent.app-component {\r\n    position: relative;\r\n    padding-top: 50px;\r\n    padding-bottom: 50px;\r\n}\r\n\r\n\r\n.appTitle.app-component {\r\n    line-height: 50px;\r\n}\r\n\r\n\r\n.navbar-fixed-top.app-component, .navbar-fixed-bottom.app-component {\r\n    z-index: 1000;\r\n}\r\n\r\n\r\n.navbar-brand.app-component {\r\n    float: none;\r\n    color: #fff;\r\n}\r\n\r\n    .navbar-brand.app-component > img {\r\n        display: inline;\r\n        height: 35px;\r\n    }\r\n\r\n.navbar-inner.app-component {\r\n    padding-left: 0px;\r\n    -webkit-border-radius: 0px;\r\n    border-radius: 0px;\r\n    -webkit-box-shadow: none;\r\n    -moz-box-shadow: none;\r\n    box-shadow: none;\r\n    background-color: #027FF4;\r\n    background-image: none;\r\n}\r\n\r\n.navbar-inner.toolbar.app-component {\r\n    background-color: #fafafa;\r\n}\r\n\r\n\r\n.navbar.app-component .nav > .active > a, .navbar.app-component .nav > .active > a:hover, .navbar.app-component .nav > .active > a:focus {\r\n    background-color: #efefef;\r\n    -webkit-box-shadow: none;\r\n    box-shadow: none;\r\n    color: #808080;\r\n}\r\n\r\n.navbar.app-component .nav > li {\r\n    cursor: pointer;\r\n}\r\n\r\n    .navbar.app-component .nav > li > a {\r\n        color: white;\r\n        font-weight: bold;\r\n        -webkit-text-shadow: none;\r\n        text-shadow: none;\r\n        height: 30px;\r\n        padding-top: 6px;\r\n        padding-bottom: 0px;\r\n    }\r\n\r\n\r\n.navbar-fixed-top.app-component .navbar-inner.app-component,\r\n.navbar-static-top.app-component .navbar-inner.app-component {\r\n    -webkit-box-shadow: 0 1px 00px rgba(0, 0, 0, 0);\r\n    -moz-box-shadow: 0 1px 00px rgba(0, 0, 0, 0);\r\n    box-shadow: 0 1px 00px rgba(0, 0, 0, 0);\r\n}\r\n\r\n.nav.navBarPadding.app-component {\r\n    margin-left: 5px;\r\n    margin-top: 10px;\r\n}\r\n\r\np.navbar-text.app-component {\r\n    color: #fff;\r\n}\r\n\r\n    p.navbar-text.app-component a {\r\n        color: #fff;\r\n    }\r\n\r\n.navbar.app-component .brand {\r\n    margin-top: 2px;\r\n    color: #fff;\r\n    -webkit-text-shadow: none;\r\n    text-shadow: none;\r\n}\r\n\r\n.navbar-toggle.app-component {\r\n    border: 1px solid white;\r\n}\r\n\r\n    .navbar-toggle.app-component .icon-bar {\r\n        background-color: white;\r\n    }\r\n\r\n\r\n\r\n\r\n\r\n@media screen and (max-width: 992px) {\r\n    #mainContent.app-component {\r\n        /*padding-top: 200px;*/\r\n    }\r\n\r\n    .navbar-brand.app-component {\r\n        font-size: 12pt;\r\n    }\r\n\r\n    /*.nav.navBarPadding.app-component {\r\n        margin-left: -10px;\r\n    }*/\r\n\r\n    .nav.app-component > li > a {\r\n        padding-right: 5px;\r\n        padding-left: 5px;\r\n    }\r\n}\r\n\r\n\r\n@media screen and (max-width: 768px) {\r\n    .nav-pills.app-component > li {\r\n        float: none;\r\n        margin: 0;\r\n    }\r\n\r\n        .nav-pills.app-component > li + li {\r\n            margin-left: 0;\r\n            margin-top: 1px;\r\n        }\r\n\r\n    .navbar-collapse.app-component {\r\n        padding-right: 30px;\r\n    }\r\n}\r\n\r\n\r\n@media (min-width: 768px) {\r\n    a.user-name.app-component {\r\n        max-width: 45px;\r\n    }\r\n}\r\n\r\n\r\n@media (min-width: 992px) {\r\n    .navbar-toggle.app-component {\r\n        display: none;\r\n    }\r\n\r\n    a.user-name.app-component {\r\n        max-width: 100px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1200px) {\r\n    a.user-name.app-component {\r\n        max-width: 250px;\r\n    }\r\n}\r\n\r\n\r\na.user-name.app-component {\r\n    display: inline-block;\r\n    overflow: hidden;\r\n    white-space: nowrap;\r\n    text-overflow: ellipsis;\r\n    vertical-align: bottom;\r\n}\r\n\r\n\r\n\r\n/*footer.app-component {\r\n    margin-top: 10px;\r\n    font-weight: bold;\r\n}*/\r\n\r\n\r\n.navbar-inner.footer.app-component {\r\n    background-color: #f5f5f5;\r\n    -webkit-box-shadow: none;\r\n    -moz-box-shadow: none;\r\n    box-shadow: none;\r\n    height: 40px;\r\n}\r\n\r\n\r\n\r\n.vcenter_text.app-component {\r\n    line-height: 40px;\r\n    vertical-align: middle;\r\n}\r\n\r\n.prebootShow.app-component {\r\n    opacity: 1 !important;\r\n}\r\n\r\n.prebootStep.app-component {\r\n    opacity: 0;\r\n    transition: .5s ease-in-out all;\r\n}\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 300 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(301);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 301 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(undefined);
-// imports
-exports.i(__webpack_require__(302), "");
-exports.i(__webpack_require__(303), "");
-exports.i(__webpack_require__(304), "");
-
-// module
-exports.push([module.i, ".navbar .nav li a:hover,\r\n.navbar.nav li.toolbaritem a:hover,\r\n.nav.nav-tabsNOTUSE li a:hover {\r\n    color: #E03930;\r\n}\r\n\r\n.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {\r\n    background-color: #efefef;\r\n}\r\n\r\n\r\n.nav.nav-tabsNOTUSED li.active a {\r\n    color: #555;\r\n}\r\n\r\n\r\n.disabledContainer {\r\n    pointer-events: none;\r\n    opacity: 0.4;\r\n}\r\n\r\n\r\ninput.form-control.is-required-status, textarea.form-control.is-required-status, .bootstrap-select.is-required-status > .dropdown-toggle {\r\n    border-left-width: 5px;\r\n}\r\n\r\n\r\n.ng-valid[required], .ng-valid.required {\r\n    border-left: 5px solid #42A948; /*57A83F*/\r\n}\r\n\r\n.ng-invalid:not(form) {\r\n    border-left: 5px solid #a94442; /*E03930*/\r\n}\r\n\r\n.bootstrap-select.ng-novalidation > .dropdown-toggle {\r\n    border-left-width: 5px;\r\n}\r\n\r\n\r\n\r\n.has-success .bootstrap-select .dropdown-toggle,\r\n.success .bootstrap-select .dropdown-toggle {\r\n    border-color: #3c763d;\r\n}\r\n\r\n.has-error .bootstrap-select .dropdown-toggle,\r\n.error .bootstrap-select .dropdown-toggle {\r\n    border-color: #a94442;\r\n}\r\n\r\n.bootstrap-select .btn-default .badge {\r\n    color: #fff;\r\n    background-color: #777;\r\n}\r\n\r\n\r\n.pageHeader {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n\r\n.errorMessage {\r\n    padding: 5px 10px;\r\n    color: #a94442;\r\n}\r\n\r\n.appName {\r\n    font-family: monospace;\r\n}\r\n\r\ni.page-caption {\r\n    vertical-align: baseline;\r\n    font-size: 1.2em;\r\n}\r\n\r\n\r\n\r\n.alertify {\r\n    top: 75px;\r\n}\r\n\r\n.alertify-message {\r\n    font-size: 1.2em;\r\n}\r\n\r\n\r\n\r\n#toasty.toasty-position-top-right {\r\n    top: 20px;\r\n    right: 20px;\r\n}\r\n\r\n#toasty .toast.toasty-theme-bootstrap {\r\n    font-size: 1em;\r\n}\r\n\r\n    #toasty .toast.toasty-theme-bootstrap .toast-text .toast-title {\r\n        font-size: 1.04em;\r\n    }\r\n\r\n\r\n\r\n\r\n/*-webkit-filter: blur(5px) grayscale(90%);*/\r\n/*body.modal-open .container {\r\n    -webkit-filter: blur(1px);\r\n    -moz-filter: blur(1px);\r\n    -o-filter: blur(1px);\r\n    -ms-filter: blur(1px);\r\n    filter: blur(1px);\r\n    filter: url(\"https://gist.githubusercontent.com/amitabhaghosh197/b7865b409e835b5a43b5/raw/1a255b551091924971e7dee8935fd38a7fdf7311/blur\".svg#blur);\r\n    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='1');\r\n}*/\r\n\r\n\r\n.notifications-popup .popover {\r\n    color: #333 !important;\r\n    max-width: 500px;\r\n    width: 500px;\r\n}\r\n\r\n\r\n.vertical-center-flex {\r\n    min-height: 80vh;\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n\r\n\r\n/*Hack stop get ngx-datatable width to be full when inside bootstrap tab control*/\r\n.tab-pane .datatable-scroll {\r\n    width: 100% !important;\r\n}\r\n\r\n.ngx-datatable.scroll-vertical {\r\n    height: 64vh;\r\n}\r\n\r\n\r\n\r\n.boldFont.app-component {\r\n    font-weight: bold;\r\n}\r\n\r\n.black-anchor {\r\n    color: #333;\r\n}\r\n\r\n\r\n\r\n.form-group .icon-addon .form-control {\r\n    border-radius: 25px;\r\n}\r\n\r\n.icon-addon {\r\n    position: relative;\r\n    color: #555;\r\n    display: block;\r\n}\r\n\r\n    .icon-addon:after,\r\n    .icon-addon:before {\r\n        display: table;\r\n        content: \" \";\r\n    }\r\n\r\n    .icon-addon:after {\r\n        clear: both;\r\n    }\r\n\r\n    .icon-addon.addon-md .glyphicon,\r\n    .icon-addon .glyphicon,\r\n    .icon-addon.addon-md .fa,\r\n    .icon-addon .fa {\r\n        position: absolute;\r\n        z-index: 2;\r\n        font-size: 14px;\r\n        width: 20px;\r\n        text-align: center;\r\n        padding: 10px 0;\r\n        top: 1px;\r\n    }\r\n\r\n        .icon-addon .fa.left-icon {\r\n            left: 10px;\r\n            margin-left: -2.5px;\r\n        }\r\n\r\n        .icon-addon .fa.right-icon {\r\n            right: 10px;\r\n            margin-right: -2.5px;\r\n        }\r\n\r\n    .icon-addon.addon-lg .form-control {\r\n        line-height: 1.33;\r\n        height: 46px;\r\n        font-size: 18px;\r\n    }\r\n\r\n        .icon-addon.addon-lg .form-control.left-icon {\r\n            padding-top: 10px;\r\n            padding-right: 16px;\r\n            padding-bottom: 10px;\r\n            padding-left: 40px !important;\r\n        }\r\n\r\n        .icon-addon.addon-lg .form-control.right-icon {\r\n            padding-top: 10px;\r\n            padding-right: 40px !important;\r\n            padding-bottom: 10px;\r\n            padding-left: 16px;\r\n        }\r\n\r\n\r\n    .icon-addon.addon-sm .form-control {\r\n        height: 30px;\r\n        font-size: 12px;\r\n        line-height: 1.5;\r\n    }\r\n\r\n        .icon-addon.addon-sm .form-control.left-icon {\r\n            padding-top: 5px;\r\n            padding-right: 10px;\r\n            padding-bottom: 5px;\r\n            padding-left: 28px !important;\r\n        }\r\n\r\n        .icon-addon.addon-sm .form-control.right-icon {\r\n            padding-top: 5px;\r\n            padding-right: 28px !important;\r\n            padding-bottom: 5px;\r\n            padding-left: 10px;\r\n        }\r\n\r\n\r\n    .icon-addon.addon-lg .fa,\r\n    .icon-addon.addon-lg .glyphicon {\r\n        font-size: 18px;\r\n        top: 4px;\r\n    }\r\n\r\n        .icon-addon.addon-lg .fa.left-icon,\r\n        .icon-addon.addon-lg .glyphicon.left-icon {\r\n            margin-left: 0;\r\n            left: 11px;\r\n        }\r\n\r\n        .icon-addon.addon-lg .fa.right-icon,\r\n        .icon-addon.addon-lg .glyphicon.right-icon {\r\n            margin-right: 0;\r\n            right: 11px;\r\n        }\r\n\r\n\r\n    .icon-addon.addon-md .form-control,\r\n    .icon-addon .form-control {\r\n        font-weight: normal;\r\n    }\r\n\r\n        .icon-addon.addon-md .form-control.left-icon,\r\n        .icon-addon .form-control.left-icon {\r\n            float: left;\r\n            padding-left: 30px;\r\n        }\r\n\r\n        .icon-addon.addon-md .form-control.right-icon,\r\n        .icon-addon .form-control.right-icon {\r\n            float: right;\r\n            padding-right: 30px;\r\n        }\r\n\r\n\r\n    .icon-addon.addon-sm .fa,\r\n    .icon-addon.addon-sm .glyphicon {\r\n        font-size: 12px;\r\n        top: -1px;\r\n    }\r\n\r\n        .icon-addon.addon-sm .fa.left-icon,\r\n        .icon-addon.addon-sm .glyphicon.left-icon {\r\n            margin-left: 0;\r\n            left: 5px;\r\n        }\r\n\r\n        .icon-addon.addon-sm .fa.right-icon,\r\n        .icon-addon.addon-sm .glyphicon.right-icon {\r\n            margin-right: 0;\r\n            right: 5px;\r\n        }\r\n\r\n\r\n\r\n\r\n    .icon-addon .form-control:focus + .glyphicon,\r\n    .icon-addon:hover .glyphicon,\r\n    .icon-addon .form-control:focus + .fa,\r\n    .icon-addon:hover .fa {\r\n        color: #2580db;\r\n    }\r\n\r\n.clear-input {\r\n    text-decoration: none !important;\r\n    color: #b3b3b3 !important;\r\n}\r\n\r\n    .clear-input:hover {\r\n        color: #2580db !important;\r\n    }\r\n\r\n.inline-block {\r\n    display: inline-block;\r\n}\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 302 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\r\n.ngx-datatable.material.table-shadow {\r\n    background: #FFF;\r\n    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);\r\n    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);\r\n    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);\r\n    /**\r\n\t * Shared Styles\r\n\t */\r\n    /**\r\n\t * Global Row Styles\r\n\t */\r\n    /**\r\n\t * Header Styles\r\n\t */\r\n    /**\r\n\t * Body Styles\r\n\t */\r\n    /**\r\n\t * Footer Styles\r\n\t */\r\n}\r\n\r\n.ngx-datatable.material.xs {\r\n    font-size: 10px;\r\n}\r\n\r\n.ngx-datatable.material.sm {\r\n    font-size: 12px;\r\n}\r\n\r\n.ngx-datatable.material.md {\r\n    font-size: 14px;\r\n}\r\n\r\n.ngx-datatable.material.lg {\r\n    font-size: 16px;\r\n}\r\n\r\n.ngx-datatable.material.table-striped .datatable-row-even {\r\n    background: #f9f9f9;\r\n}\r\n\r\n.ngx-datatable.material.single-selection .datatable-body-row.active,\r\n.ngx-datatable.material.single-selection .datatable-body-row.active .datatable-row-group, .ngx-datatable.material.multi-selection .datatable-body-row.active,\r\n.ngx-datatable.material.multi-selection .datatable-body-row.active .datatable-row-group, .ngx-datatable.material.multi-click-selection .datatable-body-row.active,\r\n.ngx-datatable.material.multi-click-selection .datatable-body-row.active .datatable-row-group {\r\n    background-color: #304FFE;\r\n    color: #FFF;\r\n}\r\n\r\n    .ngx-datatable.material.single-selection .datatable-body-row.active:hover,\r\n    .ngx-datatable.material.single-selection .datatable-body-row.active:hover .datatable-row-group, .ngx-datatable.material.multi-selection .datatable-body-row.active:hover,\r\n    .ngx-datatable.material.multi-selection .datatable-body-row.active:hover .datatable-row-group, .ngx-datatable.material.multi-click-selection .datatable-body-row.active:hover,\r\n    .ngx-datatable.material.multi-click-selection .datatable-body-row.active:hover .datatable-row-group {\r\n        background-color: #193AE4;\r\n        color: #FFF;\r\n    }\r\n\r\n    .ngx-datatable.material.single-selection .datatable-body-row.active:focus,\r\n    .ngx-datatable.material.single-selection .datatable-body-row.active:focus .datatable-row-group, .ngx-datatable.material.multi-selection .datatable-body-row.active:focus,\r\n    .ngx-datatable.material.multi-selection .datatable-body-row.active:focus .datatable-row-group, .ngx-datatable.material.multi-click-selection .datatable-body-row.active:focus,\r\n    .ngx-datatable.material.multi-click-selection .datatable-body-row.active:focus .datatable-row-group {\r\n        background-color: #2041EF;\r\n        color: #FFF;\r\n    }\r\n\r\n.ngx-datatable.material.table-hover:not(.cell-selection) .datatable-body-row:hover,\r\n.ngx-datatable.material.table-hover:not(.cell-selection) .datatable-body-row:hover .datatable-row-group {\r\n    background-color: #f5f5f5;\r\n    /*transition-property: background;\r\n        transition-duration: .3s;\r\n        transition-timing-function: linear;*/\r\n}\r\n\r\n.ngx-datatable.material:not(.cell-selection) .datatable-body-row:focus,\r\n.ngx-datatable.material:not(.cell-selection) .datatable-body-row:focus .datatable-row-group {\r\n    background-color: #ddd;\r\n}\r\n\r\n.ngx-datatable.material.cell-selection.table-hover .datatable-body-cell:hover,\r\n.ngx-datatable.material.cell-selection.table-hover .datatable-body-cell:hover .datatable-row-group {\r\n    background-color: #f5f5f5;\r\n    /*transition-property: background;\r\n        transition-duration: .3s;\r\n        transition-timing-function: linear;*/\r\n}\r\n\r\n.ngx-datatable.material.cell-selection .datatable-body-cell:focus,\r\n.ngx-datatable.material.cell-selection .datatable-body-cell:focus .datatable-row-group {\r\n    background-color: #ddd;\r\n}\r\n\r\n.ngx-datatable.material.cell-selection .datatable-body-cell.active,\r\n.ngx-datatable.material.cell-selection .datatable-body-cell.active .datatable-row-group {\r\n    background-color: #304FFE;\r\n    color: #FFF;\r\n}\r\n\r\n    .ngx-datatable.material.cell-selection .datatable-body-cell.active:hover,\r\n    .ngx-datatable.material.cell-selection .datatable-body-cell.active:hover .datatable-row-group {\r\n        background-color: #193AE4;\r\n        color: #FFF;\r\n    }\r\n\r\n    .ngx-datatable.material.cell-selection .datatable-body-cell.active:focus,\r\n    .ngx-datatable.material.cell-selection .datatable-body-cell.active:focus .datatable-row-group {\r\n        background-color: #2041EF;\r\n        color: #FFF;\r\n    }\r\n\r\n.ngx-datatable.material .empty-row {\r\n    height: 50px;\r\n    text-align: left;\r\n    padding: .5rem 1.2rem;\r\n    vertical-align: top;\r\n    border-top: 0;\r\n}\r\n\r\n.ngx-datatable.material .loading-row {\r\n    text-align: left;\r\n    padding: .5rem 1.2rem;\r\n    vertical-align: top;\r\n    border-top: 0;\r\n}\r\n\r\n.ngx-datatable.material .datatable-header .datatable-row-left,\r\n.ngx-datatable.material .datatable-body .datatable-row-left {\r\n    background-color: #FFF;\r\n    background-position: 100% 0;\r\n    background-repeat: repeat-y;\r\n    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAYAAAD5PA/NAAAAFklEQVQIHWPSkNeSBmJhTQVtbiDNCgASagIIuJX8OgAAAABJRU5ErkJggg==);\r\n}\r\n\r\n.ngx-datatable.material .datatable-header .datatable-row-right,\r\n.ngx-datatable.material .datatable-body .datatable-row-right {\r\n    background-position: 0 0;\r\n    background-color: #fff;\r\n    background-repeat: repeat-y;\r\n    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAYAAAD5PA/NAAAAFklEQVQI12PQkNdi1VTQ5gbSwkAsDQARLAIGtOSFUAAAAABJRU5ErkJggg==);\r\n}\r\n\r\n\r\n\r\n.ngx-datatable.material .datatable-header {\r\n    border-bottom: 1px solid #ddd;\r\n}\r\n\r\n\r\n.ngx-datatable.material.colored-header .datatable-header {\r\n    padding: .9rem 0;\r\n    color: #fff;\r\n    background-color: #027FF4;\r\n}\r\n\r\n.ngx-datatable.material.table .datatable-body .datatable-body-row,\r\n.ngx-datatable.material.table-bordered .datatable-body .datatable-body-row {\r\n    border-top: 1px solid #ddd;\r\n}\r\n\r\n\r\n\r\n.ngx-datatable.material.table-bordered .datatable-header .datatable-header-cell {\r\n    padding: .9rem 1.2rem;\r\n}\r\n\r\n\r\n.ngx-datatable.material.full-header .datatable-header .datatable-header-cell {\r\n    padding: .9rem 1.2rem;\r\n}\r\n\r\n.ngx-datatable.material .datatable-header .datatable-header-cell {\r\n    text-align: left;\r\n    padding: .1rem 1.2rem;\r\n    font-weight: 400;\r\n    font-weight: bold;\r\n    vertical-align: bottom;\r\n}\r\n\r\n    .ngx-datatable.material .datatable-header .datatable-header-cell.longpress {\r\n        color: #027FF4;\r\n        background-color: whitesmoke;\r\n    }\r\n\r\n    .ngx-datatable.material .datatable-header .datatable-header-cell.dragging .resize-handle {\r\n        border-right: none;\r\n    }\r\n\r\n.ngx-datatable.material .datatable-header .resize-handle {\r\n    border-right: solid 1px #eee;\r\n}\r\n\r\n.ngx-datatable.material .datatable-body .datatable-row-detail {\r\n    background: #f5f5f5;\r\n    padding: 10px;\r\n}\r\n\r\n.ngx-datatable.material .datatable-body .datatable-body-row .datatable-body-cell {\r\n    text-align: left;\r\n    padding: .7rem 1.2rem;\r\n    vertical-align: top;\r\n    border-top: 0;\r\n    -webkit-transition: width 0.3s ease;\r\n    transition: width 0.3s ease;\r\n}\r\n\r\n.ngx-datatable.material .datatable-body .progress-linear {\r\n    display: block;\r\n    width: 100%;\r\n    height: 5px;\r\n    padding: 0;\r\n    margin: 0;\r\n    position: absolute;\r\n    z-index:9999;\r\n}\r\n\r\n    .ngx-datatable.material .datatable-body .progress-linear .container {\r\n        display: block;\r\n        position: relative;\r\n        overflow: hidden;\r\n        width: 100%;\r\n        height: 5px;\r\n        -webkit-transform: translate(0, 0) scale(1, 1);\r\n        transform: translate(0, 0) scale(1, 1);\r\n        background-color: #aad1f9;\r\n    }\r\n\r\n        .ngx-datatable.material .datatable-body .progress-linear .container .bar {\r\n            transition: all .2s linear;\r\n            -webkit-animation: query 0.8s infinite cubic-bezier(0.39, 0.575, 0.565, 1);\r\n            animation: query 0.8s infinite cubic-bezier(0.39, 0.575, 0.565, 1);\r\n            transition: -webkit-transform .2s linear;\r\n            transition: transform .2s linear;\r\n            background-color: #106cc8;\r\n            position: absolute;\r\n            left: 0;\r\n            top: 0;\r\n            bottom: 0;\r\n            width: 100%;\r\n            height: 5px;\r\n        }\r\n\r\n.ngx-datatable.material .datatable-footer {\r\n    border-top: 1px solid rgba(0, 0, 0, 0.12);\r\n    font-size: 14px;\r\n    color: #777;\r\n}\r\n\r\n    .ngx-datatable.material .datatable-footer .page-count {\r\n        line-height: 50px;\r\n        height: 50px;\r\n        padding: 0 1.2rem;\r\n    }\r\n\r\n    .ngx-datatable.material .datatable-footer .datatable-pager {\r\n        margin: 0 10px;\r\n    }\r\n\r\n        .ngx-datatable.material .datatable-footer .datatable-pager li {\r\n            vertical-align: middle;\r\n        }\r\n\r\n            .ngx-datatable.material .datatable-footer .datatable-pager li.disabled a {\r\n                color: rgba(0, 0, 0, 0.26) !important;\r\n                background-color: transparent !important;\r\n            }\r\n\r\n            .ngx-datatable.material .datatable-footer .datatable-pager li.active a {\r\n                background-color: rgba(158, 158, 158, 0.2);\r\n                font-weight: bold;\r\n            }\r\n\r\n        .ngx-datatable.material .datatable-footer .datatable-pager a {\r\n            height: 22px;\r\n            min-width: 24px;\r\n            line-height: 22px;\r\n            padding: 0 6px;\r\n            border-radius: 3px;\r\n            margin: 6px 3px;\r\n            text-align: center;\r\n            vertical-align: top;\r\n            color: rgba(0, 0, 0, 0.54);\r\n            text-decoration: none;\r\n            vertical-align: bottom;\r\n        }\r\n\r\n            .ngx-datatable.material .datatable-footer .datatable-pager a:hover {\r\n                color: rgba(0, 0, 0, 0.75);\r\n                background-color: rgba(158, 158, 158, 0.2);\r\n            }\r\n\r\n        .ngx-datatable.material .datatable-footer .datatable-pager .icon-left,\r\n        .ngx-datatable.material .datatable-footer .datatable-pager .icon-skip,\r\n        .ngx-datatable.material .datatable-footer .datatable-pager .icon-right,\r\n        .ngx-datatable.material .datatable-footer .datatable-pager .icon-prev {\r\n            font-size: 20px;\r\n            line-height: 20px;\r\n            padding: 0 3px;\r\n        }\r\n\r\n/**\r\n * Checkboxes\r\n**/\r\n.datatable-checkbox {\r\n    position: relative;\r\n    margin: 0;\r\n    cursor: pointer;\r\n    vertical-align: middle;\r\n    display: inline-block;\r\n    box-sizing: border-box;\r\n    padding: 10px 0;\r\n}\r\n\r\n    .datatable-checkbox input[type='checkbox'] {\r\n        position: relative;\r\n        margin: 0 1rem 0 0;\r\n        cursor: pointer;\r\n        outline: none;\r\n    }\r\n\r\n        .datatable-checkbox input[type='checkbox']:before {\r\n            -webkit-transition: all 0.3s ease-in-out;\r\n            -moz-transition: all 0.3s ease-in-out;\r\n            transition: all 0.3s ease-in-out;\r\n            content: \"\";\r\n            position: absolute;\r\n            left: 0;\r\n            z-index: 1;\r\n            width: 1rem;\r\n            height: 1rem;\r\n            border: 2px solid #f2f2f2;\r\n        }\r\n\r\n        .datatable-checkbox input[type='checkbox']:checked:before {\r\n            -webkit-transform: rotate(-45deg);\r\n            -moz-transform: rotate(-45deg);\r\n            -ms-transform: rotate(-45deg);\r\n            transform: rotate(-45deg);\r\n            height: .5rem;\r\n            border-color: #009688;\r\n            border-top-style: none;\r\n            border-right-style: none;\r\n        }\r\n\r\n        .datatable-checkbox input[type='checkbox']:after {\r\n            content: \"\";\r\n            position: absolute;\r\n            top: 0;\r\n            left: 0;\r\n            width: 1rem;\r\n            height: 1rem;\r\n            background: #fff;\r\n            cursor: pointer;\r\n        }\r\n\r\n/**\r\n * Progress bar animations\r\n */\r\n\r\n@keyframes query {\r\n    0% {\r\n        opacity: 1;\r\n        transform: translateX(35%) scale(0.3, 1);\r\n    }\r\n\r\n    100% {\r\n        opacity: 0;\r\n        transform: translateX(-50%) scale(0, 1);\r\n    }\r\n}\r\n", ""]);
-
-// exports
-
-
-/***/ }),
 /* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(undefined);
-// imports
 
+        var result = __webpack_require__(304);
 
-// module
-exports.push([module.i, ".alertify,\r\n.alertify-show,\r\n.alertify-log {\r\n\t-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);\r\n\t   -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);\r\n\t    -ms-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);\r\n\t     -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);\r\n\t        transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */\r\n}\r\n.alertify-hide {\r\n\t-webkit-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t   -moz-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t    -ms-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t     -o-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t        transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045); /* easeInBack */\r\n}\r\n.alertify-log-hide {\r\n\t-webkit-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t   -moz-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t    -ms-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t     -o-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t        transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045); /* easeInBack */\r\n}\r\n.alertify-cover {\r\n\tposition: fixed; z-index: 99999;\r\n\ttop: 0; right: 0; bottom: 0; left: 0;\r\n\tbackground-color:white;\r\n\tfilter:alpha(opacity=0);\r\n\topacity:0;\r\n}\r\n\t.alertify-cover-hidden {\r\n\t\tdisplay: none;\r\n\t}\r\n.alertify {\r\n\tposition: fixed; z-index: 99999;\r\n\ttop: 50px; left: 50%;\r\n\twidth: 550px;\r\n\tmargin-left: -275px;\r\n\topacity: 1;\r\n}\r\n\t.alertify-hidden {\r\n\t\t-webkit-transform: translate(0,-150px);\r\n\t\t   -moz-transform: translate(0,-150px);\r\n\t\t    -ms-transform: translate(0,-150px);\r\n\t\t     -o-transform: translate(0,-150px);\r\n\t\t        transform: translate(0,-150px);\r\n\t\topacity: 0;\r\n\t\tdisplay: none;\r\n\t}\r\n\t/* overwrite display: none; for everything except IE6-8 */\r\n\t:root *> .alertify-hidden {\r\n\t\tdisplay: block;\r\n\t\tvisibility: hidden;\r\n\t}\r\n.alertify-logs {\r\n\tposition: fixed;\r\n\tz-index: 5000;\r\n\tbottom: 10px;\r\n\tright: 10px;\r\n\twidth: 300px;\r\n}\r\n.alertify-logs-hidden {\r\n\tdisplay: none;\r\n}\r\n\t.alertify-log {\r\n\t\tdisplay: block;\r\n\t\tmargin-top: 10px;\r\n\t\tposition: relative;\r\n\t\tright: -300px;\r\n\t\topacity: 0;\r\n\t}\r\n\t.alertify-log-show {\r\n\t\tright: 0;\r\n\t\topacity: 1;\r\n\t}\r\n\t.alertify-log-hide {\r\n\t\t-webkit-transform: translate(300px, 0);\r\n\t\t   -moz-transform: translate(300px, 0);\r\n\t\t    -ms-transform: translate(300px, 0);\r\n\t\t     -o-transform: translate(300px, 0);\r\n\t\t        transform: translate(300px, 0);\r\n\t\topacity: 0;\r\n\t}\r\n\t.alertify-dialog {\r\n\t\tpadding: 25px;\r\n\t}\r\n\t\t.alertify-resetFocus {\r\n\t\t\tborder: 0;\r\n\t\t\tclip: rect(0 0 0 0);\r\n\t\t\theight: 1px;\r\n\t\t\tmargin: -1px;\r\n\t\t\toverflow: hidden;\r\n\t\t\tpadding: 0;\r\n\t\t\tposition: absolute;\r\n\t\t\twidth: 1px;\r\n\t\t}\r\n\t\t.alertify-inner {\r\n\t\t\ttext-align: center;\r\n\t\t}\r\n\t\t.alertify-text {\r\n\t\t\tmargin-bottom: 15px;\r\n\t\t\twidth: 100%;\r\n\t\t\t-webkit-box-sizing: border-box;\r\n\t\t\t   -moz-box-sizing: border-box;\r\n\t\t\t        box-sizing: border-box;\r\n\t\t\tfont-size: 100%;\r\n\t\t}\r\n\t\t.alertify-buttons {\r\n\t\t}\r\n\t\t\t.alertify-button,\r\n\t\t\t.alertify-button:hover,\r\n\t\t\t.alertify-button:active,\r\n\t\t\t.alertify-button:visited {\r\n\t\t\t\tbackground: none;\r\n\t\t\t\ttext-decoration: none;\r\n\t\t\t\tborder: none;\r\n\t\t\t\t/* line-height and font-size for input button */\r\n\t\t\t\tline-height: 1.5;\r\n\t\t\t\tfont-size: 100%;\r\n\t\t\t\tdisplay: inline-block;\r\n\t\t\t\tcursor: pointer;\r\n\t\t\t\tmargin-left: 5px;\r\n\t\t\t}\r\n\r\n@media only screen and (max-width: 680px) {\r\n\t.alertify,\r\n\t.alertify-logs {\r\n\t\twidth: 90%;\r\n\t\t-webkit-box-sizing: border-box;\r\n\t\t   -moz-box-sizing: border-box;\r\n\t\t        box-sizing: border-box;\r\n\t}\r\n\t.alertify {\r\n\t\tleft: 5%;\r\n\t\tmargin: 0;\r\n\t}\r\n}\r\n", ""]);
-
-// exports
-
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
 
 /***/ }),
 /* 304 */
@@ -56790,7 +56882,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, "/**\r\n * Twitter Bootstrap Look and Feel\r\n * Based on http://twitter.github.com/bootstrap/\r\n */\r\n.alertify,\r\n.alertify-log {\r\n\tfont-family: sans-serif;\r\n}\r\n.alertify {\r\n\tbackground: #FFF;\r\n\tborder: 1px solid #8E8E8E; /* browsers that don't support rgba */\r\n\tborder: 1px solid rgba(0,0,0,.3);\r\n\tborder-radius: 6px;\r\n\tbox-shadow: 0 3px 7px rgba(0,0,0,.3);\r\n\t-webkit-background-clip: padding;     /* Safari 4? Chrome 6? */\r\n\t   -moz-background-clip: padding;     /* Firefox 3.6 */\r\n\t        background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */\r\n}\r\n.alertify-dialog {\r\n\tpadding: 0;\r\n}\r\n\t.alertify-inner {\r\n\t\ttext-align: left;\r\n\t}\r\n\t\t.alertify-message {\r\n\t\t\tpadding: 15px;\r\n\t\t\tmargin: 0;\r\n\t\t}\r\n\t\t.alertify-text-wrapper {\r\n\t\t\tpadding: 0 15px;\r\n\t\t}\r\n\t\t\t.alertify-text {\r\n\t\t\t\tcolor: #555;\r\n\t\t\t\tborder-radius: 4px;\r\n\t\t\t\tpadding: 8px;\r\n\t\t\t\tbackground-color: #FFF;\r\n\t\t\t\tborder: 1px solid #CCC;\r\n\t\t\t\tbox-shadow: inset 0 1px 1px rgba(0,0,0,.075);\r\n\t\t\t}\r\n\t\t\t.alertify-text:focus {\r\n\t\t\t\tborder-color: rgba(82,168,236,.8);\r\n\t\t\t\toutline: 0;\r\n\t\t\t\tbox-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);\r\n\t\t\t}\r\n\r\n\t\t.alertify-buttons {\r\n\t\t\tpadding: 14px 15px 15px;\r\n\t\t\tbackground: #F5F5F5;\r\n\t\t\tborder-top: 1px solid #DDD;\r\n\t\t\tborder-radius: 0 0 6px 6px;\r\n\t\t\tbox-shadow: inset 0 1px 0 #FFF;\r\n\t\t\ttext-align: right;\r\n\t\t}\r\n\t\t\t.alertify-button,\r\n\t\t\t.alertify-button:hover,\r\n\t\t\t.alertify-button:focus,\r\n\t\t\t.alertify-button:active {\r\n\t\t\t\tmargin-left: 10px;\r\n\t\t\t\tborder-radius: 4px;\r\n\t\t\t\tfont-weight: normal;\r\n\t\t\t\tpadding: 4px 12px;\r\n\t\t\t\ttext-decoration: none;\r\n\t\t\t\tbox-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);\r\n\t\t\t\tbackground-image: -webkit-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));\r\n\t\t\t\tbackground-image:    -moz-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));\r\n\t\t\t\tbackground-image:     -ms-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));\r\n\t\t\t\tbackground-image:      -o-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));\r\n\t\t\t\tbackground-image:         linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));\r\n\t\t\t}\r\n\t\t\t.alertify-button:focus {\r\n\t\t\t\toutline: none;\r\n\t\t\t\tbox-shadow: 0 0 5px #2B72D5;\r\n\t\t\t}\r\n\t\t\t.alertify-button:active {\r\n\t\t\t\tposition: relative;\r\n\t\t\t\tbox-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);\r\n\t\t\t}\r\n\t\t\t\t.alertify-button-cancel,\r\n\t\t\t\t.alertify-button-cancel:hover,\r\n\t\t\t\t.alertify-button-cancel:focus,\r\n\t\t\t\t.alertify-button-cancel:active {\r\n\t\t\t\t\ttext-shadow: 0 -1px 0 rgba(255,255,255,.75);\r\n\t\t\t\t\tbackground-color: #E6E6E6;\r\n\t\t\t\t\tborder: 1px solid #BBB;\r\n\t\t\t\t\tcolor: #333;\r\n\t\t\t\t\tbackground-image: -webkit-linear-gradient(top, #FFF, #E6E6E6);\r\n\t\t\t\t\tbackground-image:    -moz-linear-gradient(top, #FFF, #E6E6E6);\r\n\t\t\t\t\tbackground-image:     -ms-linear-gradient(top, #FFF, #E6E6E6);\r\n\t\t\t\t\tbackground-image:      -o-linear-gradient(top, #FFF, #E6E6E6);\r\n\t\t\t\t\tbackground-image:         linear-gradient(top, #FFF, #E6E6E6);\r\n\t\t\t\t}\r\n\t\t\t\t.alertify-button-cancel:hover,\r\n\t\t\t\t.alertify-button-cancel:focus,\r\n\t\t\t\t.alertify-button-cancel:active {\r\n\t\t\t\t\tbackground: #E6E6E6;\r\n\t\t\t\t}\r\n\t\t\t\t.alertify-button-ok,\r\n\t\t\t\t.alertify-button-ok:hover,\r\n\t\t\t\t.alertify-button-ok:focus,\r\n\t\t\t\t.alertify-button-ok:active {\r\n\t\t\t\t\ttext-shadow: 0 -1px 0 rgba(0,0,0,.25);\r\n\t\t\t\t\tbackground-color: #04C;\r\n\t\t\t\t\tborder: 1px solid #04C;\r\n\t\t\t\t\tborder-color: #04C #04C #002A80;\r\n\t\t\t\t\tborder-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);\r\n\t\t\t\t\tcolor: #FFF;\r\n\t\t\t\t}\r\n\t\t\t\t.alertify-button-ok:hover,\r\n\t\t\t\t.alertify-button-ok:focus,\r\n\t\t\t\t.alertify-button-ok:active {\r\n\t\t\t\t\tbackground: #04C;\r\n\t\t\t\t}\r\n\r\n.alertify-log {\r\n\tbackground: #D9EDF7;\r\n\tpadding: 8px 14px;\r\n\tborder-radius: 4px;\r\n\tcolor: #3A8ABF;\r\n\ttext-shadow: 0 1px 0 rgba(255,255,255,.5);\r\n\tborder: 1px solid #BCE8F1;\r\n}\r\n\t.alertify-log-error {\r\n\t\tcolor: #B94A48;\r\n\t\tbackground: #F2DEDE;\r\n\t\tborder: 1px solid #EED3D7;\r\n\t}\r\n\t.alertify-log-success {\r\n\t\tcolor: #468847;\r\n\t\tbackground: #DFF0D8;\r\n\t\tborder: 1px solid #D6E9C6;\r\n\t}", ""]);
+exports.push([module.i, "\r\n#mainContent.app-component {\r\n    position: relative;\r\n    padding-top: 50px;\r\n    padding-bottom: 50px;\r\n}\r\n\r\n\r\n.appTitle.app-component {\r\n    line-height: 50px;\r\n}\r\n\r\n\r\n.navbar-fixed-top.app-component, .navbar-fixed-bottom.app-component {\r\n    z-index: 1000;\r\n}\r\n\r\n\r\n.navbar-brand.app-component {\r\n    float: none;\r\n    color: #fff;\r\n}\r\n\r\n    .navbar-brand.app-component > img {\r\n        display: inline;\r\n        height: 35px;\r\n    }\r\n\r\n.navbar-inner.app-component {\r\n    padding-left: 0px;\r\n    -webkit-border-radius: 0px;\r\n    border-radius: 0px;\r\n    -webkit-box-shadow: none;\r\n    -moz-box-shadow: none;\r\n    box-shadow: none;\r\n    background-color: #027FF4;\r\n    background-image: none;\r\n}\r\n\r\n.navbar-inner.toolbar.app-component {\r\n    background-color: #fafafa;\r\n}\r\n\r\n\r\n.navbar.app-component .nav > .active > a, .navbar.app-component .nav > .active > a:hover, .navbar.app-component .nav > .active > a:focus {\r\n    background-color: #efefef;\r\n    -webkit-box-shadow: none;\r\n    box-shadow: none;\r\n    color: #808080;\r\n}\r\n\r\n.navbar.app-component .nav > li {\r\n    cursor: pointer;\r\n}\r\n\r\n    .navbar.app-component .nav > li > a {\r\n        color: white;\r\n        font-weight: bold;\r\n        -webkit-text-shadow: none;\r\n        text-shadow: none;\r\n        height: 30px;\r\n        padding-top: 6px;\r\n        padding-bottom: 0px;\r\n    }\r\n\r\n\r\n.navbar-fixed-top.app-component .navbar-inner.app-component,\r\n.navbar-static-top.app-component .navbar-inner.app-component {\r\n    -webkit-box-shadow: 0 1px 00px rgba(0, 0, 0, 0);\r\n    -moz-box-shadow: 0 1px 00px rgba(0, 0, 0, 0);\r\n    box-shadow: 0 1px 00px rgba(0, 0, 0, 0);\r\n}\r\n\r\n.nav.navBarPadding.app-component {\r\n    margin-left: 5px;\r\n    margin-top: 10px;\r\n}\r\n\r\np.navbar-text.app-component {\r\n    color: #fff;\r\n}\r\n\r\n    p.navbar-text.app-component a {\r\n        color: #fff;\r\n    }\r\n\r\n.navbar.app-component .brand {\r\n    margin-top: 2px;\r\n    color: #fff;\r\n    -webkit-text-shadow: none;\r\n    text-shadow: none;\r\n}\r\n\r\n.navbar-toggle.app-component {\r\n    border: 1px solid white;\r\n}\r\n\r\n    .navbar-toggle.app-component .icon-bar {\r\n        background-color: white;\r\n    }\r\n\r\n\r\n\r\n\r\n\r\n@media screen and (max-width: 992px) {\r\n    #mainContent.app-component {\r\n        /*padding-top: 200px;*/\r\n    }\r\n\r\n    .navbar-brand.app-component {\r\n        font-size: 12pt;\r\n    }\r\n\r\n    /*.nav.navBarPadding.app-component {\r\n        margin-left: -10px;\r\n    }*/\r\n\r\n    .nav.app-component > li > a {\r\n        padding-right: 5px;\r\n        padding-left: 5px;\r\n    }\r\n}\r\n\r\n\r\n@media screen and (max-width: 768px) {\r\n    .nav-pills.app-component > li {\r\n        float: none;\r\n        margin: 0;\r\n    }\r\n\r\n        .nav-pills.app-component > li + li {\r\n            margin-left: 0;\r\n            margin-top: 1px;\r\n        }\r\n\r\n    .navbar-collapse.app-component {\r\n        padding-right: 30px;\r\n    }\r\n}\r\n\r\n\r\n@media (min-width: 768px) {\r\n    a.user-name.app-component {\r\n        max-width: 45px;\r\n    }\r\n}\r\n\r\n\r\n@media (min-width: 992px) {\r\n    .navbar-toggle.app-component {\r\n        display: none;\r\n    }\r\n\r\n    a.user-name.app-component {\r\n        max-width: 100px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1200px) {\r\n    a.user-name.app-component {\r\n        max-width: 250px;\r\n    }\r\n}\r\n\r\n\r\na.user-name.app-component {\r\n    display: inline-block;\r\n    overflow: hidden;\r\n    white-space: nowrap;\r\n    text-overflow: ellipsis;\r\n    vertical-align: bottom;\r\n}\r\n\r\n\r\n\r\n/*footer.app-component {\r\n    margin-top: 10px;\r\n    font-weight: bold;\r\n}*/\r\n\r\n\r\n.navbar-inner.footer.app-component {\r\n    background-color: #f5f5f5;\r\n    -webkit-box-shadow: none;\r\n    -moz-box-shadow: none;\r\n    box-shadow: none;\r\n    height: 40px;\r\n}\r\n\r\n\r\n\r\n.vcenter_text.app-component {\r\n    line-height: 40px;\r\n    vertical-align: middle;\r\n}\r\n\r\n.prebootShow.app-component {\r\n    opacity: 1 !important;\r\n}\r\n\r\n.prebootStep.app-component {\r\n    opacity: 0;\r\n    transition: .5s ease-in-out all;\r\n}\r\n", ""]);
 
 // exports
 
@@ -56815,6 +56907,78 @@ exports.push([module.i, "/**\r\n * Twitter Bootstrap Look and Feel\r\n * Based o
 
 exports = module.exports = __webpack_require__(3)(undefined);
 // imports
+exports.i(__webpack_require__(307), "");
+exports.i(__webpack_require__(308), "");
+exports.i(__webpack_require__(309), "");
+
+// module
+exports.push([module.i, ".navbar .nav li a:hover,\r\n.navbar.nav li.toolbaritem a:hover,\r\n.nav.nav-tabsNOTUSE li a:hover {\r\n    color: #E03930;\r\n}\r\n\r\n.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {\r\n    background-color: #efefef;\r\n}\r\n\r\n\r\n.nav.nav-tabsNOTUSED li.active a {\r\n    color: #555;\r\n}\r\n\r\n\r\n.disabledContainer {\r\n    pointer-events: none;\r\n    opacity: 0.4;\r\n}\r\n\r\n\r\ninput.form-control.is-required-status, textarea.form-control.is-required-status, .bootstrap-select.is-required-status > .dropdown-toggle {\r\n    border-left-width: 5px;\r\n}\r\n\r\n\r\n.ng-valid[required], .ng-valid.required {\r\n    border-left: 5px solid #42A948; /*57A83F*/\r\n}\r\n\r\n.ng-invalid:not(form) {\r\n    border-left: 5px solid #a94442; /*E03930*/\r\n}\r\n\r\n.bootstrap-select.ng-novalidation > .dropdown-toggle {\r\n    border-left-width: 5px;\r\n}\r\n\r\n\r\n\r\n.has-success .bootstrap-select .dropdown-toggle,\r\n.success .bootstrap-select .dropdown-toggle {\r\n    border-color: #3c763d;\r\n}\r\n\r\n.has-error .bootstrap-select .dropdown-toggle,\r\n.error .bootstrap-select .dropdown-toggle {\r\n    border-color: #a94442;\r\n}\r\n\r\n.bootstrap-select .btn-default .badge {\r\n    color: #fff;\r\n    background-color: #777;\r\n}\r\n\r\n\r\n.pageHeader {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n\r\n.errorMessage {\r\n    padding: 5px 10px;\r\n    color: #a94442;\r\n}\r\n\r\n.appName {\r\n    font-family: monospace;\r\n}\r\n\r\ni.page-caption {\r\n    vertical-align: baseline;\r\n    font-size: 1.2em;\r\n}\r\n\r\n\r\n\r\n.alertify {\r\n    top: 75px;\r\n}\r\n\r\n.alertify-message {\r\n    font-size: 1.2em;\r\n}\r\n\r\n\r\n\r\n#toasty.toasty-position-top-right {\r\n    top: 20px;\r\n    right: 20px;\r\n}\r\n\r\n#toasty .toast.toasty-theme-bootstrap {\r\n    font-size: 1em;\r\n}\r\n\r\n    #toasty .toast.toasty-theme-bootstrap .toast-text .toast-title {\r\n        font-size: 1.04em;\r\n    }\r\n\r\n\r\n\r\n\r\n/*-webkit-filter: blur(5px) grayscale(90%);*/\r\n/*body.modal-open .container {\r\n    -webkit-filter: blur(1px);\r\n    -moz-filter: blur(1px);\r\n    -o-filter: blur(1px);\r\n    -ms-filter: blur(1px);\r\n    filter: blur(1px);\r\n    filter: url(\"https://gist.githubusercontent.com/amitabhaghosh197/b7865b409e835b5a43b5/raw/1a255b551091924971e7dee8935fd38a7fdf7311/blur\".svg#blur);\r\n    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='1');\r\n}*/\r\n\r\n\r\n.notifications-popup .popover {\r\n    color: #333 !important;\r\n    max-width: 500px;\r\n    width: 500px;\r\n}\r\n\r\n\r\n.vertical-center-flex {\r\n    min-height: 80vh;\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n\r\n\r\n/*Hack stop get ngx-datatable width to be full when inside bootstrap tab control*/\r\n.tab-pane .datatable-scroll {\r\n    width: 100% !important;\r\n}\r\n\r\n.ngx-datatable.scroll-vertical {\r\n    height: 64vh;\r\n}\r\n\r\n\r\n\r\n.boldFont.app-component {\r\n    font-weight: bold;\r\n}\r\n\r\n.black-anchor {\r\n    color: #333;\r\n}\r\n\r\n\r\n\r\n.form-group .icon-addon .form-control {\r\n    border-radius: 25px;\r\n}\r\n\r\n.icon-addon {\r\n    position: relative;\r\n    color: #555;\r\n    display: block;\r\n}\r\n\r\n    .icon-addon:after,\r\n    .icon-addon:before {\r\n        display: table;\r\n        content: \" \";\r\n    }\r\n\r\n    .icon-addon:after {\r\n        clear: both;\r\n    }\r\n\r\n    .icon-addon.addon-md .glyphicon,\r\n    .icon-addon .glyphicon,\r\n    .icon-addon.addon-md .fa,\r\n    .icon-addon .fa {\r\n        position: absolute;\r\n        z-index: 2;\r\n        font-size: 14px;\r\n        width: 20px;\r\n        text-align: center;\r\n        padding: 10px 0;\r\n        top: 1px;\r\n    }\r\n\r\n        .icon-addon .fa.left-icon {\r\n            left: 10px;\r\n            margin-left: -2.5px;\r\n        }\r\n\r\n        .icon-addon .fa.right-icon {\r\n            right: 10px;\r\n            margin-right: -2.5px;\r\n        }\r\n\r\n    .icon-addon.addon-lg .form-control {\r\n        line-height: 1.33;\r\n        height: 46px;\r\n        font-size: 18px;\r\n    }\r\n\r\n        .icon-addon.addon-lg .form-control.left-icon {\r\n            padding-top: 10px;\r\n            padding-right: 16px;\r\n            padding-bottom: 10px;\r\n            padding-left: 40px !important;\r\n        }\r\n\r\n        .icon-addon.addon-lg .form-control.right-icon {\r\n            padding-top: 10px;\r\n            padding-right: 40px !important;\r\n            padding-bottom: 10px;\r\n            padding-left: 16px;\r\n        }\r\n\r\n\r\n    .icon-addon.addon-sm .form-control {\r\n        height: 30px;\r\n        font-size: 12px;\r\n        line-height: 1.5;\r\n    }\r\n\r\n        .icon-addon.addon-sm .form-control.left-icon {\r\n            padding-top: 5px;\r\n            padding-right: 10px;\r\n            padding-bottom: 5px;\r\n            padding-left: 28px !important;\r\n        }\r\n\r\n        .icon-addon.addon-sm .form-control.right-icon {\r\n            padding-top: 5px;\r\n            padding-right: 28px !important;\r\n            padding-bottom: 5px;\r\n            padding-left: 10px;\r\n        }\r\n\r\n\r\n    .icon-addon.addon-lg .fa,\r\n    .icon-addon.addon-lg .glyphicon {\r\n        font-size: 18px;\r\n        top: 4px;\r\n    }\r\n\r\n        .icon-addon.addon-lg .fa.left-icon,\r\n        .icon-addon.addon-lg .glyphicon.left-icon {\r\n            margin-left: 0;\r\n            left: 11px;\r\n        }\r\n\r\n        .icon-addon.addon-lg .fa.right-icon,\r\n        .icon-addon.addon-lg .glyphicon.right-icon {\r\n            margin-right: 0;\r\n            right: 11px;\r\n        }\r\n\r\n\r\n    .icon-addon.addon-md .form-control,\r\n    .icon-addon .form-control {\r\n        font-weight: normal;\r\n    }\r\n\r\n        .icon-addon.addon-md .form-control.left-icon,\r\n        .icon-addon .form-control.left-icon {\r\n            float: left;\r\n            padding-left: 30px;\r\n        }\r\n\r\n        .icon-addon.addon-md .form-control.right-icon,\r\n        .icon-addon .form-control.right-icon {\r\n            float: right;\r\n            padding-right: 30px;\r\n        }\r\n\r\n\r\n    .icon-addon.addon-sm .fa,\r\n    .icon-addon.addon-sm .glyphicon {\r\n        font-size: 12px;\r\n        top: -1px;\r\n    }\r\n\r\n        .icon-addon.addon-sm .fa.left-icon,\r\n        .icon-addon.addon-sm .glyphicon.left-icon {\r\n            margin-left: 0;\r\n            left: 5px;\r\n        }\r\n\r\n        .icon-addon.addon-sm .fa.right-icon,\r\n        .icon-addon.addon-sm .glyphicon.right-icon {\r\n            margin-right: 0;\r\n            right: 5px;\r\n        }\r\n\r\n\r\n\r\n\r\n    .icon-addon .form-control:focus + .glyphicon,\r\n    .icon-addon:hover .glyphicon,\r\n    .icon-addon .form-control:focus + .fa,\r\n    .icon-addon:hover .fa {\r\n        color: #2580db;\r\n    }\r\n\r\n.clear-input {\r\n    text-decoration: none !important;\r\n    color: #b3b3b3 !important;\r\n}\r\n\r\n    .clear-input:hover {\r\n        color: #2580db !important;\r\n    }\r\n\r\n.inline-block {\r\n    display: inline-block;\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 307 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\r\n.ngx-datatable.material.table-shadow {\r\n    background: #FFF;\r\n    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);\r\n    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);\r\n    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);\r\n    /**\r\n\t * Shared Styles\r\n\t */\r\n    /**\r\n\t * Global Row Styles\r\n\t */\r\n    /**\r\n\t * Header Styles\r\n\t */\r\n    /**\r\n\t * Body Styles\r\n\t */\r\n    /**\r\n\t * Footer Styles\r\n\t */\r\n}\r\n\r\n.ngx-datatable.material.xs {\r\n    font-size: 10px;\r\n}\r\n\r\n.ngx-datatable.material.sm {\r\n    font-size: 12px;\r\n}\r\n\r\n.ngx-datatable.material.md {\r\n    font-size: 14px;\r\n}\r\n\r\n.ngx-datatable.material.lg {\r\n    font-size: 16px;\r\n}\r\n\r\n.ngx-datatable.material.table-striped .datatable-row-even {\r\n    background: #f9f9f9;\r\n}\r\n\r\n.ngx-datatable.material.single-selection .datatable-body-row.active,\r\n.ngx-datatable.material.single-selection .datatable-body-row.active .datatable-row-group, .ngx-datatable.material.multi-selection .datatable-body-row.active,\r\n.ngx-datatable.material.multi-selection .datatable-body-row.active .datatable-row-group, .ngx-datatable.material.multi-click-selection .datatable-body-row.active,\r\n.ngx-datatable.material.multi-click-selection .datatable-body-row.active .datatable-row-group {\r\n    background-color: #304FFE;\r\n    color: #FFF;\r\n}\r\n\r\n    .ngx-datatable.material.single-selection .datatable-body-row.active:hover,\r\n    .ngx-datatable.material.single-selection .datatable-body-row.active:hover .datatable-row-group, .ngx-datatable.material.multi-selection .datatable-body-row.active:hover,\r\n    .ngx-datatable.material.multi-selection .datatable-body-row.active:hover .datatable-row-group, .ngx-datatable.material.multi-click-selection .datatable-body-row.active:hover,\r\n    .ngx-datatable.material.multi-click-selection .datatable-body-row.active:hover .datatable-row-group {\r\n        background-color: #193AE4;\r\n        color: #FFF;\r\n    }\r\n\r\n    .ngx-datatable.material.single-selection .datatable-body-row.active:focus,\r\n    .ngx-datatable.material.single-selection .datatable-body-row.active:focus .datatable-row-group, .ngx-datatable.material.multi-selection .datatable-body-row.active:focus,\r\n    .ngx-datatable.material.multi-selection .datatable-body-row.active:focus .datatable-row-group, .ngx-datatable.material.multi-click-selection .datatable-body-row.active:focus,\r\n    .ngx-datatable.material.multi-click-selection .datatable-body-row.active:focus .datatable-row-group {\r\n        background-color: #2041EF;\r\n        color: #FFF;\r\n    }\r\n\r\n.ngx-datatable.material.table-hover:not(.cell-selection) .datatable-body-row:hover,\r\n.ngx-datatable.material.table-hover:not(.cell-selection) .datatable-body-row:hover .datatable-row-group {\r\n    background-color: #f5f5f5;\r\n    /*transition-property: background;\r\n        transition-duration: .3s;\r\n        transition-timing-function: linear;*/\r\n}\r\n\r\n.ngx-datatable.material:not(.cell-selection) .datatable-body-row:focus,\r\n.ngx-datatable.material:not(.cell-selection) .datatable-body-row:focus .datatable-row-group {\r\n    background-color: #ddd;\r\n}\r\n\r\n.ngx-datatable.material.cell-selection.table-hover .datatable-body-cell:hover,\r\n.ngx-datatable.material.cell-selection.table-hover .datatable-body-cell:hover .datatable-row-group {\r\n    background-color: #f5f5f5;\r\n    /*transition-property: background;\r\n        transition-duration: .3s;\r\n        transition-timing-function: linear;*/\r\n}\r\n\r\n.ngx-datatable.material.cell-selection .datatable-body-cell:focus,\r\n.ngx-datatable.material.cell-selection .datatable-body-cell:focus .datatable-row-group {\r\n    background-color: #ddd;\r\n}\r\n\r\n.ngx-datatable.material.cell-selection .datatable-body-cell.active,\r\n.ngx-datatable.material.cell-selection .datatable-body-cell.active .datatable-row-group {\r\n    background-color: #304FFE;\r\n    color: #FFF;\r\n}\r\n\r\n    .ngx-datatable.material.cell-selection .datatable-body-cell.active:hover,\r\n    .ngx-datatable.material.cell-selection .datatable-body-cell.active:hover .datatable-row-group {\r\n        background-color: #193AE4;\r\n        color: #FFF;\r\n    }\r\n\r\n    .ngx-datatable.material.cell-selection .datatable-body-cell.active:focus,\r\n    .ngx-datatable.material.cell-selection .datatable-body-cell.active:focus .datatable-row-group {\r\n        background-color: #2041EF;\r\n        color: #FFF;\r\n    }\r\n\r\n.ngx-datatable.material .empty-row {\r\n    height: 50px;\r\n    text-align: left;\r\n    padding: .5rem 1.2rem;\r\n    vertical-align: top;\r\n    border-top: 0;\r\n}\r\n\r\n.ngx-datatable.material .loading-row {\r\n    text-align: left;\r\n    padding: .5rem 1.2rem;\r\n    vertical-align: top;\r\n    border-top: 0;\r\n}\r\n\r\n.ngx-datatable.material .datatable-header .datatable-row-left,\r\n.ngx-datatable.material .datatable-body .datatable-row-left {\r\n    background-color: #FFF;\r\n    background-position: 100% 0;\r\n    background-repeat: repeat-y;\r\n    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAYAAAD5PA/NAAAAFklEQVQIHWPSkNeSBmJhTQVtbiDNCgASagIIuJX8OgAAAABJRU5ErkJggg==);\r\n}\r\n\r\n.ngx-datatable.material .datatable-header .datatable-row-right,\r\n.ngx-datatable.material .datatable-body .datatable-row-right {\r\n    background-position: 0 0;\r\n    background-color: #fff;\r\n    background-repeat: repeat-y;\r\n    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAYAAAD5PA/NAAAAFklEQVQI12PQkNdi1VTQ5gbSwkAsDQARLAIGtOSFUAAAAABJRU5ErkJggg==);\r\n}\r\n\r\n\r\n\r\n.ngx-datatable.material .datatable-header {\r\n    border-bottom: 1px solid #ddd;\r\n}\r\n\r\n\r\n.ngx-datatable.material.colored-header .datatable-header {\r\n    padding: .9rem 0;\r\n    color: #fff;\r\n    background-color: #027FF4;\r\n}\r\n\r\n.ngx-datatable.material.table .datatable-body .datatable-body-row,\r\n.ngx-datatable.material.table-bordered .datatable-body .datatable-body-row {\r\n    border-top: 1px solid #ddd;\r\n}\r\n\r\n\r\n\r\n.ngx-datatable.material.table-bordered .datatable-header .datatable-header-cell {\r\n    padding: .9rem 1.2rem;\r\n}\r\n\r\n\r\n.ngx-datatable.material.full-header .datatable-header .datatable-header-cell {\r\n    padding: .9rem 1.2rem;\r\n}\r\n\r\n.ngx-datatable.material .datatable-header .datatable-header-cell {\r\n    text-align: left;\r\n    padding: .1rem 1.2rem;\r\n    font-weight: 400;\r\n    font-weight: bold;\r\n    vertical-align: bottom;\r\n}\r\n\r\n    .ngx-datatable.material .datatable-header .datatable-header-cell.longpress {\r\n        color: #027FF4;\r\n        background-color: whitesmoke;\r\n    }\r\n\r\n    .ngx-datatable.material .datatable-header .datatable-header-cell.dragging .resize-handle {\r\n        border-right: none;\r\n    }\r\n\r\n.ngx-datatable.material .datatable-header .resize-handle {\r\n    border-right: solid 1px #eee;\r\n}\r\n\r\n.ngx-datatable.material .datatable-body .datatable-row-detail {\r\n    background: #f5f5f5;\r\n    padding: 10px;\r\n}\r\n\r\n.ngx-datatable.material .datatable-body .datatable-body-row .datatable-body-cell {\r\n    text-align: left;\r\n    padding: .7rem 1.2rem;\r\n    vertical-align: top;\r\n    border-top: 0;\r\n    -webkit-transition: width 0.3s ease;\r\n    transition: width 0.3s ease;\r\n}\r\n\r\n.ngx-datatable.material .datatable-body .progress-linear {\r\n    display: block;\r\n    width: 100%;\r\n    height: 5px;\r\n    padding: 0;\r\n    margin: 0;\r\n    position: absolute;\r\n    z-index:9999;\r\n}\r\n\r\n    .ngx-datatable.material .datatable-body .progress-linear .container {\r\n        display: block;\r\n        position: relative;\r\n        overflow: hidden;\r\n        width: 100%;\r\n        height: 5px;\r\n        -webkit-transform: translate(0, 0) scale(1, 1);\r\n        transform: translate(0, 0) scale(1, 1);\r\n        background-color: #aad1f9;\r\n    }\r\n\r\n        .ngx-datatable.material .datatable-body .progress-linear .container .bar {\r\n            transition: all .2s linear;\r\n            -webkit-animation: query 0.8s infinite cubic-bezier(0.39, 0.575, 0.565, 1);\r\n            animation: query 0.8s infinite cubic-bezier(0.39, 0.575, 0.565, 1);\r\n            transition: -webkit-transform .2s linear;\r\n            transition: transform .2s linear;\r\n            background-color: #106cc8;\r\n            position: absolute;\r\n            left: 0;\r\n            top: 0;\r\n            bottom: 0;\r\n            width: 100%;\r\n            height: 5px;\r\n        }\r\n\r\n.ngx-datatable.material .datatable-footer {\r\n    border-top: 1px solid rgba(0, 0, 0, 0.12);\r\n    font-size: 14px;\r\n    color: #777;\r\n}\r\n\r\n    .ngx-datatable.material .datatable-footer .page-count {\r\n        line-height: 50px;\r\n        height: 50px;\r\n        padding: 0 1.2rem;\r\n    }\r\n\r\n    .ngx-datatable.material .datatable-footer .datatable-pager {\r\n        margin: 0 10px;\r\n    }\r\n\r\n        .ngx-datatable.material .datatable-footer .datatable-pager li {\r\n            vertical-align: middle;\r\n        }\r\n\r\n            .ngx-datatable.material .datatable-footer .datatable-pager li.disabled a {\r\n                color: rgba(0, 0, 0, 0.26) !important;\r\n                background-color: transparent !important;\r\n            }\r\n\r\n            .ngx-datatable.material .datatable-footer .datatable-pager li.active a {\r\n                background-color: rgba(158, 158, 158, 0.2);\r\n                font-weight: bold;\r\n            }\r\n\r\n        .ngx-datatable.material .datatable-footer .datatable-pager a {\r\n            height: 22px;\r\n            min-width: 24px;\r\n            line-height: 22px;\r\n            padding: 0 6px;\r\n            border-radius: 3px;\r\n            margin: 6px 3px;\r\n            text-align: center;\r\n            vertical-align: top;\r\n            color: rgba(0, 0, 0, 0.54);\r\n            text-decoration: none;\r\n            vertical-align: bottom;\r\n        }\r\n\r\n            .ngx-datatable.material .datatable-footer .datatable-pager a:hover {\r\n                color: rgba(0, 0, 0, 0.75);\r\n                background-color: rgba(158, 158, 158, 0.2);\r\n            }\r\n\r\n        .ngx-datatable.material .datatable-footer .datatable-pager .icon-left,\r\n        .ngx-datatable.material .datatable-footer .datatable-pager .icon-skip,\r\n        .ngx-datatable.material .datatable-footer .datatable-pager .icon-right,\r\n        .ngx-datatable.material .datatable-footer .datatable-pager .icon-prev {\r\n            font-size: 20px;\r\n            line-height: 20px;\r\n            padding: 0 3px;\r\n        }\r\n\r\n/**\r\n * Checkboxes\r\n**/\r\n.datatable-checkbox {\r\n    position: relative;\r\n    margin: 0;\r\n    cursor: pointer;\r\n    vertical-align: middle;\r\n    display: inline-block;\r\n    box-sizing: border-box;\r\n    padding: 10px 0;\r\n}\r\n\r\n    .datatable-checkbox input[type='checkbox'] {\r\n        position: relative;\r\n        margin: 0 1rem 0 0;\r\n        cursor: pointer;\r\n        outline: none;\r\n    }\r\n\r\n        .datatable-checkbox input[type='checkbox']:before {\r\n            -webkit-transition: all 0.3s ease-in-out;\r\n            -moz-transition: all 0.3s ease-in-out;\r\n            transition: all 0.3s ease-in-out;\r\n            content: \"\";\r\n            position: absolute;\r\n            left: 0;\r\n            z-index: 1;\r\n            width: 1rem;\r\n            height: 1rem;\r\n            border: 2px solid #f2f2f2;\r\n        }\r\n\r\n        .datatable-checkbox input[type='checkbox']:checked:before {\r\n            -webkit-transform: rotate(-45deg);\r\n            -moz-transform: rotate(-45deg);\r\n            -ms-transform: rotate(-45deg);\r\n            transform: rotate(-45deg);\r\n            height: .5rem;\r\n            border-color: #009688;\r\n            border-top-style: none;\r\n            border-right-style: none;\r\n        }\r\n\r\n        .datatable-checkbox input[type='checkbox']:after {\r\n            content: \"\";\r\n            position: absolute;\r\n            top: 0;\r\n            left: 0;\r\n            width: 1rem;\r\n            height: 1rem;\r\n            background: #fff;\r\n            cursor: pointer;\r\n        }\r\n\r\n/**\r\n * Progress bar animations\r\n */\r\n\r\n@keyframes query {\r\n    0% {\r\n        opacity: 1;\r\n        transform: translateX(35%) scale(0.3, 1);\r\n    }\r\n\r\n    100% {\r\n        opacity: 0;\r\n        transform: translateX(-50%) scale(0, 1);\r\n    }\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 308 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".alertify,\r\n.alertify-show,\r\n.alertify-log {\r\n\t-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);\r\n\t   -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);\r\n\t    -ms-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);\r\n\t     -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);\r\n\t        transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */\r\n}\r\n.alertify-hide {\r\n\t-webkit-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t   -moz-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t    -ms-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t     -o-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t        transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045); /* easeInBack */\r\n}\r\n.alertify-log-hide {\r\n\t-webkit-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t   -moz-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t    -ms-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t     -o-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);\r\n\t        transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045); /* easeInBack */\r\n}\r\n.alertify-cover {\r\n\tposition: fixed; z-index: 99999;\r\n\ttop: 0; right: 0; bottom: 0; left: 0;\r\n\tbackground-color:white;\r\n\tfilter:alpha(opacity=0);\r\n\topacity:0;\r\n}\r\n\t.alertify-cover-hidden {\r\n\t\tdisplay: none;\r\n\t}\r\n.alertify {\r\n\tposition: fixed; z-index: 99999;\r\n\ttop: 50px; left: 50%;\r\n\twidth: 550px;\r\n\tmargin-left: -275px;\r\n\topacity: 1;\r\n}\r\n\t.alertify-hidden {\r\n\t\t-webkit-transform: translate(0,-150px);\r\n\t\t   -moz-transform: translate(0,-150px);\r\n\t\t    -ms-transform: translate(0,-150px);\r\n\t\t     -o-transform: translate(0,-150px);\r\n\t\t        transform: translate(0,-150px);\r\n\t\topacity: 0;\r\n\t\tdisplay: none;\r\n\t}\r\n\t/* overwrite display: none; for everything except IE6-8 */\r\n\t:root *> .alertify-hidden {\r\n\t\tdisplay: block;\r\n\t\tvisibility: hidden;\r\n\t}\r\n.alertify-logs {\r\n\tposition: fixed;\r\n\tz-index: 5000;\r\n\tbottom: 10px;\r\n\tright: 10px;\r\n\twidth: 300px;\r\n}\r\n.alertify-logs-hidden {\r\n\tdisplay: none;\r\n}\r\n\t.alertify-log {\r\n\t\tdisplay: block;\r\n\t\tmargin-top: 10px;\r\n\t\tposition: relative;\r\n\t\tright: -300px;\r\n\t\topacity: 0;\r\n\t}\r\n\t.alertify-log-show {\r\n\t\tright: 0;\r\n\t\topacity: 1;\r\n\t}\r\n\t.alertify-log-hide {\r\n\t\t-webkit-transform: translate(300px, 0);\r\n\t\t   -moz-transform: translate(300px, 0);\r\n\t\t    -ms-transform: translate(300px, 0);\r\n\t\t     -o-transform: translate(300px, 0);\r\n\t\t        transform: translate(300px, 0);\r\n\t\topacity: 0;\r\n\t}\r\n\t.alertify-dialog {\r\n\t\tpadding: 25px;\r\n\t}\r\n\t\t.alertify-resetFocus {\r\n\t\t\tborder: 0;\r\n\t\t\tclip: rect(0 0 0 0);\r\n\t\t\theight: 1px;\r\n\t\t\tmargin: -1px;\r\n\t\t\toverflow: hidden;\r\n\t\t\tpadding: 0;\r\n\t\t\tposition: absolute;\r\n\t\t\twidth: 1px;\r\n\t\t}\r\n\t\t.alertify-inner {\r\n\t\t\ttext-align: center;\r\n\t\t}\r\n\t\t.alertify-text {\r\n\t\t\tmargin-bottom: 15px;\r\n\t\t\twidth: 100%;\r\n\t\t\t-webkit-box-sizing: border-box;\r\n\t\t\t   -moz-box-sizing: border-box;\r\n\t\t\t        box-sizing: border-box;\r\n\t\t\tfont-size: 100%;\r\n\t\t}\r\n\t\t.alertify-buttons {\r\n\t\t}\r\n\t\t\t.alertify-button,\r\n\t\t\t.alertify-button:hover,\r\n\t\t\t.alertify-button:active,\r\n\t\t\t.alertify-button:visited {\r\n\t\t\t\tbackground: none;\r\n\t\t\t\ttext-decoration: none;\r\n\t\t\t\tborder: none;\r\n\t\t\t\t/* line-height and font-size for input button */\r\n\t\t\t\tline-height: 1.5;\r\n\t\t\t\tfont-size: 100%;\r\n\t\t\t\tdisplay: inline-block;\r\n\t\t\t\tcursor: pointer;\r\n\t\t\t\tmargin-left: 5px;\r\n\t\t\t}\r\n\r\n@media only screen and (max-width: 680px) {\r\n\t.alertify,\r\n\t.alertify-logs {\r\n\t\twidth: 90%;\r\n\t\t-webkit-box-sizing: border-box;\r\n\t\t   -moz-box-sizing: border-box;\r\n\t\t        box-sizing: border-box;\r\n\t}\r\n\t.alertify {\r\n\t\tleft: 5%;\r\n\t\tmargin: 0;\r\n\t}\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 309 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "/**\r\n * Twitter Bootstrap Look and Feel\r\n * Based on http://twitter.github.com/bootstrap/\r\n */\r\n.alertify,\r\n.alertify-log {\r\n\tfont-family: sans-serif;\r\n}\r\n.alertify {\r\n\tbackground: #FFF;\r\n\tborder: 1px solid #8E8E8E; /* browsers that don't support rgba */\r\n\tborder: 1px solid rgba(0,0,0,.3);\r\n\tborder-radius: 6px;\r\n\tbox-shadow: 0 3px 7px rgba(0,0,0,.3);\r\n\t-webkit-background-clip: padding;     /* Safari 4? Chrome 6? */\r\n\t   -moz-background-clip: padding;     /* Firefox 3.6 */\r\n\t        background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */\r\n}\r\n.alertify-dialog {\r\n\tpadding: 0;\r\n}\r\n\t.alertify-inner {\r\n\t\ttext-align: left;\r\n\t}\r\n\t\t.alertify-message {\r\n\t\t\tpadding: 15px;\r\n\t\t\tmargin: 0;\r\n\t\t}\r\n\t\t.alertify-text-wrapper {\r\n\t\t\tpadding: 0 15px;\r\n\t\t}\r\n\t\t\t.alertify-text {\r\n\t\t\t\tcolor: #555;\r\n\t\t\t\tborder-radius: 4px;\r\n\t\t\t\tpadding: 8px;\r\n\t\t\t\tbackground-color: #FFF;\r\n\t\t\t\tborder: 1px solid #CCC;\r\n\t\t\t\tbox-shadow: inset 0 1px 1px rgba(0,0,0,.075);\r\n\t\t\t}\r\n\t\t\t.alertify-text:focus {\r\n\t\t\t\tborder-color: rgba(82,168,236,.8);\r\n\t\t\t\toutline: 0;\r\n\t\t\t\tbox-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);\r\n\t\t\t}\r\n\r\n\t\t.alertify-buttons {\r\n\t\t\tpadding: 14px 15px 15px;\r\n\t\t\tbackground: #F5F5F5;\r\n\t\t\tborder-top: 1px solid #DDD;\r\n\t\t\tborder-radius: 0 0 6px 6px;\r\n\t\t\tbox-shadow: inset 0 1px 0 #FFF;\r\n\t\t\ttext-align: right;\r\n\t\t}\r\n\t\t\t.alertify-button,\r\n\t\t\t.alertify-button:hover,\r\n\t\t\t.alertify-button:focus,\r\n\t\t\t.alertify-button:active {\r\n\t\t\t\tmargin-left: 10px;\r\n\t\t\t\tborder-radius: 4px;\r\n\t\t\t\tfont-weight: normal;\r\n\t\t\t\tpadding: 4px 12px;\r\n\t\t\t\ttext-decoration: none;\r\n\t\t\t\tbox-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);\r\n\t\t\t\tbackground-image: -webkit-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));\r\n\t\t\t\tbackground-image:    -moz-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));\r\n\t\t\t\tbackground-image:     -ms-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));\r\n\t\t\t\tbackground-image:      -o-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));\r\n\t\t\t\tbackground-image:         linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));\r\n\t\t\t}\r\n\t\t\t.alertify-button:focus {\r\n\t\t\t\toutline: none;\r\n\t\t\t\tbox-shadow: 0 0 5px #2B72D5;\r\n\t\t\t}\r\n\t\t\t.alertify-button:active {\r\n\t\t\t\tposition: relative;\r\n\t\t\t\tbox-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);\r\n\t\t\t}\r\n\t\t\t\t.alertify-button-cancel,\r\n\t\t\t\t.alertify-button-cancel:hover,\r\n\t\t\t\t.alertify-button-cancel:focus,\r\n\t\t\t\t.alertify-button-cancel:active {\r\n\t\t\t\t\ttext-shadow: 0 -1px 0 rgba(255,255,255,.75);\r\n\t\t\t\t\tbackground-color: #E6E6E6;\r\n\t\t\t\t\tborder: 1px solid #BBB;\r\n\t\t\t\t\tcolor: #333;\r\n\t\t\t\t\tbackground-image: -webkit-linear-gradient(top, #FFF, #E6E6E6);\r\n\t\t\t\t\tbackground-image:    -moz-linear-gradient(top, #FFF, #E6E6E6);\r\n\t\t\t\t\tbackground-image:     -ms-linear-gradient(top, #FFF, #E6E6E6);\r\n\t\t\t\t\tbackground-image:      -o-linear-gradient(top, #FFF, #E6E6E6);\r\n\t\t\t\t\tbackground-image:         linear-gradient(top, #FFF, #E6E6E6);\r\n\t\t\t\t}\r\n\t\t\t\t.alertify-button-cancel:hover,\r\n\t\t\t\t.alertify-button-cancel:focus,\r\n\t\t\t\t.alertify-button-cancel:active {\r\n\t\t\t\t\tbackground: #E6E6E6;\r\n\t\t\t\t}\r\n\t\t\t\t.alertify-button-ok,\r\n\t\t\t\t.alertify-button-ok:hover,\r\n\t\t\t\t.alertify-button-ok:focus,\r\n\t\t\t\t.alertify-button-ok:active {\r\n\t\t\t\t\ttext-shadow: 0 -1px 0 rgba(0,0,0,.25);\r\n\t\t\t\t\tbackground-color: #04C;\r\n\t\t\t\t\tborder: 1px solid #04C;\r\n\t\t\t\t\tborder-color: #04C #04C #002A80;\r\n\t\t\t\t\tborder-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);\r\n\t\t\t\t\tcolor: #FFF;\r\n\t\t\t\t}\r\n\t\t\t\t.alertify-button-ok:hover,\r\n\t\t\t\t.alertify-button-ok:focus,\r\n\t\t\t\t.alertify-button-ok:active {\r\n\t\t\t\t\tbackground: #04C;\r\n\t\t\t\t}\r\n\r\n.alertify-log {\r\n\tbackground: #D9EDF7;\r\n\tpadding: 8px 14px;\r\n\tborder-radius: 4px;\r\n\tcolor: #3A8ABF;\r\n\ttext-shadow: 0 1px 0 rgba(255,255,255,.5);\r\n\tborder: 1px solid #BCE8F1;\r\n}\r\n\t.alertify-log-error {\r\n\t\tcolor: #B94A48;\r\n\t\tbackground: #F2DEDE;\r\n\t\tborder: 1px solid #EED3D7;\r\n\t}\r\n\t.alertify-log-success {\r\n\t\tcolor: #468847;\r\n\t\tbackground: #DFF0D8;\r\n\t\tborder: 1px solid #D6E9C6;\r\n\t}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 310 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(311);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 311 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(undefined);
+// imports
 
 
 // module
@@ -56824,7 +56988,7 @@ exports.push([module.i, "\r\n/**************************************************
 
 
 /***/ }),
-/* 307 */
+/* 312 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -56846,15 +57010,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var BannerDemoComponent = /** @class */ (function () {
     function BannerDemoComponent() {
-        this.banner1 = __webpack_require__(308);
-        this.banner2 = __webpack_require__(309);
-        this.banner3 = __webpack_require__(310);
-        this.banner4 = __webpack_require__(311);
+        this.banner1 = __webpack_require__(313);
+        this.banner2 = __webpack_require__(314);
+        this.banner3 = __webpack_require__(315);
+        this.banner4 = __webpack_require__(316);
     }
     BannerDemoComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'banner-demo',
-            template: __webpack_require__(312)
+            template: __webpack_require__(317)
         })
     ], BannerDemoComponent);
     return BannerDemoComponent;
@@ -56863,37 +57027,37 @@ var BannerDemoComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 308 */
+/* 313 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,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"
 
 /***/ }),
-/* 309 */
+/* 314 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "e10af218b941826ea360d7554688d721.png";
 
 /***/ }),
-/* 310 */
+/* 315 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,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"
 
 /***/ }),
-/* 311 */
+/* 316 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAD6CAYAAABAvFrvAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAK6wAACusBgosNWgAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAACAASURBVHic7N3tcyPXlSb45968+QYQVYIklkSqirZpm3JXzbR6R90jx0od4XV3xPzJO7P2fpmojra7RzsjT5faRdm0zZJIm5AKVQKBfM+7H8CbAsFMECTxmnh+CgRZIJi4CSRICk+ec8QvfvELDSIiIiIiIiIiIiIiIiIiWnty2QsgIiIiIiIiIiIiIiIiIqLZYABMRERERERERERERERERFQTDICJiIiIiIiIiIiIiIiIiGqCATARERERERERERERERERUU0wACYiIiIiIiIiIiIiIiIiqgkGwERERERERERERERERERENcEAmIiIiIiIiIiIiIiIiIioJhgAExERERERERERERERERHVBANgIiIiIiIiIiIiIiIiIqKaYABMRERERERERERERERERFQTDICJiIiIiIiIiIiIiIiIiGqCATARERERERERERERERERUU0wACYiIiIiIiIiIiIiIiIiqgkGwEREREREVHvvv/8+3n///WUvg4iIiIiIiIho7tSyF0BERERERDRv7XZ72UsgIiIiIiIiIloIVgATEREREREREREREREREdUEA2AiIiIiIiIiIiIiIiIioppgAExEREREREREREREREREVBMMgImIiIiIiIiIiIiIiIiIaoIBMBERERERERERERERERFRTTAAJiIiIiIiIiIiIiIiIiKqCQbAREREREREREREREREREQ1wQCYiIiIiIiIiIiIiIiIiKgmGAATEREREREREREREREREdUEA2AiIiIiIiIiIiIiIiIioppgAExEREREREREREREREREVBMMgImIiIiIiIiIiIiIiIiIaoIBMBERERERERERERERERFRTahlL4CIiIiIiIhoE2itobVGnufI8/zK52WklJBSQikFpfi/8LR4SZrjq69DvOql0FosezmrSWi8saXw3rYHR7HWgogI5u8arSHGrxv5t8hziDwDsmz4eZYDeQZR/Dsb+bcefp7nEHkO5BpC50CWDz9qXWzT3JfIs+uXKq3hJ0JASwkIMfxcSMCSw49y+DUtJSAt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"
 
 /***/ }),
-/* 312 */
+/* 317 */
 /***/ (function(module, exports) {
 
 module.exports = "<div>\r\n    <div>\r\n        <carousel interval=\"6000\">\r\n            <slide>\r\n                <img [src]=\"banner1\" alt=\"ASP.NET\" class=\"img-responsive\" />\r\n                <div class=\"carousel-caption\">\r\n                    <p>\r\n                        Learn how to build ASP.NET apps that can run anywhere\r\n                        <a class=\"btn btn-default btn-sm\" href=\"http://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409\" target=\"_blank\">\r\n                            Learn More\r\n                        </a>\r\n                    </p>\r\n                </div>\r\n            </slide>\r\n            <slide>\r\n                <img [src]=\"banner2\" alt=\"Visual Studio\" class=\"img-responsive\" />\r\n                <div class=\"carousel-caption\">\r\n                    <p>\r\n                        One platform for building modern web, native mobile and native desktop applications\r\n                        <a class=\"btn btn-default btn-sm\" href=\"http://angular.io\" target=\"_blank\">\r\n                            Learn More\r\n                        </a>\r\n                    </p>\r\n                </div>\r\n            </slide>\r\n            <slide>\r\n                <img [src]=\"banner3\" alt=\"Package Management\" class=\"img-responsive\" />\r\n                <div class=\"carousel-caption\">\r\n                    <p>\r\n                        Bring in libraries from NuGet and npm, and bundle with webpack\r\n                        <a class=\"btn btn-default btn-sm\" href=\"http://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409\" target=\"_blank\">\r\n                            Learn More\r\n                        </a>\r\n                    </p>\r\n                </div>\r\n            </slide>\r\n            <slide>\r\n                <img [src]=\"banner4\" alt=\"Eben Monney\" class=\"img-responsive\" />\r\n                <div class=\"carousel-caption\">\r\n                    <p>\r\n                        Follow me on social media for updates and tips on using this startup project\r\n                        <a class=\"btn btn-default btn-sm\" href=\"https://www.ebenmonney.com/about\" target=\"_blank\">\r\n                            Learn More\r\n                        </a>\r\n                    </p>\r\n                </div>\r\n            </slide>\r\n        </carousel>\r\n    </div>\r\n\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-md-3\">\r\n            <h3>Application uses</h3>\r\n            <ul>\r\n                <li>Restful API backend using the cross platform <a href=\"http://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409\" target=\"_blank\">ASP.NET Core MVC</a></li>\r\n                <li>Client framework with <a href=\"http://angular.io\" target=\"_blank\">angular2</a> and typescript</li>\r\n                <li><a href=\"http://npmjs.com\" target=\"_blank\">npm</a> for managing client-side libraries</li>\r\n                <li>Theming using <a href=\"http://go.microsoft.com/fwlink/?LinkID=398939\" target=\"_blank\">Bootstrap</a></li>\r\n                <li>Module bundling with <a href=\"https://webpack.js.org\" target=\"_blank\">webpack3</a></li>\r\n            </ul>\r\n        </div>\r\n        <div class=\"col-md-3\">\r\n            <h3>How to</h3>\r\n            <ul>\r\n                <li><a href=\"https://www.ebenmonney.com/quickapp#adding-pages\" target=\"_blank\">Add additional pages and set access permissions</a></li>\r\n                <li><a href=\"http://go.microsoft.com/fwlink/?LinkId=699315\" target=\"_blank\">Manage User Secrets using Secret Manager.</a></li>\r\n                <li><a href=\"http://go.microsoft.com/fwlink/?LinkId=699316\" target=\"_blank\">Use logging to log a message.</a></li>\r\n                <li><a href=\"http://go.microsoft.com/fwlink/?LinkId=699317\" target=\"_blank\">Add packages using NuGet.</a></li>\r\n                <li><a href=\"https://www.ebenmonney.com/quickapp#adding-vendor-packages\" target=\"_blank\">Add client packages using npm</a></li>\r\n                <li><a href=\"https://www.ebenmonney.com/quickapp#building-vendor-packages\" target=\"_blank\">Rebuild client vendor packages</a></li>\r\n                <li><a href=\"http://go.microsoft.com/fwlink/?LinkId=699319\" target=\"_blank\">Target development, staging or production environment.</a></li>\r\n            </ul>\r\n        </div>\r\n        <div class=\"col-md-3\">\r\n            <h3>Overview</h3>\r\n            <ul>\r\n                <li><a href=\"http://go.microsoft.com/fwlink/?LinkId=518008\" target=\"_blank\">Conceptual overview of what is ASP.NET Core</a></li>\r\n                <li><a href=\"http://angular.io/docs/ts/latest/guide\" target=\"_blank\">Angular2 documentation overview</a></li>\r\n                <li><a href=\"http://go.microsoft.com/fwlink/?LinkId=398602\" target=\"_blank\">Working with Data</a></li>\r\n                <li><a href=\"http://go.microsoft.com/fwlink/?LinkId=398603\" target=\"_blank\">Security</a></li>\r\n                <li><a href=\"http://go.microsoft.com/fwlink/?LinkID=699321\" target=\"_blank\">Client side development</a></li>\r\n                <li><a href=\"https://webpack.js.org/guides/get-started\" target=\"_blank\">An introduction to webpack</a></li>\r\n                <li><a href=\"http://go.microsoft.com/fwlink/?LinkID=699322\" target=\"_blank\">Develop on different platforms</a></li>\r\n                <li><a href=\"https://www.ebenmonney.com/quickapp\" target=\"_blank\">Read more on the documentation site</a></li>\r\n            </ul>\r\n        </div>\r\n        <div class=\"col-md-3\">\r\n            <h3>Run & Deploy</h3>\r\n            <ul>\r\n                <li><a href=\"https://www.ebenmonney.com/quickapp#how-to-run-app\" target=\"_blank\">Run your app</a></li>\r\n                <li><a href=\"http://go.microsoft.com/fwlink/?LinkID=517853\" target=\"_blank\">Run tools such as EF migrations and more</a></li>\r\n                <li><a href=\"http://go.microsoft.com/fwlink/?LinkID=398609\" target=\"_blank\">Publish to Microsoft Azure Web Apps</a></li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
-/* 313 */
+/* 318 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57088,8 +57252,8 @@ var TodoDemoComponent = /** @class */ (function () {
     TodoDemoComponent = TodoDemoComponent_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'todo-demo',
-            template: __webpack_require__(314),
-            styles: [__webpack_require__(315)]
+            template: __webpack_require__(319),
+            styles: [__webpack_require__(320)]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__services_alert_service__["a" /* AlertService */], __WEBPACK_IMPORTED_MODULE_4__services_app_translation_service__["a" /* AppTranslationService */], __WEBPACK_IMPORTED_MODULE_5__services_local_store_manager_service__["a" /* LocalStoreManager */], __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */]])
     ], TodoDemoComponent);
@@ -57100,17 +57264,17 @@ var TodoDemoComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 314 */
+/* 319 */
 /***/ (function(module, exports) {
 
 module.exports = "<div>\r\n    <div class=\"row control-box\">\r\n        <div class=\"col-sm-8\">\r\n            <div class=\"form-group search-box\">\r\n                <search-box (searchChange)=\"onSearchChanged($event)\" placeholder=\"{{'todoDemo.management.Search' | translate}}\"></search-box>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-sm-4\">\r\n            <div class=\"navbar action-box\">\r\n                <ul class=\"nav navbar-nav\">\r\n                    <li [class.active]=\"hideCompletedTasks\" class=\"toolbaritem\"><a href=\"javascript:;\" (click)=\"hideCompletedTasks = !hideCompletedTasks\"><i class=\"fa fa-eye-slash\"></i> {{'todoDemo.management.HideCompleted' | translate}}</a></li>\r\n                    <li class=\"toolbaritem\"><a href=\"javascript:;\" (click)=\"addTask()\"><i class=\"fa fa-plus\"></i> {{'todoDemo.management.AddTask' | translate}}</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <ngx-datatable class=\"material colored-header sm table-hover\"\r\n                   [loadingIndicator]=\"loadingIndicator\"\r\n                   [rows]=\"rows\"\r\n                   [rowHeight]=\"35\"\r\n                   [headerHeight]=\"35\"\r\n                   [footerHeight]=\"35\"\r\n                   [columns]=\"columns\"\r\n                   [scrollbarV]=\"verticalScrollbar\"\r\n                   [columnMode]=\"'force'\">\r\n    </ngx-datatable>\r\n\r\n    <ng-template #statusHeaderTemplate>\r\n        <i class=\"fa fa-check-square-o\"></i>\r\n    </ng-template>\r\n\r\n    <ng-template #statusTemplate let-row=\"row\" let-value=\"value\">\r\n        <div class=\"checkbox\">\r\n            <label>\r\n                <input attr.name=\"checkboxes-{{value}}\" type=\"checkbox\" [(ngModel)]=\"row.completed\">\r\n            </label>\r\n        </div>\r\n    </ng-template>\r\n\r\n    <ng-template #nameTemplate let-row=\"row\" let-value=\"value\">\r\n        <span *ngIf=\"!editing[row.$$index + '-name']\" [class.completed]=\"row.completed\" attr.title=\"{{value}}\" (dblclick)=\"editing[row.$$index + '-name'] = true\">\r\n            {{value}}\r\n        </span>\r\n        <input *ngIf=\"editing[row.$$index + '-name']\" class=\"inline-editor\" autofocus (blur)=\"updateValue($event, 'name', value, row)\" type=\"text\" [value]=\"value\" />\r\n    </ng-template>\r\n\r\n    <ng-template #descriptionTemplate let-row=\"row\" let-value=\"value\">\r\n        <span *ngIf=\"!editing[row.$$index + '-description']\" [class.completed]=\"row.completed\" attr.title=\"{{value}}\" (dblclick)=\"editing[row.$$index + '-description'] = true\">\r\n            {{value}}\r\n        </span>\r\n        <input *ngIf=\"editing[row.$$index + '-description']\" class=\"inline-editor\" autofocus (blur)=\"updateValue($event, 'description', value, row)\" type=\"text\" [value]=\"value\" />\r\n    </ng-template>\r\n\r\n\r\n    <ng-template #actionsTemplate let-row=\"row\">\r\n        <a class=\"btn btn-link btn-xs\" href=\"javascript:;\" tooltip=\"{{'todoDemo.management.Delete' | translate}}\" container=\"body\" (click)=\"delete(row)\"><i class=\"fa fa-times\"></i></a>\r\n        <a class=\"btn btn-link btn-xs\" href=\"javascript:;\" tooltip=\"{{'todoDemo.management.Important' | translate}}\" container=\"body\" (click)=\"row.important = !row.important\" (mouseover)=\"row.isMouseOver=true\" (mouseout)=\"row.isMouseOver=false\">\r\n            <i *ngIf=\"row.important || row.isMouseOver\" class=\"fa fa-bookmark\"></i>\r\n            <i *ngIf=\"!row.important && !row.isMouseOver\" class=\"fa fa-bookmark-o\"></i>\r\n        </a>\r\n    </ng-template>\r\n\r\n\r\n\r\n\r\n\r\n    <div class=\"modal fade\" bsModal #editorModal=\"bs-modal\" tabindex=\"-1\">\r\n        <div class=\"modal-dialog\">\r\n            <div class=\"modal-content\">\r\n                <div class=\"modal-header\">\r\n                    <h4 class=\"modal-title pull-left\"><i class=\"fa fa-tasks\"></i> {{'todoDemo.editor.NewTask' | translate}}</h4>\r\n                    <button type=\"button\" class=\"close pull-right\" title=\"Close\" (click)=\"editorModal.hide()\">\r\n                        <span aria-hidden=\"true\">&times;</span>\r\n                    </button>\r\n                </div>\r\n                <div class=\"modal-body\">\r\n                    <form *ngIf=\"formResetToggle\" class=\"form-horizontal\" name=\"taskEditorForm\" #f=\"ngForm\" novalidate\r\n                          (ngSubmit)=\"f.form.valid ? save() :\r\n                      (!taskName.valid && showErrorAlert('Task name is required', 'Please enter a name for the task'));\">\r\n\r\n\r\n                        <div class=\"form-group has-feedback\">\r\n                            <label class=\"control-label col-md-2\" for=\"taskName\">{{'todoDemo.editor.Name' | translate}}:</label>\r\n                            <div class=\"col-md-10\" [ngClass]=\"{'has-success': f.submitted && taskName.valid, 'has-error' : f.submitted && !taskName.valid}\">\r\n                                <input autofocus type=\"text\" id=\"taskName\" name=\"taskName\" placeholder=\"Enter task name\" class=\"form-control\" [(ngModel)]=\"taskEdit.name\" #taskName=\"ngModel\" required />\r\n                                <span *ngIf=\"f.submitted\" class=\"glyphicon form-control-feedback\" [ngClass]=\"{'glyphicon-ok ':taskName.valid, 'glyphicon-remove' : !taskName.valid}\"></span>\r\n                                <span *ngIf=\"f.submitted && !taskName.valid\" class=\"errorMessage\">\r\n                                    {{'todoDemo.editor.TaskNameRequired' | translate}}\r\n                                </span>\r\n                            </div>\r\n                        </div>\r\n\r\n                        <div class=\"form-group description-form-group\">\r\n                            <label class=\"control-label col-md-2\" for=\"taskDescription\">{{'todoDemo.editor.Description' | translate}}:</label>\r\n                            <div class=\"col-md-10\">\r\n                                <input type=\"text\" id=\"taskDescription\" name=\"taskDescription\" placeholder=\"Enter task description\" class=\"form-control\" [(ngModel)]=\"taskEdit.description\" />\r\n                            </div>\r\n                        </div>\r\n                        <label class=\"control-label col-md-2\"> </label>\r\n                        <div class=\"col-md-7\">\r\n                            <div class=\"checkbox\">\r\n                                <label>\r\n                                    <input name=\"isImportant\" type=\"checkbox\" [(ngModel)]=\"taskEdit.important\">\r\n                                    {{'todoDemo.editor.Important' | translate}}\r\n                                </label>\r\n                            </div>\r\n                        </div>\r\n\r\n                        <div class=\"col-md-12\">\r\n                            <hr class=\"edit-last-separator-hr\" />\r\n                        </div>\r\n\r\n\r\n                        <div class=\"form-group actionBtn-form-group\">\r\n                            <div class=\"pull-right\">\r\n                                <button type=\"submit\" class=\"btn btn-primary\">{{'todoDemo.editor.AddTask' | translate}}</button>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"clearfix\"></div>\r\n                    </form>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
 
 /***/ }),
-/* 315 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(316);
+        var result = __webpack_require__(321);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -57120,7 +57284,7 @@ module.exports = "<div>\r\n    <div class=\"row control-box\">\r\n        <div c
     
 
 /***/ }),
-/* 316 */
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -57134,7 +57298,7 @@ exports.push([module.i, "\r\n.navbar .nav > li.toolbaritem > a {\r\n    font-wei
 
 
 /***/ }),
-/* 317 */
+/* 322 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57159,7 +57323,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-__webpack_require__(318);
+__webpack_require__(323);
 var StatisticsDemoComponent = /** @class */ (function () {
     function StatisticsDemoComponent(alertService) {
         this.alertService = alertService;
@@ -57256,8 +57420,8 @@ var StatisticsDemoComponent = /** @class */ (function () {
     StatisticsDemoComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'statistics-demo',
-            template: __webpack_require__(319),
-            styles: [__webpack_require__(320)]
+            template: __webpack_require__(324),
+            styles: [__webpack_require__(325)]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_alert_service__["a" /* AlertService */]])
     ], StatisticsDemoComponent);
@@ -57267,23 +57431,23 @@ var StatisticsDemoComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 318 */
+/* 323 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(224);
 
 /***/ }),
-/* 319 */
+/* 324 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n        <div class=\"chart-container\">\r\n            <canvas baseChart width=\"600\" height=\"250\"\r\n                    [datasets]=\"chartData\"\r\n                    [labels]=\"chartLabels\"\r\n                    [options]=\"chartOptions\"\r\n                    [colors]=\"chartColors\"\r\n                    [legend]=\"chartLegend\"\r\n                    [chartType]=\"chartType\"\r\n                    (chartHover)=\"chartHovered($event)\"\r\n                    (chartClick)=\"chartClicked($event)\"></canvas>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-md-6 table-container\">\r\n        <table class=\"table table-responsive table-condensed\">\r\n            <thead>\r\n                <tr>\r\n                    <th></th>\r\n                    <th *ngFor=\"let label of chartLabels\">{{label}}</th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n                <tr *ngFor=\"let d of chartData\">\r\n                    <th>{{d && d.label.split(' ').pop()}}</th>\r\n                    <td *ngFor=\"let label of chartLabels; let j=index\">{{d && d.data[j]}}</td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        <button class=\"refresh-btn\" (click)=\"randomize();showMessage('Manual refresh!');\">REFSH</button>\r\n        <div class=\"chart-type-container\" dropdown>\r\n            <button id=\"chartType\" type=\"button\" dropdownToggle><i class=\"fa fa-bar-chart dropdown-toggle\"></i></button>\r\n            <ul *dropdownMenu role=\"menu\" aria-labelledby=\"chartType\" class=\"dropdown-menu\">\r\n                <li [class.active2]=\"chartType == 'bar'\" role=\"menuitem\"><a class=\"dropdown-item\" (click)=\"changeChartType('bar')\" href=\"javascript:;\">Bar Chart</a></li>\r\n                <li [class.active2]=\"chartType == 'pie'\" role=\"menuitem\"><a class=\"dropdown-item\" (click)=\"changeChartType('pie')\" href=\"javascript:;\">Pie Chart</a></li>\r\n                <li [class.active2]=\"chartType == 'doughnut'\" role=\"menuitem\"><a class=\"dropdown-item\" (click)=\"changeChartType('doughnut')\" href=\"javascript:;\">Doughnut Chart</a></li>\r\n                <li [class.active2]=\"chartType == 'polarArea'\" role=\"menuitem\"><a class=\"dropdown-item\" (click)=\"changeChartType('polarArea')\" href=\"javascript:;\">Polar Area Chart</a></li>\r\n                <li [class.active2]=\"chartType == 'radar'\" role=\"menuitem\"><a class=\"dropdown-item\" (click)=\"changeChartType('radar')\" href=\"javascript:;\">Radar Chart</a></li>\r\n                <li class=\"divider dropdown-divider\"></li>\r\n                <li [class.active2]=\"chartType == 'line'\" role=\"menuitem\"><a class=\"dropdown-item\" (click)=\"changeChartType('line')\" href=\"javascript:;\">Line Chart</a></li>\r\n            </ul>\r\n        </div>\r\n        <button class=\"p1ull-right\" (click)=\"showMessage('You\\'ve clicked on the menu')\"><i class=\"fa fa-bars\"></i></button>\r\n        <button class=\"p1ull-right\" (click)=\"showDialog('Enter some value to do serious configuration...')\"><i class=\"fa fa-cogs\"></i></button>\r\n    </div>\r\n</div>";
 
 /***/ }),
-/* 320 */
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(321);
+        var result = __webpack_require__(326);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -57293,7 +57457,7 @@ module.exports = "<div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n       
     
 
 /***/ }),
-/* 321 */
+/* 326 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -57307,7 +57471,7 @@ exports.push([module.i, "\r\n.chart-container {\r\n    display: block;\r\n}\r\n\
 
 
 /***/ }),
-/* 322 */
+/* 327 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57494,8 +57658,8 @@ var NotificationsViewerComponent = /** @class */ (function () {
     NotificationsViewerComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'notifications-viewer',
-            template: __webpack_require__(323),
-            styles: [__webpack_require__(324)]
+            template: __webpack_require__(328),
+            styles: [__webpack_require__(329)]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_alert_service__["a" /* AlertService */], __WEBPACK_IMPORTED_MODULE_2__services_app_translation_service__["a" /* AppTranslationService */], __WEBPACK_IMPORTED_MODULE_4__services_account_service__["a" /* AccountService */], __WEBPACK_IMPORTED_MODULE_3__services_notification_service__["a" /* NotificationService */]])
     ], NotificationsViewerComponent);
@@ -57505,17 +57669,17 @@ var NotificationsViewerComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 323 */
+/* 328 */
 /***/ (function(module, exports) {
 
 module.exports = "<div>\r\n    <ngx-datatable class=\"material colored-header sm table-hover\"\r\n                   [loadingIndicator]=\"loadingIndicator\"\r\n                   [rows]=\"rows\"\r\n                   [rowHeight]=\"35\"\r\n                   [headerHeight]=\"isViewOnly ? 0 : 35\"\r\n                   [footerHeight]=\"35\"\r\n                   [limit]=\"10\"\r\n                   [columns]=\"columns\"\r\n                   [scrollbarV]=\"verticalScrollbar\"\r\n                   [columnMode]=\"'force'\">\r\n    </ngx-datatable>\r\n\r\n    <ng-template #statusHeaderTemplate>\r\n        <i class=\"fa fa-bullhorn\"></i>\r\n    </ng-template>\r\n\r\n    <ng-template #statusTemplate>\r\n        <span></span>\r\n    </ng-template>\r\n\r\n    <ng-template #dateTemplate let-row=\"row\" let-value=\"value\">\r\n        <span [class.unread]=\"!row.isRead\" attr.title=\"{{getPrintedDate(value)}}\">\r\n            {{getPrintedDate(value)}}\r\n        </span>\r\n    </ng-template>\r\n\r\n    <ng-template #contentHeaderTemplate let-row=\"row\" let-value=\"value\">\r\n        <span [class.unread]=\"!row.isRead\" attr.title=\"{{row.body}}\">\r\n            {{value}}\r\n        </span>\r\n    </ng-template>\r\n\r\n    <ng-template #contenBodytTemplate let-row=\"row\" let-value=\"value\">\r\n        <span [class.unread]=\"!row.isRead\" attr.title=\"{{row.header}}\">\r\n            {{value}}\r\n        </span>\r\n    </ng-template>\r\n\r\n\r\n    <ng-template #actionsTemplate let-row=\"row\">\r\n        <a class=\"btn btn-link btn-xs\" href=\"javascript:;\" tooltip=\"{{'notifications.Delete' | translate}}\" container=\"body\" (click)=\"deleteNotification(row)\"><i class=\"fa fa-times\"></i></a>\r\n        <a class=\"btn btn-link btn-xs\" href=\"javascript:;\" tooltip=\"{{'notifications.Pin' | translate}}\" co container=\"body\" (click)=\"togglePin(row)\">\r\n            <i *ngIf=\"row.isPinned\" class=\"fa fa-thumb-tack\"></i>\r\n            <i *ngIf=\"!row.isPinned\" class=\"fa fa-thumb-tack fa-rotate-90\"></i>\r\n        </a>\r\n    </ng-template>\r\n</div>";
 
 /***/ }),
-/* 324 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(325);
+        var result = __webpack_require__(330);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -57525,7 +57689,7 @@ module.exports = "<div>\r\n    <ngx-datatable class=\"material colored-header sm
     
 
 /***/ }),
-/* 325 */
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -57539,7 +57703,7 @@ exports.push([module.i, "\r\n.unread {\r\n    font-weight: bold;\r\n}\r\n", ""])
 
 
 /***/ }),
-/* 326 */
+/* 331 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57590,8 +57754,8 @@ var SearchBoxComponent = /** @class */ (function () {
     SearchBoxComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'search-box',
-            template: __webpack_require__(327),
-            styles: [__webpack_require__(328)]
+            template: __webpack_require__(332),
+            styles: [__webpack_require__(333)]
         })
     ], SearchBoxComponent);
     return SearchBoxComponent;
@@ -57600,17 +57764,17 @@ var SearchBoxComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 327 */
+/* 332 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"icon-addon addon-sm\">\r\n    <label for=\"searchInput\" title=\"Search\"><i class=\"fa fa-search left-icon search-icon\"></i></label>\r\n    <input id=\"searchInput\" #searchInput type=\"search\" ngModel=\"\" (ngModelChange)=\"onValueChange($event)\" [attr.placeholder]=\"placeholder\" class=\"form-control left-icon right-icon\">\r\n    <a *ngIf=\"searchInput.value\" href=\"javascript:;\" title=\"Clear\" (click)=\"clear()\" class=\"fa fa-times-circle clear-input right-icon\"></a>\r\n</div>";
 
 /***/ }),
-/* 328 */
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(329);
+        var result = __webpack_require__(334);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -57620,7 +57784,7 @@ module.exports = "<div class=\"icon-addon addon-sm\">\r\n    <label for=\"search
     
 
 /***/ }),
-/* 329 */
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -57634,7 +57798,7 @@ exports.push([module.i, "\r\n.search-icon {\r\n    pointer-events: none;\r\n}\r\
 
 
 /***/ }),
-/* 330 */
+/* 335 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57673,17 +57837,17 @@ var UserEdit = /** @class */ (function (_super) {
 
 
 /***/ }),
-/* 331 */
+/* 336 */
 /***/ (function(module, exports) {
 
 module.exports = "<div>\r\n    <form *ngIf=\"formResetToggle\" [attr.autocomplete]=\"isGeneralEditor ? NaN : null\" class=\"form-horizontal\" name=\"userInfoForm\" #f=\"ngForm\" novalidate\r\n          (ngSubmit)=\"f.form.valid ? save() :\r\n\r\n          (!userName.valid && showErrorAlert('User name is required', 'Please enter a user name (minimum of 2 and maximum of 200 characters)'));\r\n\r\n          (userPassword && !userPassword.valid && showErrorAlert('Password is required', 'Please enter the current password'));\r\n\r\n          (email.errors?.required && showErrorAlert('Email is required', 'Please enter an email address (maximum of 200 characters)'));\r\n          (email.errors?.pattern && showErrorAlert('Invalid Email', 'Please enter a valid email address'));\r\n\r\n          (isChangePassword && isEditingSelf && !currentPassword.valid && showErrorAlert('Current password is required', 'Please enter the current password'));\r\n\r\n          (isChangePassword && !newPassword.valid && showErrorAlert('New password is required', 'Please enter the new password (minimum of 6 characters)'));\r\n\r\n          (isChangePassword && confirmPassword.errors?.required && showErrorAlert('Confirmation password is required', 'Please enter the confirmation password'));\r\n          (isChangePassword && confirmPassword.errors?.validateEqual && showErrorAlert('Passwword mismatch', 'New password and comfirmation password do not match'));\r\n\r\n          (canAssignRoles && !roles.valid && showErrorAlert('Roles is required', 'Please select a minimum of 1 role'));\">\r\n\r\n        <div class=\"form-group\">\r\n            <label [class.col-md-3]=\"isViewOnly\" [class.col-md-2]=\"!isViewOnly\" class=\"control-label\" for=\"jobTitle-{{uniqueId}}\">{{'users.editor.JobTitle' | translate}}</label>\r\n            <div *ngIf=\"!isEditMode\" [class.col-md-9]=\"isViewOnly\" [class.col-md-10]=\"!isViewOnly\">\r\n                <p class=\"form-control-static\">{{user.jobTitle}}</p>\r\n            </div>\r\n            <div *ngIf=\"isEditMode\" [class.col-md-9]=\"isViewOnly\" [class.col-md-10]=\"!isViewOnly\">\r\n                <input autofocus type=\"text\" attr.id=\"jobTitle-{{uniqueId}}\" name=\"jobTitle\" placeholder=\"Enter Job Title\" class=\"form-control\" [(ngModel)]=\"userEdit.jobTitle\" />\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <hr [class.separator-hr]=\"!isEditMode\" [class.edit-separator-hr]=\"isEditMode\" />\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"form-group has-feedback\">\r\n            <label [class.col-md-3]=\"isViewOnly\" [class.col-md-2]=\"!isViewOnly\" class=\"control-label\" for=\"userName-{{uniqueId}}\">{{'users.editor.UserName' | translate}}</label>\r\n            <div *ngIf=\"!isEditMode\" [class.col-md-9]=\"isViewOnly\" [class.col-md-10]=\"!isViewOnly\">\r\n                <p class=\"form-control-static\">{{user.userName}}</p>\r\n            </div>\r\n            <div *ngIf=\"isEditMode\" [class.col-md-9]=\"isViewOnly\" [class.col-md-10]=\"!isViewOnly\" [ngClass]=\"{'has-success': f.submitted && userName.valid, 'has-error' : f.submitted && !userName.valid}\">\r\n                <input type=\"text\" attr.id=\"userName-{{uniqueId}}\" name=\"userName\" [attr.autocomplete]=\"isGeneralEditor ? new-password : null\" placeholder=\"Enter user name\"\r\n                       class=\"form-control\" [(ngModel)]=\"userEdit.userName\" #userName=\"ngModel\" required minlength=\"2\" maxlength=\"200\" />\r\n                <span *ngIf=\"showValidationErrors && f.submitted\" class=\"glyphicon form-control-feedback\" [ngClass]=\"{'glyphicon-ok ': userName.valid, 'glyphicon-remove' : !userName.valid}\"></span>\r\n                <span *ngIf=\"showValidationErrors && f.submitted && !userName.valid\" class=\"errorMessage\">\r\n                    {{'users.editor.UserNameRequired' | translate}}\r\n                </span>\r\n            </div>\r\n        </div>\r\n\r\n        <div *ngIf=\"isEditMode && isEditingSelf && !isChangePassword && user.userName != userEdit.userName\" class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <hr class=\"password-separator-hr\" />\r\n            </div>\r\n        </div>\r\n        <div *ngIf=\"isEditMode && isEditingSelf && !isChangePassword && user.userName != userEdit.userName\" class=\"form-group has-feedback\">\r\n            <label class=\"control-label col-md-2\" for=\"userPassword-{{uniqueId}}\">{{'users.editor.Password' | translate}}</label>\r\n            <div class=\"col-md-10\" [ngClass]=\"{'has-success': f.submitted && userPassword.valid, 'has-error' : f.submitted && !userPassword.valid}\">\r\n                <input type=\"password\" attr.id=\"userPassword-{{uniqueId}}\" name=\"userPassword\" [attr.autocomplete]=\"isGeneralEditor ? new-password : null\" placeholder=\"Enter password\"\r\n                       class=\"form-control\" [(ngModel)]=\"userEdit.currentPassword\" #userPassword=\"ngModel\" required />\r\n                <small class=\"hint-sm\">{{'users.editor.PasswordHint' | translate}}</small>\r\n                <span *ngIf=\"showValidationErrors && f.submitted\" class=\"glyphicon form-control-feedback\" [ngClass]=\"{'glyphicon-ok ': userPassword.valid, 'glyphicon-remove' : !userPassword.valid}\"></span>\r\n                <span *ngIf=\"showValidationErrors && f.submitted && !userPassword.valid\" class=\"errorMessage\">\r\n                    {{'users.editor.CurrentPasswordRequired' | translate}}\r\n                </span>\r\n            </div>\r\n        </div>\r\n\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <hr [class.separator-hr]=\"!isEditMode\" [class.edit-separator-hr]=\"isEditMode\" />\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"form-group has-feedback\">\r\n            <label [class.col-md-3]=\"isViewOnly\" [class.col-md-2]=\"!isViewOnly\" class=\"control-label\" for=\"email-{{uniqueId}}\">{{'users.editor.Email' | translate}}</label>\r\n            <div *ngIf=\"!isEditMode\" [class.col-md-9]=\"isViewOnly\" [class.col-md-10]=\"!isViewOnly\">\r\n                <p class=\"form-control-static\">{{user.email}}</p>\r\n            </div>\r\n            <div *ngIf=\"isEditMode\" [class.col-md-9]=\"isViewOnly\" [class.col-md-10]=\"!isViewOnly\" [ngClass]=\"{'has-success': f.submitted && email.valid, 'has-error' : f.submitted && !email.valid}\">\r\n                <input type=\"text\" attr.id=\"email-{{uniqueId}}\" name=\"email\" placeholder=\"Enter email address\" class=\"form-control\" [(ngModel)]=\"userEdit.email\" #email=\"ngModel\"\r\n                       required maxlength=\"200\" pattern=\"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$\" />\r\n                <span *ngIf=\"showValidationErrors && f.submitted\" class=\"glyphicon form-control-feedback\" [ngClass]=\"{'glyphicon-ok ': email.valid, 'glyphicon-remove' : !email.valid}\"></span>\r\n                <span *ngIf=\"showValidationErrors && f.submitted && email.errors?.required\" class=\"errorMessage\">\r\n                    {{'users.editor.EmailRequired' | translate}}\r\n                </span>\r\n                <span *ngIf=\"showValidationErrors && f.submitted && email.errors?.pattern\" class=\"errorMessage\">\r\n                    {{'users.editor.InvalidEmail' | translate}}\r\n                </span>\r\n            </div>\r\n        </div>\r\n\r\n        <div *ngIf=\"isEditMode\" class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <hr [class.separator-hr]=\"!isEditMode\" [class.edit-separator-hr]=\"isEditMode\" />\r\n            </div>\r\n        </div>\r\n\r\n        <div *ngIf=\"isEditMode\" class=\"form-group\">\r\n            <label for=\"newPassword-{{uniqueId}}\" class=\"control-label col-md-2\">{{'users.editor.Password' | translate}}</label>\r\n            <div *ngIf=\"!isChangePassword && !isNewUser\" class=\"col-md-10\">\r\n                <button type=\"button\" (click)=\"changePassword()\" class=\"btn btn-link\">{{'users.editor.ChangePassword' | translate}}</button>\r\n            </div>\r\n\r\n            <div *ngIf=\"isChangePassword || isNewUser\" class=\"col-md-10\">\r\n                <div class=\"password-well well well-sm\">\r\n                    <div *ngIf=\"isEditingSelf\" class=\"form-group has-feedback\">\r\n                        <label class=\"control-label col-md-3\" for=\"currentPassword-{{uniqueId}}\">{{'users.editor.CurrentPassword' | translate}}</label>\r\n                        <div class=\"col-md-9\" [ngClass]=\"{'has-success': f.submitted && currentPassword.valid, 'has-error' : f.submitted && !currentPassword.valid}\">\r\n                            <input type=\"password\" attr.id=\"currentPassword-{{uniqueId}}\" name=\"currentPassword\" [attr.autocomplete]=\"isGeneralEditor ? new-password : null\" placeholder=\"Enter current password\" class=\"form-control\" [(ngModel)]=\"userEdit.currentPassword\" #currentPassword=\"ngModel\"\r\n                                   required />\r\n                            <span *ngIf=\"showValidationErrors && f.submitted\" class=\"glyphicon form-control-feedback\" [ngClass]=\"{'glyphicon-ok ': currentPassword.valid, 'glyphicon-remove' : !currentPassword.valid}\"></span>\r\n                            <span *ngIf=\"showValidationErrors && f.submitted && !currentPassword.valid\" class=\"errorMessage\">\r\n                                {{'users.editor.CurrentPasswordRequired' | translate}}\r\n                            </span>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div *ngIf=\"!isNewUser\" class=\"row\">\r\n                        <div class=\"col-md-12\">\r\n                            <hr class=\"password-separator-hr\" />\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"form-group has-feedback\">\r\n                        <label class=\"control-label col-md-3\" for=\"newPassword-{{uniqueId}}\">{{'users.editor.NewPassword' | translate}}</label>\r\n                        <div class=\"col-md-9\" [ngClass]=\"{'has-success': f.submitted && newPassword.valid, 'has-error' : f.submitted && !newPassword.valid}\">\r\n                            <input type=\"password\" attr.id=\"newPassword-{{uniqueId}}\" name=\"newPassword\" [attr.autocomplete]=\"isGeneralEditor ? new-password : null\" placeholder=\"Enter new password\" class=\"form-control\" [(ngModel)]=\"userEdit.newPassword\" #newPassword=\"ngModel\"\r\n                                   required minlength=\"6\" validateEqual=\"confirmPassword\" reverse=\"true\" />\r\n                            <span *ngIf=\"showValidationErrors && f.submitted\" class=\"glyphicon form-control-feedback\" [ngClass]=\"{'glyphicon-ok ': newPassword.valid, 'glyphicon-remove' : !newPassword.valid}\"></span>\r\n                            <span *ngIf=\"showValidationErrors && f.submitted && !newPassword.valid\" class=\"errorMessage\">\r\n                                {{'users.editor.NewPasswordRequired' | translate}}\r\n                            </span>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"row\">\r\n                        <div class=\"col-md-12\">\r\n                            <hr class=\"password-separator-hr\" />\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"form-group has-feedback\">\r\n                        <label class=\"control-label col-md-3\" for=\"confirmPassword-{{uniqueId}}\">{{'users.editor.ConfirmPassword' | translate}}</label>\r\n                        <div class=\"col-md-9\" [ngClass]=\"{'has-success': f.submitted && confirmPassword.valid, 'has-error' : f.submitted && !confirmPassword.valid}\">\r\n                            <input type=\"password\" attr.id=\"confirmPassword-{{uniqueId}}\" name=\"confirmPassword\" [attr.autocomplete]=\"isGeneralEditor ? new-password : null\" placeholder=\"Confirm new password\" class=\"form-control\" [(ngModel)]=\"userEdit.confirmPassword\" #confirmPassword=\"ngModel\"\r\n                                   required validateEqual=\"newPassword\" />\r\n                            <span *ngIf=\"showValidationErrors && f.submitted\" class=\"glyphicon form-control-feedback\" [ngClass]=\"{'glyphicon-ok ': confirmPassword.valid, 'glyphicon-remove' : !confirmPassword.valid}\"></span>\r\n                            <span *ngIf=\"showValidationErrors && f.submitted && confirmPassword.errors?.required\" class=\"errorMessage\">\r\n                                {{'users.editor.ConfirmationPasswordRequired' | translate}}\r\n                            </span>\r\n                            <span *ngIf=\"showValidationErrors && f.submitted && confirmPassword.errors?.validateEqual && !confirmPassword.errors?.required\" class=\"errorMessage\">\r\n                                {{'users.editor.PasswordMismatch' | translate}}\r\n                            </span>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <!--******************************************************************************************************-->\r\n\r\n        <div *ngIf=\"!isEditMode || canAssignRoles\" class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <hr [class.separator-hr]=\"!isEditMode\" [class.edit-separator-hr]=\"isEditMode\" />\r\n            </div>\r\n        </div>\r\n\r\n        <div *ngIf=\"!isEditMode || canAssignRoles\" class=\"form-group has-feedback\">\r\n            <label [class.col-md-3]=\"isViewOnly\" [class.col-md-2]=\"!isViewOnly\" class=\"control-label\" for=\"roles-user-info\">{{'users.editor.Roles' | translate}}</label>\r\n            <div *ngIf=\"!isEditMode\" [class.col-md-9]=\"isViewOnly\" [class.col-md-10]=\"!isViewOnly\">\r\n                <p class=\"form-control-static\">\r\n                    <span *ngFor=\"let role of user.roles\">\r\n                        <span title='{{getRoleByName(role)?.description}}' class=\"badge\">{{role}}</span>\r\n                    </span>\r\n                </p>\r\n            </div>\r\n            <div *ngIf=\"isEditMode && canAssignRoles\" [class.col-md-9]=\"isViewOnly\" [class.col-md-10]=\"!isViewOnly\" [ngClass]=\"{'has-success': f.submitted && roles.valid, 'has-error' : f.submitted && !roles.valid}\">\r\n                <select id=\"roles-user-info\" name=\"roles\" [(ngModel)]=\"userEdit.roles\" #roles=\"ngModel\" #rolesSelector=\"bootstrap-select\" class=\"selectpicker form-control\" bootstrapSelect required multiple\r\n                        data-live-search=\"true\" data-actions-box=\"false\" data-live-search-placeholder=\"Search...\" title=\"Select Roles\">\r\n                    <option *ngFor=\"let role of allRoles\" attr.data-content=\"<span title='{{role.description}}' class='badge'>{{role.name}}</span>\" attr.value=\"{{role.name}}\">\r\n                        {{role.name}}\r\n                    </option>\r\n                </select>\r\n                <span *ngIf=\"showValidationErrors && f.submitted\" class=\"glyphicon form-control-feedback\" [ngClass]=\"{'glyphicon-ok ': roles.valid, 'glyphicon-remove' : !roles.valid}\"></span>\r\n                <span *ngIf=\"showValidationErrors && f.submitted && !roles.valid\" class=\"errorMessage\">\r\n                    {{'users.editor.RoleRequired' | translate}}\r\n                </span>\r\n            </div>\r\n        </div>\r\n\r\n        <!--******************************************************************************************************-->\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <hr [class.separator-hr]=\"!isEditMode\" [class.edit-separator-hr]=\"isEditMode\" />\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"form-group\">\r\n            <label [class.col-md-3]=\"isViewOnly\" [class.col-md-2]=\"!isViewOnly\" class=\"control-label\" for=\"fullName-{{uniqueId}}\">{{'users.editor.FullName' | translate}}</label>\r\n            <div *ngIf=\"!isEditMode\" [class.col-md-9]=\"isViewOnly\" [class.col-md-10]=\"!isViewOnly\">\r\n                <p class=\"form-control-static\">{{user.fullName}}</p>\r\n            </div>\r\n            <div *ngIf=\"isEditMode\" [class.col-md-9]=\"isViewOnly\" [class.col-md-10]=\"!isViewOnly\">\r\n                <input type=\"text\" attr.id=\"fullName-{{uniqueId}}\" name=\"fullName\" placeholder=\"Enter full name\" class=\"form-control\" [(ngModel)]=\"userEdit.fullName\" />\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <hr [class.separator-hr]=\"!isEditMode\" [class.edit-separator-hr]=\"isEditMode\" />\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"form-group has-feedback\">\r\n            <label [class.col-md-3]=\"isViewOnly\" [class.col-md-2]=\"!isViewOnly\" class=\"control-label\" for=\"phoneNumber-{{uniqueId}}\">{{'users.editor.PhoneNumber' | translate}}</label>\r\n            <div *ngIf=\"!isEditMode\" [class.col-md-9]=\"isViewOnly\" [class.col-md-10]=\"!isViewOnly\">\r\n                <p class=\"form-control-static\">{{user.phoneNumber}}</p>\r\n            </div>\r\n            <div *ngIf=\"isEditMode\" [class.col-md-9]=\"isViewOnly\" [class.col-md-10]=\"!isViewOnly\">\r\n                <input type=\"text\" attr.id=\"phoneNumber-{{uniqueId}}\" name=\"phoneNumber\" placeholder=\"Enter phone number\" class=\"form-control\" [(ngModel)]=\"userEdit.phoneNumber\" />\r\n            </div>\r\n        </div>\r\n\r\n        <div *ngIf=\"!isViewOnly\" class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <hr [class.last-separator-hr]=\"!isEditMode\" [class.edit-last-separator-hr]=\"isEditMode\" />\r\n            </div>\r\n        </div>\r\n\r\n        <div *ngIf=\"!isViewOnly\" class=\"form-group\">\r\n            <div class=\"col-sm-5\">\r\n                <div *ngIf=\"isGeneralEditor && isEditMode\" class=\"pull-left\">\r\n                    <div class=\"checkbox user-enabled\">\r\n                        <label>\r\n                            <input type=\"checkbox\" name=\"isEnabled\" [(ngModel)]=\"userEdit.isEnabled\">\r\n                            {{'users.editor.Enabled' | translate}}\r\n                        </label>\r\n                    </div>\r\n                    <button *ngIf=\"userEdit.isLockedOut\" type=\"button\" (click)=\"unlockUser()\" class=\"btn btn-warning unblock-user\" [disabled]=\"isSaving\"><i class='fa fa-unlock-alt'></i> {{'users.editor.Unblock' | translate}}</button>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-sm-7\">\r\n                <div class=\"pull-right\">\r\n                    <button *ngIf=\"!isEditMode && isGeneralEditor\" type=\"button\" (click)=\"close()\" class=\"btn btn-default\"><i class='fa fa-close'></i> {{'users.editor.Close' | translate}}</button>\r\n                    <button *ngIf=\"!isEditMode && !isGeneralEditor\" type=\"button\" (click)=\"edit()\" class=\"btn btn-default\"><i class='fa fa-edit'></i> {{'users.editor.Edit' | translate}}</button>\r\n                    <button *ngIf=\"isEditMode\" type=\"button\" (click)=\"cancel()\" class=\"btn btn-danger\" [disabled]=\"isSaving\"><i class='fa fa-times'></i> {{'users.editor.Cancel' | translate}}</button>\r\n                    <button *ngIf=\"isEditMode\" type=\"submit\" class=\"btn btn-primary\" [disabled]=\"isSaving\">\r\n                        <i *ngIf=\"!isSaving\" class='fa fa-save'></i><i *ngIf=\"isSaving\" class='fa fa-circle-o-notch fa-spin'></i> {{isSaving ? ('users.editor.Saving' | translate) : ('users.editor.Save' | translate)}}\r\n                    </button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"clearfix\"></div>\r\n    </form>\r\n</div>\r\n";
 
 /***/ }),
-/* 332 */
+/* 337 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(333);
+        var result = __webpack_require__(338);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -57693,7 +57857,7 @@ module.exports = "<div>\r\n    <form *ngIf=\"formResetToggle\" [attr.autocomplet
     
 
 /***/ }),
-/* 333 */
+/* 338 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -57707,7 +57871,7 @@ exports.push([module.i, ".row:not(:last-child) {\r\n    /*border-bottom: 1px sol
 
 
 /***/ }),
-/* 334 */
+/* 339 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57716,7 +57880,7 @@ exports.push([module.i, ".row:not(:last-child) {\r\n    /*border-bottom: 1px sol
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_alert_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_configuration_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_app_translation_service__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_bootstrap_select_directive__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_bootstrap_select_directive__ = __webpack_require__(126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_account_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_utilities__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_permission_model__ = __webpack_require__(18);
@@ -57844,8 +58008,8 @@ var UserPreferencesComponent = /** @class */ (function () {
     UserPreferencesComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'user-preferences',
-            template: __webpack_require__(335),
-            styles: [__webpack_require__(336)]
+            template: __webpack_require__(340),
+            styles: [__webpack_require__(341)]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_alert_service__["a" /* AlertService */], __WEBPACK_IMPORTED_MODULE_3__services_app_translation_service__["a" /* AppTranslationService */], __WEBPACK_IMPORTED_MODULE_5__services_account_service__["a" /* AccountService */], __WEBPACK_IMPORTED_MODULE_2__services_configuration_service__["a" /* ConfigurationService */]])
     ], UserPreferencesComponent);
@@ -57855,17 +58019,17 @@ var UserPreferencesComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 335 */
+/* 340 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"form-horizontal\">\r\n    <div class=\"form-group\">\r\n        <label for=\"refreshButton\" class=\"col-sm-3 control-label\">{{'preferences.ReloadPreferences' | translate}} </label>\r\n        <div class=\"col-sm-4\">\r\n            <button id=\"refreshButton\" class=\"btn btn-default\" (click)=\"reloadFromServer()\">\r\n                <i class=\"fa fa-refresh\"></i>\r\n            </button>\r\n        </div>\r\n        <div class=\"col-sm-5\">\r\n            <p class=\"form-control-static text-muted small\">{{'preferences.ReloadPreferencesHint' | translate}}</p>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n            <hr class=\"separator-hr\" />\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n        <label for=\"language\" class=\"col-sm-3 control-label\">{{'preferences.Language' | translate}} </label>\r\n        <div class=\"col-sm-4\">\r\n            <select id=\"language\" [(ngModel)]=\"configurations.language\" #languageSelector=\"bootstrap-select\" bootstrapSelect class=\"selectpicker form-control\">\r\n                <option data-subtext=\"(Default)\" value=\"en\">{{'preferences.English' | translate}}</option>\r\n                <option value=\"fr\">{{'preferences.French' | translate}}</option>\r\n                <option value=\"de\">{{'preferences.German' | translate}}</option>\r\n                <option value=\"pt\">{{'preferences.Portuguese' | translate}}</option>\r\n                <option value=\"ar\">{{'preferences.Arabic' | translate}}</option>\r\n                <option value=\"ko\">{{'preferences.Korean' | translate}}</option>\r\n            </select>\r\n        </div>\r\n        <div class=\"col-sm-5\">\r\n            <p class=\"form-control-static text-muted small\">{{'preferences.LanguageHint' | translate}}</p>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n            <hr class=\"separator-hr\" />\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n        <label for=\"homePage\" class=\"col-sm-3 control-label\">{{'preferences.HomePage' | translate}} </label>\r\n        <div class=\"col-sm-4\">\r\n            <select id=\"homePage\" [(ngModel)]=\"configurations.homeUrl\" #homePageSelector=\"bootstrap-select\" bootstrapSelect class=\"selectpicker form-control\">\r\n                <option data-icon=\"fa fa-tachometer\" data-subtext=\"(Default)\" value=\"/\">{{'preferences.Dashboard' | translate}}</option>\r\n                <option *ngIf=\"canViewCustomers\" data-icon=\"fa fa-handshake-o\" value=\"/customers\">{{'preferences.Customers' | translate}}</option>\r\n                <option *ngIf=\"canViewProducts\" data-icon=\"fa fa-truck\" value=\"/products\">{{'preferences.Products' | translate}}</option>\r\n                <option *ngIf=\"canViewOrders\" data-icon=\"fa fa-shopping-cart\" value=\"/orders\">{{'preferences.Orders' | translate}}</option>\r\n                <option data-icon=\"fa fa-info-circle\" value=\"/about\">{{'preferences.About' | translate}}</option>\r\n                <option data-icon=\"fa fa-cog\" value=\"/settings\">{{'preferences.Settings' | translate}}</option>\r\n            </select>\r\n        </div>\r\n        <div class=\"col-sm-5\">\r\n            <p class=\"form-control-static text-muted small\">{{'preferences.HomePageHint' | translate}}</p>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n            <hr class=\"separator-hr\" />\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n        <label for=\"defaultTheme\" class=\"col-sm-3 control-label\">{{'preferences.Theme' | translate}} </label>\r\n        <div *ngIf=\"themeSelectorToggle\" class=\"col-sm-4\">\r\n            <select id=\"defaultTheme\" [(ngModel)]=\"configurations.theme\" bootstrapSelect class=\"selectpicker form-control\">\r\n                <option attr.data-content=\"{{'preferences.DefaultColor' | translate}}\">Default</option>\r\n                <option attr.data-content=\"{{'preferences.RedColor' | translate}}\">Red</option>\r\n                <option attr.data-content=\"{{'preferences.OrangeColor' | translate}}\">Orange</option>\r\n                <option attr.data-content=\"{{'preferences.GreenColor' | translate}}\">Green</option>\r\n                <option attr.data-content=\"{{'preferences.GrayColor' | translate}}\">Gray</option>\r\n                <option attr.data-content=\"{{'preferences.BlackColor' | translate}}\">Black</option>\r\n            </select>\r\n        </div>\r\n        <div class=\"col-sm-5\">\r\n            <p class=\"form-control-static text-muted small\">{{'preferences.ThemeHint' | translate}}</p>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n            <hr class=\"separator-hr\" />\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n        <label class=\"col-sm-3 control-label\" for=\"dashboardStatistics\">{{'preferences.DashboardStatistics' | translate}} </label>\r\n        <div class=\"col-sm-4\">\r\n            <div class=\"checkbox\">\r\n                <input name=\"dashboardStatistics\" [(ngModel)]=\"configurations.showDashboardStatistics\" class=\"form-control\" type=\"checkbox\" bootstrapToggle data-size=\"small\">\r\n            </div>\r\n        </div>\r\n        <div class=\"col-sm-5\">\r\n            <p class=\"form-control-static text-muted small\">{{'preferences.DashboardStatisticsHint' | translate}}</p>\r\n        </div>\r\n    </div>\r\n    <!--  -->\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n            <hr class=\"subseparator-hr\" />\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n        <label class=\"col-sm-3 control-label\" for=\"dashboardTodo\">{{'preferences.DashboardNotifications' | translate}} </label>\r\n        <div class=\"col-sm-4\">\r\n            <div class=\"checkbox\">\r\n                <input name=\"dashboardNotifications\" [(ngModel)]=\"configurations.showDashboardNotifications\" class=\"form-control\" type=\"checkbox\" bootstrapToggle data-size=\"small\">\r\n            </div>\r\n        </div>\r\n        <div class=\"col-sm-5\">\r\n            <p class=\"form-control-static text-muted small\">{{'preferences.DashboardNotificationsHint' | translate}}</p>\r\n        </div>\r\n    </div>\r\n    <!--  -->\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n            <hr class=\"subseparator-hr\" />\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n        <label class=\"col-sm-3 control-label\" for=\"dashboardTodo\">{{'preferences.DashboardTodo' | translate}} </label>\r\n        <div class=\"col-sm-4\">\r\n            <div class=\"checkbox\">\r\n                <input name=\"dashboardTodo\" [(ngModel)]=\"configurations.showDashboardTodo\" class=\"form-control\" type=\"checkbox\" bootstrapToggle data-size=\"small\">\r\n            </div>\r\n        </div>\r\n        <div class=\"col-sm-5\">\r\n            <p class=\"form-control-static text-muted small\">{{'preferences.DashboardTodoHint' | translate}}</p>\r\n        </div>\r\n    </div>\r\n    <!--  -->\r\n\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n            <hr class=\"subseparator-hr\" />\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n        <label class=\"col-sm-3 control-label\" for=\"dashboardBanner\">{{'preferences.DashboardBanner' | translate}}</label>\r\n        <div class=\"col-sm-4\">\r\n            <div class=\"checkbox\">\r\n                <input name=\"dashboardBanner\" [(ngModel)]=\"configurations.showDashboardBanner\" class=\"form-control\" type=\"checkbox\" bootstrapToggle data-size=\"small\">\r\n            </div>\r\n        </div>\r\n        <div class=\"col-sm-5\">\r\n            <p class=\"form-control-static text-muted small\">{{'preferences.DashboardBannerHint' | translate}}</p>\r\n        </div>\r\n    </div>\r\n    <!--  -->\r\n\r\n\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n            <hr class=\"last-separator-hr\" />\r\n        </div>\r\n    </div>\r\n    <div class=\"form-group\">\r\n        <div class=\"col-sm-3\">\r\n\r\n        </div>\r\n        <div class=\"col-sm-9\">\r\n            <div class=\"row pull-left\">\r\n                <div class=\"col-sm-6 col-reset-default\">\r\n                    <button type=\"button\" (click)=\"resetDefault()\" class=\"btn btn-success\">\r\n                        <i class='fa fa-circle-o-notch'></i> {{'preferences.ResetDefault' | translate}}\r\n                    </button>\r\n                </div>\r\n                <div class=\"col-sm-6 col-set-default\">\r\n                    <button type=\"button\" (click)=\"setAsDefault()\" class=\"btn btn-primary\">\r\n                        <i class='fa fa-hdd-o'></i> {{'preferences.SetDefault' | translate}}\r\n                    </button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
-/* 336 */
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(337);
+        var result = __webpack_require__(342);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -57875,7 +58039,7 @@ module.exports = "<div class=\"form-horizontal\">\r\n    <div class=\"form-group
     
 
 /***/ }),
-/* 337 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -57889,7 +58053,7 @@ exports.push([module.i, "\r\n.separator-hr {\r\n    margin: 7px 5px;\r\n    bord
 
 
 /***/ }),
-/* 338 */
+/* 343 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57903,7 +58067,7 @@ exports.push([module.i, "\r\n.separator-hr {\r\n    margin: 7px 5px;\r\n    bord
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_user_model__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_role_model__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_permission_model__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__user_info_component__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__user_info_component__ = __webpack_require__(127);
 // ======================================
 // Author: Ebenezer Monney
 // Email:  info@ebenmonney.com
@@ -58109,8 +58273,8 @@ var UsersManagementComponent = /** @class */ (function () {
     UsersManagementComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'users-management',
-            template: __webpack_require__(339),
-            styles: [__webpack_require__(340)]
+            template: __webpack_require__(344),
+            styles: [__webpack_require__(345)]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_alert_service__["a" /* AlertService */], __WEBPACK_IMPORTED_MODULE_3__services_app_translation_service__["a" /* AppTranslationService */], __WEBPACK_IMPORTED_MODULE_4__services_account_service__["a" /* AccountService */]])
     ], UsersManagementComponent);
@@ -58120,17 +58284,17 @@ var UsersManagementComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 339 */
+/* 344 */
 /***/ (function(module, exports) {
 
 module.exports = "<div>\r\n    <div class=\"row control-box\">\r\n        <div class=\"col-sm-8\">\r\n            <div class=\"form-group search-box\">\r\n                <search-box (searchChange)=\"onSearchChanged($event)\" placeholder=\"{{'users.management.Search' | translate}}\">></search-box>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-sm-4\">\r\n            <div class=\"navbar action-box\">\r\n                <ul class=\"nav navbar-nav navbar-right\">\r\n                    <li *ngIf=\"canManageUsers && canAssignRoles\" class=\"toolbaritem\">\r\n                        <a href=\"javascript:;\" (click)=\"newUser(row)\">\r\n                            <i class=\"fa fa-plus-circle\"></i> {{'users.management.NewUser' | translate}}\r\n                        </a>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n    <ngx-datatable class=\"material colored-header sm table table-striped table-hover\"\r\n                   [loadingIndicator]=\"loadingIndicator\"\r\n                   [rows]=\"rows\"\r\n                   [rowHeight]=\"35\"\r\n                   [headerHeight]=\"35\"\r\n                   [footerHeight]=\"35\"\r\n                   [columns]=\"columns\"\r\n                   [scrollbarV]=\"true\"\r\n                   [columnMode]=\"'force'\">\r\n    </ngx-datatable>\r\n\r\n    <ng-template #indexTemplate let-value=\"value\">\r\n        <strong>{{value}}</strong>\r\n    </ng-template>\r\n\r\n    <ng-template #userNameTemplate let-row=\"row\" let-value=\"value\">\r\n        <span [class.locked-out]=\"row.isLockedOut\" [class.user-disabled]=\"!row.isEnabled\">\r\n            <i *ngIf=\"row.isLockedOut\" class=\"fa fa-exclamation-triangle\"> </i>\r\n            <i *ngIf=\"!row.isEnabled\" class=\"fa fa-exclamation\"> </i>\r\n            {{value}}\r\n        </span>\r\n    </ng-template>\r\n\r\n    <ng-template #rolesTemplate let-row=\"row\" let-value=\"value\" let-i=\"index\">\r\n        <span class=\"user-role badge\" *ngFor=\"let role of value\">{{role}}</span>\r\n    </ng-template>\r\n\r\n    <ng-template #actionsTemplate let-row=\"row\" let-value=\"value\" let-i=\"index\">\r\n        <div *ngIf=\"canManageUsers\">\r\n            <a class=\"btn btn-link btn-xs\" href=\"javascript:;\" (click)=\"editUser(row)\"><i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i> {{'users.management.Edit' | translate}}</a>\r\n            |\r\n            <a class=\"btn btn-link btn-xs\" href=\"javascript:;\" (click)=\"deleteUser(row)\"><i class=\"fa fa-trash-o\" aria-hidden=\"true\"></i> {{'users.management.Delete' | translate}}</a>\r\n        </div>\r\n    </ng-template>\r\n\r\n\r\n    <div class=\"modal fade\" bsModal #editorModal=\"bs-modal\" (onHidden)=\"onEditorModalHidden()\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\">\r\n        <div class=\"modal-dialog modal-lg\">\r\n            <div class=\"modal-content\">\r\n                <div class=\"modal-header\">\r\n                    <h4 class=\"modal-title pull-left\"><i class=\"fa fa-user-circle-o\"></i> {{editingUserName ? ('users.management.EditUser' | translate:editingUserName) : ('users.management.NewUser' | translate)}}</h4>\r\n                    <button type=\"button\" class=\"close pull-right\" title=\"Close\" (click)=\"editorModal.hide()\">\r\n                        <span aria-hidden=\"true\">&times;</span>\r\n                    </button>\r\n                </div>\r\n                <div class=\"modal-body\">\r\n                    <user-info #userEditor [isGeneralEditor]=\"true\"></user-info>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
-/* 340 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(341);
+        var result = __webpack_require__(346);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -58140,7 +58304,7 @@ module.exports = "<div>\r\n    <div class=\"row control-box\">\r\n        <div c
     
 
 /***/ }),
-/* 341 */
+/* 346 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -58154,7 +58318,7 @@ exports.push([module.i, "\r\n.user-role {\r\n    font-size: 0.8em !important;\r\
 
 
 /***/ }),
-/* 342 */
+/* 347 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58167,7 +58331,7 @@ exports.push([module.i, "\r\n.user-role {\r\n    font-size: 0.8em !important;\r\
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_utilities__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_role_model__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_permission_model__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__role_editor_component__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__role_editor_component__ = __webpack_require__(128);
 // ======================================
 // Author: Ebenezer Monney
 // Email:  info@ebenmonney.com
@@ -58341,8 +58505,8 @@ var RolesManagementComponent = /** @class */ (function () {
     RolesManagementComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'roles-management',
-            template: __webpack_require__(346),
-            styles: [__webpack_require__(347)]
+            template: __webpack_require__(351),
+            styles: [__webpack_require__(352)]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_alert_service__["a" /* AlertService */], __WEBPACK_IMPORTED_MODULE_3__services_app_translation_service__["a" /* AppTranslationService */], __WEBPACK_IMPORTED_MODULE_4__services_account_service__["a" /* AccountService */]])
     ], RolesManagementComponent);
@@ -58352,17 +58516,17 @@ var RolesManagementComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 343 */
+/* 348 */
 /***/ (function(module, exports) {
 
 module.exports = "<div>\r\n    <form *ngIf=\"formResetToggle\" class=\"form-horizontal\" name=\"roleEditorForm\" #f=\"ngForm\" novalidate\r\n          (ngSubmit)=\"f.form.valid ? save() :\r\n          (!roleName.valid && showErrorAlert('Role name is required', 'Please enter a role name (minimum of 2 and maximum of 200 characters)'));\">\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-sm-4\">\r\n                <div class=\"form-group has-feedback\">\r\n                    <label class=\"control-label col-md-2\" for=\"roleName\">{{'roles.editor.Name' | translate}}</label>\r\n                    <div class=\"col-md-10\" [ngClass]=\"{'has-success': f.submitted && roleName.valid, 'has-error' : f.submitted && !roleName.valid}\">\r\n                        <input [disabled]=\"!canManageRoles\" type=\"text\" id=\"roleName\" name=\"roleName\" placeholder=\"Enter role name\" class=\"form-control\" [(ngModel)]=\"roleEdit.name\" #roleName=\"ngModel\" required minlength=\"2\" maxlength=\"200\" />\r\n                        <span *ngIf=\"showValidationErrors && f.submitted\" class=\"glyphicon form-control-feedback\" [ngClass]=\"{'glyphicon-ok ': roleName.valid, 'glyphicon-remove' : !roleName.valid}\"></span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"col-sm-8\">\r\n                <div class=\"form-group\">\r\n                    <label class=\"control-label col-md-2\" for=\"roleDescription\">{{'roles.editor.Description' | translate}}</label>\r\n                    <div class=\"col-md-10\">\r\n                        <input [disabled]=\"!canManageRoles\" type=\"text\" id=\"roleDescription\" name=\"roleDescription\" placeholder=\"Enter role description\" class=\"form-control\" [(ngModel)]=\"roleEdit.description\" />\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <span *ngIf=\"showValidationErrors && f.submitted && !roleName.valid\" class=\"errorMessage roleErrorMessage\">\r\n                    {{'roles.editor.RoleNameRequired' | translate}}\r\n                </span>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <hr class=\"edit-separator-hr\" />\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"row well well-sm permissionsRow\">\r\n\r\n                <ng-template ngFor let-permissionGroup [ngForOf]=\"allPermissions | groupBy: 'groupName'\" let-i=\"index\">\r\n                    <div class=\"form-group col-sm-6 permissionsColumn\">\r\n                        <label class=\"col-md-5 control-label\" for=\"checkboxes\" (click)=\"toggleGroup(permissionGroup.key)\">{{permissionGroup.key}}</label>\r\n                        <div class=\"col-md-7\">\r\n                            <div class=\"checkbox\" *ngFor=\"let permission of permissionGroup.value\">\r\n                                <label tooltip=\"{{permission.description}}\" for=\"checkboxes-{{permission.value}}\">\r\n                                    <input [disabled]=\"!canManageRoles\" name=\"checkboxes-{{permission.value}}\" id=\"checkboxes-{{permission.value}}\" type=\"checkbox\" [(ngModel)]=\"selectedValues[permission.value]\">\r\n                                    {{permission.name}}\r\n                                </label>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div *ngIf=\"(i + 1) % 2 === 0\" class=\"clearfix\"></div>\r\n                </ng-template>\r\n\r\n            </div>\r\n\r\n        </div>\r\n\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <hr class=\"edit-last-separator-hr\" />\r\n            </div>\r\n        </div>\r\n\r\n\r\n        <div class=\"form-group\">\r\n            <div class=\"col-sm-5\">\r\n                <div *ngIf=\"canManageRoles\" class=\"pull-left\">\r\n                    <a (click)=\"selectAll()\" href=\"javascript:;\" class=\"btn btn-link\">{{'roles.editor.SelectAll' | translate}}</a>|<a (click)=\"selectNone()\" href=\"javascript:;\" class=\"btn btn-link\">{{'roles.editor.SelectNone' | translate}}</a>\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"col-sm-7\">\r\n                <div class=\"pull-right\">\r\n                    <button *ngIf=\"!canManageRoles\" type=\"button\" (click)=\"cancel()\" class=\"btn btn-default\">{{'roles.editor.Close' | translate}}</button>\r\n                    <button *ngIf=\"canManageRoles\" type=\"button\" (click)=\"cancel()\" class=\"btn btn-danger\" [disabled]=\"isSaving\"><i class='fa fa-times'></i> {{'roles.editor.Cancel' | translate}}</button>\r\n                    <button *ngIf=\"canManageRoles\" type=\"submit\" class=\"btn btn-primary\" [disabled]=\"isSaving\">\r\n                        <i *ngIf=\"!isSaving\" class='fa fa-save'></i><i *ngIf=\"isSaving\" class='fa fa-circle-o-notch fa-spin'></i> {{isSaving ? ('roles.editor.Saving' | translate) : ('roles.editor.Save' | translate)}}\r\n                    </button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"clearfix\"></div>\r\n    </form>\r\n</div>\r\n";
 
 /***/ }),
-/* 344 */
+/* 349 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(345);
+        var result = __webpack_require__(350);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -58372,7 +58536,7 @@ module.exports = "<div>\r\n    <form *ngIf=\"formResetToggle\" class=\"form-hori
     
 
 /***/ }),
-/* 345 */
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -58386,17 +58550,17 @@ exports.push([module.i, ".row:not(:last-child) {\r\n    /*border-bottom: 1px sol
 
 
 /***/ }),
-/* 346 */
+/* 351 */
 /***/ (function(module, exports) {
 
 module.exports = "<div>\r\n    <div class=\"row control-box\">\r\n        <div class=\"col-sm-8\">\r\n            <div class=\"form-group search-box\">\r\n                <search-box (searchChange)=\"onSearchChanged($event)\" placeholder=\"{{'roles.management.Search' | translate}}\">></search-box>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-sm-4\">\r\n            <div class=\"navbar action-box\">\r\n                <ul class=\"nav navbar-nav navbar-right\">\r\n                    <li *ngIf=\"canManageRoles\" class=\"toolbaritem\">\r\n                        <a href=\"javascript:;\" (click)=\"newRole(row)\">\r\n                            <i class=\"fa fa-plus-circle\"></i> {{'roles.management.NewRole' | translate}}\r\n                        </a>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n    <ngx-datatable class=\"material colored-header sm table table-striped table-hover\"\r\n                   [loadingIndicator]=\"loadingIndicator\"\r\n                   [rows]=\"rows\"\r\n                   [rowHeight]=\"35\"\r\n                   [headerHeight]=\"35\"\r\n                   [footerHeight]=\"35\"\r\n                   [columns]=\"columns\"\r\n                   [scrollbarV]=\"true\"\r\n                   [columnMode]=\"'force'\">\r\n    </ngx-datatable>\r\n\r\n    <ng-template #indexTemplate let-value=\"value\">\r\n        <strong>{{value}}</strong>\r\n    </ng-template>\r\n\r\n\r\n    <ng-template #actionsTemplate let-row=\"row\" let-value=\"value\" let-i=\"index\">\r\n        <a *ngIf=\"canManageRoles\" class=\"btn btn-link btn-xs\" href=\"javascript:;\" (click)=\"editRole(row)\"><i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i> {{'roles.management.Edit' | translate}}</a>\r\n        <a *ngIf=\"!canManageRoles\" class=\"btn btn-link btn-xs\" href=\"javascript:;\" (click)=\"editRole(row)\"><i class=\"fa fa-eye\" aria-hidden=\"true\"></i> {{'roles.management.Details' | translate}}</a>\r\n        {{canManageRoles ? '|' : ''}}\r\n        <a *ngIf=\"canManageRoles\" class=\"btn btn-link btn-xs\" href=\"javascript:;\" (click)=\"deleteRole(row)\"><i class=\"fa fa-trash-o\" aria-hidden=\"true\"></i> {{'roles.management.Delete' | translate}}</a>\r\n    </ng-template>\r\n\r\n\r\n    <div class=\"modal fade\" bsModal #editorModal=\"bs-modal\" (onHidden)=\"onEditorModalHidden()\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\">\r\n        <div class=\"modal-dialog modal-lg\">\r\n            <div class=\"modal-content\">\r\n                <div class=\"modal-header\">\r\n                    <h4 *ngIf=\"!canManageRoles\" class=\"modal-title pull-left\"><i class=\"fa fa-shield\"></i> {{'roles.management.RoleDetails' | translate:editingRoleName}}</h4>\r\n                    <h4 *ngIf=\"canManageRoles\" class=\"modal-title pull-left\"><i class=\"fa fa-shield\"></i> {{editingRoleName ? ('roles.management.EditRole' | translate:editingRoleName) : ('roles.management.NewRole' | translate)}}</h4>\r\n                    <button type=\"button\" class=\"close pull-right\" title=\"Close\" (click)=\"editorModal.hide()\">\r\n                        <span aria-hidden=\"true\">&times;</span>\r\n                    </button>\r\n                </div>\r\n                <div class=\"modal-body\">\r\n                    <role-editor #roleEditor></role-editor>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
-/* 347 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(348);
+        var result = __webpack_require__(353);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -58406,7 +58570,7 @@ module.exports = "<div>\r\n    <div class=\"row control-box\">\r\n        <div c
     
 
 /***/ }),
-/* 348 */
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);
@@ -58420,7 +58584,7 @@ exports.push([module.i, "\r\n.control-box {\r\n    margin-bottom: 5px;\r\n}\r\n\
 
 
 /***/ }),
-/* 349 */
+/* 354 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58428,16 +58592,16 @@ exports.push([module.i, "\r\n.control-box {\r\n    margin-bottom: 5px;\r\n}\r\n\
 /* unused harmony reexport listLocales */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_theme_provider__ = __webpack_require__(22);
 /* unused harmony reexport setTheme */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__accordion__ = __webpack_require__(351);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__accordion__ = __webpack_require__(356);
 /* unused harmony reexport AccordionComponent */
 /* unused harmony reexport AccordionConfig */
 /* unused harmony reexport AccordionModule */
 /* unused harmony reexport AccordionPanelComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alert__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alert__ = __webpack_require__(358);
 /* unused harmony reexport AlertComponent */
 /* unused harmony reexport AlertConfig */
 /* unused harmony reexport AlertModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__buttons__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__buttons__ = __webpack_require__(361);
 /* unused harmony reexport ButtonCheckboxDirective */
 /* unused harmony reexport ButtonRadioDirective */
 /* unused harmony reexport ButtonsModule */
@@ -58446,10 +58610,10 @@ exports.push([module.i, "\r\n.control-box {\r\n    margin-bottom: 5px;\r\n}\r\n\
 /* unused harmony reexport CarouselConfig */
 /* unused harmony reexport CarouselModule */
 /* unused harmony reexport SlideComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__collapse__ = __webpack_require__(358);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__collapse__ = __webpack_require__(363);
 /* unused harmony reexport CollapseDirective */
 /* unused harmony reexport CollapseModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__datepicker__ = __webpack_require__(359);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__datepicker__ = __webpack_require__(364);
 /* unused harmony reexport DateFormatter */
 /* unused harmony reexport DatePickerComponent */
 /* unused harmony reexport DatepickerConfig */
@@ -58476,32 +58640,32 @@ exports.push([module.i, "\r\n.control-box {\r\n    margin-bottom: 5px;\r\n}\r\n\
 /* unused harmony reexport BsDropdownDirective */
 /* unused harmony reexport BsDropdownMenuDirective */
 /* unused harmony reexport BsDropdownToggleDirective */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pagination__ = __webpack_require__(403);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pagination__ = __webpack_require__(408);
 /* unused harmony reexport PagerComponent */
 /* unused harmony reexport PaginationComponent */
 /* unused harmony reexport PaginationConfig */
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_10__pagination__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__progressbar__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__progressbar__ = __webpack_require__(410);
 /* unused harmony reexport BarComponent */
 /* unused harmony reexport ProgressbarComponent */
 /* unused harmony reexport ProgressbarConfig */
 /* unused harmony reexport ProgressbarModule */
 /* unused harmony reexport ProgressDirective */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__rating__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__rating__ = __webpack_require__(412);
 /* unused harmony reexport RatingComponent */
 /* unused harmony reexport RatingModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__sortable__ = __webpack_require__(409);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__sortable__ = __webpack_require__(414);
 /* unused harmony reexport DraggableItemService */
 /* unused harmony reexport SortableComponent */
 /* unused harmony reexport SortableModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__tabs__ = __webpack_require__(411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__tabs__ = __webpack_require__(416);
 /* unused harmony reexport NgTranscludeDirective */
 /* unused harmony reexport TabDirective */
 /* unused harmony reexport TabHeadingDirective */
 /* unused harmony reexport TabsetComponent */
 /* unused harmony reexport TabsetConfig */
 /* unused harmony reexport TabsModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__timepicker__ = __webpack_require__(413);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__timepicker__ = __webpack_require__(418);
 /* unused harmony reexport TimepickerComponent */
 /* unused harmony reexport TimepickerConfig */
 /* unused harmony reexport TimepickerModule */
@@ -58510,7 +58674,7 @@ exports.push([module.i, "\r\n.control-box {\r\n    margin-bottom: 5px;\r\n}\r\n\
 /* unused harmony reexport TooltipContainerComponent */
 /* unused harmony reexport TooltipDirective */
 /* unused harmony reexport TooltipModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__typeahead__ = __webpack_require__(416);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__typeahead__ = __webpack_require__(421);
 /* unused harmony reexport TypeaheadOptions */
 /* unused harmony reexport TypeaheadContainerComponent */
 /* unused harmony reexport TypeaheadDirective */
@@ -58521,7 +58685,7 @@ exports.push([module.i, "\r\n.control-box {\r\n    margin-bottom: 5px;\r\n}\r\n\
 /* unused harmony reexport PopoverContainerComponent */
 /* unused harmony reexport PopoverDirective */
 /* unused harmony reexport PopoverModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__utils__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__utils__ = __webpack_require__(154);
 /* unused harmony reexport OnChange */
 /* unused harmony reexport LinkedList */
 /* unused harmony reexport isBs3 */
@@ -58531,14 +58695,14 @@ exports.push([module.i, "\r\n.control-box {\r\n    margin-bottom: 5px;\r\n}\r\n\
 /* unused harmony reexport ComponentLoader */
 /* unused harmony reexport ComponentLoaderFactory */
 /* unused harmony reexport ContentRef */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__positioning__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__positioning__ = __webpack_require__(164);
 /* unused harmony reexport Positioning */
 /* unused harmony reexport PositioningService */
 /* unused harmony reexport positionElements */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__bs_moment__ = __webpack_require__(426);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__bs_moment__ = __webpack_require__(431);
 /* unused harmony reexport defineLocale */
 /* unused harmony reexport getSetGlobalLocale */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__locale__ = __webpack_require__(427);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__locale__ = __webpack_require__(432);
 /* unused harmony reexport ar */
 /* unused harmony reexport cs */
 /* unused harmony reexport de */
@@ -58588,7 +58752,7 @@ exports.push([module.i, "\r\n.control-box {\r\n    margin-bottom: 5px;\r\n}\r\n\
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 350 */
+/* 355 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58596,7 +58760,7 @@ exports.push([module.i, "\r\n.control-box {\r\n    margin-bottom: 5px;\r\n}\r\n\
 /* unused harmony export defaultLocaleWeek */
 /* unused harmony export defaultLocaleMeridiemParse */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return baseConfig; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__locale_class__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__locale_class__ = __webpack_require__(129);
 
 var defaultInvalidDate = 'Invalid date';
 var defaultLocaleWeek = {
@@ -58622,15 +58786,15 @@ var baseConfig = {
 //# sourceMappingURL=locale.defaults.js.map
 
 /***/ }),
-/* 351 */
+/* 356 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__accordion_group_component__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__accordion_group_component__ = __webpack_require__(132);
 /* unused harmony reexport AccordionPanelComponent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__accordion_component__ = __webpack_require__(63);
 /* unused harmony reexport AccordionComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__accordion_module__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__accordion_module__ = __webpack_require__(357);
 /* unused harmony reexport AccordionModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__accordion_config__ = __webpack_require__(64);
 /* unused harmony reexport AccordionConfig */
@@ -58641,15 +58805,15 @@ var baseConfig = {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 352 */
+/* 357 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export AccordionModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__collapse_collapse_module__ = __webpack_require__(131);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__accordion_group_component__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__collapse_collapse_module__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__accordion_group_component__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__accordion_component__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__accordion_config__ = __webpack_require__(64);
 
@@ -58679,13 +58843,13 @@ var AccordionModule = (function () {
 //# sourceMappingURL=accordion.module.js.map
 
 /***/ }),
-/* 353 */
+/* 358 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert_component__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert_component__ = __webpack_require__(135);
 /* unused harmony reexport AlertComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_module__ = __webpack_require__(355);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_module__ = __webpack_require__(360);
 /* unused harmony reexport AlertModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__alert_config__ = __webpack_require__(65);
 /* unused harmony reexport AlertConfig */
@@ -58695,20 +58859,20 @@ var AccordionModule = (function () {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 354 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(191);
 
 /***/ }),
-/* 355 */
+/* 360 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export AlertModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__alert_component__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__alert_component__ = __webpack_require__(135);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alert_config__ = __webpack_require__(65);
 
 
@@ -58736,15 +58900,15 @@ var AlertModule = (function () {
 //# sourceMappingURL=alert.module.js.map
 
 /***/ }),
-/* 356 */
+/* 361 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_checkbox_directive__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_checkbox_directive__ = __webpack_require__(136);
 /* unused harmony reexport ButtonCheckboxDirective */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_radio_directive__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_radio_directive__ = __webpack_require__(137);
 /* unused harmony reexport ButtonRadioDirective */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__buttons_module__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__buttons_module__ = __webpack_require__(362);
 /* unused harmony reexport ButtonsModule */
 
 
@@ -58752,14 +58916,14 @@ var AlertModule = (function () {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 357 */
+/* 362 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export ButtonsModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_checkbox_directive__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button_radio_directive__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_checkbox_directive__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button_radio_directive__ = __webpack_require__(137);
 
 
 
@@ -58783,38 +58947,38 @@ var ButtonsModule = (function () {
 //# sourceMappingURL=buttons.module.js.map
 
 /***/ }),
-/* 358 */
+/* 363 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse_directive__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse_directive__ = __webpack_require__(134);
 /* unused harmony reexport CollapseDirective */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__collapse_module__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__collapse_module__ = __webpack_require__(133);
 /* unused harmony reexport CollapseModule */
 
 
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 359 */
+/* 364 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__datepicker_component__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__datepicker_component__ = __webpack_require__(138);
 /* unused harmony reexport DatePickerComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__datepicker_module__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__datepicker_module__ = __webpack_require__(375);
 /* unused harmony reexport DatepickerModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__daypicker_component__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__daypicker_component__ = __webpack_require__(140);
 /* unused harmony reexport DayPickerComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monthpicker_component__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monthpicker_component__ = __webpack_require__(141);
 /* unused harmony reexport MonthPickerComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__yearpicker_component__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__yearpicker_component__ = __webpack_require__(142);
 /* unused harmony reexport YearPickerComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__date_formatter__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__date_formatter__ = __webpack_require__(139);
 /* unused harmony reexport DateFormatter */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__datepicker_config__ = __webpack_require__(66);
 /* unused harmony reexport DatepickerConfig */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bs_datepicker_module__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bs_datepicker_module__ = __webpack_require__(376);
 /* unused harmony reexport BsDatepickerModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bs_datepicker_component__ = __webpack_require__(73);
 /* unused harmony reexport BsDatepickerDirective */
@@ -58822,7 +58986,7 @@ var ButtonsModule = (function () {
 /* unused harmony reexport BsDaterangepickerDirective */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bs_datepicker_config__ = __webpack_require__(23);
 /* unused harmony reexport BsDatepickerConfig */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bs_locale_service__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bs_locale_service__ = __webpack_require__(35);
 /* unused harmony reexport BsLocaleService */
 
 
@@ -58839,18 +59003,18 @@ var ButtonsModule = (function () {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 360 */
+/* 365 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__en__ = __webpack_require__(361);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sv__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__en__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sv__ = __webpack_require__(367);
 
 
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 361 */
+/* 366 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58871,7 +59035,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__locales_service__["b" /* getSetGlobalLocale 
 //# sourceMappingURL=en.js.map
 
 /***/ }),
-/* 362 */
+/* 367 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58892,18 +59056,18 @@ Object(__WEBPACK_IMPORTED_MODULE_0__locales_service__["b" /* getSetGlobalLocale 
 //# sourceMappingURL=sv.js.map
 
 /***/ }),
-/* 363 */
+/* 368 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__day_of_month__ = __webpack_require__(364);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__day_of_week__ = __webpack_require__(365);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__day_of_year__ = __webpack_require__(129);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hour__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__minute__ = __webpack_require__(367);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__month__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__second__ = __webpack_require__(368);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__week__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__day_of_month__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__day_of_week__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__day_of_year__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hour__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__minute__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__month__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__second__ = __webpack_require__(373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__week__ = __webpack_require__(374);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__week_calendar_utils__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__year__ = __webpack_require__(62);
 
@@ -58919,7 +59083,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__locales_service__["b" /* getSetGlobalLocale 
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 364 */
+/* 369 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58933,7 +59097,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__format_functions__["a" /* addFormatToken */]
 //# sourceMappingURL=day-of-month.js.map
 
 /***/ }),
-/* 365 */
+/* 370 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58971,13 +59135,13 @@ function getISODayOfWeek(date) {
 //# sourceMappingURL=day-of-week.js.map
 
 /***/ }),
-/* 366 */
+/* 371 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_date_getters__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__format_functions__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(31);
 // import { makeGetSet } from '../moment/get-set';
 // import { addFormatToken } from '../format/format';
 // import { addUnitAlias } from './aliases';
@@ -59029,7 +59193,7 @@ meridiem('A', false);
 //# sourceMappingURL=hour.js.map
 
 /***/ }),
-/* 367 */
+/* 372 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59043,7 +59207,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__format_functions__["a" /* addFormatToken */]
 //# sourceMappingURL=minute.js.map
 
 /***/ }),
-/* 368 */
+/* 373 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59057,7 +59221,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__format_functions__["a" /* addFormatToken */]
 //# sourceMappingURL=second.js.map
 
 /***/ }),
-/* 369 */
+/* 374 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59082,7 +59246,7 @@ function getISOWeek(date) {
 //# sourceMappingURL=week.js.map
 
 /***/ }),
-/* 370 */
+/* 375 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59090,11 +59254,11 @@ function getISOWeek(date) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__datepicker_inner_component__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__datepicker_component__ = __webpack_require__(136);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__daypicker_component__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__monthpicker_component__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__yearpicker_component__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__datepicker_inner_component__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__datepicker_component__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__daypicker_component__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__monthpicker_component__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__yearpicker_component__ = __webpack_require__(142);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__datepicker_config__ = __webpack_require__(66);
 
 
@@ -59139,36 +59303,36 @@ var DatepickerModule = (function () {
 //# sourceMappingURL=datepicker.module.js.map
 
 /***/ }),
-/* 371 */
+/* 376 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export BsDatepickerModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducer_bs_datepicker_actions__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducer_bs_datepicker_actions__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducer_bs_datepicker_store__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__themes_bs_bs_datepicker_container_component__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__themes_bs_bs_datepicker_navigation_view_component__ = __webpack_require__(390);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__themes_bs_bs_days_calendar_view_component__ = __webpack_require__(391);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__themes_bs_bs_datepicker_container_component__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__themes_bs_bs_datepicker_navigation_view_component__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__themes_bs_bs_days_calendar_view_component__ = __webpack_require__(396);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__reducer_bs_datepicker_effects__ = __webpack_require__(70);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__themes_bs_bs_daterangepicker_container_component__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__themes_bs_bs_daterangepicker_container_component__ = __webpack_require__(149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__bs_daterangepicker_component__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bs_datepicker_component__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__component_loader_component_loader_factory__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__positioning_positioning_service__ = __webpack_require__(392);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__themes_bs_bs_datepicker_day_decorator_directive__ = __webpack_require__(393);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__themes_bs_bs_months_calendar_view_component__ = __webpack_require__(394);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__themes_bs_bs_years_calendar_view_component__ = __webpack_require__(395);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__themes_bs_bs_custom_dates_view_component__ = __webpack_require__(396);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__themes_bs_bs_current_date_view_component__ = __webpack_require__(397);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__themes_bs_bs_timepicker_view_component__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__positioning_positioning_service__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__themes_bs_bs_datepicker_day_decorator_directive__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__themes_bs_bs_months_calendar_view_component__ = __webpack_require__(399);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__themes_bs_bs_years_calendar_view_component__ = __webpack_require__(400);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__themes_bs_bs_custom_dates_view_component__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__themes_bs_bs_current_date_view_component__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__themes_bs_bs_timepicker_view_component__ = __webpack_require__(403);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__bs_datepicker_config__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__themes_bs_bs_calendar_layout_component__ = __webpack_require__(399);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__bs_datepicker_input_directive__ = __webpack_require__(400);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__bs_daterangepicker_input_directive__ = __webpack_require__(401);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__bs_locale_service__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__utils_warn_once__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__themes_bs_bs_calendar_layout_component__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__bs_datepicker_input_directive__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__bs_daterangepicker_input_directive__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__bs_locale_service__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__utils_warn_once__ = __webpack_require__(407);
 
 
 
@@ -59249,12 +59413,12 @@ var BsDatepickerModule = (function () {
 //# sourceMappingURL=bs-datepicker.module.js.map
 
 /***/ }),
-/* 372 */
+/* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var distinctUntilChanged_1 = __webpack_require__(373);
+var distinctUntilChanged_1 = __webpack_require__(378);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item.
@@ -59302,7 +59466,7 @@ exports.distinctUntilChanged = distinctUntilChanged;
 //# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ }),
-/* 373 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59312,9 +59476,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = __webpack_require__(37);
-var tryCatch_1 = __webpack_require__(107);
-var errorObject_1 = __webpack_require__(108);
+var Subscriber_1 = __webpack_require__(38);
+var tryCatch_1 = __webpack_require__(109);
+var errorObject_1 = __webpack_require__(110);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item.
@@ -59416,7 +59580,7 @@ var DistinctUntilChangedSubscriber = (function (_super) {
 //# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ }),
-/* 374 */
+/* 379 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59428,12 +59592,12 @@ var defaultMonthOptions = {
 //# sourceMappingURL=_defaults.js.map
 
 /***/ }),
-/* 375 */
+/* 380 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var observeOn_1 = __webpack_require__(376);
+var observeOn_1 = __webpack_require__(381);
 /**
  *
  * Re-emits all notifications from source Observable with specified scheduler.
@@ -59488,19 +59652,19 @@ exports.observeOn = observeOn;
 //# sourceMappingURL=observeOn.js.map
 
 /***/ }),
-/* 376 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(314);
 
 /***/ }),
-/* 377 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var QueueAction_1 = __webpack_require__(378);
-var QueueScheduler_1 = __webpack_require__(379);
+var QueueAction_1 = __webpack_require__(383);
+var QueueScheduler_1 = __webpack_require__(384);
 /**
  *
  * Queue Scheduler
@@ -59566,7 +59730,7 @@ exports.queue = new QueueScheduler_1.QueueScheduler(QueueAction_1.QueueAction);
 //# sourceMappingURL=queue.js.map
 
 /***/ }),
-/* 378 */
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59576,7 +59740,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncAction_1 = __webpack_require__(119);
+var AsyncAction_1 = __webpack_require__(121);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -59621,7 +59785,7 @@ exports.QueueAction = QueueAction;
 //# sourceMappingURL=QueueAction.js.map
 
 /***/ }),
-/* 379 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59631,7 +59795,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncScheduler_1 = __webpack_require__(120);
+var AsyncScheduler_1 = __webpack_require__(122);
 var QueueScheduler = (function (_super) {
     __extends(QueueScheduler, _super);
     function QueueScheduler() {
@@ -59643,12 +59807,12 @@ exports.QueueScheduler = QueueScheduler;
 //# sourceMappingURL=QueueScheduler.js.map
 
 /***/ }),
-/* 380 */
+/* 385 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var scan_1 = __webpack_require__(381);
+var scan_1 = __webpack_require__(386);
 /* tslint:enable:max-line-length */
 /**
  * Applies an accumulator function over the source Observable, and returns each
@@ -59697,30 +59861,30 @@ exports.scan = scan;
 //# sourceMappingURL=scan.js.map
 
 /***/ }),
-/* 381 */
+/* 386 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(329);
 
 /***/ }),
-/* 382 */
+/* 387 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = bsDatepickerReducer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bs_datepicker_state__ = __webpack_require__(142);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bs_datepicker_actions__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__engine_calc_days_calendar__ = __webpack_require__(383);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__engine_format_days_calendar__ = __webpack_require__(384);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__engine_flag_days_calendar__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bs_datepicker_state__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bs_datepicker_actions__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__engine_calc_days_calendar__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__engine_format_days_calendar__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__engine_flag_days_calendar__ = __webpack_require__(390);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bs_moment_utils_date_setters__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__engine_view_mode__ = __webpack_require__(386);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__engine_format_months_calendar__ = __webpack_require__(387);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__engine_flag_months_calendar__ = __webpack_require__(388);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__engine_format_years_calendar__ = __webpack_require__(144);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__engine_flag_years_calendar__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__engine_view_mode__ = __webpack_require__(391);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__engine_format_months_calendar__ = __webpack_require__(392);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__engine_flag_months_calendar__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__engine_format_years_calendar__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__engine_flag_years_calendar__ = __webpack_require__(394);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bs_moment_utils_type_checks__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__bs_moment_utils_start_end_of__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__bs_moment_utils_start_end_of__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__bs_moment_locale_locales_service__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__bs_moment_utils_date_compare__ = __webpack_require__(68);
 // tslint:disable:max-file-line-count
@@ -59987,7 +60151,7 @@ function getViewDate(viewDate, minDate, maxDate) {
 //# sourceMappingURL=bs-datepicker.reducer.js.map
 
 /***/ }),
-/* 383 */
+/* 388 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60016,7 +60180,7 @@ function calcDaysCalendar(startingDate, options) {
 //# sourceMappingURL=calc-days-calendar.js.map
 
 /***/ }),
-/* 384 */
+/* 389 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60057,7 +60221,7 @@ function getShiftedWeekdays(locale) {
 //# sourceMappingURL=format-days-calendar.js.map
 
 /***/ }),
-/* 385 */
+/* 390 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60140,7 +60304,7 @@ function isDateInRange(date, selectedRange, hoveredDate) {
 //# sourceMappingURL=flag-days-calendar.js.map
 
 /***/ }),
-/* 386 */
+/* 391 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60151,12 +60315,12 @@ function canSwitchMode(mode) {
 //# sourceMappingURL=view-mode.js.map
 
 /***/ }),
-/* 387 */
+/* 392 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = formatMonthsCalendar;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bs_moment_utils_start_end_of__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bs_moment_utils_start_end_of__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bs_moment_format__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_matrix_utils__ = __webpack_require__(69);
 
@@ -60181,7 +60345,7 @@ function formatMonthsCalendar(viewDate, formatOptions) {
 //# sourceMappingURL=format-months-calendar.js.map
 
 /***/ }),
-/* 388 */
+/* 393 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60221,7 +60385,7 @@ function flagMonthsCalendar(monthCalendar, options) {
 //# sourceMappingURL=flag-months-calendar.js.map
 
 /***/ }),
-/* 389 */
+/* 394 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60260,7 +60424,7 @@ function flagYearsCalendar(yearsCalendar, options) {
 //# sourceMappingURL=flag-years-calendar.js.map
 
 /***/ }),
-/* 390 */
+/* 395 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60300,7 +60464,7 @@ var BsDatepickerNavigationViewComponent = (function () {
 //# sourceMappingURL=bs-datepicker-navigation-view.component.js.map
 
 /***/ }),
-/* 391 */
+/* 396 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60352,13 +60516,13 @@ var BsDaysCalendarViewComponent = (function () {
 //# sourceMappingURL=bs-days-calendar-view.component.js.map
 
 /***/ }),
-/* 392 */
+/* 397 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(276);
 
 /***/ }),
-/* 393 */
+/* 398 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60395,7 +60559,7 @@ var BsDatepickerDayDecoratorComponent = (function () {
 //# sourceMappingURL=bs-datepicker-day-decorator.directive.js.map
 
 /***/ }),
-/* 394 */
+/* 399 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60445,13 +60609,13 @@ var BsMonthCalendarViewComponent = (function () {
 //# sourceMappingURL=bs-months-calendar-view.component.js.map
 
 /***/ }),
-/* 395 */
+/* 400 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BsYearsCalendarViewComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__engine_format_years_calendar__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__engine_format_years_calendar__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_index__ = __webpack_require__(47);
 
 
@@ -60497,7 +60661,7 @@ var BsYearsCalendarViewComponent = (function () {
 //# sourceMappingURL=bs-years-calendar-view.component.js.map
 
 /***/ }),
-/* 396 */
+/* 401 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60526,7 +60690,7 @@ var BsCustomDatesViewComponent = (function () {
 //# sourceMappingURL=bs-custom-dates-view.component.js.map
 
 /***/ }),
-/* 397 */
+/* 402 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60553,7 +60717,7 @@ var BsCurrentDateViewComponent = (function () {
 //# sourceMappingURL=bs-current-date-view.component.js.map
 
 /***/ }),
-/* 398 */
+/* 403 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60581,7 +60745,7 @@ var BsTimepickerViewComponent = (function () {
 //# sourceMappingURL=bs-timepicker-view.component.js.map
 
 /***/ }),
-/* 399 */
+/* 404 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60605,7 +60769,7 @@ var BsCalendarLayoutComponent = (function () {
 //# sourceMappingURL=bs-calendar-layout.component.js.map
 
 /***/ }),
-/* 400 */
+/* 405 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60615,7 +60779,7 @@ var BsCalendarLayoutComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bs_datepicker_component__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bs_moment_format__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bs_moment_locale_locales_service__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bs_locale_service__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bs_locale_service__ = __webpack_require__(35);
 
 
 
@@ -60725,7 +60889,7 @@ var BsDatepickerInputDirective = (function () {
 //# sourceMappingURL=bs-datepicker-input.directive.js.map
 
 /***/ }),
-/* 401 */
+/* 406 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60735,7 +60899,7 @@ var BsDatepickerInputDirective = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bs_moment_format__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bs_moment_locale_locales_service__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bs_daterangepicker_component__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bs_locale_service__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bs_locale_service__ = __webpack_require__(35);
 
 
 
@@ -60852,21 +61016,21 @@ var BsDaterangepickerInputDirective = (function () {
 //# sourceMappingURL=bs-daterangepicker-input.directive.js.map
 
 /***/ }),
-/* 402 */
+/* 407 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(279);
 
 /***/ }),
-/* 403 */
+/* 408 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pager_component__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pager_component__ = __webpack_require__(150);
 /* unused harmony reexport PagerComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pagination_component__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pagination_component__ = __webpack_require__(151);
 /* unused harmony reexport PaginationComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pagination_module__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pagination_module__ = __webpack_require__(409);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__pagination_module__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pagination_config__ = __webpack_require__(48);
 /* unused harmony reexport PaginationConfig */
@@ -60877,7 +61041,7 @@ module.exports = (__webpack_require__(1))(279);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 404 */
+/* 409 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60885,8 +61049,8 @@ module.exports = (__webpack_require__(1))(279);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pagination_config__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pager_component__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pagination_component__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pager_component__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pagination_component__ = __webpack_require__(151);
 
 
 
@@ -60913,17 +61077,17 @@ var PaginationModule = (function () {
 //# sourceMappingURL=pagination.module.js.map
 
 /***/ }),
-/* 405 */
+/* 410 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bar_component__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bar_component__ = __webpack_require__(152);
 /* unused harmony reexport BarComponent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__progress_directive__ = __webpack_require__(74);
 /* unused harmony reexport ProgressDirective */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__progressbar_component__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__progressbar_component__ = __webpack_require__(153);
 /* unused harmony reexport ProgressbarComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__progressbar_module__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__progressbar_module__ = __webpack_require__(411);
 /* unused harmony reexport ProgressbarModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__progressbar_config__ = __webpack_require__(75);
 /* unused harmony reexport ProgressbarConfig */
@@ -60935,16 +61099,16 @@ var PaginationModule = (function () {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 406 */
+/* 411 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export ProgressbarModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bar_component__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bar_component__ = __webpack_require__(152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__progress_directive__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__progressbar_component__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__progressbar_component__ = __webpack_require__(153);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__progressbar_config__ = __webpack_require__(75);
 
 
@@ -60973,27 +61137,27 @@ var ProgressbarModule = (function () {
 //# sourceMappingURL=progressbar.module.js.map
 
 /***/ }),
-/* 407 */
+/* 412 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__rating_component__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__rating_component__ = __webpack_require__(155);
 /* unused harmony reexport RatingComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__rating_module__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__rating_module__ = __webpack_require__(413);
 /* unused harmony reexport RatingModule */
 
 
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 408 */
+/* 413 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export RatingModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__rating_component__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__rating_component__ = __webpack_require__(155);
 
 
 
@@ -61021,13 +61185,13 @@ var RatingModule = (function () {
 //# sourceMappingURL=rating.module.js.map
 
 /***/ }),
-/* 409 */
+/* 414 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sortable_module__ = __webpack_require__(410);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sortable_module__ = __webpack_require__(415);
 /* unused harmony reexport SortableModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sortable_component__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sortable_component__ = __webpack_require__(156);
 /* unused harmony reexport SortableComponent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__draggable_item_service__ = __webpack_require__(76);
 /* unused harmony reexport DraggableItemService */
@@ -61037,14 +61201,14 @@ var RatingModule = (function () {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 410 */
+/* 415 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export SortableModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sortable_component__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sortable_component__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__draggable_item_service__ = __webpack_require__(76);
 
 
@@ -61071,21 +61235,21 @@ var SortableModule = (function () {
 //# sourceMappingURL=sortable.module.js.map
 
 /***/ }),
-/* 411 */
+/* 416 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ng_transclude_directive__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ng_transclude_directive__ = __webpack_require__(157);
 /* unused harmony reexport NgTranscludeDirective */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tab_directive__ = __webpack_require__(77);
 /* unused harmony reexport TabDirective */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tab_heading_directive__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tab_heading_directive__ = __webpack_require__(158);
 /* unused harmony reexport TabHeadingDirective */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabset_component__ = __webpack_require__(78);
 /* unused harmony reexport TabsetComponent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tabset_config__ = __webpack_require__(79);
 /* unused harmony reexport TabsetConfig */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tabs_module__ = __webpack_require__(412);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tabs_module__ = __webpack_require__(417);
 /* unused harmony reexport TabsModule */
 
 
@@ -61096,15 +61260,15 @@ var SortableModule = (function () {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 412 */
+/* 417 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export TabsModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_transclude_directive__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tab_heading_directive__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_transclude_directive__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tab_heading_directive__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tab_directive__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tabset_component__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabset_config__ = __webpack_require__(79);
@@ -61149,11 +61313,11 @@ var TabsModule = (function () {
 //# sourceMappingURL=tabs.module.js.map
 
 /***/ }),
-/* 413 */
+/* 418 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__timepicker_component__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__timepicker_component__ = __webpack_require__(159);
 /* unused harmony reexport TimepickerComponent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__reducer_timepicker_actions__ = __webpack_require__(49);
 /* unused harmony reexport TimepickerActions */
@@ -61161,7 +61325,7 @@ var TabsModule = (function () {
 /* unused harmony reexport TimepickerStore */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__timepicker_config__ = __webpack_require__(50);
 /* unused harmony reexport TimepickerConfig */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__timepicker_module__ = __webpack_require__(415);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__timepicker_module__ = __webpack_require__(420);
 /* unused harmony reexport TimepickerModule */
 
 
@@ -61171,14 +61335,14 @@ var TabsModule = (function () {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 414 */
+/* 419 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export TimepickerState */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return initialState; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = timepickerReducer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__timepicker_controls_util__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__timepicker_controls_util__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__timepicker_config__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__timepicker_utils__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__timepicker_actions__ = __webpack_require__(49);
@@ -61264,14 +61428,14 @@ function timepickerReducer(state, action) {
 //# sourceMappingURL=timepicker.reducer.js.map
 
 /***/ }),
-/* 415 */
+/* 420 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export TimepickerModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__timepicker_component__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__timepicker_component__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducer_timepicker_actions__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__timepicker_config__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reducer_timepicker_store__ = __webpack_require__(80);
@@ -61305,15 +61469,15 @@ var TimepickerModule = (function () {
 //# sourceMappingURL=timepicker.module.js.map
 
 /***/ }),
-/* 416 */
+/* 421 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__latin_map__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__latin_map__ = __webpack_require__(161);
 /* unused harmony reexport latinMap */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__typeahead_options_class__ = __webpack_require__(417);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__typeahead_options_class__ = __webpack_require__(422);
 /* unused harmony reexport TypeaheadOptions */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__typeahead_match_class__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__typeahead_match_class__ = __webpack_require__(162);
 /* unused harmony reexport TypeaheadMatch */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__typeahead_utils__ = __webpack_require__(82);
 /* unused harmony reexport escapeRegexp */
@@ -61322,9 +61486,9 @@ var TimepickerModule = (function () {
 /* unused harmony reexport latinize */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__typeahead_container_component__ = __webpack_require__(83);
 /* unused harmony reexport TypeaheadContainerComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__typeahead_directive__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__typeahead_directive__ = __webpack_require__(163);
 /* unused harmony reexport TypeaheadDirective */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__typeahead_module__ = __webpack_require__(425);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__typeahead_module__ = __webpack_require__(430);
 /* unused harmony reexport TypeaheadModule */
 
 
@@ -61336,7 +61500,7 @@ var TimepickerModule = (function () {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 417 */
+/* 422 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61351,41 +61515,41 @@ var TypeaheadOptions = (function () {
 //# sourceMappingURL=typeahead-options.class.js.map
 
 /***/ }),
-/* 418 */
+/* 423 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(41);
 
 /***/ }),
-/* 419 */
+/* 424 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(2);
-var from_1 = __webpack_require__(122);
+var from_1 = __webpack_require__(124);
 Observable_1.Observable.from = from_1.from;
 //# sourceMappingURL=from.js.map
 
 /***/ }),
-/* 420 */
+/* 425 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(2);
-var debounceTime_1 = __webpack_require__(421);
+var debounceTime_1 = __webpack_require__(426);
 Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
 //# sourceMappingURL=debounceTime.js.map
 
 /***/ }),
-/* 421 */
+/* 426 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var async_1 = __webpack_require__(60);
-var debounceTime_1 = __webpack_require__(422);
+var debounceTime_1 = __webpack_require__(427);
 /**
  * Emits a value from the source Observable only after a particular time span
  * has passed without another source emission.
@@ -61440,7 +61604,7 @@ exports.debounceTime = debounceTime;
 //# sourceMappingURL=debounceTime.js.map
 
 /***/ }),
-/* 422 */
+/* 427 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61450,7 +61614,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = __webpack_require__(37);
+var Subscriber_1 = __webpack_require__(38);
 var async_1 = __webpack_require__(60);
 /**
  * Emits a value from the source Observable only after a particular time span
@@ -61562,18 +61726,18 @@ function dispatchNext(subscriber) {
 //# sourceMappingURL=debounceTime.js.map
 
 /***/ }),
-/* 423 */
+/* 428 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(2);
-var toArray_1 = __webpack_require__(424);
+var toArray_1 = __webpack_require__(429);
 Observable_1.Observable.prototype.toArray = toArray_1.toArray;
 //# sourceMappingURL=toArray.js.map
 
 /***/ }),
-/* 424 */
+/* 429 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61609,7 +61773,7 @@ exports.toArray = toArray;
 //# sourceMappingURL=toArray.js.map
 
 /***/ }),
-/* 425 */
+/* 430 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61617,9 +61781,9 @@ exports.toArray = toArray;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__typeahead_container_component__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__typeahead_directive__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__typeahead_directive__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__component_loader__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__positioning__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__positioning__ = __webpack_require__(164);
 
 
 
@@ -61651,7 +61815,7 @@ var TypeaheadModule = (function () {
 //# sourceMappingURL=typeahead.module.js.map
 
 /***/ }),
-/* 426 */
+/* 431 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61663,53 +61827,53 @@ var TypeaheadModule = (function () {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 427 */
+/* 432 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bs_moment_i18n_ar__ = __webpack_require__(428);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bs_moment_i18n_ar__ = __webpack_require__(433);
 /* unused harmony reexport ar */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bs_moment_i18n_cs__ = __webpack_require__(429);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bs_moment_i18n_cs__ = __webpack_require__(434);
 /* unused harmony reexport cs */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bs_moment_i18n_de__ = __webpack_require__(430);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bs_moment_i18n_de__ = __webpack_require__(435);
 /* unused harmony reexport de */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bs_moment_i18n_en_gb__ = __webpack_require__(431);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bs_moment_i18n_en_gb__ = __webpack_require__(436);
 /* unused harmony reexport enGb */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bs_moment_i18n_es__ = __webpack_require__(432);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bs_moment_i18n_es__ = __webpack_require__(437);
 /* unused harmony reexport es */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bs_moment_i18n_es_do__ = __webpack_require__(433);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bs_moment_i18n_es_do__ = __webpack_require__(438);
 /* unused harmony reexport esDo */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bs_moment_i18n_es_us__ = __webpack_require__(434);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bs_moment_i18n_es_us__ = __webpack_require__(439);
 /* unused harmony reexport esUs */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bs_moment_i18n_fr__ = __webpack_require__(435);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bs_moment_i18n_fr__ = __webpack_require__(440);
 /* unused harmony reexport fr */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bs_moment_i18n_hi__ = __webpack_require__(436);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bs_moment_i18n_hi__ = __webpack_require__(441);
 /* unused harmony reexport hi */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__bs_moment_i18n_hu__ = __webpack_require__(437);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__bs_moment_i18n_hu__ = __webpack_require__(442);
 /* unused harmony reexport hu */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bs_moment_i18n_it__ = __webpack_require__(438);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bs_moment_i18n_it__ = __webpack_require__(443);
 /* unused harmony reexport it */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bs_moment_i18n_ja__ = __webpack_require__(439);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bs_moment_i18n_ja__ = __webpack_require__(444);
 /* unused harmony reexport ja */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__bs_moment_i18n_ko__ = __webpack_require__(440);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__bs_moment_i18n_ko__ = __webpack_require__(445);
 /* unused harmony reexport ko */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__bs_moment_i18n_nl__ = __webpack_require__(441);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__bs_moment_i18n_nl__ = __webpack_require__(446);
 /* unused harmony reexport nl */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__bs_moment_i18n_nl_be__ = __webpack_require__(442);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__bs_moment_i18n_nl_be__ = __webpack_require__(447);
 /* unused harmony reexport nlBe */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__bs_moment_i18n_pl__ = __webpack_require__(443);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__bs_moment_i18n_pl__ = __webpack_require__(448);
 /* unused harmony reexport pl */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__bs_moment_i18n_pt_br__ = __webpack_require__(444);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__bs_moment_i18n_pt_br__ = __webpack_require__(449);
 /* unused harmony reexport ptBr */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__bs_moment_i18n_sv__ = __webpack_require__(445);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__bs_moment_i18n_sv__ = __webpack_require__(450);
 /* unused harmony reexport sv */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__bs_moment_i18n_ru__ = __webpack_require__(446);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__bs_moment_i18n_ru__ = __webpack_require__(451);
 /* unused harmony reexport ru */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__bs_moment_i18n_zh_cn__ = __webpack_require__(447);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__bs_moment_i18n_zh_cn__ = __webpack_require__(452);
 /* unused harmony reexport zhCn */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__bs_moment_i18n_tr__ = __webpack_require__(448);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__bs_moment_i18n_tr__ = __webpack_require__(453);
 /* unused harmony reexport tr */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__bs_moment_i18n_he__ = __webpack_require__(449);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__bs_moment_i18n_he__ = __webpack_require__(454);
 /* unused harmony reexport he */
 
 
@@ -61736,7 +61900,7 @@ var TypeaheadModule = (function () {
 //# sourceMappingURL=locale.js.map
 
 /***/ }),
-/* 428 */
+/* 433 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61927,7 +62091,7 @@ var ar = {
 //# sourceMappingURL=ar.js.map
 
 /***/ }),
-/* 429 */
+/* 434 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62030,7 +62194,7 @@ var cs = {
 //# sourceMappingURL=cs.js.map
 
 /***/ }),
-/* 430 */
+/* 435 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62106,7 +62270,7 @@ var de = {
 //# sourceMappingURL=de.js.map
 
 /***/ }),
-/* 431 */
+/* 436 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62168,7 +62332,7 @@ var enGb = {
 //# sourceMappingURL=en-gb.js.map
 
 /***/ }),
-/* 432 */
+/* 437 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62253,7 +62417,7 @@ var es = {
 //# sourceMappingURL=es.js.map
 
 /***/ }),
-/* 433 */
+/* 438 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62337,7 +62501,7 @@ var esDo = {
 //# sourceMappingURL=es-do.js.map
 
 /***/ }),
-/* 434 */
+/* 439 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62400,7 +62564,7 @@ var esUs = {
 //# sourceMappingURL=es-us.js.map
 
 /***/ }),
-/* 435 */
+/* 440 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62480,7 +62644,7 @@ var fr = {
 //# sourceMappingURL=fr.js.map
 
 /***/ }),
-/* 436 */
+/* 441 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62609,7 +62773,7 @@ var hi = {
 //# sourceMappingURL=hi.js.map
 
 /***/ }),
-/* 437 */
+/* 442 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62665,7 +62829,7 @@ var hu = {
 //# sourceMappingURL=hu.js.map
 
 /***/ }),
-/* 438 */
+/* 443 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62701,7 +62865,7 @@ var it = {
 //# sourceMappingURL=it.js.map
 
 /***/ }),
-/* 439 */
+/* 444 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62782,7 +62946,7 @@ var ja = {
 //# sourceMappingURL=ja.js.map
 
 /***/ }),
-/* 440 */
+/* 445 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62861,7 +63025,7 @@ var ko = {
 //# sourceMappingURL=ko.js.map
 
 /***/ }),
-/* 441 */
+/* 446 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62954,7 +63118,7 @@ var nl = {
 //# sourceMappingURL=nl.js.map
 
 /***/ }),
-/* 442 */
+/* 447 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63049,7 +63213,7 @@ var nlBe = {
 //# sourceMappingURL=nl-be.js.map
 
 /***/ }),
-/* 443 */
+/* 448 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63135,7 +63299,7 @@ var pl = {
 //# sourceMappingURL=pl.js.map
 
 /***/ }),
-/* 444 */
+/* 449 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63183,7 +63347,7 @@ var ptBr = {
 //# sourceMappingURL=pt-br.js.map
 
 /***/ }),
-/* 445 */
+/* 450 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63249,7 +63413,7 @@ var sv = {
 //# sourceMappingURL=sv.js.map
 
 /***/ }),
-/* 446 */
+/* 451 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63393,7 +63557,7 @@ var ru = {
 //# sourceMappingURL=ru.js.map
 
 /***/ }),
-/* 447 */
+/* 452 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63506,7 +63670,7 @@ var zhCn = {
 //# sourceMappingURL=zh-cn.js.map
 
 /***/ }),
-/* 448 */
+/* 453 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63564,7 +63728,7 @@ var tr = {
 //# sourceMappingURL=tr.js.map
 
 /***/ }),
-/* 449 */
+/* 454 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63618,13 +63782,13 @@ var he = {
 //# sourceMappingURL=he.js.map
 
 /***/ }),
-/* 450 */
+/* 455 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PaginationComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_range__ = __webpack_require__(451);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_range__ = __webpack_require__(456);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_range___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_range__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -63695,8 +63859,8 @@ var PaginationComponent = /** @class */ (function () {
     PaginationComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-pagination',
-            template: __webpack_require__(453),
-            styles: [__webpack_require__(454)]
+            template: __webpack_require__(458),
+            styles: [__webpack_require__(459)]
         }),
         __metadata("design:paramtypes", [])
     ], PaginationComponent);
@@ -63706,17 +63870,17 @@ var PaginationComponent = /** @class */ (function () {
 
 
 /***/ }),
-/* 451 */
+/* 456 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var RangeObservable_1 = __webpack_require__(452);
+var RangeObservable_1 = __webpack_require__(457);
 exports.range = RangeObservable_1.RangeObservable.create;
 //# sourceMappingURL=range.js.map
 
 /***/ }),
-/* 452 */
+/* 457 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -63818,96 +63982,27 @@ exports.RangeObservable = RangeObservable;
 //# sourceMappingURL=RangeObservable.js.map
 
 /***/ }),
-/* 453 */
+/* 458 */
 /***/ (function(module, exports) {
 
 module.exports = "<ul class=\"pagination\">\r\n    <li (click)=\"selectPage(1, $event)\" [class.disabled]=\"currentPage == 1\">\r\n        <a href=\"\" title=\"Go to first page\">&laquo;</a>\r\n    </li>\r\n    <li (click)=\"selectPage(currentPage - 1, $event)\" [class.disabled]=\"currentPage == 1\">\r\n        <a href=\"\" title=\"Go to previous page\">&lsaquo;</a>\r\n    </li>\r\n    <li class=\"disabled\" (click)=\"cancelEvent($event)\" *ngIf=\"(currentPage - range) > 1\">\r\n        <a href=\"\">...</a>\r\n    </li>\r\n    <li *ngFor=\"let page of pages | async\" [class.active]=\"page == currentPage\">\r\n        <a href=\"\" (click)=\"selectPage(page, $event)\">\r\n            {{page}}\r\n        </a>\r\n    </li>\r\n    <li class=\"disabled\" (click)=\"cancelEvent($event)\" *ngIf=\"(currentPage + range) < totalPages\">\r\n        <a href=\"\">...</a>\r\n    </li>\r\n    <li (click)=\"selectPage(currentPage + 1, $event)\" [class.disabled]=\"currentPage == totalPages\">\r\n        <a href=\"\" title=\"Go to next page\">&rsaquo;</a>\r\n    </li>\r\n    <li (click)=\"selectPage(totalPages, $event)\" [class.disabled]=\"currentPage == totalPages\">\r\n        <a href=\"\" title=\"Go to last page\">&raquo;</a>\r\n    </li>\r\n</ul>\r\n";
 
 /***/ }),
-/* 454 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(455);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 455 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-/* 456 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectedBlogComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var SelectedBlogComponent = /** @class */ (function () {
-    function SelectedBlogComponent() {
-    }
-    SelectedBlogComponent.prototype.ngOnInit = function () {
-    };
-    SelectedBlogComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-selected-blog',
-            template: __webpack_require__(457),
-            styles: [__webpack_require__(458)]
-        }),
-        __metadata("design:paramtypes", [])
-    ], SelectedBlogComponent);
-    return SelectedBlogComponent;
-}());
-
-
-
-/***/ }),
-/* 457 */
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  selected-blog works!\n</p>\n";
-
-/***/ }),
-/* 458 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(459);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
 /* 459 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(460);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 460 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(undefined);

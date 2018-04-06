@@ -15,6 +15,7 @@ using CodeFirstDatabase;
 using DAL.Repositories;
 using DAL.Repositories.Interfaces;
 using MatcomJamDAL.Repositories;
+using MatcomJamDAL.Repositories.Interfaces;
 
 namespace DAL
 {
@@ -26,6 +27,7 @@ namespace DAL
         private IContestRepository _contests;
         private ISolutionRepository _submissions;
         private IBlogRepository _blogs;
+        private ICommentRepository _comments;
 
         public UnitOfWork(MJDbContext context)
         {
@@ -37,6 +39,7 @@ namespace DAL
         public IContestRepository Contests => _contests ?? (_contests = new ContestRepository(_context));
         public ISolutionRepository Submissions => _submissions ?? (_submissions = new SolutionRepository(_context));
         public IBlogRepository Blogs => _blogs ?? (_blogs = new BlogRepository(_context));
+        public ICommentRepository Comments => _comments ?? (_comments = new CommentRepository(_context));
 
         public int SaveChanges()
         {

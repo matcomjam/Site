@@ -1,4 +1,5 @@
-import {User} from './user.model';
+import { User } from './user.model';
+import { Comment } from './comment.model';
 
 export class Blog {
     Id: Number;
@@ -6,4 +7,5 @@ export class Blog {
     Description: String;
     UserId: Number;
     UserName: String;
+    Comments: Comment[];
 }

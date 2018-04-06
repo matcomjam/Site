@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MatcomJamDAL.Repositories.Interfaces;
 
 namespace DAL
 {
@@ -21,7 +22,7 @@ namespace DAL
         IContestRepository Contests { get; }
         ISolutionRepository Submissions { get; }
         IBlogRepository Blogs { get; }
-
+        ICommentRepository Comments { get; }
 
         int SaveChanges();
     }
