@@ -1,7 +1,7 @@
 <div class="card card-outline-primary m-1 p-1 well" *ngFor="let blog of this.blogList">
     <div class="bg-faded p-1">
         <h3>
-            {{blog.title}}
+            <a [routerLink]="['/blogs/', blog.id]"> {{blog.title}}</a>
         </h3>
         <h6>by <a href="javascript:;">{{blog.userName}}</a></h6>
     </div>

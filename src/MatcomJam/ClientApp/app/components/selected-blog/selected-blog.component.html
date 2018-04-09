@@ -8,9 +8,10 @@
         </h6>
     </div>
     <div class="card-text p-1">
-            <h5>{{blog.description}}</h5>
+        <h5>{{blog.description}}</h5>
     </div>
-   
+
+    <h3>Comments:</h3>
     <div class="card card-outline-primary m-1 p-1" *ngFor="let comment of this.comments">
         <div class="card-text p-1">{{comment.description}}</div>
     </div>
