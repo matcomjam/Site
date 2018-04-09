@@ -4,21 +4,20 @@ using System.Collections.Generic;
 
 namespace QuickApp.Migrations
 {
-    public partial class addingIdToComment : Migration
+    public partial class testing : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<int>(
-                name: "Id",
+            migrationBuilder.AddColumn<string>(
+                name: "Change",
                 table: "Comments",
-                nullable: false,
-                defaultValue: 0);
+                nullable: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "Id",
+                name: "Change",
                 table: "Comments");
         }
     }

@@ -48,7 +48,17 @@ namespace QuickApp.Migrations
 
                     b.Property<int>("BlogId");
 
+                    b.Property<string>("Change");
+
+                    b.Property<string>("CreatedBy");
+
+                    b.Property<DateTime>("CreatedDate");
+
                     b.Property<string>("Description");
+
+                    b.Property<string>("UpdatedBy");
+
+                    b.Property<DateTime>("UpdatedDate");
 
                     b.Property<string>("UserId")
                         .IsRequired();

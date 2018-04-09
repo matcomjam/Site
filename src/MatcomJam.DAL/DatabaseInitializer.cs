@@ -115,19 +115,6 @@ namespace DAL
                 _context.Blogs.Add(b2);
                 await _context.SaveChangesAsync();
             }
-
-            if (!await _context.Comments.AnyAsync())
-            {
-                Comment c = new Comment
-                {
-                    BlogId = 7008,
-                    Description = "Acaba de insertarte",
-                    UserId = "44065e3e-43d1-4666-b0b6-d4d47c9aba7e"
-                };
-                _context.Comments.Add(c);
-                await _context.SaveChangesAsync();
-            }
-
             #region check
             //if (!await _context.Customers.AnyAsync() && !await _context.ProductCategories.AnyAsync())
             //{
