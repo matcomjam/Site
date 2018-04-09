@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "bff2056ba95cecc0c484"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "6a22df0eadd75ccbdc0c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -14680,6 +14680,7 @@ var SelectedBlogComponent = /** @class */ (function () {
         if (this._avRoute.snapshot.params["id"]) {
             this.blogId = this._avRoute.snapshot.params["id"];
             this.autorId = this.authService.currentUser.id;
+            //this.autorName = this.authService.currentUser.userName;
         }
     }
     SelectedBlogComponent.prototype.ngOnInit = function () {
@@ -14688,14 +14689,25 @@ var SelectedBlogComponent = /** @class */ (function () {
             .subscribe(function (b) {
             _this.blog = (b);
         });
+        this.loadData();
+    };
+    SelectedBlogComponent.prototype.loadData = function () {
+        var _this = this;
+        this.commentService.getComment(this.blogId)
+            .subscribe(function (c) {
+            _this.comments = (c);
+        });
     };
     SelectedBlogComponent.prototype.saveComment = function () {
+        var _this = this;
         this.actualComment.userId = this.autorId;
         this.actualComment.blogId = this.blogId;
         console.log('comment so far', this.actualComment);
         this.commentService.save(this.actualComment)
             .subscribe(function (res) {
             console.log('victoria');
+            _this.loadData();
+            _this.actualComment.description = "";
         });
     };
     SelectedBlogComponent = __decorate([
@@ -14742,8 +14754,8 @@ var CommentService = /** @class */ (function () {
         this._updateUrl = 'api/Comment/Update/';
         this._deleteByIdUrl = 'api/Comment/Delete/';
     }
-    CommentService.prototype.getComment = function () {
-        return this.http.get(this._getUrl);
+    CommentService.prototype.getComment = function (blog) {
+        return this.http.get(this._getUrl + ("?blogId=" + blog));
     };
     CommentService.prototype.getBlogById = function (id) {
         var getByIdUrl = this._getUrl + '/' + id;
@@ -52069,7 +52081,7 @@ exports.push([module.i, "", ""]);
 /* 239 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"tab-content\" *ngIf=\"blog\">\r\n    <div class=\"bg-faded p-1\">\r\n        <h3>\r\n            {{blog.title}}\r\n        </h3>\r\n        <h6>\r\n            by <a href=\"javascript:;\">{{blog.userName}}</a>\r\n        </h6>\r\n    </div>\r\n    <div class=\"card-text p-1\">\r\n            <h5>{{blog.description}}</h5>\r\n    </div>\r\n   \r\n    <hr />\r\n\r\n    <div class=\"form-group row\">\r\n        <div class=\"col-md-6\">\r\n            <textarea class=\"form-control\" type=\"text\" [(ngModel)]=\"actualComment.description\" name=\"Description\" data-val=\"true\" placeholder=\"Enter a messagge\"></textarea>\r\n            <!--<div class-validation-error *ngIf=\"Description.invalid && Description.touched\">This Field is Required</div>-->\r\n        </div>\r\n        <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'description') && formDir.submitted\">\r\n            Description is required\r\n        </span>-->\r\n        <button class=\"btn\" (click)=\"saveComment()\" [class.disabled]=\"actualComment.description == null || actualComment.description == ''\">Commentar</button>\r\n    </div>\r\n</div>";
+module.exports = "<div class=\"tab-content\" *ngIf=\"blog\">\r\n    <div class=\"bg-faded p-1\">\r\n        <h3>\r\n            {{blog.title}}\r\n        </h3>\r\n        <h6>\r\n            by <a href=\"javascript:;\">{{blog.userName}}</a>\r\n        </h6>\r\n    </div>\r\n    <div class=\"card-text p-1\">\r\n            <h5>{{blog.description}}</h5>\r\n    </div>\r\n   \r\n    <div class=\"card card-outline-primary m-1 p-1\" *ngFor=\"let comment of this.comments\">\r\n        <div class=\"card-text p-1\">{{comment.description}}</div>\r\n    </div>\r\n\r\n    <hr />\r\n\r\n    <div class=\"form-group row\">\r\n        <div class=\"col-md-6\">\r\n            <textarea class=\"form-control\" type=\"text\" [(ngModel)]=\"actualComment.description\" name=\"Description\" data-val=\"true\" placeholder=\"Enter a messagge\"></textarea>\r\n            <!--<div class-validation-error *ngIf=\"Description.invalid && Description.touched\">This Field is Required</div>-->\r\n        </div>\r\n        <!--<span class=\"text-danger\" *ngIf=\"problemForm.hasError('required', 'description') && formDir.submitted\">\r\n            Description is required\r\n        </span>-->\r\n        <button class=\"btn\" (click)=\"saveComment()\" [class.disabled]=\"actualComment.description == null || actualComment.description == ''\">Commentar</button>\r\n    </div>\r\n</div>";
 
 /***/ }),
 /* 240 */

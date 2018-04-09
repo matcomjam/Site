@@ -5,6 +5,7 @@ import { Blog } from "../../models/blog.model";
 import { Router, ActivatedRoute } from '@angular/router';
 import { NgForm, FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
+import { Comment } from '../../models/comment.model';
 
 @Component({
     selector: 'app-selected-blog',
@@ -12,12 +13,12 @@ import { AuthService } from '../../services/auth.service';
     styleUrls: ['./selected-blog.component.css']
 })
 export class SelectedBlogComponent implements OnInit {
-
-    commentBlog: FormGroup;
+    comments: Comment[];
 
     blogId: number;
     autorId: string;
-    
+    //autorName: string;
+
     blog: Blog;
     actualComment: any = {};
 
@@ -29,6 +30,7 @@ export class SelectedBlogComponent implements OnInit {
         if (this._avRoute.snapshot.params["id"]) {
             this.blogId = this._avRoute.snapshot.params["id"];
             this.autorId = this.authService.currentUser.id;
+            //this.autorName = this.authService.currentUser.userName;
         }
     }
 
@@ -36,6 +38,14 @@ export class SelectedBlogComponent implements OnInit {
         this.blogService.getBlogById(this.blogId)
             .subscribe(b => {
                 this.blog = <Blog>(b);
+            });
+        this.loadData();
+    }
+
+    loadData() {
+        this.commentService.getComment(this.blogId)
+            .subscribe(c => {
+                this.comments = <Comment[]>(c);
             });
     }
 
@@ -48,6 +58,8 @@ export class SelectedBlogComponent implements OnInit {
         this.commentService.save(this.actualComment)
             .subscribe(res => {
                 console.log('victoria')
-            })
+                this.loadData();
+                this.actualComment.description = "";
+            });
     }
 }

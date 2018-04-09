@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using CodeFirstDatabase;
 using DAL.Repositories;
@@ -15,12 +16,12 @@ namespace MatcomJamDAL.Repositories
         public CommentRepository(DbContext context) : base(context)
         {
         }
-        
+
         private MJDbContext _appContext => (MJDbContext)_context;
 
-        public IEnumerable<Comment> GetAllComments(Filter filter, int page = 1, int limit = 4)
+        public IEnumerable<Comment> GetAllComments(int blogId)
         {
-            throw new NotImplementedException();
+            return _appContext.Comments.Where(c => c.BlogId == blogId).OrderBy(c => c.CreatedDate);
         }
 
         public bool SaveComment(Comment model)

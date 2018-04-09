@@ -8,7 +8,7 @@ namespace MatcomJamDAL.Repositories.Interfaces
 {
     public interface ICommentRepository
     {
-        IEnumerable<Comment> GetAllComments(Filter filter, int page = 1, int limit = 4);
+        IEnumerable<Comment> GetAllComments(int blogId);
         bool SaveComment(Comment comment);
         bool DeleteComment(int comment);
         Comment GetComment(int d);

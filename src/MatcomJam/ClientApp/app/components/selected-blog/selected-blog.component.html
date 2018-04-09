@@ -11,6 +11,10 @@
             <h5>{{blog.description}}</h5>
     </div>
    
+    <div class="card card-outline-primary m-1 p-1" *ngFor="let comment of this.comments">
+        <div class="card-text p-1">{{comment.description}}</div>
+    </div>
+
     <hr />
 
     <div class="form-group row">
