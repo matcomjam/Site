@@ -2,7 +2,7 @@
 
 namespace DAL.Repositories.Interfaces
 {
-    public interface ISolutionRepository:IRepository<Solution>
+    public interface ISolutionRepository:IRepository<Submission>
     {
         
     }

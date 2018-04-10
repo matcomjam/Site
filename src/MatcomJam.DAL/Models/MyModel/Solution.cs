@@ -2,7 +2,7 @@
 
 namespace CodeFirstDatabase
 {
-    public class Solution
+    public class Submission
     {
         public int ProblemContestId { get; set; }
 		public ProblemContest ProblemContest {get; set; }

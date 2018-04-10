@@ -45,23 +45,29 @@ namespace QuickApp.Controllers
             if (sourceFile == null) return BadRequest("Null File");
             if (sourceFile.Length == 0) return BadRequest("Empty File");
             if (sourceFile.Length > MAX_BYTES) return BadRequest("Max File Size Exceeded");
-            if (ACCEPTED_FILE_TYPE.All(s => s != Path.GetExtension(sourceFile.FileName)))
-                return BadRequest("Invalid wndfnlkdsnvndsv file type");
 
-            var uploadsFolderPath = Path.Combine(_host.WebRootPath, "uploads");
-            if (!Directory.Exists(uploadsFolderPath))
-                Directory.CreateDirectory(uploadsFolderPath);
+            var extension = Path.GetExtension(sourceFile.FileName);
+            if (ACCEPTED_FILE_TYPE.All(s => s != extension))
+                return BadRequest("Invalid file type");
 
-            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(sourceFile.FileName);
-            var filePath = Path.Combine(uploadsFolderPath, fileName);
+            //var uploadsFolderPath = Path.Combine(_host.WebRootPath, "uploads");
+            //if (!Directory.Exists(uploadsFolderPath))
+            //    Directory.CreateDirectory(uploadsFolderPath);
 
-            using (var stream = new FileStream(filePath, FileMode.Create))
-            {
-                await sourceFile.CopyToAsync(stream);
-            }
+            //var fileName = Guid.NewGuid().ToString() + Path.GetExtension(sourceFile.FileName);
+            //var filePath = Path.Combine(uploadsFolderPath, fileName);
+            var fileName = $"Main{extension}";
+            var code = new StreamReader(sourceFile.OpenReadStream()).ReadToEnd();
 
-            var code = new Code { FileName = fileName };
-            return Ok(code);
+           
+            //using (var stream = new FileStream(filePath, FileMode.Create))
+            //{
+               
+            //   // await sourceFile.CopyToAsync(stream);
+            //}
+
+            //var code = new Code { FileName = fileName };
+            //return Ok(code);
         }
 
         // PUT api/values/5

@@ -11,6 +11,6 @@ namespace CodeFirstDatabase
         public string Description { get; set; }
         public virtual Contest Constest { get; set; }
         public virtual Problem Problem { get; set; }
-        public List<Solution> Solutions { get; set; }
+        public List<Submission> Solutions { get; set; }
     }
 }

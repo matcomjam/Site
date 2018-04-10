@@ -26,7 +26,7 @@ namespace CodeFirstDatabase
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Contestant> Contestants { get; set; }
         public DbSet<Team> Teams { get; set; }
-        public DbSet<Solution> Solutions { get; set; }
+        public DbSet<Submission> Solutions { get; set; }
         public DbSet<Language> Languages { get; set; }
         public DbSet<Group> Groups { get; set; }
         public DbSet<Institution> Institutions { get; set; }
@@ -60,21 +60,21 @@ namespace CodeFirstDatabase
                 .WithMany(t => t.UserTeams)
                 .HasForeignKey(ut => ut.TeamID);
 
-            modelBuilder.Entity<Solution>()
+            modelBuilder.Entity<Submission>()
                 .HasOne(pcl => pcl.Contestant)
                 .WithMany(c => c.Solutions)
                 .HasForeignKey(pcl => pcl.ContestantId)
                 .IsRequired().OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<Solution>()
+            modelBuilder.Entity<Submission>()
                 .HasKey(pcl => new { pcl.ContestantId, pcl.LanguageId, pcl.ProblemContestId });
 
-            modelBuilder.Entity<Solution>()
+            modelBuilder.Entity<Submission>()
                 .HasOne(pcl => pcl.Language)
                 .WithMany(l => l.Solutions)
                 .HasForeignKey(pcl => pcl.LanguageId);
 
-            modelBuilder.Entity<Solution>()
+            modelBuilder.Entity<Submission>()
                 .HasOne(pcl => pcl.ProblemContest)
                 .WithMany(p => p.Solutions)
                 .HasForeignKey(pcl => pcl.ProblemContestId);

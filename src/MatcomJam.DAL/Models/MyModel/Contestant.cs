@@ -18,6 +18,6 @@ namespace CodeFirstDatabase
         
 		public Contest Contest { get; set; }
         public Team Team { get; set; }
-        public ICollection<Solution> Solutions { get; set; }
+        public ICollection<Submission> Solutions { get; set; }
     }
 }

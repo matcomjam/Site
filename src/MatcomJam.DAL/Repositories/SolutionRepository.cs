@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MatcomJamDAL.Repositories
 {
-    class SolutionRepository:Repository<Solution>, ISolutionRepository
+    class SolutionRepository:Repository<Submission>, ISolutionRepository
     {
         public SolutionRepository(DbContext context) : base(context)
         {
