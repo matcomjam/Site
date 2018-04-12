@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using DAL;
 using MatcomJamDAL.Models.MyModel;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using QuickApp.ViewModels;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -34,9 +36,12 @@ namespace QuickApp.Controllers
 
         // GET: api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        [Route("api/Code/Index")]
+        public IActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            var code = _unitOfWork.Codes.GetNextPendingCode();
+            var codeVM = Mapper.Map<CodeViewModel>(code);
+            return Ok(codeVM);
         }
 
         // GET api/values/5

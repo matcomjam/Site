@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using CodeFirstDatabase;
 using DAL.Repositories;
@@ -19,7 +20,12 @@ namespace MatcomJamDAL.Repositories
 
         public IEnumerable<Code> GetAllCodes(Filter filter)
         {
-            throw new NotImplementedException();
+            throw new Exception();
+        }
+
+        public Code GetNextPendingCode()
+        {
+            return _appContext.Codes.Where(c => c.Status == "PENDING").OrderBy(c=> c.CreatedDate).ToList()[0];
         }
 
         public bool SaveCode(Code model)

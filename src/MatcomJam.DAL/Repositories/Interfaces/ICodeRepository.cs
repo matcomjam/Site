@@ -12,5 +12,6 @@ namespace MatcomJamDAL.Repositories.Interfaces
         bool DeleteCode(int codeId);
         Code GetCode(int d);
         int GetCodeCount();
+        Code GetNextPendingCode();
     }
 }
