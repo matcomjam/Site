@@ -20,7 +20,7 @@ namespace MatcomJamDAL.Repositories
 
         public IEnumerable<Code> GetAllCodes(Filter filter)
         {
-            throw new Exception();
+            return _appContext.Codes.ToList();
         }
 
         public Code GetNextPendingCode()

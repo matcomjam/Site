@@ -1,0 +1,21 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>File Name</th>
+            <th>Status</th>
+            <th>Created Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let code of codes">
+            <!--<td>
+                <a [routerLink]="['/problems/', problem.id]">{{problem.id}}</a>
+            </td>-->
+            <td>{{code.id}}</td>
+            <td>{{code.fileName}}</td>
+            <td>{{code.status}}</td>
+            <td>{{code.createdDate}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -85,6 +85,7 @@ import { CreateBlogComponent } from './components/create-blog/create-blog.compon
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { CodeService } from "./services/code.service";
 import { SelectedBlogComponent } from './components/selected-blog/selected-blog.component';
+import { SubmissionComponent } from './components/submission/submission.component';
 
 @NgModule({
     imports: [
@@ -140,7 +141,8 @@ import { SelectedBlogComponent } from './components/selected-blog/selected-blog.
         CreateContestComponent,
         CreateBlogComponent,
         PaginationComponent,
-        SelectedBlogComponent
+        SelectedBlogComponent,
+        SubmissionComponent
     ],
     providers: [
         { provide: 'BASE_URL', useFactory: getBaseUrl },

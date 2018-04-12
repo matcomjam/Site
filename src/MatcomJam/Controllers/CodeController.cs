@@ -41,6 +41,15 @@ namespace QuickApp.Controllers
         {
             var code = _unitOfWork.Codes.GetNextPendingCode();
             var codeVM = Mapper.Map<CodeViewModel>(code);
+            return Json(codeVM);
+        }
+
+        [HttpGet]
+        [Route("api/Code/IndexAll")]
+        public IActionResult GetAll()
+        {
+            var code = _unitOfWork.Codes.GetAllCodes(null);
+            var codeVM = code.Select(Mapper.Map<CodeViewModel>).ToList();
             return Ok(codeVM);
         }
 

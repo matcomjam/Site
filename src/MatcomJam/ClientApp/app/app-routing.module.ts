@@ -9,7 +9,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { RegisterComponent} from "./components/register/register.component";
+import { RegisterComponent } from "./components/register/register.component";
 import { LoginComponent } from "./components/login/login.component";
 import { HomeComponent } from "./components/home/home.component";
 import { CustomersComponent } from "./components/customers/customers.component";
@@ -23,9 +23,10 @@ import { AuthService } from './services/auth.service';
 import { AuthGuard } from './services/auth-guard.service';
 import { ProblemsComponent } from "./components/problems/problems.component";
 import { CreateProblemComponent } from "./components/create-problem/create-problem.component";
-import { SelectProblemComponent } from "./components/select-problem/select-problem.component"; 
-import { CreateContestComponent } from "./components/create-contest/create-contest.component"; 
-import { CreateBlogComponent } from "./components/create-blog/create-blog.component"; 
+import { SelectProblemComponent } from "./components/select-problem/select-problem.component";
+import { CreateContestComponent } from "./components/create-contest/create-contest.component";
+import { CreateBlogComponent } from "./components/create-blog/create-blog.component";
+import { SubmissionComponent } from "./components/submission/submission.component";
 
 
 @NgModule({
@@ -33,8 +34,8 @@ import { CreateBlogComponent } from "./components/create-blog/create-blog.compon
         RouterModule.forRoot([
             { path: "", component: HomeComponent, canActivate: [AuthGuard], data: { title: "Home" } },
             { path: "login", component: LoginComponent, data: { title: "Login" } },
-            {path: "login/register", component:RegisterComponent},
-            { path: "customers", component: CustomersComponent, canActivate: [AuthGuard], data: { title: "Customers" } },
+            { path: "login/register", component: RegisterComponent },
+            //{ path: "customers", component: CustomersComponent, canActivate: [AuthGuard], data: { title: "Customers" } },
             { path: "problems", component: ProblemsComponent, data: { title: "Problems" } },
             { path: "problems/:id", component: SelectProblemComponent, data: { title: "SelectedProblem" } },
             { path: "insert-problem", component: CreateProblemComponent, data: { title: "CreateProblems" } },
@@ -46,6 +47,7 @@ import { CreateBlogComponent } from "./components/create-blog/create-blog.compon
             { path: "contests", component: ContestComponent, canActivate: [AuthGuard], data: { title: "Contests" } },
             { path: "blogs", component: BlogComponent, canActivate: [AuthGuard], data: { title: "Blogs" } },
             { path: "blogs/:id", component: SelectedBlogComponent, canActivate: [AuthGuard], data: { title: "SelectedBlogs" } },
+            { path: "submissions", component: SubmissionComponent, data: { title: "Submissions" } },
             { path: "settings", component: SettingsComponent, canActivate: [AuthGuard], data: { title: "Settings" } },
             { path: "about", component: AboutComponent, data: { title: "About Us" } },
             { path: "home", redirectTo: "/", pathMatch: "full" },

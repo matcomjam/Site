@@ -5,6 +5,11 @@ import { Code } from "../models/code.model";
 @Injectable()
 export class CodeService {
 
+    private _getUrl = '/api/Code/Index';
+    public _saveUrl: string = 'api/Code/Save';
+    public _updateUrl: string = 'api/Code/Update/';
+    public _deleteByIdUrl: string = 'api/Code/Delete/';
+
     constructor(private http: HttpClient) { }
 
     //upload(code: Code) {
@@ -18,10 +23,14 @@ export class CodeService {
     //    console.log()
     //}
 
-    upload(userId, problemId, languageId, file) {
+    upload<T>(userId, problemId, languageId, file) {
         var formData = new FormData();
         formData.append('file', file);
         var query = `?userId=${userId}&problemId=${problemId}&languageId=${languageId}`;
-        return this.http.post(`/api/Code/Save` + query, formData);
+        return this.http.post(this._getUrl + query, formData);
+    }
+
+    getCodes<T>() {
+        return this.http.get(this._getUrl + "All");
     }
 }
