@@ -72,6 +72,7 @@ import { ProblemService } from './services/problem.service';
 import { ContestService } from './services/contest.service';
 import { BlogService } from './services/blog.service';
 import { CommentService } from './services/comment.service';
+import { LanguageService } from "./services/language.service";
 import { CreateProblemComponent } from './components/create-problem/create-problem.component';
 
 import { PaginationModule } from 'ngx-bootstrap';
@@ -159,7 +160,8 @@ import { SelectedBlogComponent } from './components/selected-blog/selected-blog.
         BlogService,
         FormBuilder,
         CodeService,
-        CommentService
+        CommentService,
+        LanguageService
     ],
     bootstrap: [AppComponent]
 })

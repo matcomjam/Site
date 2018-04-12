@@ -115,6 +115,22 @@ namespace DAL
                 _context.Blogs.Add(b2);
                 await _context.SaveChangesAsync();
             }
+
+            if (!await _context.Languages.AnyAsync())
+            {
+                var l1 = new Language
+                {
+                    Name = "CSHARP"
+                };
+                var l2 = new Language
+                {
+                    Name = "PYTHON"
+                };
+
+                _context.Languages.Add(l1);
+                _context.Languages.Add(l2);
+                await _context.SaveChangesAsync();
+            }
             #region check
             //if (!await _context.Customers.AnyAsync() && !await _context.ProductCategories.AnyAsync())
             //{

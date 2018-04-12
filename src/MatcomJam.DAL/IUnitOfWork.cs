@@ -23,6 +23,8 @@ namespace DAL
         ISolutionRepository Submissions { get; }
         IBlogRepository Blogs { get; }
         ICommentRepository Comments { get; }
+        ICodeRepository Codes { get; }
+        ILanguageRepository Languages { get; }
 
         int SaveChanges();
     }

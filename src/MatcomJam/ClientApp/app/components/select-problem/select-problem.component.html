@@ -17,5 +17,11 @@
             {{problem.description}}
         </p>
     </div>
-    <input type="file" (change)="uploadCode()" #fileInput />
+    <div class="container">
+        <select id="language" [(ngModel)]="languageId">
+            <option value=""></option>
+            <option *ngFor="let lan of languages" value="{{lan.id}}">{{lan.name}}</option>
+        </select>
+        <input type="file" (change)="uploadCode()" #fileInput />
+    </div>
 </div>

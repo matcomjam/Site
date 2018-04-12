@@ -28,6 +28,8 @@ namespace DAL
         private ISolutionRepository _submissions;
         private IBlogRepository _blogs;
         private ICommentRepository _comments;
+        private ICodeRepository _codes;
+        private ILanguageRepository _languages;
 
         public UnitOfWork(MJDbContext context)
         {
@@ -40,6 +42,8 @@ namespace DAL
         public ISolutionRepository Submissions => _submissions ?? (_submissions = new SolutionRepository(_context));
         public IBlogRepository Blogs => _blogs ?? (_blogs = new BlogRepository(_context));
         public ICommentRepository Comments => _comments ?? (_comments = new CommentRepository(_context));
+        public ICodeRepository Codes => _codes ?? (_codes = new CodeRepository(_context));
+        public ILanguageRepository Languages => _languages ?? (_languages = new LanguageRepository(_context));
 
         public int SaveChanges()
         {

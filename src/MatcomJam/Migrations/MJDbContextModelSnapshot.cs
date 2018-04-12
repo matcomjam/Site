@@ -182,7 +182,7 @@ namespace QuickApp.Migrations
                     b.ToTable("ProblemContests");
                 });
 
-            modelBuilder.Entity("CodeFirstDatabase.Solution", b =>
+            modelBuilder.Entity("CodeFirstDatabase.Submission", b =>
                 {
                     b.Property<string>("ContestantId");
 
@@ -355,11 +355,35 @@ namespace QuickApp.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("CreatedBy");
+
+                    b.Property<DateTime>("CreatedDate");
+
                     b.Property<string>("FileName")
                         .IsRequired()
                         .HasMaxLength(255);
 
+                    b.Property<int>("LanguageId");
+
+                    b.Property<int>("ProblemId");
+
+                    b.Property<string>("Status");
+
+                    b.Property<string>("Text");
+
+                    b.Property<string>("UpdatedBy");
+
+                    b.Property<DateTime>("UpdatedDate");
+
+                    b.Property<string>("UserId");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("LanguageId");
+
+                    b.HasIndex("ProblemId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Codes");
                 });
@@ -624,7 +648,7 @@ namespace QuickApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("CodeFirstDatabase.Solution", b =>
+            modelBuilder.Entity("CodeFirstDatabase.Submission", b =>
                 {
                     b.HasOne("CodeFirstDatabase.Contestant", "Contestant")
                         .WithMany("Solutions")
@@ -660,6 +684,23 @@ namespace QuickApp.Migrations
                         .WithMany("UserTeams")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict);
+                });
+
+            modelBuilder.Entity("MatcomJamDAL.Models.MyModel.Code", b =>
+                {
+                    b.HasOne("CodeFirstDatabase.Language", "Language")
+                        .WithMany()
+                        .HasForeignKey("LanguageId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("CodeFirstDatabase.Problem", "Problem")
+                        .WithMany()
+                        .HasForeignKey("ProblemId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("MatcomJamDAL.Models.MyModel.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
