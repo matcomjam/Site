@@ -30,6 +30,7 @@ namespace DAL
         private ICommentRepository _comments;
         private ICodeRepository _codes;
         private ILanguageRepository _languages;
+        private ISyncServerRepository _syncServers;
 
         public UnitOfWork(MJDbContext context)
         {
@@ -44,6 +45,7 @@ namespace DAL
         public ICommentRepository Comments => _comments ?? (_comments = new CommentRepository(_context));
         public ICodeRepository Codes => _codes ?? (_codes = new CodeRepository(_context));
         public ILanguageRepository Languages => _languages ?? (_languages = new LanguageRepository(_context));
+        public ISyncServerRepository SyncServers => _syncServers ?? (_syncServers = new SyncServerRepository(_context));
 
         public int SaveChanges()
         {

@@ -12,9 +12,10 @@ using System;
 namespace QuickApp.Migrations
 {
     [DbContext(typeof(MJDbContext))]
-    partial class MJDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180417183803_AddingSyncServer")]
+    partial class AddingSyncServer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -398,10 +399,6 @@ namespace QuickApp.Migrations
                     b.Property<string>("Name");
 
                     b.Property<string>("Port");
-
-                    b.Property<string>("URL_Get");
-
-                    b.Property<string>("URL_Post");
 
                     b.HasKey("Id");
 

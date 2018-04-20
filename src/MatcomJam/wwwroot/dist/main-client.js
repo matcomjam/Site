@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "73baf8f53dc81e0b4744"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5ba37d7d6f47c5ec492c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -7477,7 +7477,7 @@ var CodeService = /** @class */ (function () {
         var formData = new FormData();
         formData.append('file', file);
         var query = "?userId=" + userId + "&problemId=" + problemId + "&languageId=" + languageId;
-        return this.http.post(this._getUrl + query, formData);
+        return this.http.post(this._saveUrl + query, formData);
     };
     CodeService.prototype.getCodes = function () {
         return this.http.get(this._getUrl + "All");

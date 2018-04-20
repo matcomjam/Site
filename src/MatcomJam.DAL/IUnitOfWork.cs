@@ -25,6 +25,7 @@ namespace DAL
         ICommentRepository Comments { get; }
         ICodeRepository Codes { get; }
         ILanguageRepository Languages { get; }
+        ISyncServerRepository SyncServers { get; }
 
         int SaveChanges();
     }

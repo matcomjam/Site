@@ -42,6 +42,7 @@ namespace QuickApp.Controllers
             var code = _unitOfWork.Codes.GetNextPendingCode();
             var codeVM = Mapper.Map<CodeViewModel>(code);
             return Json(codeVM);
+
         }
 
         [HttpGet]
@@ -155,9 +156,11 @@ namespace QuickApp.Controllers
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpPut]
+        [Route("api/Code/Update")]
+        public IActionResult Put([FromBody]Code code)
         {
+            return Json(_unitOfWork.Codes.SaveCode(code));
         }
 
         // DELETE api/values/5

@@ -31,6 +31,7 @@ namespace CodeFirstDatabase
         public DbSet<Group> Groups { get; set; }
         public DbSet<Institution> Institutions { get; set; }
         public DbSet<Code> Codes { get; set; }
+        public DbSet<SyncServer> SyncServers { get; set; }
 
         public MJDbContext(DbContextOptions options) : base(options)
         { }

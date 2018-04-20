@@ -160,6 +160,15 @@ namespace QuickApp
                 options.AddPolicy(Authorization.Policies.AssignAllowedRolesPolicy, policy => policy.Requirements.Add(new AssignRolesAuthorizationRequirement()));
             });
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin();
+                    });
+            });
+
             Mapper.Initialize(cfg =>
             {
                 cfg.AddProfile<AutoMapperProfile>();
@@ -225,6 +234,7 @@ namespace QuickApp
                 .AllowAnyHeader()
                 .AllowAnyMethod());
 
+            app.UseCors("AllowAllOrigins");
 
             app.UseStaticFiles();
             app.UseAuthentication();

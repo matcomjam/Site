@@ -7,6 +7,7 @@ using DAL.Repositories;
 using MatcomJamDAL.Models.MyModel;
 using MatcomJamDAL.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Serialization;
 
 namespace MatcomJamDAL.Repositories
 {
@@ -23,9 +24,17 @@ namespace MatcomJamDAL.Repositories
             return _appContext.Codes.ToList();
         }
 
+        private static object obj = new Object();
         public Code GetNextPendingCode()
         {
-            return _appContext.Codes.Where(c => c.Status == "PENDING").OrderBy(c=> c.CreatedDate).ToList()[0];
+            lock (obj)
+            {
+                var code = _appContext.Codes.Where(c => c.Status == "PENDING").OrderBy(c => c.CreatedDate).ToList()[0];
+                code.Status = "RUNNIG";
+                SaveCode(code);
+                return code;
+            }
+
         }
 
         public bool SaveCode(Code model)

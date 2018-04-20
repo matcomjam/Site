@@ -27,7 +27,7 @@ export class CodeService {
         var formData = new FormData();
         formData.append('file', file);
         var query = `?userId=${userId}&problemId=${problemId}&languageId=${languageId}`;
-        return this.http.post(this._getUrl + query, formData);
+        return this.http.post(this._saveUrl + query, formData);
     }
 
     getCodes<T>() {
