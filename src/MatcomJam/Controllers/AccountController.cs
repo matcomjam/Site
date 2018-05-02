@@ -1,29 +1,19 @@
-﻿// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using QuickApp.ViewModels;
+using MatcomJam.ViewModels;
 using AutoMapper;
-using DAL.Models;
 using DAL.Core.Interfaces;
-using QuickApp.Authorization;
-using QuickApp.Helpers;
+using MatcomJam.Authorization;
+using MatcomJam.Helpers;
 using Microsoft.AspNetCore.JsonPatch;
 using DAL.Core;
 using MatcomJamDAL.Models.MyModel;
 
-namespace QuickApp.Controllers
+namespace MatcomJam.Controllers
 {
     [Authorize]
     [Route("api/[controller]")]

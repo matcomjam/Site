@@ -1,12 +1,4 @@
-﻿// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
-import { Injectable } from '@angular/core';
+﻿import { Injectable } from '@angular/core';
 import { TranslateService, TranslateLoader } from '@ngx-translate/core';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
@@ -17,7 +9,7 @@ import 'rxjs/add/observable/of';
 export class AppTranslationService {
 
     private _languageChanged = new Subject<string>();
-    readonly defaultLanguage = "en";
+    readonly defaultLanguage = "es";
 
     constructor(private translate: TranslateService) {
 
@@ -46,13 +38,13 @@ export class AppTranslationService {
     useBrowserLanguage(): string | void {
         let browserLang = this.getBrowserLanguage();
 
-        if (browserLang.match(/en|fr|de|ar|ko|pt/)) {
+        if (browserLang.match(/en|es/)) {
             this.changeLanguage(browserLang);
             return browserLang;
         }
     }
 
-    changeLanguage(language: string = "en") {
+    changeLanguage(language: string = "es") {
 
         if (!language)
             language = this.translate.defaultLang;
@@ -102,16 +94,8 @@ export class TranslateLanguageLoader implements TranslateLoader {
         switch (lang) {
             case "en":
                 return Observable.of(require("../assets/locale/en.json"));
-            case "fr":
-                return Observable.of(require("../assets/locale/fr.json"));
-            case "de":
-                return Observable.of(require("../assets/locale/de.json"));
-            case "pt":
-                return Observable.of(require("../assets/locale/pt.json"));
-            case "ar":
-                return Observable.of(require("../assets/locale/ar.json"));
-            case "ko":
-                return Observable.of(require("../assets/locale/ko.json"));
+            case "es":
+                return Observable.of(require("../assets/locale/es.json"));
             default:
         }
     }

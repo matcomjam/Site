@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using DAL;
 using MatcomJamDAL.Models.MyModel;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace QuickApp.Controllers
+namespace MatcomJam.Controllers
 {
     public class SyncController : Controller
     {

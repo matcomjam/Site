@@ -1,12 +1,4 @@
-﻿// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
-import { Component, OnInit, OnDestroy, Input } from "@angular/core";
+﻿import { Component, OnInit, OnDestroy, Input } from "@angular/core";
 
 import { AlertService, MessageSeverity, DialogType } from '../../services/alert.service';
 import { AuthService } from "../../services/auth.service";
@@ -128,13 +120,9 @@ export class LoginComponent implements OnInit, OnDestroy {
     offerAlternateHost() {
 
         if (Utilities.checkIsLocalHost(location.origin) && Utilities.checkIsLocalHost(this.configurations.baseUrl)) {
-            this.alertService.showDialog("Dear Developer!\nIt appears your backend Web API service is not running...\n" +
-                "Would you want to temporarily switch to the online Demo API below?(Or specify another)",
-                DialogType.prompt,
-                (value: string) => {
-                    this.configurations.baseUrl = value;
-                    this.alertService.showStickyMessage("API Changed!", "The target Web API has been changed to: " + value, MessageSeverity.warn);
-                },
+            this.alertService.showDialog("Dear Developer!\nIt appears your backend Web API service is not running...\n",
+                DialogType.alert,
+                null,
                 null,
                 null,
                 null,

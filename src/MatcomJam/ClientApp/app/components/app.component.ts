@@ -1,12 +1,4 @@
-﻿// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
-import { Component, ViewEncapsulation, OnInit, OnDestroy, ViewChildren, AfterViewInit, QueryList, ElementRef } from "@angular/core";
+﻿import { Component, ViewEncapsulation, OnInit, OnDestroy, ViewChildren, AfterViewInit, QueryList, ElementRef } from "@angular/core";
 import { Router, NavigationStart } from '@angular/router';
 import { ToastyService, ToastyConfig, ToastOptions, ToastData } from 'ng2-toasty';
 import { ModalDirective } from 'ngx-bootstrap/modal';
@@ -71,8 +63,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 
         storageManager.initialiseStorageSyncListener();
 
-        translationService.addLanguages(["en", "fr", "de", "pt", "ar", "ko"]);
-        translationService.setDefaultLanguage('en');
+        translationService.addLanguages(["es","en"]);
+        translationService.setDefaultLanguage('es');
 
 
         this.toastyConfig.theme = 'bootstrap';

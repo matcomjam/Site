@@ -1,20 +1,10 @@
-﻿// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
-using DAL.Core;
+﻿using DAL.Core;
 using Microsoft.AspNetCore.Authorization;
-using QuickApp.Helpers;
-using System.Collections.Generic;
+using MatcomJam.Helpers;
 using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace QuickApp.Authorization
+namespace MatcomJam.Authorization
 {
     public class UserAccountAuthorizationRequirement : IAuthorizationRequirement
     {

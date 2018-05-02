@@ -1,20 +1,11 @@
-﻿// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
+﻿
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace QuickApp.Helpers
+namespace MatcomJam.Helpers
 {
     [AttributeUsage(AttributeTargets.Property)]
     public sealed class MinimumCountAttribute : ValidationAttribute

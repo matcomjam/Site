@@ -1,16 +1,12 @@
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
-using DAL;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using CodeFirstDatabase;
 
-namespace QuickApp
+namespace MatcomJam
 {
     public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<MJDbContext>
     {

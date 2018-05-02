@@ -1,19 +1,11 @@
-﻿// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using System;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using DAL.Core;
 
-namespace QuickApp.Authorization
+namespace MatcomJam.Authorization
 {
     public class AssignRolesAuthorizationRequirement : IAuthorizationRequirement
     {

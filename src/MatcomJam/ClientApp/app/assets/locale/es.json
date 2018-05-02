@@ -1,8 +1,8 @@
 ﻿{
   "app": {
-    "Welcome": "Welcome",
-    "Notifications": "Notifications",
-    "New": "New"
+    "Welcome": "Bienvenido",
+    "Notifications": "Notificaciones",
+    "New": "Nuevo"
   },
   "mainMenu": {
     "Appointments": "Appointments",
@@ -17,8 +17,8 @@
     "Customers": "Customers",
     "Products": "Products",
     "Orders": "Orders",
-    "NotFound": "Not-Found",
-    "About": "About",
+    "NotFound": "No encontrado",
+    "About": "Acerca de",
     "Settings": "Settings"
   },
   "home": {
@@ -28,32 +28,32 @@
   },
   "notFound": {
     "404": "404",
-    "pageNotFound": "The page you are looking for does not exist",
-    "backToHome": "Back to home"
+    "pageNotFound": "Esta Página no se encuentra",
+    "backToHome": "Regrese a Inicio"
   },
   "settings": {
     "tab": {
-      "Profile": "Profile",
-      "Preferences": "Preferences",
-      "Users": "Users",
+      "Profile": "Perfil",
+      "Preferences": "Preferencias",
+      "Users": "Usuarios",
       "Roles": "Roles"
     },
     "header": {
-      "UserProfile": "User Profile",
-      "UserPreferences": "User Preferences",
-      "UserDepartments": "User Departments",
-      "UsersManagements": "Users Managements",
-      "RolesManagement": "Roles Management"
+      "UserProfile": "Perfil de Usuario",
+      "UserPreferences": "Preferencias de Usuario",
+      "UserDepartments": "Departamentos de Usuario",
+      "UsersManagements": "Administración Usuarios",
+      "RolesManagement": "Administración Roles"
     }
   },
   "preferences": {
-    "ReloadPreferences": "Reload Preferences:",
+    "ReloadPreferences": "Recargar Preferencias",
     "ReloadPreferencesHint": "Load default preferences (local changes are discarded)",
     "Language": "Language:",
-    "English": "English",
+    "English": "Ingles",
     "Spanish": "Espanol",
-    "LanguageHint": "Select the preferred language for your account",
-    "HomePage": "Home Page:",
+    "LanguageHint": "Seleccione el lenguaje predeterminado",
+    "HomePage": "Pagina de inicio",
     "Dashboard": "Dashboard",
     "Customers": "Customers",
     "Products": "Products",
@@ -61,7 +61,7 @@
     "About": "About",
     "Settings": "Settings",
     "HomePageHint": "Select the default page to navigate to on login",
-    "Theme": "Theme:",
+    "Theme": "Tema:",
     "DefaultColor": "<span class='default-theme-option'>Default</span>",
     "RedColor": "<span class='red-theme-option'>Red</span>",
     "OrangeColor": "<span class='orange-theme-option'>Orange</span>",
@@ -152,7 +152,7 @@
   "notifications": {
     "Delete": "Delete notification",
     "Pin": "Pin notification",
-    "Date": "Date",
+    "Date": "Fecha",
     "Notification": "Notification"
   },
   "todoDemo": {

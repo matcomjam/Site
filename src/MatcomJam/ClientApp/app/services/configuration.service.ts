@@ -1,13 +1,4 @@
-﻿// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
-import { Injectable } from '@angular/core';
-
+﻿import { Injectable } from '@angular/core';
 import { AppTranslationService } from './app-translation.service';
 import { LocalStoreManager } from './local-store-manager.service';
 import { DBkeys } from './db-Keys';
@@ -31,7 +22,7 @@ export class ConfigurationService {
     public static readonly appVersion: string = "1.0.0";
 
     public baseUrl: string = Utilities.baseUrl();
-    public fallbackBaseUrl: string = "http://quickapp.ebenmonney.com";
+    public fallbackBaseUrl: string = "http://MatcomJam.ebenmonney.com";
     public loginUrl: string = "/Login";
 
     //***Specify default configurations here***

@@ -1,11 +1,3 @@
-// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
 import { NgModule, ErrorHandler } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
@@ -49,16 +41,11 @@ import { GroupByPipe } from './pipes/group-by.pipe';
 import { AppComponent } from "./components/app.component";
 import { LoginComponent } from "./components/login/login.component";
 import { HomeComponent } from "./components/home/home.component";
-import { CustomersComponent } from "./components/customers/customers.component";
 import { ContestComponent } from "./components/contest/contest.component";
 import { BlogComponent } from "./components/blog/blog.component";
 import { SettingsComponent } from "./components/settings/settings.component";
 import { AboutComponent } from "./components/about/about.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
-
-import { BannerDemoComponent } from "./components/controls/banner-demo.component";
-import { TodoDemoComponent } from "./components/controls/todo-demo.component";
-import { StatisticsDemoComponent } from "./components/controls/statistics-demo.component";
 import { NotificationsViewerComponent } from "./components/controls/notifications-viewer.component";
 import { SearchBoxComponent } from "./components/controls/search-box.component";
 import { UserInfoComponent } from "./components/controls/user-info.component";
@@ -115,7 +102,6 @@ import { SubmissionComponent } from './components/submission/submission.componen
         AppComponent,
         LoginComponent,
         HomeComponent,
-        CustomersComponent,
         ContestComponent,
         BlogComponent,
         SettingsComponent,
@@ -125,7 +111,6 @@ import { SubmissionComponent } from './components/submission/submission.componen
         NotFoundComponent,
         NotificationsViewerComponent,
         SearchBoxComponent,
-        StatisticsDemoComponent, TodoDemoComponent, BannerDemoComponent,
         EqualValidator,
         LastElementDirective,
         AutofocusDirective,

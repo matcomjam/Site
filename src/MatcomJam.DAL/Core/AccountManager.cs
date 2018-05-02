@@ -6,7 +6,6 @@
 // ==> Gun4Hire: contact@ebenmonney.com
 // ======================================
 
-using DAL;
 using DAL.Core.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -14,9 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
-using DAL.Core;
 using CodeFirstDatabase;
 using MatcomJamDAL.Models.MyModel;
 

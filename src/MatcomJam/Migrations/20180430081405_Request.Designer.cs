@@ -12,8 +12,8 @@ using System;
 namespace MatcomJam.Migrations
 {
     [DbContext(typeof(MJDbContext))]
-    [Migration("20180410200655_addingFieldsToCode")]
-    partial class addingFieldsToCode
+    [Migration("20180430081405_Request")]
+    partial class Request
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -376,9 +376,7 @@ namespace MatcomJam.Migrations
 
                     b.Property<DateTime>("UpdatedDate");
 
-                    b.Property<int>("UserId");
-
-                    b.Property<string>("UserId1");
+                    b.Property<string>("UserId");
 
                     b.HasKey("Id");
 
@@ -386,9 +384,29 @@ namespace MatcomJam.Migrations
 
                     b.HasIndex("ProblemId");
 
-                    b.HasIndex("UserId1");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Codes");
+                });
+
+            modelBuilder.Entity("MatcomJamDAL.Models.MyModel.SyncServer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Ip");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Port");
+
+                    b.Property<string>("URL_Get");
+
+                    b.Property<string>("URL_Post");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SyncServers");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -488,9 +506,15 @@ namespace MatcomJam.Migrations
                     b.Property<string>("ConcurrencyToken")
                         .IsConcurrencyToken();
 
+                    b.Property<string>("ConsentType");
+
                     b.Property<string>("DisplayName");
 
+                    b.Property<string>("Permissions");
+
                     b.Property<string>("PostLogoutRedirectUris");
+
+                    b.Property<string>("Properties");
 
                     b.Property<string>("RedirectUris");
 
@@ -514,6 +538,8 @@ namespace MatcomJam.Migrations
 
                     b.Property<string>("ConcurrencyToken")
                         .IsConcurrencyToken();
+
+                    b.Property<string>("Properties");
 
                     b.Property<string>("Scopes");
 
@@ -543,10 +569,19 @@ namespace MatcomJam.Migrations
 
                     b.Property<string>("Description");
 
+                    b.Property<string>("DisplayName");
+
                     b.Property<string>("Name")
                         .IsRequired();
 
+                    b.Property<string>("Properties");
+
+                    b.Property<string>("Resources");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
 
                     b.ToTable("OpenIddictScopes");
                 });
@@ -568,6 +603,8 @@ namespace MatcomJam.Migrations
                     b.Property<DateTimeOffset?>("ExpirationDate");
 
                     b.Property<string>("Payload");
+
+                    b.Property<string>("Properties");
 
                     b.Property<string>("ReferenceId");
 
@@ -703,7 +740,7 @@ namespace MatcomJam.Migrations
 
                     b.HasOne("MatcomJamDAL.Models.MyModel.ApplicationUser", "User")
                         .WithMany()
-                        .HasForeignKey("UserId1");
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -1,22 +1,9 @@
-﻿// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
-using DAL.Models;
-using FluentValidation;
-using QuickApp.Helpers;
-using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
+﻿
+using MatcomJam.Helpers;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 
 
-namespace QuickApp.ViewModels
+namespace MatcomJam.ViewModels
 {
     public class UserViewModel
     {

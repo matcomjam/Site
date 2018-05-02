@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using CodeFirstDatabase;
 using DAL.Repositories;
 using MatcomJamDAL.Models.MyModel;
 using MatcomJamDAL.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json.Serialization;
 
 namespace MatcomJamDAL.Repositories
 {

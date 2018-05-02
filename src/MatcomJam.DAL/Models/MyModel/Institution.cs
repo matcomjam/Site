@@ -1,8 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Net.Mime;
-using System.Reflection;
-
-namespace CodeFirstDatabase
+﻿namespace CodeFirstDatabase
 {
     public class Institution
     {

@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using AutoMapper;
 using CodeFirstDatabase;
 using DAL;
 using Microsoft.AspNetCore.Mvc;
-using QuickApp.ViewModels;
+using MatcomJam.ViewModels;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace QuickApp.Controllers
+namespace MatcomJam.Controllers
 {
     //[Route("api/[controller]")]
     public class CommentController : Controller
@@ -35,13 +32,6 @@ namespace QuickApp.Controllers
             }
             return Ok(commentViewModels);
         }
-
-        // GET api/values/5
-        //[HttpGet("{id}")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
 
         // POST api/values
         [HttpPost]

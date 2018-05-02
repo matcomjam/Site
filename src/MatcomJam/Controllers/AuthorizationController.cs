@@ -1,12 +1,4 @@
-﻿// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
-using System;
+﻿
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,7 +9,6 @@ using Microsoft.AspNetCore.Authentication;
 using AspNet.Security.OpenIdConnect.Server;
 using OpenIddict.Core;
 using AspNet.Security.OpenIdConnect.Primitives;
-using DAL.Models;
 using DAL.Core;
 using Microsoft.Extensions.Options;
 using System.Security.Claims;
@@ -27,7 +18,7 @@ using MatcomJamDAL.Models.MyModel;
 // For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
 
-namespace QuickApp.Controllers
+namespace MatcomJam.Controllers
 {
     public class AuthorizationController : Controller
     {

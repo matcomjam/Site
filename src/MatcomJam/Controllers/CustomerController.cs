@@ -1,25 +1,14 @@
-﻿// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
+﻿
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DAL;
-using QuickApp.ViewModels;
-using AutoMapper;
-using DAL.Models;
+using MatcomJam.ViewModels;
 using Microsoft.Extensions.Logging;
-using QuickApp.Helpers;
-using Microsoft.Extensions.Options;
+using MatcomJam.Helpers;
 
-namespace QuickApp.Controllers
+namespace MatcomJam.Controllers
 {
     [Route("api/[controller]")]
     public class CustomerController : Controller
@@ -64,7 +53,7 @@ namespace QuickApp.Controllers
 
             string message = EmailTemplates.GetTestEmail(recepientName, DateTime.UtcNow);
 
-            (bool success, string errorMsg) response = await _emailer.SendEmailAsync(recepientName, recepientEmail, "Test Email from QuickApp", message);
+            (bool success, string errorMsg) response = await _emailer.SendEmailAsync(recepientName, recepientEmail, "Test Email from MatcomJam", message);
 
             if (response.success)
                 return "Success";

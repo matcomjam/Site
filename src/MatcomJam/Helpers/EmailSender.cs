@@ -1,12 +1,4 @@
-﻿// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
-using MailKit.Net.Smtp;
+﻿using MailKit.Net.Smtp;
 using MimeKit;
 using System;
 using Microsoft.Extensions.Logging;
@@ -15,7 +7,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Net.Security;
 using Microsoft.Extensions.Options;
 
-namespace QuickApp.Helpers
+namespace MatcomJam.Helpers
 {
     public interface IEmailer
     {

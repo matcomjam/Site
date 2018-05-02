@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DAL.Models;
 using MatcomJamDAL.Models.MyModel;
 using MatcomJamDAL.Models.MyModel.interfaces;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace CodeFirstDatabase
 {

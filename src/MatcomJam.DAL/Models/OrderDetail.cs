@@ -6,8 +6,6 @@
 // ==> Gun4Hire: contact@ebenmonney.com
 // ======================================
 
-using System;
-using System.Linq;
 
 namespace DAL.Models
 {

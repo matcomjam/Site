@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
 using DAL;
 using MatcomJamDAL.Models.MyModel;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using QuickApp.ViewModels;
+using MatcomJam.ViewModels;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace QuickApp.Controllers
+namespace MatcomJam.Controllers
 {
     //[Route("api/[controller]")]
     public class CodeController : Controller
@@ -29,10 +25,6 @@ namespace QuickApp.Controllers
         private readonly int MAX_BYTES = 10 * 1024 * 1024;
         private readonly string[] ACCEPTED_FILE_TYPE = new[] { ".cpp", ".cs", ".py", ".java" };
 
-        //public CodeController(IHostingEnvironment host)
-        //{
-        //    _host = host;
-        //}
 
         // GET: api/values
         [HttpGet]
@@ -163,10 +155,5 @@ namespace QuickApp.Controllers
             return Json(_unitOfWork.Codes.SaveCode(code));
         }
 
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }

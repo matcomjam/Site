@@ -1,23 +1,10 @@
-﻿// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
-using AutoMapper;
+﻿using AutoMapper;
 using DAL.Core;
 using DAL.Models;
 using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MatcomJamDAL.Models.MyModel;
 
-namespace QuickApp.ViewModels
+namespace MatcomJam.ViewModels
 {
     public class AutoMapperProfile : Profile
     {

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MatcomJam.DAL
+﻿namespace MatcomJam.DAL
 {
     public class Class1
     {

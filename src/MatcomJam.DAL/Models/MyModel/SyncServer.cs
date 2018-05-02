@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MatcomJamDAL.Models.MyModel
+﻿namespace MatcomJamDAL.Models.MyModel
 {
     public class SyncServer
     {

@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using DAL.Models;
 using DAL.Models.Interfaces;
 using Microsoft.AspNetCore.Identity;
 

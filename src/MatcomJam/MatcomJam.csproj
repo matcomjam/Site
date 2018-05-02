@@ -9,8 +9,8 @@
     <Copyright>Copyright © 2018 Matcom</Copyright>
     <PackageProjectUrl>https://github.com/matcomjam/Site</PackageProjectUrl>
     <Company>Matcom</Company>
-    <StartupObject>QuickApp.Program</StartupObject>
-    <RootNamespace>QuickApp</RootNamespace>
+    <StartupObject>MatcomJam.Program</StartupObject>
+    <RootNamespace>MatcomJam</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -69,12 +69,8 @@
   </Target>
 
   <ItemGroup>
-    <Content Include="ClientApp\app\assets\locale\ar.json" />
-    <Content Include="ClientApp\app\assets\locale\de.json" />
-    <Content Include="ClientApp\app\assets\locale\ko.json" />
+    <Content Include="ClientApp\app\assets\locale\es.json" />
     <Content Include="ClientApp\app\assets\locale\en.json" />
-    <Content Include="ClientApp\app\assets\locale\fr.json" />
-    <Content Include="ClientApp\app\assets\locale\pt.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -86,6 +82,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Logs\" />
     <Folder Include="wwwroot\uploads\" />
   </ItemGroup>
 </Project>

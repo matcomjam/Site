@@ -1,18 +1,9 @@
-﻿// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
-import { NgModule } from '@angular/core';
+﻿import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { RegisterComponent } from "./components/register/register.component";
 import { LoginComponent } from "./components/login/login.component";
 import { HomeComponent } from "./components/home/home.component";
-import { CustomersComponent } from "./components/customers/customers.component";
 import { ContestComponent } from "./components/contest/contest.component";
 import { BlogComponent } from "./components/blog/blog.component";
 import { SelectedBlogComponent } from "./components/selected-blog/selected-blog.component";
@@ -35,7 +26,6 @@ import { SubmissionComponent } from "./components/submission/submission.componen
             { path: "", component: HomeComponent, canActivate: [AuthGuard], data: { title: "Home" } },
             { path: "login", component: LoginComponent, data: { title: "Login" } },
             { path: "login/register", component: RegisterComponent },
-            //{ path: "customers", component: CustomersComponent, canActivate: [AuthGuard], data: { title: "Customers" } },
             { path: "problems", component: ProblemsComponent, data: { title: "Problems" } },
             { path: "problems/:id", component: SelectProblemComponent, data: { title: "SelectedProblem" } },
             { path: "insert-problem", component: CreateProblemComponent, data: { title: "CreateProblems" } },

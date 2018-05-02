@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.Internal;
 using Microsoft.EntityFrameworkCore.ValueGeneration;
 using System;
 
-namespace QuickApp.Migrations
+namespace MatcomJam.Migrations
 {
     [DbContext(typeof(MJDbContext))]
     [Migration("20180409164633_InitialCreate")]

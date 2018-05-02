@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using CodeFirstDatabase;
 using DAL.Repositories;
 using DAL.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using MatcomJamDAL.Models.MyModel;
 
 namespace MatcomJamDAL.Repositories

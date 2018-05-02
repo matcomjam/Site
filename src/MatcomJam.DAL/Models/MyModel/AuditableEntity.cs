@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using MatcomJamDAL.Models.MyModel.interfaces;
 
 namespace MatcomJamDAL.Models.MyModel

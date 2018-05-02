@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CodeFirstDatabase;
-using MatcomJamDAL.Models.MyModel;
-
-namespace QuickApp.ViewModels
+﻿namespace MatcomJam.ViewModels
 {
     public class BlogViewModel
     {

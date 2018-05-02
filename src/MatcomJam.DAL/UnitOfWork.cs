@@ -6,13 +6,7 @@
 // ==> Gun4Hire: contact@ebenmonney.com
 // ======================================
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CodeFirstDatabase;
-using DAL.Repositories;
 using DAL.Repositories.Interfaces;
 using MatcomJamDAL.Repositories;
 using MatcomJamDAL.Repositories.Interfaces;

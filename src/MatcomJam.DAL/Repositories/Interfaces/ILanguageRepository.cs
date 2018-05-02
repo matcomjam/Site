@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using CodeFirstDatabase;
 using DAL.Repositories.Interfaces;
-using MatcomJamDAL.Models.MyModel;
 
 namespace MatcomJamDAL.Repositories.Interfaces
 {

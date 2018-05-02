@@ -5,6 +5,7 @@ export class Blog {
     Id: Number;
     Title: String;
     Description: String;
+    Resume: String;
     UserId: Number;
     UserName: String;
     Comments: Comment[];

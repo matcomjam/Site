@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace CodeFirstDatabase
+﻿namespace CodeFirstDatabase
 {
     public class Submission
     {

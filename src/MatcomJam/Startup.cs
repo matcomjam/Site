@@ -9,7 +9,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using DAL;
-using DAL.Models;
 using System.Net;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
@@ -18,34 +17,28 @@ using Newtonsoft.Json;
 using DAL.Core;
 using DAL.Core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
-using QuickApp.ViewModels;
-using QuickApp.Helpers;
-using QuickApp.Authorization;
+using MatcomJam.ViewModels;
+using MatcomJam.Helpers;
+using MatcomJam.Authorization;
 using AspNet.Security.OpenIdConnect.Primitives;
 using AspNet.Security.OAuth.Validation;
 using Microsoft.AspNetCore.Identity;
 using Swashbuckle.AspNetCore.Swagger;
 using AppPermissions = DAL.Core.ApplicationPermissions;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Rewrite;
 using CodeFirstDatabase;
 using DAL.Repositories.Interfaces;
 using MatcomJamDAL.Models.MyModel;
 using MatcomJamDAL.Repositories;
 
-namespace QuickApp
+namespace MatcomJam
 {
     public class Startup
     {
         public IConfiguration Configuration { get; }
-        //private readonly IHostingEnvironment _hostingEnvironment;
 
-
-
-        public Startup(IConfiguration configuration/*, IHostingEnvironment env*/)
+        public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
-            //_hostingEnvironment = env;
+            Configuration = configuration; 
         }
 
 
@@ -124,17 +117,6 @@ namespace QuickApp
             //    services.Configure<MvcOptions>(options => options.Filters.Add(new RequireHttpsAttribute()));
 
 
-            //Todo: ***Using DataAnnotations for validation until Swashbuckle supports FluentValidation***
-            //services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
-
-
-            //.AddJsonOptions(opts =>
-            //{
-            //    opts.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-            //});
-
-
-
             services.AddSwaggerGen(c =>
             {
                 c.AddSecurityDefinition("BearerAuth", new ApiKeyScheme
@@ -150,14 +132,14 @@ namespace QuickApp
 
             services.AddAuthorization(options =>
             {
-                options.AddPolicy(Authorization.Policies.ViewAllUsersPolicy, policy => policy.RequireClaim(CustomClaimTypes.Permission, AppPermissions.ViewUsers));
-                options.AddPolicy(Authorization.Policies.ManageAllUsersPolicy, policy => policy.RequireClaim(CustomClaimTypes.Permission, AppPermissions.ManageUsers));
+                options.AddPolicy(Policies.ViewAllUsersPolicy, policy => policy.RequireClaim(CustomClaimTypes.Permission, AppPermissions.ViewUsers));
+                options.AddPolicy(Policies.ManageAllUsersPolicy, policy => policy.RequireClaim(CustomClaimTypes.Permission, AppPermissions.ManageUsers));
 
-                options.AddPolicy(Authorization.Policies.ViewAllRolesPolicy, policy => policy.RequireClaim(CustomClaimTypes.Permission, AppPermissions.ViewRoles));
-                options.AddPolicy(Authorization.Policies.ViewRoleByRoleNamePolicy, policy => policy.Requirements.Add(new ViewRoleAuthorizationRequirement()));
-                options.AddPolicy(Authorization.Policies.ManageAllRolesPolicy, policy => policy.RequireClaim(CustomClaimTypes.Permission, AppPermissions.ManageRoles));
+                options.AddPolicy(Policies.ViewAllRolesPolicy, policy => policy.RequireClaim(CustomClaimTypes.Permission, AppPermissions.ViewRoles));
+                options.AddPolicy(Policies.ViewRoleByRoleNamePolicy, policy => policy.Requirements.Add(new ViewRoleAuthorizationRequirement()));
+                options.AddPolicy(Policies.ManageAllRolesPolicy, policy => policy.RequireClaim(CustomClaimTypes.Permission, AppPermissions.ManageRoles));
 
-                options.AddPolicy(Authorization.Policies.AssignAllowedRolesPolicy, policy => policy.Requirements.Add(new AssignRolesAuthorizationRequirement()));
+                options.AddPolicy(Policies.AssignAllowedRolesPolicy, policy => policy.Requirements.Add(new AssignRolesAuthorizationRequirement()));
             });
 
             services.AddCors(options =>

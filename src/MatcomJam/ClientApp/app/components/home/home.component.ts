@@ -1,11 +1,3 @@
-// ======================================
-// Author: Ebenezer Monney
-// Email:  info@ebenmonney.com
-// Copyright (c) 2017 www.ebenmonney.com
-// 
-// ==> Gun4Hire: contact@ebenmonney.com
-// ======================================
-
 import { Component, OnInit, Input } from '@angular/core';
 import { fadeInOut } from '../../services/animations';
 import { ConfigurationService } from '../../services/configuration.service';
@@ -38,23 +30,23 @@ export class HomeComponent implements OnInit {
         this.findAll(this.limit);
     }
 
+    onPageChange(offset) {
+        this.offset = offset;
+        this.findAll(this.limit, (offset / this.limit) + 1);
+    }
+
     getSize() {
         this.blogService.getBlogCount(null)
             .subscribe(c => {
                 this.size = Number(c)
-                console.log('size', this.size);
+              //  console.log('size', this.size);
             });
     }
-
+    
     findAll(limit: number, offset: number = 1) {
         this.blogService.getBlogs(null, offset, limit)
             .subscribe(b => {
                 this.blogList = <Blog[]>(b);
             });
-    }
-
-    onPageChange(offset) {
-        this.offset = offset;
-        this.findAll(this.limit, (offset / this.limit) + 1);
     }
 }
